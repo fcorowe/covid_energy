@@ -4,7 +4,7 @@
 
 <sup>1</sup> *Geographic Data Science Lab, University of Liverpool, Liverpool, United Kingdom*
 
-![](outputs/preliminary/image.png)
+![](figs/Wuhan_Dec2019_Jan2020.tif)
 
 
 Access to the application and code: https://code.earthengine.google.com/?accept_repo=users/fcorowe/covid_energy
