@@ -17,6 +17,10 @@ Analysis:
 
 - [Index: Stringency of government response](https://docs.google.com/presentation/d/1-DbRcIJzy0QAyOLzEhcV44P_jFEZLPv7HZpxbWU9HrA/edit#slide=id.p3)
 
+- [Basic Demographic Characteristics (Gridded Population of the World Version 4.11)](https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv411_GPW_Basic_Demographic_Characteristics#bands)
+
+- [Estimated Residential Population per 100x100m Grid Square](https://developers.google.com/earth-engine/datasets/catalog/WorldPop_GP_100m_pop#description)
+
 # References
 
 Ruan, G., Wu, D., Zheng, X., Sivaranjani, S., Zhong, H., Kang, C., Dahleh, M.A. and Xie, L., 2020. [A Cross-Domain Approach to Analyzing the Short-Run Impact of COVID-19 on the US Electricity Sector.](http://www.enerarxiv.org/thesis/1594622565.pdf)
