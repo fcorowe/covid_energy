@@ -1,7 +1,7 @@
 ﻿City,Country,Mobility_Retail_Feb,Mobility_Transit_Feb,Mobility_Workplace_Feb,Mobility_Residential_Feb,Mobility_Retail_Mar,Mobility_Transit_Mar,Mobility_Workplace_Mar,Mobility_Residential_Mar,Mobility_Retail_April,Mobility_Transit_April,Mobility_Workplace_April,Mobility_Residential_April,Response_Feb,Response_March,Response_April
-Wuhan,China,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,75,	81,	57,
-Beijing,China,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,75,	81,	57,
-Shanghai,China,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,75,	81,	57,
+Wuhan,China,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,75,81,57,
+Beijing,China,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,75,81,57,
+Shanghai,China,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,75,81,57,
 Lombardy (Region),Italy,2,8,-2,-1,-91,-83,-57,22,-83,-82,-67,34,19,85,94,
 Catalonia (County),Spain,2,8,0,-1,-87,-68,-48,16,-87,-80,-70,33,11,67,85,
 Manila,Philippines,8,5,5,0,-54,-58,-16,15,-82,-91,-80,40,25,75,100,
