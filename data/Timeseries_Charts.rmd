@@ -1,0 +1,231 @@
+# Global Changes in Energy Consumption During COVID-19: Creating contextual time-series graphs of mobility and government response indicators
+
+Here we explore two different tyes of graph that can be used to represent time-series data: a simple Line Graph and a [Heat Map](https://www.r-graph-gallery.com/heatmap). 
+
+### Details about data
+
+**Selecting cities:** Twenty four cities were selected based on several criteria: availability of indicator data; start of lockdown measures (before end of March); and different range of geographical contexts. Large cities likely to account for a high proportion of a countries total energy consumption were prioritised. For some countries, data about mobility was not disaggregated to a sub-regional level so it was not possible to include them. Although mobility indicator data is not available for China owing to the data being compiled by Google, Wuhan and Shanghai will also be considered as the country in which the virus originated.
+
+**Mobility data:** Mobility data is available from the [COVID-19 Community Mobility Reports](https://www.google.com/covid19/mobility/) by Google. Mobility data is broken down into a number of sectors that are useful when thinking about energy consumption patterns: workplace, residential, transit and retail. The data is typically available at the city scale, although in some instances it was necessary to also include the surrounding county (e.g. the region of Lombardy in the case of Milan, Italy).
+
+**Government response data:** The government response data that we will analyse comes from the *[Coronavirus Government Response Tracker](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker
+). The data is available at the national-scale. The tracker compiles a range of different indicators, but here we focus on the stringency indiactor which records the strictness of 'lockdown syle' policies, reflecting restrictions on people's behaviours. Note that these indices simply record the number and strictness of government policies, and should not be interpreted as ‘scoring’ the appropriateness or effectiveness of a country’s response. A higher position in an index does not necessarily mean that a country's response is ‘better’ than others lower on the index.
+
+### Before we get started
+
+**Set the working directory:** First set the working directory so that R knows where to find the data for analysis, and where to export our final images etc. 
+```{r}
+getwd()
+setwd("C:/Users/Cait Robinson/OneDrive - The University of Liverpool/Projects/COVID_NightLights/Selected_Cities")
+getwd()
+```
+
+**Install useful packages for your analysis:** Install a range of useful packages for creating graphs (ggplot2) and organising or manuipulating data ([tidyr](https://tidyr.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/)). Additionally, install [RColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) for accessing pretty colour palettes and [lubridate](https://lubridate.tidyverse.org/) for working with dates. 
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(dplyr)
+```
+
+
+```{r}
+```
+
+**Import your csv. data:** Read the csv. folder with the COVID mobility and stringency of response data for our selected cities. Add it to a dataframe called data. Use the head() function to see the first six lines of the data.
+
+```{r}
+data <- read.csv("timeseries_selectedcities.csv")
+head(data)
+```
+
+**Rename column headings:** You will notice looking at the data that some of the column names need updating for clarity. Use the names() function to update them.
+
+```{r}
+names(data) <- c("Country","City","Date","Mobility_Retail","Mobility_Transit","Mobility_Workplace","Mobility_Residential","Response_Stringency")
+colnames(data)
+```
+
+### Working with dates in R
+We are working with data that is broken down according to dates, from 15th February - 15th June. Working with dates and times can be a little bit tricky in R. It is always a good idea to try to ensure your data is in a format that R recognises as a date (year-month-day), before you import it. Then use as.Date() to transfer the Date column into the correct format followed by str() to provide a summary of the structure of our data. You will see that Date is now in the correct format.
+
+```{r}
+data$Date <- as.Date(data$Date)
+str(data)
+```
+
+### Analysing mobility data 
+
+#### Graph of workplace mobility for all cities
+First, lets make a simple line graph of workplace mobility for all the cities in the sample. Plot this data as a line graph using geom_line(). Colour each line according to the city.You will notice an error message relating to Shanghai and Wuhan, for which there is no mobility data available.
+
+```{r}
+ggplot(data)+
+  geom_line(aes(x=Date, y=Mobility_Workplace, color=City),size=1, lineend="round", linejoin="round")+
+  labs(caption = " 
+       Based on Google Mobility Reports 2020")+ 
+  labs(title="Mobility: Workplace", y="Change in mobility (%)")+
+  theme(panel.background= element_rect(fill="gray96"), panel.grid.minor = element_blank(), 
+        panel.grid.major= element_blank(), plot.title = element_text(face="bold"), 
+        axis.title.x = element_blank(), legend.title=element_blank(), legend.position="bottom")
+```
+
+This graph is a bit of a mess - it is difficult to distinguish between all twenty-four cities!
+
+#### Individual graphs of residential and workplace mobility for each city
+Instead we can make an individual graph for each city in the dataset, and plot them side by side for comparison. This time include a line for residential mobility, aswell as workplace mobility. Residential and workplace mobility make for an interesting comparison when considering how energy consumption is likely to have increased or decreased in different sectors.
+
+To do this, we add a seperate ggplot2 object for each line, using geom_line(). We then use facet_wrap() and the "City" variable to make a graph for each city. 
+
+```{r}
+ggplot(data)+
+  geom_line(aes(x=Date, y=Mobility_Workplace),size=1, lineend="round", linejoin="round", color="Red")+
+  geom_line(aes(x=Date, y=Mobility_Residential),size=1, lineend="round", linejoin="round", color="Black")+
+  facet_wrap(~City)+
+  labs(caption = " 
+       Based on Google Mobility Reports 2020")+ 
+  labs(title="Mobility: Workplace and residential", y="Change in mobility (%)")+
+  theme(panel.background= element_rect(fill="gray96"), panel.grid.minor = element_blank(), 
+        panel.grid.major= element_blank(), plot.title = element_text(face="bold"), 
+        axis.title.x = element_blank(), legend.title=element_blank(), legend.position="bottom")
+```
+
+*Interpretation:* All twenty-four cities in the plot experienced a simultaneous increase in residential mobility and decrease in workplace mobility at some point during the period. However, there is considerable variation in the rapidity with which this change occurred, its timing, and duration. For example, in Hong Kong (and Ho Chi Minh City) reductions in workplace mobility were evident throughout Feb-Jun, however, the city did not experience the significant drop in mobility recorded in many cities elsewhere (e.g. Dublin, London, Manila). In several examples there are substantial drops in workplace mobility prior to, and probably in anticipation of, wide-spread lockdown (e.g. Manila, Ulaanbaatar, Tokyo, Mumbai, La Pez, Delhi). 
+
+As our analysis of satellite imagery only focuses on data from February and March we can also limit the timeframe of interest using the filter() function. Create a new dataframe called data_bydate.
+
+```{r}
+data_bydate <- filter(data, between(Date, as.Date("2020-02-15"), as.Date("2020-04-15")))
+```
+
+Then we can recreate our timeseries chart, this time focusing on a shorter time period. 
+
+```{r}
+ggplot(data_bydate)+
+  geom_line(aes(x=Date, y=Mobility_Workplace),size=1, lineend="round", linejoin="round", color="Red")+
+  geom_line(aes(x=Date, y=Mobility_Residential),size=1, lineend="round", linejoin="round", color="Black")+
+  facet_wrap(~City)+
+  labs(caption = " 
+       Based on Google Mobility Reports 2020")+ 
+  labs(title="Mobility: Workplace and residential", y="Change in mobility (%)")+
+  theme(panel.background= element_rect(fill="gray96"), panel.grid.minor = element_blank(), 
+        panel.grid.major= element_blank(), plot.title = element_text(face="bold"), 
+        axis.title.x = element_blank(), legend.title=element_blank(), legend.position="bottom")
+```
+
+
+
+#### Horizon plots of residential and workplace mobility for selected cities
+
+Horizon plots are a type or plots frequently used in time-series data to represent a moving value in a fraction of the vertical space required by a standard line or area plots. This is most useful when plotting and comparing different moving values. They aren't that straightforward in R, but you can use the [ggTimeSeries](https://cran.r-project.org/web/packages/ggTimeSeries/vignettes/ggTimeSeries.html) package to make them which includes the ggplot_horizon() function. This package can be installed from github by installing devtools library and then running the following command - devtools::install_github('Ather-Energy/ggTimeSeries').
+
+```{r}
+library(ggTimeSeries)
+library(lattice)
+library(RColorBrewer)
+library(scico)
+```
+
+First is is useful to plot an xyplot using the function from the [lattice](https://cran.r-project.org/web/packages/lattice/index.html) package. This shows us the distribution of our data.
+
+```{r}
+xyplot(data$Mobility_Residential ~ data$Date, groups=data$City)
+```
+
+Then use the ggplot_horizon() function to create a horizon graph for residential mobility data. Here we are using a divergent colour palette to try to reflect changes in positive and negative values. 
+
+Note: I still need to think about exactly what it is these graphs show! 
+
+```{r}
+horizonplot_residential <- ggplot_horizon(data, 'Date', 'Mobility_Residential', bandwidth=10, vcGroupingColumnNames='City')+
+  facet_wrap(~City, ncol=1, switch="y")+
+  labs(title="Mobility: Residential
+       ")+
+  theme_void()+
+  scale_fill_distiller(type="div", palette="RdYlBu", direction=-1)+
+  theme(plot.title=element_text(face="bold", size= 16), axis.text.x=element_text(), axis.title.y = element_blank(), axis.text.y = element_blank(), axis.ticks.y= element_blank(), strip.text.y.left=element_text(angle=0, size=12, hjust=1), legend.position="bottom", legend.text = element_text(size=10), legend.title = element_blank(), plot.margin=unit(c(0.5,0.5,0.5,0.5),"cm"))
+
+horizonplot_residential
+```
+
+The same can also be done for the workplace mobility data. 
+
+```{r}
+horizonplot_workplace <- ggplot_horizon(data, 'Date', 'Mobility_Workplace', bandwidth=20, vcGroupingColumnNames='City')+
+  facet_wrap(~City, ncol=1, switch="y")+
+  labs(title="Mobility: Workplace
+       ")+
+  scale_fill_distiller(type="div", palette="RdYlBu", direction=-1)+
+  theme_void()+
+  theme(plot.title=element_text(face="bold", size= 16), axis.text.x=element_text(), axis.title.y = element_blank(), axis.text.y = element_blank(), axis.ticks.y= element_blank(), strip.text.y.left=element_text(angle=0, size=12, hjust=1), legend.position="bottom", legend.text = element_text(size=10), legend.title = element_blank(), plot.margin=unit(c(0.5,0.5,0.5,0.5),"cm"))
+
+horizonplot_workplace
+```
+
+#### Export as a high resolution tiff image 
+
+We can now export the image as a high resolution tiff...
+
+```{r}
+tiff("Horizonplot_workplace_400.tiff", width = 3500, height = 5000, res=400)
+plot(horizonplot_workplace)
+dev.off()
+```
+
+### Analysing stringency of response data
+
+A line graph is a relatively simplistic way of present change over time data. Another useful visual display, especially for datasets that end up with lots of line, is a heatmap. We use the [geom_tile()](https://www.r-graph-gallery.com/79-levelplot-with-ggplot2.html) function from ggplot2 to produce a basic heatmap. At least 3 variables are needed per observation:
+
+  x: position on the X axis (in our case the Date)
+  y: position on the Y axis (in our case the Country)
+  fill: the numeric value that will be translated in a color (in our case the Stringency Index)
+  
+We use the reorder() function to change the y axis from ascending to desending order, to make sure they are alphabetical. scale_fill_gradientn() is used to specify a colour paletter from RColorBrewer. You can see a useful colour cheatsheet for R [here](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf).
+
+```{r}
+ggplot(data, aes(y=reorder(City, desc(City)), x=Date, fill=Response_Stringency))+
+         geom_tile()+
+  scale_fill_gradientn(colours=rev(brewer.pal(n=10, "RdBu")))+
+  theme_minimal()+
+  labs(title="Stringency of Government Response")+
+  labs(caption = "Based on national estimates extracted from Hale et al. (2020)")+ 
+  theme(panel.background= element_blank(), 
+        plot.title = element_text(face="bold", size = 12), 
+        panel.grid.minor = element_blank(), panel.grid.major= element_blank(), 
+        axis.title.y = element_blank(), axis.text.y = element_text(size=10),
+        axis.title.x = element_blank(), axis.text.x = element_text(size=10),
+        legend.title=element_blank(), legend.position="bottom")
+```
+
+*Note:* It is important to note that the values here are based on the stringency of the national response. The figures don't reflect relatively localised lockdowns, for example, in the case of Wuhan or Milan.
+
+We can also repeat this heatmap chart for the shorter time frame using the data_bydate dateframe again.
+
+```{r}
+stringency_bydate <- ggplot(data_bydate, aes(y=reorder(City, desc(City)), x=Date, fill=Response_Stringency))+
+         geom_tile()+
+  scale_fill_gradientn(colours=rev(brewer.pal(n=10, "RdBu")))+
+  theme_minimal()+
+  labs(title="Stringency of Government Response")+
+  labs(caption = "Based on national estimates extracted from Hale et al. (2020)")+ 
+  theme(panel.background= element_blank(), 
+        plot.title = element_text(face="bold", size = 12), 
+        panel.grid.minor = element_blank(), panel.grid.major= element_blank(), 
+        axis.title.y = element_blank(), axis.text.y = element_text(size=10),
+        axis.title.x = element_blank(), axis.text.x = element_text(size=10),
+        legend.title=element_blank(), legend.position="bottom")
+
+stringency_bydate
+```
+
+#### Export as a high resolution image 
+
+We can now export it as a high resolution tiff image...
+
+```{r}
+tiff("stringencybydate.tiff", width = 3000, height = 2000, res=300)
+plot(stringency_bydate)
+dev.off()
+```
+
+
