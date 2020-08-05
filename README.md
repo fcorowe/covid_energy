@@ -27,4 +27,4 @@ Analysis:
 
 Ruan, G., Wu, D., Zheng, X., Sivaranjani, S., Zhong, H., Kang, C., Dahleh, M.A. and Xie, L., 2020. [A Cross-Domain Approach to Analyzing the Short-Run Impact of COVID-19 on the US Electricity Sector.](http://www.enerarxiv.org/thesis/1594622565.pdf)
 
-![](figs/Wuhan_Dec2019_Jan2020.png)
+![](figs/wuhan_singapore_dec-feb.png)
