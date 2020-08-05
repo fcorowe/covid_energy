@@ -21,6 +21,8 @@ Analysis:
 
 - [Estimated Residential Population per 100x100m Grid Square](https://developers.google.com/earth-engine/datasets/catalog/WorldPop_GP_100m_pop#description)
 
+- [Functional Urban Areas - OECD / JRC](http://data.europa.eu/89h/347f0337-f2da-4592-87b3-e25975ec2c95)
+
 # References
 
 Ruan, G., Wu, D., Zheng, X., Sivaranjani, S., Zhong, H., Kang, C., Dahleh, M.A. and Xie, L., 2020. [A Cross-Domain Approach to Analyzing the Short-Run Impact of COVID-19 on the US Electricity Sector.](http://www.enerarxiv.org/thesis/1594622565.pdf)
