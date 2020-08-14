@@ -16,20 +16,16 @@ Here we explore two different tyes of graph that can be used to represent time-s
 **Set the working directory:** First set the working directory so that R knows where to find the data for analysis, and where to export our final images etc. 
 ```{r}
 getwd()
-setwd("C:/Users/Cait Robinson/OneDrive - The University of Liverpool/Projects/COVID_NightLights/Selected_Cities")
+setwd("../data")
 getwd()
 ```
 
-**Install useful packages for your analysis:** Install a range of useful packages for creating graphs (ggplot2) and organising or manuipulating data ([tidyr](https://tidyr.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/)). Additionally, install [RColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) for accessing pretty colour palettes and [lubridate](https://lubridate.tidyverse.org/) for working with dates. 
+**Install useful packages for your analysis:** Install a range of useful packages for creating graphs (ggplot2) and organising or manipulating data ([tidyr](https://tidyr.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/)). Additionally, install [RColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) for accessing pretty colour palettes and [lubridate](https://lubridate.tidyverse.org/) for working with dates. 
 
 ```{r}
 library(tidyverse)
 library(lubridate)
 library(dplyr)
-```
-
-
-```{r}
 ```
 
 **Import your csv. data:** Read the csv. folder with the COVID mobility and stringency of response data for our selected cities. Add it to a dataframe called data. Use the head() function to see the first six lines of the data.
@@ -61,7 +57,10 @@ First, lets make a simple line graph of workplace mobility for all the cities in
 
 ```{r}
 ggplot(data)+
-  geom_line(aes(x=Date, y=Mobility_Workplace, color=City),size=1, lineend="round", linejoin="round")+
+  geom_line(aes(x = Date, y = Mobility_Workplace, color = City), 
+            size=2, 
+            lineend = "round", 
+            linejoin="round")+
   labs(caption = " 
        Based on Google Mobility Reports 2020")+ 
   labs(title="Mobility: Workplace", y="Change in mobility (%)")+
@@ -79,15 +78,16 @@ To do this, we add a seperate ggplot2 object for each line, using geom_line(). W
 
 ```{r}
 ggplot(data)+
-  geom_line(aes(x=Date, y=Mobility_Workplace),size=1, lineend="round", linejoin="round", color="Red")+
-  geom_line(aes(x=Date, y=Mobility_Residential),size=1, lineend="round", linejoin="round", color="Black")+
+  geom_line(aes(x=Date, y=Mobility_Workplace), size = 2, lineend="round", linejoin="round", color="Red") +
+  geom_line(aes(x=Date, y=Mobility_Residential), size = 2, lineend="round", linejoin="round", color="Blue") +
   facet_wrap(~City)+
   labs(caption = " 
        Based on Google Mobility Reports 2020")+ 
   labs(title="Mobility: Workplace and residential", y="Change in mobility (%)")+
   theme(panel.background= element_rect(fill="gray96"), panel.grid.minor = element_blank(), 
         panel.grid.major= element_blank(), plot.title = element_text(face="bold"), 
-        axis.title.x = element_blank(), legend.title=element_blank(), legend.position="bottom")
+        axis.title.x = element_blank(), legend.title=element_blank(), legend.position="bottom") +
+  theme_classic()
 ```
 
 *Interpretation:* All twenty-four cities in the plot experienced a simultaneous increase in residential mobility and decrease in workplace mobility at some point during the period. However, there is considerable variation in the rapidity with which this change occurred, its timing, and duration. For example, in Hong Kong (and Ho Chi Minh City) reductions in workplace mobility were evident throughout Feb-Jun, however, the city did not experience the significant drop in mobility recorded in many cities elsewhere (e.g. Dublin, London, Manila). In several examples there are substantial drops in workplace mobility prior to, and probably in anticipation of, wide-spread lockdown (e.g. Manila, Ulaanbaatar, Tokyo, Mumbai, La Pez, Delhi). 
@@ -102,8 +102,8 @@ Then we can recreate our timeseries chart, this time focusing on a shorter time 
 
 ```{r}
 ggplot(data_bydate)+
-  geom_line(aes(x=Date, y=Mobility_Workplace),size=1, lineend="round", linejoin="round", color="Red")+
-  geom_line(aes(x=Date, y=Mobility_Residential),size=1, lineend="round", linejoin="round", color="Black")+
+  geom_line(aes(x=Date, y=Mobility_Workplace),size = 2, lineend="round", linejoin="round", color="Red")+
+  geom_line(aes(x=Date, y=Mobility_Residential),size = 2, lineend="round", linejoin="round", color="Blue")+
   facet_wrap(~City)+
   labs(caption = " 
        Based on Google Mobility Reports 2020")+ 
