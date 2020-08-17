@@ -98,7 +98,7 @@ As our analysis of satellite imagery only focuses on data from February and Marc
 data_bydate <- filter(data, between(Date, as.Date("2020-02-15"), as.Date("2020-04-15")))
 ```
 
-Then we can recreate our timeseries chart, this time focusing on a shorter time period. Here we also shade in the background according to the stringency of response (see other code in repo), and change the order of the cities according to when the pandemic began. 
+Then we can recreate our timeseries chart, this time focusing on a shorter time period. Here we also shade in the background according to the stringency of response [(see other code in repo)](https://github.com/fcorowe/covid_energy/blob/master/methods/covid_cases_line_plot_2.R), and change the order of the cities according to when the pandemic began. 
 
 ```{r}
 shade_select <- data_bydate %>% dplyr::select(City, Date, Response_Stringency)
@@ -121,7 +121,7 @@ data_bydate$City = factor(data_bydate$City, levels=c("Wuhan", "Beijing", "Shangh
             "Lima", "La Paz", "Ulaanbaatar",
             "Istanbul"))
 
-mobility_selectdates <- ggplot(data_bydate)+
+ggplot(data_bydate)+
   geom_line(aes(x=Date, y=Mobility_Workplace),size = 2, lineend="round", linejoin="round", color="Red")+
   geom_line(aes(x=Date, y=Mobility_Residential),size = 2, lineend="round", linejoin="round", color="Blue")+
   geom_rect(data = shade_select, ymin = -Inf, ymax = Inf, aes(NULL, NULL, xmin = start, xmax = end, fill = Response_Stringency), alpha = .2) +
