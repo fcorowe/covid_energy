@@ -98,22 +98,44 @@ As our analysis of satellite imagery only focuses on data from February and Marc
 data_bydate <- filter(data, between(Date, as.Date("2020-02-15"), as.Date("2020-04-15")))
 ```
 
-Then we can recreate our timeseries chart, this time focusing on a shorter time period. 
+Then we can recreate our timeseries chart, this time focusing on a shorter time period. Here we also shade in the background according to the stringency of response (see other code in repo), and change the order of the cities according to when the pandemic began. 
 
 ```{r}
-ggplot(data_bydate)+
+shade_select <- data_bydate %>% dplyr::select(City, Date, Response_Stringency)
+inx <- c(FALSE, diff(shade$Response_Stringency) != 0)
+shade_select <- shade_select[inx, ]
+shade_select <- shade_select %>% dplyr::filter(!is.na(Response_Stringency))
+shade_select <- shade_select %>% mutate(end = lead(Date))
+shade_select$end[is.na(shade_select$end)] <- as.Date("2020-04-01", origin="1970-01-01")
+shade_select <- shade_select %>% rename("start" = "Date")
+shade_select$y1 = -Inf
+shade_select$y2 = Inf
+
+data_bydate$City = factor(data_bydate$City, levels=c("Wuhan", "Beijing", "Shanghai", 
+            "Tokyo", "New York", "Los Angeles", 
+            "Hong Kong", "Singapore", "Ho Chi Minh City",
+            "Paris", "Mumbai", "Delhi",
+            "Milan", "Manila", "Barcelona", "Madrid",
+            "London", "Stockholm","Brussels", "Al Ahmadi",
+            "Dublin", "Doha", "Riyadh",
+            "Lima", "La Paz", "Ulaanbaatar",
+            "Istanbul"))
+
+mobility_selectdates <- ggplot(data_bydate)+
   geom_line(aes(x=Date, y=Mobility_Workplace),size = 2, lineend="round", linejoin="round", color="Red")+
   geom_line(aes(x=Date, y=Mobility_Residential),size = 2, lineend="round", linejoin="round", color="Blue")+
+  geom_rect(data = shade_select, ymin = -Inf, ymax = Inf, aes(NULL, NULL, xmin = start, xmax = end, fill = Response_Stringency), alpha = .2) +
   facet_wrap(~City)+
   labs(caption = " 
        Based on Google Mobility Reports 2020")+ 
   labs(title="Mobility: Workplace and residential", y="Change in mobility (%)")+
-  theme(panel.background= element_rect(fill="gray96"), panel.grid.minor = element_blank(), 
-        panel.grid.major= element_blank(), plot.title = element_text(face="bold"), 
-        axis.title.x = element_blank(), legend.title=element_blank(), legend.position="bottom")
+  labs(fill = "Stringency of response")+
+  theme_classic() +
+  theme(text = element_text(size = 15), axis.text.x = element_text(angle = 90),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        legend.title = element_text( size = 14, color = "black"), 
+        legend.position = "bottom",legend.box = "horizontal")
 ```
-
-
 
 #### Horizon plots of residential and workplace mobility for selected cities
 
