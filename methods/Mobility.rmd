@@ -3,7 +3,7 @@
 
 ```{r}
 getwd()
-setwd("C:/Users/Cait Robinson/Documents")
+setwd(""../data")
 getwd()
 ```
 
