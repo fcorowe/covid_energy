@@ -78,7 +78,7 @@ mobility_selectdates <- ggplot(data_bydate)+
 mobility_selectdates
 ```
 
-We can now export it as a high resolution tiff image...
+## Export it as a high resolution tiff image
 
 ```{r}
 tiff("mobility_ylorrd.tiff", units= "in", width = 11, height = 11, res=300)
