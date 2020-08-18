@@ -27,7 +27,7 @@ Analysis:
 
 - [Data hub](https://cgdv.github.io/challenges/COVID-19/datasource/)
 
--[Google trend data store](https://googletrends.github.io/data/)
+- [Google trend data store](https://googletrends.github.io/data/)
 
 - [Mobility data: Apple, Google and Waze](https://github.com/ActiveConclusion/COVID19_mobility)
 
