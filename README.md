@@ -25,6 +25,8 @@ Analysis:
 
 - [Timeline of first confirmed case by country](https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory)
 
+- [Subnational COVID data](https://github.com/epiforecasts/covidregionaldata/tree/v0.6.0)
+
 - [Data hub](https://cgdv.github.io/challenges/COVID-19/datasource/)
 
 - [Google trend data store](https://googletrends.github.io/data/)
