@@ -1,0 +1,3268 @@
+﻿Country,City,Date,Mobility_Retail,Mobility_Transit,Mobility_Workplace,Mobility_Residential,Response_Stringency
+China,Wuhan,2020-02-15, , , , ,75
+China,Wuhan,2020-02-16, , , , ,75
+China,Wuhan,2020-02-17, , , , ,75
+China,Wuhan,2020-02-18, , , , ,75
+China,Wuhan,2020-02-19, , , , ,75
+China,Wuhan,2020-02-20, , , , ,75
+China,Wuhan,2020-02-21, , , , ,75
+China,Wuhan,2020-02-22, , , , ,75
+China,Wuhan,2020-02-23, , , , ,75
+China,Wuhan,2020-02-24, , , , ,75
+China,Wuhan,2020-02-25, , , , ,81
+China,Wuhan,2020-02-26, , , , ,81
+China,Wuhan,2020-02-27, , , , ,81
+China,Wuhan,2020-02-28, , , , ,81
+China,Wuhan,2020-02-29, , , , ,81
+China,Wuhan,2020-03-01, , , , ,81
+China,Wuhan,2020-03-02, , , , ,81
+China,Wuhan,2020-03-03, , , , ,81
+China,Wuhan,2020-03-04, , , , ,81
+China,Wuhan,2020-03-05, , , , ,81
+China,Wuhan,2020-03-06, , , , ,81
+China,Wuhan,2020-03-07, , , , ,81
+China,Wuhan,2020-03-08, , , , ,81
+China,Wuhan,2020-03-09, , , , ,81
+China,Wuhan,2020-03-10, , , , ,81
+China,Wuhan,2020-03-11, , , , ,81
+China,Wuhan,2020-03-12, , , , ,81
+China,Wuhan,2020-03-13, , , , ,81
+China,Wuhan,2020-03-14, , , , ,81
+China,Wuhan,2020-03-15, , , , ,81
+China,Wuhan,2020-03-16, , , , ,79
+China,Wuhan,2020-03-17, , , , ,79
+China,Wuhan,2020-03-18, , , , ,79
+China,Wuhan,2020-03-19, , , , ,79
+China,Wuhan,2020-03-20, , , , ,79
+China,Wuhan,2020-03-21, , , , ,79
+China,Wuhan,2020-03-22, , , , ,79
+China,Wuhan,2020-03-23, , , , ,79
+China,Wuhan,2020-03-24, , , , ,79
+China,Wuhan,2020-03-25, , , , ,79
+China,Wuhan,2020-03-26, , , , ,82
+China,Wuhan,2020-03-27, , , , ,82
+China,Wuhan,2020-03-28, , , , ,74
+China,Wuhan,2020-03-29, , , , ,74
+China,Wuhan,2020-03-30, , , , ,74
+China,Wuhan,2020-03-31, , , , ,74
+China,Wuhan,2020-04-01, , , , ,74
+China,Wuhan,2020-04-02, , , , ,74
+China,Wuhan,2020-04-03, , , , ,70
+China,Wuhan,2020-04-04, , , , ,70
+China,Wuhan,2020-04-05, , , , ,70
+China,Wuhan,2020-04-06, , , , ,70
+China,Wuhan,2020-04-07, , , , ,70
+China,Wuhan,2020-04-08, , , , ,57
+China,Wuhan,2020-04-09, , , , ,57
+China,Wuhan,2020-04-10, , , , ,57
+China,Wuhan,2020-04-11, , , , ,57
+China,Wuhan,2020-04-12, , , , ,57
+China,Wuhan,2020-04-13, , , , ,57
+China,Wuhan,2020-04-14, , , , ,57
+China,Wuhan,2020-04-15, , , , ,57
+China,Wuhan,2020-04-16, , , , ,57
+China,Wuhan,2020-04-17, , , , ,57
+China,Wuhan,2020-04-18, , , , ,57
+China,Wuhan,2020-04-19, , , , ,57
+China,Wuhan,2020-04-20, , , , ,57
+China,Wuhan,2020-04-21, , , , ,57
+China,Wuhan,2020-04-22, , , , ,57
+China,Wuhan,2020-04-23, , , , ,57
+China,Wuhan,2020-04-24, , , , ,57
+China,Wuhan,2020-04-25, , , , ,57
+China,Wuhan,2020-04-26, , , , ,57
+China,Wuhan,2020-04-27, , , , ,57
+China,Wuhan,2020-04-28, , , , ,57
+China,Wuhan,2020-04-29, , , , ,57
+China,Wuhan,2020-04-30, , , , ,57
+China,Wuhan,2020-05-01, , , , ,57
+China,Wuhan,2020-05-02, , , , ,57
+China,Wuhan,2020-05-03, , , , ,57
+China,Wuhan,2020-05-04, , , , ,57
+China,Wuhan,2020-05-05, , , , ,57
+China,Wuhan,2020-05-06, , , , ,57
+China,Wuhan,2020-05-07, , , , ,57
+China,Wuhan,2020-05-08, , , , ,57
+China,Wuhan,2020-05-09, , , , ,57
+China,Wuhan,2020-05-10, , , , ,82
+China,Wuhan,2020-05-11, , , , ,82
+China,Wuhan,2020-05-12, , , , ,82
+China,Wuhan,2020-05-13, , , , ,82
+China,Wuhan,2020-05-14, , , , ,82
+China,Wuhan,2020-05-15, , , , ,82
+China,Wuhan,2020-05-16, , , , ,82
+China,Wuhan,2020-05-17, , , , ,82
+China,Wuhan,2020-05-18, , , , ,82
+China,Wuhan,2020-05-19, , , , ,82
+China,Wuhan,2020-05-20, , , , ,82
+China,Wuhan,2020-05-21, , , , ,82
+China,Wuhan,2020-05-22, , , , ,82
+China,Wuhan,2020-05-23, , , , ,82
+China,Wuhan,2020-05-24, , , , ,82
+China,Wuhan,2020-05-25, , , , ,82
+China,Wuhan,2020-05-26, , , , ,82
+China,Wuhan,2020-05-27, , , , ,82
+China,Wuhan,2020-05-28, , , , ,82
+China,Wuhan,2020-05-29, , , , ,82
+China,Wuhan,2020-05-30, , , , ,82
+China,Wuhan,2020-05-31, , , , ,82
+China,Wuhan,2020-06-01, , , , ,82
+China,Wuhan,2020-06-02, , , , ,82
+China,Wuhan,2020-06-03, , , , ,78
+China,Wuhan,2020-06-04, , , , ,78
+China,Wuhan,2020-06-05, , , , ,78
+China,Wuhan,2020-06-06, , , , ,78
+China,Wuhan,2020-06-07, , , , ,78
+China,Wuhan,2020-06-08, , , , ,78
+China,Wuhan,2020-06-09, , , , ,78
+China,Wuhan,2020-06-10, , , , ,78
+China,Wuhan,2020-06-11, , , , ,78
+China,Wuhan,2020-06-12, , , , ,78
+China,Wuhan,2020-06-13, , , , ,78
+China,Wuhan,2020-06-14, , , , ,78
+China,Shanghai,2020-02-15, , , , ,75
+China,Shanghai,2020-02-16, , , , ,75
+China,Shanghai,2020-02-17, , , , ,75
+China,Shanghai,2020-02-18, , , , ,75
+China,Shanghai,2020-02-19, , , , ,75
+China,Shanghai,2020-02-20, , , , ,75
+China,Shanghai,2020-02-21, , , , ,75
+China,Shanghai,2020-02-22, , , , ,75
+China,Shanghai,2020-02-23, , , , ,75
+China,Shanghai,2020-02-24, , , , ,75
+China,Shanghai,2020-02-25, , , , ,81
+China,Shanghai,2020-02-26, , , , ,81
+China,Shanghai,2020-02-27, , , , ,81
+China,Shanghai,2020-02-28, , , , ,81
+China,Shanghai,2020-02-29, , , , ,81
+China,Shanghai,2020-03-01, , , , ,81
+China,Shanghai,2020-03-02, , , , ,81
+China,Shanghai,2020-03-03, , , , ,81
+China,Shanghai,2020-03-04, , , , ,81
+China,Shanghai,2020-03-05, , , , ,81
+China,Shanghai,2020-03-06, , , , ,81
+China,Shanghai,2020-03-07, , , , ,81
+China,Shanghai,2020-03-08, , , , ,81
+China,Shanghai,2020-03-09, , , , ,81
+China,Shanghai,2020-03-10, , , , ,81
+China,Shanghai,2020-03-11, , , , ,81
+China,Shanghai,2020-03-12, , , , ,81
+China,Shanghai,2020-03-13, , , , ,81
+China,Shanghai,2020-03-14, , , , ,81
+China,Shanghai,2020-03-15, , , , ,81
+China,Shanghai,2020-03-16, , , , ,79
+China,Shanghai,2020-03-17, , , , ,79
+China,Shanghai,2020-03-18, , , , ,79
+China,Shanghai,2020-03-19, , , , ,79
+China,Shanghai,2020-03-20, , , , ,79
+China,Shanghai,2020-03-21, , , , ,79
+China,Shanghai,2020-03-22, , , , ,79
+China,Shanghai,2020-03-23, , , , ,79
+China,Shanghai,2020-03-24, , , , ,79
+China,Shanghai,2020-03-25, , , , ,79
+China,Shanghai,2020-03-26, , , , ,82
+China,Shanghai,2020-03-27, , , , ,82
+China,Shanghai,2020-03-28, , , , ,74
+China,Shanghai,2020-03-29, , , , ,74
+China,Shanghai,2020-03-30, , , , ,74
+China,Shanghai,2020-03-31, , , , ,74
+China,Shanghai,2020-04-01, , , , ,74
+China,Shanghai,2020-04-02, , , , ,74
+China,Shanghai,2020-04-03, , , , ,70
+China,Shanghai,2020-04-04, , , , ,70
+China,Shanghai,2020-04-05, , , , ,70
+China,Shanghai,2020-04-06, , , , ,70
+China,Shanghai,2020-04-07, , , , ,70
+China,Shanghai,2020-04-08, , , , ,57
+China,Shanghai,2020-04-09, , , , ,57
+China,Shanghai,2020-04-10, , , , ,57
+China,Shanghai,2020-04-11, , , , ,57
+China,Shanghai,2020-04-12, , , , ,57
+China,Shanghai,2020-04-13, , , , ,57
+China,Shanghai,2020-04-14, , , , ,57
+China,Shanghai,2020-04-15, , , , ,57
+China,Shanghai,2020-04-16, , , , ,57
+China,Shanghai,2020-04-17, , , , ,57
+China,Shanghai,2020-04-18, , , , ,57
+China,Shanghai,2020-04-19, , , , ,57
+China,Shanghai,2020-04-20, , , , ,57
+China,Shanghai,2020-04-21, , , , ,57
+China,Shanghai,2020-04-22, , , , ,57
+China,Shanghai,2020-04-23, , , , ,57
+China,Shanghai,2020-04-24, , , , ,57
+China,Shanghai,2020-04-25, , , , ,57
+China,Shanghai,2020-04-26, , , , ,57
+China,Shanghai,2020-04-27, , , , ,57
+China,Shanghai,2020-04-28, , , , ,57
+China,Shanghai,2020-04-29, , , , ,57
+China,Shanghai,2020-04-30, , , , ,57
+China,Shanghai,2020-05-01, , , , ,57
+China,Shanghai,2020-05-02, , , , ,57
+China,Shanghai,2020-05-03, , , , ,57
+China,Shanghai,2020-05-04, , , , ,57
+China,Shanghai,2020-05-05, , , , ,57
+China,Shanghai,2020-05-06, , , , ,57
+China,Shanghai,2020-05-07, , , , ,57
+China,Shanghai,2020-05-08, , , , ,57
+China,Shanghai,2020-05-09, , , , ,57
+China,Shanghai,2020-05-10, , , , ,82
+China,Shanghai,2020-05-11, , , , ,82
+China,Shanghai,2020-05-12, , , , ,82
+China,Shanghai,2020-05-13, , , , ,82
+China,Shanghai,2020-05-14, , , , ,82
+China,Shanghai,2020-05-15, , , , ,82
+China,Shanghai,2020-05-16, , , , ,82
+China,Shanghai,2020-05-17, , , , ,82
+China,Shanghai,2020-05-18, , , , ,82
+China,Shanghai,2020-05-19, , , , ,82
+China,Shanghai,2020-05-20, , , , ,82
+China,Shanghai,2020-05-21, , , , ,82
+China,Shanghai,2020-05-22, , , , ,82
+China,Shanghai,2020-05-23, , , , ,82
+China,Shanghai,2020-05-24, , , , ,82
+China,Shanghai,2020-05-25, , , , ,82
+China,Shanghai,2020-05-26, , , , ,82
+China,Shanghai,2020-05-27, , , , ,82
+China,Shanghai,2020-05-28, , , , ,82
+China,Shanghai,2020-05-29, , , , ,82
+China,Shanghai,2020-05-30, , , , ,82
+China,Shanghai,2020-05-31, , , , ,82
+China,Shanghai,2020-06-01, , , , ,82
+China,Shanghai,2020-06-02, , , , ,82
+China,Shanghai,2020-06-03, , , , ,78
+China,Shanghai,2020-06-04, , , , ,78
+China,Shanghai,2020-06-05, , , , ,78
+China,Shanghai,2020-06-06, , , , ,78
+China,Shanghai,2020-06-07, , , , ,78
+China,Shanghai,2020-06-08, , , , ,78
+China,Shanghai,2020-06-09, , , , ,78
+China,Shanghai,2020-06-10, , , , ,78
+China,Shanghai,2020-06-11, , , , ,78
+China,Shanghai,2020-06-12, , , , ,78
+China,Shanghai,2020-06-13, , , , ,78
+China,Shanghai,2020-06-14, , , , ,78
+China,Beijing,2020-02-15, , , , ,75
+China,Beijing,2020-02-16, , , , ,75
+China,Beijing,2020-02-17, , , , ,75
+China,Beijing,2020-02-18, , , , ,75
+China,Beijing,2020-02-19, , , , ,75
+China,Beijing,2020-02-20, , , , ,75
+China,Beijing,2020-02-21, , , , ,75
+China,Beijing,2020-02-22, , , , ,75
+China,Beijing,2020-02-23, , , , ,75
+China,Beijing,2020-02-24, , , , ,75
+China,Beijing,2020-02-25, , , , ,81
+China,Beijing,2020-02-26, , , , ,81
+China,Beijing,2020-02-27, , , , ,81
+China,Beijing,2020-02-28, , , , ,81
+China,Beijing,2020-02-29, , , , ,81
+China,Beijing,2020-03-01, , , , ,81
+China,Beijing,2020-03-02, , , , ,81
+China,Beijing,2020-03-03, , , , ,81
+China,Beijing,2020-03-04, , , , ,81
+China,Beijing,2020-03-05, , , , ,81
+China,Beijing,2020-03-06, , , , ,81
+China,Beijing,2020-03-07, , , , ,81
+China,Beijing,2020-03-08, , , , ,81
+China,Beijing,2020-03-09, , , , ,81
+China,Beijing,2020-03-10, , , , ,81
+China,Beijing,2020-03-11, , , , ,81
+China,Beijing,2020-03-12, , , , ,81
+China,Beijing,2020-03-13, , , , ,81
+China,Beijing,2020-03-14, , , , ,81
+China,Beijing,2020-03-15, , , , ,81
+China,Beijing,2020-03-16, , , , ,79
+China,Beijing,2020-03-17, , , , ,79
+China,Beijing,2020-03-18, , , , ,79
+China,Beijing,2020-03-19, , , , ,79
+China,Beijing,2020-03-20, , , , ,79
+China,Beijing,2020-03-21, , , , ,79
+China,Beijing,2020-03-22, , , , ,79
+China,Beijing,2020-03-23, , , , ,79
+China,Beijing,2020-03-24, , , , ,79
+China,Beijing,2020-03-25, , , , ,79
+China,Beijing,2020-03-26, , , , ,82
+China,Beijing,2020-03-27, , , , ,82
+China,Beijing,2020-03-28, , , , ,74
+China,Beijing,2020-03-29, , , , ,74
+China,Beijing,2020-03-30, , , , ,74
+China,Beijing,2020-03-31, , , , ,74
+China,Beijing,2020-04-01, , , , ,74
+China,Beijing,2020-04-02, , , , ,74
+China,Beijing,2020-04-03, , , , ,70
+China,Beijing,2020-04-04, , , , ,70
+China,Beijing,2020-04-05, , , , ,70
+China,Beijing,2020-04-06, , , , ,70
+China,Beijing,2020-04-07, , , , ,70
+China,Beijing,2020-04-08, , , , ,57
+China,Beijing,2020-04-09, , , , ,57
+China,Beijing,2020-04-10, , , , ,57
+China,Beijing,2020-04-11, , , , ,57
+China,Beijing,2020-04-12, , , , ,57
+China,Beijing,2020-04-13, , , , ,57
+China,Beijing,2020-04-14, , , , ,57
+China,Beijing,2020-04-15, , , , ,57
+China,Beijing,2020-04-16, , , , ,57
+China,Beijing,2020-04-17, , , , ,57
+China,Beijing,2020-04-18, , , , ,57
+China,Beijing,2020-04-19, , , , ,57
+China,Beijing,2020-04-20, , , , ,57
+China,Beijing,2020-04-21, , , , ,57
+China,Beijing,2020-04-22, , , , ,57
+China,Beijing,2020-04-23, , , , ,57
+China,Beijing,2020-04-24, , , , ,57
+China,Beijing,2020-04-25, , , , ,57
+China,Beijing,2020-04-26, , , , ,57
+China,Beijing,2020-04-27, , , , ,57
+China,Beijing,2020-04-28, , , , ,57
+China,Beijing,2020-04-29, , , , ,57
+China,Beijing,2020-04-30, , , , ,57
+China,Beijing,2020-05-01, , , , ,57
+China,Beijing,2020-05-02, , , , ,57
+China,Beijing,2020-05-03, , , , ,57
+China,Beijing,2020-05-04, , , , ,57
+China,Beijing,2020-05-05, , , , ,57
+China,Beijing,2020-05-06, , , , ,57
+China,Beijing,2020-05-07, , , , ,57
+China,Beijing,2020-05-08, , , , ,57
+China,Beijing,2020-05-09, , , , ,57
+China,Beijing,2020-05-10, , , , ,82
+China,Beijing,2020-05-11, , , , ,82
+China,Beijing,2020-05-12, , , , ,82
+China,Beijing,2020-05-13, , , , ,82
+China,Beijing,2020-05-14, , , , ,82
+China,Beijing,2020-05-15, , , , ,82
+China,Beijing,2020-05-16, , , , ,82
+China,Beijing,2020-05-17, , , , ,82
+China,Beijing,2020-05-18, , , , ,82
+China,Beijing,2020-05-19, , , , ,82
+China,Beijing,2020-05-20, , , , ,82
+China,Beijing,2020-05-21, , , , ,82
+China,Beijing,2020-05-22, , , , ,82
+China,Beijing,2020-05-23, , , , ,82
+China,Beijing,2020-05-24, , , , ,82
+China,Beijing,2020-05-25, , , , ,82
+China,Beijing,2020-05-26, , , , ,82
+China,Beijing,2020-05-27, , , , ,82
+China,Beijing,2020-05-28, , , , ,82
+China,Beijing,2020-05-29, , , , ,82
+China,Beijing,2020-05-30, , , , ,82
+China,Beijing,2020-05-31, , , , ,82
+China,Beijing,2020-06-01, , , , ,82
+China,Beijing,2020-06-02, , , , ,82
+China,Beijing,2020-06-03, , , , ,78
+China,Beijing,2020-06-04, , , , ,78
+China,Beijing,2020-06-05, , , , ,78
+China,Beijing,2020-06-06, , , , ,78
+China,Beijing,2020-06-07, , , , ,78
+China,Beijing,2020-06-08, , , , ,78
+China,Beijing,2020-06-09, , , , ,78
+China,Beijing,2020-06-10, , , , ,78
+China,Beijing,2020-06-11, , , , ,78
+China,Beijing,2020-06-12, , , , ,78
+China,Beijing,2020-06-13, , , , ,78
+China,Beijing,2020-06-14, , , , ,78
+Italy,Milan,2020-02-15,2,8,-2,-1,19
+Italy,Milan,2020-02-16,-1,2,0,-1,19
+Italy,Milan,2020-02-17,-3,1,0,0,19
+Italy,Milan,2020-02-18,2,4,1,0,19
+Italy,Milan,2020-02-19,2,4,1,-1,19
+Italy,Milan,2020-02-20,2,4,0,-1,19
+Italy,Milan,2020-02-21,1,3,0,0,28
+Italy,Milan,2020-02-22,-6,1,-1,0,37
+Italy,Milan,2020-02-23,-19,-13,-2,2,70
+Italy,Milan,2020-02-24,-18,-32,-22,9,70
+Italy,Milan,2020-02-25,-22,-37,-23,11,70
+Italy,Milan,2020-02-26,-23,-40,-23,11,70
+Italy,Milan,2020-02-27,-19,-39,-23,10,70
+Italy,Milan,2020-02-28,-16,-37,-24,10,70
+Italy,Milan,2020-02-29,-24,-34,-20,8,70
+Italy,Milan,2020-03-01,-33,-40,-14,7,70
+Italy,Milan,2020-03-02,-26,-44,-20,11,70
+Italy,Milan,2020-03-03,-13,-35,-19,9,70
+Italy,Milan,2020-03-04,-14,-34,-19,8,75
+Italy,Milan,2020-03-05,-22,-42,-21,11,75
+Italy,Milan,2020-03-06,-20,-40,-22,11,75
+Italy,Milan,2020-03-07,-25,-31,-19,7,75
+Italy,Milan,2020-03-08,-48,-42,-19,8,75
+Italy,Milan,2020-03-09,-42,-57,-31,16,75
+Italy,Milan,2020-03-10,-50,-61,-38,20,82
+Italy,Milan,2020-03-11,-57,-65,-43,22,85
+Italy,Milan,2020-03-12,-74,-74,-52,28,85
+Italy,Milan,2020-03-13,-78,-76,-58,31,85
+Italy,Milan,2020-03-14,-86,-80,-63,26,85
+Italy,Milan,2020-03-15,-91,-83,-57,22,85
+Italy,Milan,2020-03-16,-78,-79,-63,30,85
+Italy,Milan,2020-03-17,-80,-80,-65,32,85
+Italy,Milan,2020-03-18,-82,-81,-66,33,85
+Italy,Milan,2020-03-19,-82,-82,-67,34,85
+Italy,Milan,2020-03-20,-82,-82,-68,36,92
+Italy,Milan,2020-03-21,-88,-83,-67,27,92
+Italy,Milan,2020-03-22,-95,-89,-65,24,92
+Italy,Milan,2020-03-23,-84,-86,-74,35,92
+Italy,Milan,2020-03-24,-84,-85,-74,36,92
+Italy,Milan,2020-03-25,-86,-86,-75,37,92
+Italy,Milan,2020-03-26,-86,-86,-77,39,92
+Italy,Milan,2020-03-27,-86,-86,-77,40,92
+Italy,Milan,2020-03-28,-89,-85,-70,28,92
+Italy,Milan,2020-03-29,-95,-89,-65,24,92
+Italy,Milan,2020-03-30,-85,-85,-75,36,92
+Italy,Milan,2020-03-31,-92,-84,-76,37,92
+Italy,Milan,2020-04-01,-92,-84,-75,37,92
+Italy,Milan,2020-04-02,-92,-84,-75,38,92
+Italy,Milan,2020-04-03,-88,-84,-74,39,92
+Italy,Milan,2020-04-04,-91,-84,-68,28,92
+Italy,Milan,2020-04-05,-96,-88,-64,24,92
+Italy,Milan,2020-04-06,-86,-83,-71,34,92
+Italy,Milan,2020-04-07,-85,-83,-72,35,92
+Italy,Milan,2020-04-08,-85,-83,-71,35,92
+Italy,Milan,2020-04-09,-84,-83,-71,35,92
+Italy,Milan,2020-04-10,-84,-82,-73,38,88
+Italy,Milan,2020-04-11,-89,-82,-67,27,88
+Italy,Milan,2020-04-12,-97,-90,-68,25,94
+Italy,Milan,2020-04-13,-96,-92,-92,43,94
+Italy,Milan,2020-04-14,-83,-82,-68,34,94
+Italy,Milan,2020-04-15,-83,-82,-67,34,94
+Italy,Milan,2020-04-16,-82,-82,-67,34,94
+Italy,Milan,2020-04-17,-83,-82,-67,36,94
+Italy,Milan,2020-04-18,-88,-81,-63,27,94
+Italy,Milan,2020-04-19,-95,-87,-60,23,94
+Italy,Milan,2020-04-20,-82,-83,-65,32,94
+Italy,Milan,2020-04-21,-82,-82,-65,33,94
+Italy,Milan,2020-04-22,-82,-80,-63,32,94
+Italy,Milan,2020-04-23,-81,-80,-64,33,94
+Italy,Milan,2020-04-24,-81,-80,-64,34,94
+Italy,Milan,2020-04-25,-92,-84,-71,28,94
+Italy,Milan,2020-04-26,-94,-85,-57,23,94
+Italy,Milan,2020-04-27,-78,-79,-61,30,94
+Italy,Milan,2020-04-28,-80,-80,-62,30,94
+Italy,Milan,2020-04-29,-80,-79,-61,31,94
+Italy,Milan,2020-04-30,-77,-79,-61,31,94
+Italy,Milan,2020-05-01,-93,-89,-89,45,94
+Italy,Milan,2020-05-02,-83,-77,-58,25,94
+Italy,Milan,2020-05-03,-92,-82,-50,22,94
+Italy,Milan,2020-05-04,-64,-65,-49,21,63
+Italy,Milan,2020-05-05,-65,-66,-49,23,63
+Italy,Milan,2020-05-06,-66,-66,-48,23,63
+Italy,Milan,2020-05-07,-64,-65,-48,23,63
+Italy,Milan,2020-05-08,-65,-65,-48,24,63
+Italy,Milan,2020-05-09,-67,-57,-43,17,63
+Italy,Milan,2020-05-10,-76,-64,-29,14,63
+Italy,Milan,2020-05-11,-68,-72,-47,23,63
+Italy,Milan,2020-05-12,-61,-64,-46,22,63
+Italy,Milan,2020-05-13,-67,-69,-46,23,63
+Italy,Milan,2020-05-14,-61,-63,-45,21,63
+Italy,Milan,2020-05-15,-64,-66,-46,24,63
+Italy,Milan,2020-05-16,-65,-58,-37,17,67
+Italy,Milan,2020-05-17,-70,-58,-22,13,67
+Italy,Milan,2020-05-18,-42,-56,-40,17,64
+Italy,Milan,2020-05-19,-46,-59,-41,19,64
+Italy,Milan,2020-05-20,-41,-53,-39,17,64
+Italy,Milan,2020-05-21,-40,-54,-41,17,64
+Italy,Milan,2020-05-22,-41,-54,-39,18,64
+Italy,Milan,2020-05-23,-43,-43,-26,11,64
+Italy,Milan,2020-05-24,-43,-40,-9,7,64
+Italy,Milan,2020-05-25,-37,-54,-39,15,64
+Italy,Milan,2020-05-26,-36,-52,-37,15,64
+Italy,Milan,2020-05-27,-36,-51,-37,15,64
+Italy,Milan,2020-05-28,-36,-52,-37,15,64
+Italy,Milan,2020-05-29,-36,-51,-37,16,64
+Italy,Milan,2020-05-30,-35,-35,-21,8,64
+Italy,Milan,2020-05-31,-37,-37,-1,6,64
+Italy,Milan,2020-06-01,-16,-44,-53,14,64
+Italy,Milan,2020-06-02,-35,-54,-77,22,53
+Italy,Milan,2020-06-03,-37,-49,-35,14,44
+Italy,Milan,2020-06-04,-42,-58,-38,17,44
+Italy,Milan,2020-06-05,-28,-46,-35,12,44
+Italy,Milan,2020-06-06,-30,-35,-19,6,44
+Italy,Milan,2020-06-07,-46,-58,-8,9,44
+Italy,Milan,2020-06-08,-32,-53,-35,13,44
+Italy,Milan,2020-06-09,-27,-48,-34,12,44
+Italy,Milan,2020-06-10,-29,-49,-33,13,44
+Italy,Milan,2020-06-11,-25,-49,-34,13,50
+Italy,Milan,2020-06-12,-24,-44,-34,11,50
+Italy,Milan,2020-06-13,-29,-35,-16,5,50
+Italy,Milan,2020-06-14,-27,-34,5,2,50
+Spain,Barcelona,2020-02-15,2,8,0,-1,11
+Spain,Barcelona,2020-02-16,-6,4,-2,-1,11
+Spain,Barcelona,2020-02-17,0,4,2,0,11
+Spain,Barcelona,2020-02-18,0,3,2,0,11
+Spain,Barcelona,2020-02-19,0,1,2,0,11
+Spain,Barcelona,2020-02-20,1,4,2,0,11
+Spain,Barcelona,2020-02-21,1,4,0,-1,11
+Spain,Barcelona,2020-02-22,1,13,2,-2,11
+Spain,Barcelona,2020-02-23,0,12,0,-3,11
+Spain,Barcelona,2020-02-24,2,-1,-14,2,11
+Spain,Barcelona,2020-02-25,-3,1,1,0,11
+Spain,Barcelona,2020-02-26,-4,-1,2,0,11
+Spain,Barcelona,2020-02-27,-1,1,2,0,11
+Spain,Barcelona,2020-02-28,0,1,2,-1,11
+Spain,Barcelona,2020-02-29,-1,5,1,-2,11
+Spain,Barcelona,2020-03-01,-1,5,2,-2,11
+Spain,Barcelona,2020-03-02,-5,-2,1,1,11
+Spain,Barcelona,2020-03-03,-2,-1,2,0,11
+Spain,Barcelona,2020-03-04,-1,0,2,0,11
+Spain,Barcelona,2020-03-05,-1,0,2,0,11
+Spain,Barcelona,2020-03-06,-1,-2,-1,1,11
+Spain,Barcelona,2020-03-07,-1,3,1,-1,11
+Spain,Barcelona,2020-03-08,-3,10,0,-2,11
+Spain,Barcelona,2020-03-09,-4,-1,2,0,25
+Spain,Barcelona,2020-03-10,-4,-3,1,0,46
+Spain,Barcelona,2020-03-11,-6,-5,0,1,46
+Spain,Barcelona,2020-03-12,-11,-11,-2,2,46
+Spain,Barcelona,2020-03-13,-32,-31,-24,11,46
+Spain,Barcelona,2020-03-14,-74,-50,-34,16,67
+Spain,Barcelona,2020-03-15,-87,-68,-48,16,67
+Spain,Barcelona,2020-03-16,-82,-71,-54,26,69
+Spain,Barcelona,2020-03-17,-83,-74,-60,28,72
+Spain,Barcelona,2020-03-18,-84,-76,-62,29,72
+Spain,Barcelona,2020-03-19,-85,-77,-64,31,72
+Spain,Barcelona,2020-03-20,-87,-79,-65,34,72
+Spain,Barcelona,2020-03-21,-92,-83,-64,26,72
+Spain,Barcelona,2020-03-22,-94,-87,-65,22,72
+Spain,Barcelona,2020-03-23,-87,-82,-68,31,72
+Spain,Barcelona,2020-03-24,-87,-81,-69,33,72
+Spain,Barcelona,2020-03-25,-88,-82,-70,33,72
+Spain,Barcelona,2020-03-26,-88,-83,-71,35,72
+Spain,Barcelona,2020-03-27,-88,-83,-70,36,72
+Spain,Barcelona,2020-03-28,-92,-85,-66,27,72
+Spain,Barcelona,2020-03-29,-94,-88,-64,21,72
+Spain,Barcelona,2020-03-30,-90,-85,-77,35,85
+Spain,Barcelona,2020-03-31,-92,-84,-78,35,85
+Spain,Barcelona,2020-04-01,-93,-85,-78,36,85
+Spain,Barcelona,2020-04-02,-92,-84,-78,37,85
+Spain,Barcelona,2020-04-03,-89,-84,-77,39,85
+Spain,Barcelona,2020-04-04,-92,-85,-68,27,85
+Spain,Barcelona,2020-04-05,-94,-88,-68,22,85
+Spain,Barcelona,2020-04-06,-88,-83,-77,35,85
+Spain,Barcelona,2020-04-07,-90,-83,-78,35,85
+Spain,Barcelona,2020-04-08,-89,-83,-78,35,85
+Spain,Barcelona,2020-04-09,-88,-82,-80,36,85
+Spain,Barcelona,2020-04-10,-96,-91,-91,45,85
+Spain,Barcelona,2020-04-11,-92,-83,-66,27,85
+Spain,Barcelona,2020-04-12,-94,-88,-68,22,85
+Spain,Barcelona,2020-04-13,-95,-91,-91,41,85
+Spain,Barcelona,2020-04-14,-87,-79,-70,32,85
+Spain,Barcelona,2020-04-15,-87,-80,-70,33,85
+Spain,Barcelona,2020-04-16,-87,-80,-70,34,85
+Spain,Barcelona,2020-04-17,-88,-80,-69,36,85
+Spain,Barcelona,2020-04-18,-92,-83,-62,26,85
+Spain,Barcelona,2020-04-19,-95,-90,-66,22,85
+Spain,Barcelona,2020-04-20,-88,-81,-68,32,85
+Spain,Barcelona,2020-04-21,-89,-82,-69,33,85
+Spain,Barcelona,2020-04-22,-87,-79,-68,32,85
+Spain,Barcelona,2020-04-23,-85,-78,-68,33,85
+Spain,Barcelona,2020-04-24,-87,-79,-67,35,85
+Spain,Barcelona,2020-04-25,-91,-81,-60,26,85
+Spain,Barcelona,2020-04-26,-91,-79,-61,21,85
+Spain,Barcelona,2020-04-27,-84,-75,-65,30,85
+Spain,Barcelona,2020-04-28,-84,-74,-65,29,85
+Spain,Barcelona,2020-04-29,-84,-74,-65,30,85
+Spain,Barcelona,2020-04-30,-81,-73,-65,30,85
+Spain,Barcelona,2020-05-01,-93,-85,-89,43,85
+Spain,Barcelona,2020-05-02,-84,-60,-55,22,85
+Spain,Barcelona,2020-05-03,-83,-60,-52,18,85
+Spain,Barcelona,2020-05-04,-75,-59,-61,26,82
+Spain,Barcelona,2020-05-05,-75,-60,-60,26,82
+Spain,Barcelona,2020-05-06,-75,-59,-60,27,82
+Spain,Barcelona,2020-05-07,-76,-61,-60,27,82
+Spain,Barcelona,2020-05-08,-77,-61,-59,29,82
+Spain,Barcelona,2020-05-09,-83,-61,-49,21,82
+Spain,Barcelona,2020-05-10,-89,-75,-54,20,82
+Spain,Barcelona,2020-05-11,-71,-56,-57,24,82
+Spain,Barcelona,2020-05-12,-71,-56,-56,25,82
+Spain,Barcelona,2020-05-13,-71,-56,-56,25,83
+Spain,Barcelona,2020-05-14,-76,-66,-57,26,83
+Spain,Barcelona,2020-05-15,-73,-57,-55,27,83
+Spain,Barcelona,2020-05-16,-81,-63,-45,21,83
+Spain,Barcelona,2020-05-17,-79,-55,-43,16,79
+Spain,Barcelona,2020-05-18,-61,-50,-52,22,79
+Spain,Barcelona,2020-05-19,-62,-50,-52,22,79
+Spain,Barcelona,2020-05-20,-61,-51,-52,22,79
+Spain,Barcelona,2020-05-21,-61,-51,-52,23,79
+Spain,Barcelona,2020-05-22,-62,-51,-51,24,75
+Spain,Barcelona,2020-05-23,-68,-46,-33,17,75
+Spain,Barcelona,2020-05-24,-71,-52,-34,14,75
+Spain,Barcelona,2020-05-25,-46,-41,-48,18,75
+Spain,Barcelona,2020-05-26,-47,-42,-47,18,72
+Spain,Barcelona,2020-05-27,-48,-42,-47,19,68
+Spain,Barcelona,2020-05-28,-47,-42,-46,19,68
+Spain,Barcelona,2020-05-29,-54,-49,-46,21,68
+Spain,Barcelona,2020-05-30,-53,-32,-19,11,68
+Spain,Barcelona,2020-05-31,-56,-39,-17,9,68
+Spain,Barcelona,2020-06-01,-48,-48,-60,21,67
+Spain,Barcelona,2020-06-02,-42,-37,-43,16,67
+Spain,Barcelona,2020-06-03,-46,-43,-43,18,67
+Spain,Barcelona,2020-06-04,-45,-42,-44,19,67
+Spain,Barcelona,2020-06-05,-39,-37,-41,17,67
+Spain,Barcelona,2020-06-06,-45,-28,-15,9,67
+Spain,Barcelona,2020-06-07,-64,-53,-20,12,67
+Spain,Barcelona,2020-06-08,-31,-40,-41,16,57
+Spain,Barcelona,2020-06-09,-36,-44,-41,16,57
+Spain,Barcelona,2020-06-10,-30,-37,-40,15,57
+Spain,Barcelona,2020-06-11,-30,-39,-40,16,57
+Spain,Barcelona,2020-06-12,-28,-35,-38,14,57
+Spain,Barcelona,2020-06-13,-32,-25,-8,6,57
+Spain,Barcelona,2020-06-14,-41,-31,-4,5,57
+Philippines,Manila,2020-02-15,8,5,5,0,25
+Philippines,Manila,2020-02-16,3,-1,1,0,25
+Philippines,Manila,2020-02-17,0,-1,4,0,25
+Philippines,Manila,2020-02-18,0,2,4,0,25
+Philippines,Manila,2020-02-19,-3,-5,4,0,25
+Philippines,Manila,2020-02-20,-1,-2,4,0,25
+Philippines,Manila,2020-02-21,-2,-5,5,1,25
+Philippines,Manila,2020-02-22,0,0,5,0,25
+Philippines,Manila,2020-02-23,-4,-9,2,1,25
+Philippines,Manila,2020-02-24,0,-6,1,0,25
+Philippines,Manila,2020-02-25,-6,-28,-46,12,25
+Philippines,Manila,2020-02-26,-3,-3,4,0,25
+Philippines,Manila,2020-02-27,-2,-4,4,0,25
+Philippines,Manila,2020-02-28,0,-4,5,0,25
+Philippines,Manila,2020-02-29,5,4,7,0,25
+Philippines,Manila,2020-03-01,2,-4,4,0,25
+Philippines,Manila,2020-03-02,0,-4,6,0,25
+Philippines,Manila,2020-03-03,0,-3,5,0,25
+Philippines,Manila,2020-03-04,-2,-6,4,1,25
+Philippines,Manila,2020-03-05,-1,-3,4,0,25
+Philippines,Manila,2020-03-06,-3,-6,5,1,25
+Philippines,Manila,2020-03-07,-1,-2,6,0,25
+Philippines,Manila,2020-03-08,-6,-10,2,1,25
+Philippines,Manila,2020-03-09,-5,-9,2,1,25
+Philippines,Manila,2020-03-10,-11,-16,-14,6,34
+Philippines,Manila,2020-03-11,-15,-23,-15,7,34
+Philippines,Manila,2020-03-12,-16,-22,-16,7,34
+Philippines,Manila,2020-03-13,-22,-25,-19,10,34
+Philippines,Manila,2020-03-14,-28,-23,-11,8,34
+Philippines,Manila,2020-03-15,-54,-58,-16,15,75
+Philippines,Manila,2020-03-16,-48,-53,-35,17,75
+Philippines,Manila,2020-03-17,-76,-81,-71,32,75
+Philippines,Manila,2020-03-18,-81,-87,-76,36,97
+Philippines,Manila,2020-03-19,-83,-88,-78,38,97
+Philippines,Manila,2020-03-20,-84,-90,-79,41,97
+Philippines,Manila,2020-03-21,-84,-89,-72,32,97
+Philippines,Manila,2020-03-22,-85,-89,-63,27,100
+Philippines,Manila,2020-03-23,-83,-91,-80,38,100
+Philippines,Manila,2020-03-24,-84,-91,-81,39,100
+Philippines,Manila,2020-03-25,-85,-91,-81,39,100
+Philippines,Manila,2020-03-26,-85,-91,-82,40,100
+Philippines,Manila,2020-03-27,-85,-92,-81,42,100
+Philippines,Manila,2020-03-28,-84,-90,-74,34,100
+Philippines,Manila,2020-03-29,-86,-90,-65,28,100
+Philippines,Manila,2020-03-30,-84,-92,-81,39,100
+Philippines,Manila,2020-03-31,-85,-92,-82,39,100
+Philippines,Manila,2020-04-01,-85,-92,-82,40,100
+Philippines,Manila,2020-04-02,-86,-92,-82,41,100
+Philippines,Manila,2020-04-03,-86,-92,-81,44,100
+Philippines,Manila,2020-04-04,-85,-91,-74,34,100
+Philippines,Manila,2020-04-05,-86,-91,-66,28,100
+Philippines,Manila,2020-04-06,-84,-92,-81,39,100
+Philippines,Manila,2020-04-07,-83,-91,-82,39,100
+Philippines,Manila,2020-04-08,-82,-91,-81,39,100
+Philippines,Manila,2020-04-09,-89,-93,-87,42,100
+Philippines,Manila,2020-04-10,-92,-95,-88,47,100
+Philippines,Manila,2020-04-11,-86,-92,-77,35,100
+Philippines,Manila,2020-04-12,-85,-90,-67,28,100
+Philippines,Manila,2020-04-13,-82,-91,-80,38,100
+Philippines,Manila,2020-04-14,-82,-90,-81,39,100
+Philippines,Manila,2020-04-15,-82,-91,-80,40,100
+Philippines,Manila,2020-04-16,-84,-91,-81,40,100
+Philippines,Manila,2020-04-17,-85,-92,-80,43,100
+Philippines,Manila,2020-04-18,-84,-90,-74,34,100
+Philippines,Manila,2020-04-19,-85,-90,-66,28,100
+Philippines,Manila,2020-04-20,-82,-91,-80,38,100
+Philippines,Manila,2020-04-21,-84,-92,-81,40,100
+Philippines,Manila,2020-04-22,-85,-92,-81,41,100
+Philippines,Manila,2020-04-23,-85,-92,-82,41,100
+Philippines,Manila,2020-04-24,-86,-93,-81,44,100
+Philippines,Manila,2020-04-25,-85,-91,-74,35,100
+Philippines,Manila,2020-04-26,-86,-91,-66,29,100
+Philippines,Manila,2020-04-27,-83,-91,-79,39,100
+Philippines,Manila,2020-04-28,-83,-91,-80,39,100
+Philippines,Manila,2020-04-29,-83,-91,-79,39,100
+Philippines,Manila,2020-04-30,-88,-89,-79,39,100
+Philippines,Manila,2020-05-01,-90,-90,-83,44,96
+Philippines,Manila,2020-05-02,-89,-88,-72,34,96
+Philippines,Manila,2020-05-03,-90,-88,-65,28,96
+Philippines,Manila,2020-05-04,-88,-88,-78,38,96
+Philippines,Manila,2020-05-05,-88,-88,-78,38,96
+Philippines,Manila,2020-05-06,-88,-88,-78,39,96
+Philippines,Manila,2020-05-07,-87,-88,-78,39,96
+Philippines,Manila,2020-05-08,-87,-89,-77,41,96
+Philippines,Manila,2020-05-09,-85,-86,-69,32,96
+Philippines,Manila,2020-05-10,-83,-85,-59,25,96
+Philippines,Manila,2020-05-11,-85,-87,-76,37,96
+Philippines,Manila,2020-05-12,-86,-87,-77,38,96
+Philippines,Manila,2020-05-13,-86,-87,-76,38,96
+Philippines,Manila,2020-05-14,-85,-87,-76,38,96
+Philippines,Manila,2020-05-15,-88,-90,-77,41,96
+Philippines,Manila,2020-05-16,-81,-83,-65,30,96
+Philippines,Manila,2020-05-17,-82,-83,-55,26,96
+Philippines,Manila,2020-05-18,-79,-83,-68,33,96
+Philippines,Manila,2020-05-19,-80,-83,-70,34,96
+Philippines,Manila,2020-05-20,-79,-84,-69,35,96
+Philippines,Manila,2020-05-21,-79,-84,-70,35,96
+Philippines,Manila,2020-05-22,-80,-85,-68,38,96
+Philippines,Manila,2020-05-23,-79,-82,-59,30,96
+Philippines,Manila,2020-05-24,-80,-81,-52,25,96
+Philippines,Manila,2020-05-25,-79,-85,-77,37,96
+Philippines,Manila,2020-05-26,-78,-82,-66,33,96
+Philippines,Manila,2020-05-27,-78,-83,-66,34,96
+Philippines,Manila,2020-05-28,-78,-83,-66,35,96
+Philippines,Manila,2020-05-29,-79,-83,-65,37,78
+Philippines,Manila,2020-05-30,-76,-80,-54,28,78
+Philippines,Manila,2020-05-31,-77,-78,-45,24,78
+Philippines,Manila,2020-06-01,-72,-75,-58,29,78
+Philippines,Manila,2020-06-02,-72,-74,-60,30,78
+Philippines,Manila,2020-06-03,-71,-73,-59,30,78
+Philippines,Manila,2020-06-04,-72,-73,-60,30,78
+Philippines,Manila,2020-06-05,-68,-74,-58,32,78
+Philippines,Manila,2020-06-06,-66,-71,-47,25,78
+Philippines,Manila,2020-06-07,-68,-69,-39,22,78
+Philippines,Manila,2020-06-08,-64,-71,-55,27,78
+Philippines,Manila,2020-06-09,-66,-70,-57,28,78
+Philippines,Manila,2020-06-10,-66,-71,-57,29,78
+Philippines,Manila,2020-06-11,-65,-68,-58,28,78
+Philippines,Manila,2020-06-12,-69,-77,-70,36,78
+Philippines,Manila,2020-06-13,-64,-69,-45,25,78
+Philippines,Manila,2020-06-14,-66,-67,-35,21,78
+Spain,Madrid,2020-02-15,-1,7,-1,-2,11
+Spain,Madrid,2020-02-16,3,4,0,-2,11
+Spain,Madrid,2020-02-17,1,4,4,-1,11
+Spain,Madrid,2020-02-18,-1,4,4,-1,11
+Spain,Madrid,2020-02-19,-1,2,4,-1,11
+Spain,Madrid,2020-02-20,-2,3,3,-1,11
+Spain,Madrid,2020-02-21,-2,5,4,-2,11
+Spain,Madrid,2020-02-22,-3,10,1,-2,11
+Spain,Madrid,2020-02-23,4,6,2,-4,11
+Spain,Madrid,2020-02-24,4,6,4,-2,11
+Spain,Madrid,2020-02-25,-2,4,4,-1,11
+Spain,Madrid,2020-02-26,2,3,4,-1,11
+Spain,Madrid,2020-02-27,4,6,3,-2,11
+Spain,Madrid,2020-02-28,0,1,-12,0,11
+Spain,Madrid,2020-02-29,-9,-3,-2,-1,11
+Spain,Madrid,2020-03-01,-4,-4,1,-2,11
+Spain,Madrid,2020-03-02,0,-5,-15,1,11
+Spain,Madrid,2020-03-03,-6,0,3,-1,11
+Spain,Madrid,2020-03-04,-2,1,3,-1,11
+Spain,Madrid,2020-03-05,-4,-2,3,0,11
+Spain,Madrid,2020-03-06,-4,-1,1,0,11
+Spain,Madrid,2020-03-07,-4,2,-1,-1,11
+Spain,Madrid,2020-03-08,-1,2,-1,-1,11
+Spain,Madrid,2020-03-09,-1,0,1,-1,25
+Spain,Madrid,2020-03-10,-7,-7,-1,0,46
+Spain,Madrid,2020-03-11,-16,-21,-21,8,46
+Spain,Madrid,2020-03-12,-32,-33,-28,12,46
+Spain,Madrid,2020-03-13,-47,-46,-37,17,46
+Spain,Madrid,2020-03-14,-82,-65,-46,18,67
+Spain,Madrid,2020-03-15,-89,-77,-53,19,67
+Spain,Madrid,2020-03-16,-82,-75,-65,29,69
+Spain,Madrid,2020-03-17,-85,-79,-69,31,72
+Spain,Madrid,2020-03-18,-86,-81,-71,33,72
+Spain,Madrid,2020-03-19,-87,-82,-73,35,72
+Spain,Madrid,2020-03-20,-89,-83,-73,38,72
+Spain,Madrid,2020-03-21,-93,-87,-66,26,72
+Spain,Madrid,2020-03-22,-93,-88,-66,23,72
+Spain,Madrid,2020-03-23,-86,-83,-75,33,72
+Spain,Madrid,2020-03-24,-88,-84,-76,35,72
+Spain,Madrid,2020-03-25,-89,-85,-77,36,72
+Spain,Madrid,2020-03-26,-89,-85,-77,37,72
+Spain,Madrid,2020-03-27,-90,-86,-77,40,72
+Spain,Madrid,2020-03-28,-93,-87,-68,27,72
+Spain,Madrid,2020-03-29,-94,-89,-65,22,72
+Spain,Madrid,2020-03-30,-89,-87,-82,36,85
+Spain,Madrid,2020-03-31,-92,-88,-83,37,85
+Spain,Madrid,2020-04-01,-91,-87,-83,38,85
+Spain,Madrid,2020-04-02,-91,-87,-83,39,85
+Spain,Madrid,2020-04-03,-90,-87,-82,41,85
+Spain,Madrid,2020-04-04,-93,-88,-69,27,85
+Spain,Madrid,2020-04-05,-94,-90,-69,23,85
+Spain,Madrid,2020-04-06,-88,-86,-82,36,85
+Spain,Madrid,2020-04-07,-91,-86,-82,36,85
+Spain,Madrid,2020-04-08,-90,-85,-82,36,85
+Spain,Madrid,2020-04-09,-95,-92,-92,43,85
+Spain,Madrid,2020-04-10,-96,-93,-92,46,85
+Spain,Madrid,2020-04-11,-94,-87,-68,27,85
+Spain,Madrid,2020-04-12,-96,-90,-68,23,85
+Spain,Madrid,2020-04-13,-90,-84,-78,35,85
+Spain,Madrid,2020-04-14,-91,-84,-77,35,85
+Spain,Madrid,2020-04-15,-91,-84,-77,36,85
+Spain,Madrid,2020-04-16,-90,-84,-77,37,85
+Spain,Madrid,2020-04-17,-91,-84,-76,39,85
+Spain,Madrid,2020-04-18,-94,-86,-66,26,85
+Spain,Madrid,2020-04-19,-95,-89,-67,23,85
+Spain,Madrid,2020-04-20,-89,-82,-75,34,85
+Spain,Madrid,2020-04-21,-90,-83,-76,35,85
+Spain,Madrid,2020-04-22,-90,-83,-75,35,85
+Spain,Madrid,2020-04-23,-90,-83,-75,36,85
+Spain,Madrid,2020-04-24,-91,-83,-74,38,85
+Spain,Madrid,2020-04-25,-93,-85,-65,26,85
+Spain,Madrid,2020-04-26,-93,-84,-65,22,85
+Spain,Madrid,2020-04-27,-88,-80,-73,33,85
+Spain,Madrid,2020-04-28,-88,-80,-74,32,85
+Spain,Madrid,2020-04-29,-88,-80,-73,34,85
+Spain,Madrid,2020-04-30,-86,-79,-73,34,85
+Spain,Madrid,2020-05-01,-95,-89,-91,45,85
+Spain,Madrid,2020-05-02,-88,-69,-64,23,85
+Spain,Madrid,2020-05-03,-86,-69,-57,19,85
+Spain,Madrid,2020-05-04,-79,-68,-69,29,82
+Spain,Madrid,2020-05-05,-80,-69,-69,30,82
+Spain,Madrid,2020-05-06,-81,-68,-69,30,82
+Spain,Madrid,2020-05-07,-81,-70,-69,31,82
+Spain,Madrid,2020-05-08,-83,-69,-68,33,82
+Spain,Madrid,2020-05-09,-87,-67,-54,22,82
+Spain,Madrid,2020-05-10,-88,-72,-56,20,82
+Spain,Madrid,2020-05-11,-77,-67,-65,28,82
+Spain,Madrid,2020-05-12,-82,-73,-66,30,82
+Spain,Madrid,2020-05-13,-79,-67,-65,29,83
+Spain,Madrid,2020-05-14,-80,-70,-67,29,83
+Spain,Madrid,2020-05-15,-86,-78,-80,38,83
+Spain,Madrid,2020-05-16,-84,-66,-51,22,83
+Spain,Madrid,2020-05-17,-85,-65,-51,19,79
+Spain,Madrid,2020-05-18,-71,-61,-62,26,79
+Spain,Madrid,2020-05-19,-73,-62,-63,27,79
+Spain,Madrid,2020-05-20,-73,-62,-63,28,79
+Spain,Madrid,2020-05-21,-73,-63,-63,28,79
+Spain,Madrid,2020-05-22,-76,-64,-61,30,75
+Spain,Madrid,2020-05-23,-80,-60,-42,20,75
+Spain,Madrid,2020-05-24,-82,-64,-44,18,75
+Spain,Madrid,2020-05-25,-54,-53,-58,21,75
+Spain,Madrid,2020-05-26,-57,-54,-57,21,72
+Spain,Madrid,2020-05-27,-57,-54,-56,22,68
+Spain,Madrid,2020-05-28,-57,-54,-56,23,68
+Spain,Madrid,2020-05-29,-59,-52,-55,23,68
+Spain,Madrid,2020-05-30,-63,-43,-23,11,68
+Spain,Madrid,2020-05-31,-70,-59,-24,12,68
+Spain,Madrid,2020-06-01,-50,-48,-53,20,67
+Spain,Madrid,2020-06-02,-52,-49,-53,20,67
+Spain,Madrid,2020-06-03,-53,-49,-53,21,67
+Spain,Madrid,2020-06-04,-55,-51,-54,22,67
+Spain,Madrid,2020-06-05,-52,-48,-51,20,67
+Spain,Madrid,2020-06-06,-57,-40,-19,9,67
+Spain,Madrid,2020-06-07,-63,-52,-20,11,67
+Spain,Madrid,2020-06-08,-34,-46,-50,18,57
+Spain,Madrid,2020-06-09,-36,-46,-50,18,57
+Spain,Madrid,2020-06-10,-36,-46,-50,18,57
+Spain,Madrid,2020-06-11,-37,-48,-50,19,57
+Spain,Madrid,2020-06-12,-41,-48,-48,19,57
+Spain,Madrid,2020-06-13,-42,-36,-10,7,57
+Spain,Madrid,2020-06-14,-42,-43,-6,7,57
+Belgium,Brussels,2020-02-15,11,18,1,-1,11
+Belgium,Brussels,2020-02-16,-1,8,-5,1,11
+Belgium,Brussels,2020-02-17,2,4,4,0,11
+Belgium,Brussels,2020-02-18,6,7,5,-1,11
+Belgium,Brussels,2020-02-19,0,3,5,-1,11
+Belgium,Brussels,2020-02-20,-4,3,3,0,11
+Belgium,Brussels,2020-02-21,1,7,2,0,11
+Belgium,Brussels,2020-02-22,-6,4,-1,0,11
+Belgium,Brussels,2020-02-23,-9,0,-5,0,11
+Belgium,Brussels,2020-02-24,3,-9,-18,3,11
+Belgium,Brussels,2020-02-25,3,-7,-17,3,11
+Belgium,Brussels,2020-02-26,-4,-9,-16,2,11
+Belgium,Brussels,2020-02-27,-8,-13,-18,4,11
+Belgium,Brussels,2020-02-28,-3,-7,-18,4,11
+Belgium,Brussels,2020-02-29,-7,-2,-2,0,11
+Belgium,Brussels,2020-03-01,-5,7,-4,-1,11
+Belgium,Brussels,2020-03-02,-8,-1,2,1,11
+Belgium,Brussels,2020-03-03,2,-2,3,0,11
+Belgium,Brussels,2020-03-04,-3,-1,3,0,14
+Belgium,Brussels,2020-03-05,-6,0,2,1,14
+Belgium,Brussels,2020-03-06,-2,6,0,1,14
+Belgium,Brussels,2020-03-07,2,6,1,0,14
+Belgium,Brussels,2020-03-08,-5,3,-5,1,14
+Belgium,Brussels,2020-03-09,-5,-4,0,1,14
+Belgium,Brussels,2020-03-10,-10,-8,0,2,19
+Belgium,Brussels,2020-03-11,-12,-7,-1,2,19
+Belgium,Brussels,2020-03-12,-13,-10,-4,3,19
+Belgium,Brussels,2020-03-13,-19,-19,-14,7,23
+Belgium,Brussels,2020-03-14,-73,-41,-33,12,51
+Belgium,Brussels,2020-03-15,-70,-44,-37,9,51
+Belgium,Brussels,2020-03-16,-50,-51,-47,18,51
+Belgium,Brussels,2020-03-17,-55,-57,-55,19,51
+Belgium,Brussels,2020-03-18,-73,-66,-64,24,73
+Belgium,Brussels,2020-03-19,-83,-77,-72,31,73
+Belgium,Brussels,2020-03-20,-85,-78,-72,35,81
+Belgium,Brussels,2020-03-21,-88,-76,-60,24,81
+Belgium,Brussels,2020-03-22,-86,-76,-58,17,81
+Belgium,Brussels,2020-03-23,-83,-79,-75,31,81
+Belgium,Brussels,2020-03-24,-84,-80,-76,32,81
+Belgium,Brussels,2020-03-25,-85,-79,-75,31,81
+Belgium,Brussels,2020-03-26,-85,-81,-76,34,81
+Belgium,Brussels,2020-03-27,-85,-79,-75,36,81
+Belgium,Brussels,2020-03-28,-88,-77,-62,24,81
+Belgium,Brussels,2020-03-29,-89,-82,-62,19,81
+Belgium,Brussels,2020-03-30,-85,-81,-76,32,81
+Belgium,Brussels,2020-03-31,-84,-81,-76,32,81
+Belgium,Brussels,2020-04-01,-85,-80,-75,31,81
+Belgium,Brussels,2020-04-02,-86,-82,-77,34,81
+Belgium,Brussels,2020-04-03,-85,-80,-75,36,81
+Belgium,Brussels,2020-04-04,-87,-74,-61,24,81
+Belgium,Brussels,2020-04-05,-84,-72,-57,17,81
+Belgium,Brussels,2020-04-06,-83,-79,-75,31,81
+Belgium,Brussels,2020-04-07,-82,-79,-75,31,81
+Belgium,Brussels,2020-04-08,-83,-78,-74,29,81
+Belgium,Brussels,2020-04-09,-83,-79,-75,32,81
+Belgium,Brussels,2020-04-10,-83,-77,-75,34,81
+Belgium,Brussels,2020-04-11,-86,-71,-57,22,81
+Belgium,Brussels,2020-04-12,-84,-74,-56,17,81
+Belgium,Brussels,2020-04-13,-89,-86,-90,37,81
+Belgium,Brussels,2020-04-14,-82,-79,-75,31,81
+Belgium,Brussels,2020-04-15,-82,-77,-73,29,81
+Belgium,Brussels,2020-04-16,-83,-78,-74,31,81
+Belgium,Brussels,2020-04-17,-82,-76,-73,34,81
+Belgium,Brussels,2020-04-18,-86,-75,-56,24,81
+Belgium,Brussels,2020-04-19,-85,-74,-54,17,81
+Belgium,Brussels,2020-04-20,-78,-76,-73,30,81
+Belgium,Brussels,2020-04-21,-78,-77,-72,29,81
+Belgium,Brussels,2020-04-22,-79,-75,-70,28,81
+Belgium,Brussels,2020-04-23,-79,-75,-71,29,81
+Belgium,Brussels,2020-04-24,-80,-75,-70,32,81
+Belgium,Brussels,2020-04-25,-83,-69,-51,21,81
+Belgium,Brussels,2020-04-26,-80,-67,-50,15,81
+Belgium,Brussels,2020-04-27,-77,-74,-70,28,81
+Belgium,Brussels,2020-04-28,-81,-78,-71,28,81
+Belgium,Brussels,2020-04-29,-79,-75,-69,28,81
+Belgium,Brussels,2020-04-30,-76,-74,-69,29,81
+Belgium,Brussels,2020-05-01,-86,-81,-86,39,81
+Belgium,Brussels,2020-05-02,-81,-69,-50,21,81
+Belgium,Brussels,2020-05-03,-79,-67,-47,15,81
+Belgium,Brussels,2020-05-04,-73,-70,-66,26,81
+Belgium,Brussels,2020-05-05,-72,-70,-66,26,79
+Belgium,Brussels,2020-05-06,-73,-67,-64,24,79
+Belgium,Brussels,2020-05-07,-73,-69,-65,26,79
+Belgium,Brussels,2020-05-08,-74,-66,-64,28,79
+Belgium,Brussels,2020-05-09,-76,-58,-41,16,79
+Belgium,Brussels,2020-05-10,-76,-63,-38,12,79
+Belgium,Brussels,2020-05-11,-59,-63,-61,23,75
+Belgium,Brussels,2020-05-12,-60,-62,-61,23,75
+Belgium,Brussels,2020-05-13,-62,-61,-60,22,75
+Belgium,Brussels,2020-05-14,-63,-61,-61,22,75
+Belgium,Brussels,2020-05-15,-63,-57,-59,24,75
+Belgium,Brussels,2020-05-16,-65,-47,-32,14,75
+Belgium,Brussels,2020-05-17,-69,-48,-29,10,75
+Belgium,Brussels,2020-05-18,-53,-54,-57,20,75
+Belgium,Brussels,2020-05-19,-53,-55,-56,20,75
+Belgium,Brussels,2020-05-20,-50,-52,-55,17,75
+Belgium,Brussels,2020-05-21,-73,-67,-81,25,75
+Belgium,Brussels,2020-05-22,-54,-57,-65,24,75
+Belgium,Brussels,2020-05-23,-59,-44,-26,13,75
+Belgium,Brussels,2020-05-24,-72,-51,-23,8,75
+Belgium,Brussels,2020-05-25,-49,-52,-55,19,75
+Belgium,Brussels,2020-05-26,-49,-54,-53,18,75
+Belgium,Brussels,2020-05-27,-52,-51,-52,17,75
+Belgium,Brussels,2020-05-28,-52,-52,-53,19,75
+Belgium,Brussels,2020-05-29,-52,-48,-51,19,75
+Belgium,Brussels,2020-05-30,-54,-35,-10,8,75
+Belgium,Brussels,2020-05-31,-63,-38,-11,5,75
+Belgium,Brussels,2020-06-01,-70,-64,-79,22,75
+Belgium,Brussels,2020-06-02,-44,-48,-49,15,75
+Belgium,Brussels,2020-06-03,-48,-47,-49,15,75
+Belgium,Brussels,2020-06-04,-55,-53,-50,19,75
+Belgium,Brussels,2020-06-05,-56,-50,-49,20,73
+Belgium,Brussels,2020-06-06,-50,-37,-12,10,73
+Belgium,Brussels,2020-06-07,-56,-34,-12,7,73
+Belgium,Brussels,2020-06-08,-36,-47,-48,16,52
+Belgium,Brussels,2020-06-09,-34,-46,-47,15,52
+Belgium,Brussels,2020-06-10,-35,-44,-47,14,52
+Belgium,Brussels,2020-06-11,-34,-45,-47,15,52
+Belgium,Brussels,2020-06-12,-34,-40,-45,14,52
+Belgium,Brussels,2020-06-13,-34,-26,-2,4,52
+Belgium,Brussels,2020-06-14,-42,-32,1,2,52
+Vietnam,Ho Chi Minh City,2020-02-15,-16,-12,1,8,47
+Vietnam,Ho Chi Minh City,2020-02-16,-15,-14,-6,7,47
+Vietnam,Ho Chi Minh City,2020-02-17,-16,-14,8,7,47
+Vietnam,Ho Chi Minh City,2020-02-18,-10,-12,8,6,47
+Vietnam,Ho Chi Minh City,2020-02-19,0,-15,7,3,47
+Vietnam,Ho Chi Minh City,2020-02-20,6,-3,6,2,47
+Vietnam,Ho Chi Minh City,2020-02-21,-14,-14,1,9,47
+Vietnam,Ho Chi Minh City,2020-02-22,-17,-13,3,8,47
+Vietnam,Ho Chi Minh City,2020-02-23,-16,-16,-5,6,47
+Vietnam,Ho Chi Minh City,2020-02-24,-14,-13,10,6,47
+Vietnam,Ho Chi Minh City,2020-02-25,-11,-12,9,6,47
+Vietnam,Ho Chi Minh City,2020-02-26,-2,-16,7,3,47
+Vietnam,Ho Chi Minh City,2020-02-27,6,-3,7,2,47
+Vietnam,Ho Chi Minh City,2020-02-28,-14,-12,2,8,47
+Vietnam,Ho Chi Minh City,2020-02-29,-15,-11,4,7,47
+Vietnam,Ho Chi Minh City,2020-03-01,-14,-13,-5,6,47
+Vietnam,Ho Chi Minh City,2020-03-02,-13,-13,10,6,47
+Vietnam,Ho Chi Minh City,2020-03-03,-10,-11,10,5,47
+Vietnam,Ho Chi Minh City,2020-03-04,2,-16,8,3,47
+Vietnam,Ho Chi Minh City,2020-03-05,8,-3,8,1,47
+Vietnam,Ho Chi Minh City,2020-03-06,-10,-11,3,8,47
+Vietnam,Ho Chi Minh City,2020-03-07,-15,-12,5,8,47
+Vietnam,Ho Chi Minh City,2020-03-08,-11,-14,-4,6,47
+Vietnam,Ho Chi Minh City,2020-03-09,-17,-16,10,7,47
+Vietnam,Ho Chi Minh City,2020-03-10,-14,-15,10,6,47
+Vietnam,Ho Chi Minh City,2020-03-11,-5,-18,8,4,47
+Vietnam,Ho Chi Minh City,2020-03-12,-2,-10,7,3,47
+Vietnam,Ho Chi Minh City,2020-03-13,-21,-21,2,10,47
+Vietnam,Ho Chi Minh City,2020-03-14,-27,-21,3,11,47
+Vietnam,Ho Chi Minh City,2020-03-15,-30,-25,-7,10,47
+Vietnam,Ho Chi Minh City,2020-03-16,-27,-23,7,9,47
+Vietnam,Ho Chi Minh City,2020-03-17,-26,-24,5,9,47
+Vietnam,Ho Chi Minh City,2020-03-18,-18,-28,3,7,47
+Vietnam,Ho Chi Minh City,2020-03-19,-16,-20,2,6,47
+Vietnam,Ho Chi Minh City,2020-03-20,-32,-29,-4,13,47
+Vietnam,Ho Chi Minh City,2020-03-21,-36,-31,-2,13,47
+Vietnam,Ho Chi Minh City,2020-03-22,-38,-36,-11,12,50
+Vietnam,Ho Chi Minh City,2020-03-23,-34,-33,2,11,50
+Vietnam,Ho Chi Minh City,2020-03-24,-35,-33,0,11,50
+Vietnam,Ho Chi Minh City,2020-03-25,-35,-37,-5,10,56
+Vietnam,Ho Chi Minh City,2020-03-26,-37,-31,-8,9,61
+Vietnam,Ho Chi Minh City,2020-03-27,-52,-38,-15,18,67
+Vietnam,Ho Chi Minh City,2020-03-28,-62,-45,-16,20,83
+Vietnam,Ho Chi Minh City,2020-03-29,-69,-55,-29,20,83
+Vietnam,Ho Chi Minh City,2020-03-30,-63,-51,-16,18,83
+Vietnam,Ho Chi Minh City,2020-03-31,-61,-50,-18,17,83
+Vietnam,Ho Chi Minh City,2020-04-01,-66,-60,-31,20,96
+Vietnam,Ho Chi Minh City,2020-04-02,-69,-63,-66,28,96
+Vietnam,Ho Chi Minh City,2020-04-03,-71,-63,-38,28,96
+Vietnam,Ho Chi Minh City,2020-04-04,-74,-63,-33,26,96
+Vietnam,Ho Chi Minh City,2020-04-05,-76,-68,-37,24,96
+Vietnam,Ho Chi Minh City,2020-04-06,-68,-60,-28,23,96
+Vietnam,Ho Chi Minh City,2020-04-07,-67,-59,-29,22,96
+Vietnam,Ho Chi Minh City,2020-04-08,-64,-61,-30,19,96
+Vietnam,Ho Chi Minh City,2020-04-09,-64,-56,-31,18,96
+Vietnam,Ho Chi Minh City,2020-04-10,-69,-60,-34,26,96
+Vietnam,Ho Chi Minh City,2020-04-11,-70,-59,-30,24,96
+Vietnam,Ho Chi Minh City,2020-04-12,-73,-65,-35,22,96
+Vietnam,Ho Chi Minh City,2020-04-13,-68,-59,-26,22,96
+Vietnam,Ho Chi Minh City,2020-04-14,-66,-58,-27,21,96
+Vietnam,Ho Chi Minh City,2020-04-15,-61,-59,-27,18,87
+Vietnam,Ho Chi Minh City,2020-04-16,-57,-51,-25,15,87
+Vietnam,Ho Chi Minh City,2020-04-17,-65,-57,-29,24,87
+Vietnam,Ho Chi Minh City,2020-04-18,-68,-58,-25,22,87
+Vietnam,Ho Chi Minh City,2020-04-19,-70,-62,-31,20,87
+Vietnam,Ho Chi Minh City,2020-04-20,-63,-56,-20,19,87
+Vietnam,Ho Chi Minh City,2020-04-21,-63,-56,-21,18,87
+Vietnam,Ho Chi Minh City,2020-04-22,-57,-57,-21,16,78
+Vietnam,Ho Chi Minh City,2020-04-23,-42,-47,-17,12,78
+Vietnam,Ho Chi Minh City,2020-04-24,-47,-49,-20,18,78
+Vietnam,Ho Chi Minh City,2020-04-25,-47,-46,-17,17,72
+Vietnam,Ho Chi Minh City,2020-04-26,-48,-49,-21,15,75
+Vietnam,Ho Chi Minh City,2020-04-27,-40,-43,-9,14,75
+Vietnam,Ho Chi Minh City,2020-04-28,-34,-37,-10,11,75
+Vietnam,Ho Chi Minh City,2020-04-29,-21,-28,-12,5,75
+Vietnam,Ho Chi Minh City,2020-04-30,-34,-25,-60,11,75
+Vietnam,Ho Chi Minh City,2020-05-01,-51,-44,-67,23,75
+Vietnam,Ho Chi Minh City,2020-05-02,-52,-39,-42,17,75
+Vietnam,Ho Chi Minh City,2020-05-03,-45,-27,-20,8,75
+Vietnam,Ho Chi Minh City,2020-05-04,-36,-18,-3,10,66
+Vietnam,Ho Chi Minh City,2020-05-05,-32,-15,-3,9,66
+Vietnam,Ho Chi Minh City,2020-05-06,-23,-17,-4,7,66
+Vietnam,Ho Chi Minh City,2020-05-07,-15,-7,-5,5,66
+Vietnam,Ho Chi Minh City,2020-05-08,-28,-15,-8,11,66
+Vietnam,Ho Chi Minh City,2020-05-09,-28,-13,-7,11,66
+Vietnam,Ho Chi Minh City,2020-05-10,-24,-11,-11,9,66
+Vietnam,Ho Chi Minh City,2020-05-11,-24,-6,4,7,66
+Vietnam,Ho Chi Minh City,2020-05-12,-22,-5,4,6,66
+Vietnam,Ho Chi Minh City,2020-05-13,-12,-10,2,4,66
+Vietnam,Ho Chi Minh City,2020-05-14,-6,0,1,2,66
+Vietnam,Ho Chi Minh City,2020-05-15,-22,-8,-4,8,66
+Vietnam,Ho Chi Minh City,2020-05-16,-24,-9,-6,10,66
+Vietnam,Ho Chi Minh City,2020-05-17,-21,-11,-10,8,66
+Vietnam,Ho Chi Minh City,2020-05-18,-23,-8,8,6,66
+Vietnam,Ho Chi Minh City,2020-05-19,-25,-12,7,6,66
+Vietnam,Ho Chi Minh City,2020-05-20,-8,-13,4,3,66
+Vietnam,Ho Chi Minh City,2020-05-21,-3,0,3,1,66
+Vietnam,Ho Chi Minh City,2020-05-22,-21,-10,0,8,66
+Vietnam,Ho Chi Minh City,2020-05-23,-20,-11,-2,8,66
+Vietnam,Ho Chi Minh City,2020-05-24,-18,-13,-9,7,66
+Vietnam,Ho Chi Minh City,2020-05-25,-29,-18,6,8,66
+Vietnam,Ho Chi Minh City,2020-05-26,-17,-9,11,5,66
+Vietnam,Ho Chi Minh City,2020-05-27,-13,-17,8,3,66
+Vietnam,Ho Chi Minh City,2020-05-28,-3,0,7,1,66
+Vietnam,Ho Chi Minh City,2020-05-29,-20,-9,1,8,66
+Vietnam,Ho Chi Minh City,2020-05-30,-23,-12,1,9,66
+Vietnam,Ho Chi Minh City,2020-05-31,-13,-9,-8,6,66
+Vietnam,Ho Chi Minh City,2020-06-01,-18,-9,11,5,66
+Vietnam,Ho Chi Minh City,2020-06-02,-18,-10,11,5,66
+Vietnam,Ho Chi Minh City,2020-06-03,-8,-12,9,3,66
+Vietnam,Ho Chi Minh City,2020-06-04,-6,-2,8,2,66
+Vietnam,Ho Chi Minh City,2020-06-05,-15,-5,2,7,66
+Vietnam,Ho Chi Minh City,2020-06-06,-17,-8,0,8,66
+Vietnam,Ho Chi Minh City,2020-06-07,-15,-13,-10,7,66
+Vietnam,Ho Chi Minh City,2020-06-08,-18,-9,13,5,66
+Vietnam,Ho Chi Minh City,2020-06-09,-17,-11,12,4,66
+Vietnam,Ho Chi Minh City,2020-06-10,-10,-16,9,3,66
+Vietnam,Ho Chi Minh City,2020-06-11,7,2,9,0,66
+Vietnam,Ho Chi Minh City,2020-06-12,-12,-7,3,7,66
+Vietnam,Ho Chi Minh City,2020-06-13,-28,-18,-1,10,66
+Vietnam,Ho Chi Minh City,2020-06-14,-20,-20,-11,9,66
+Hong Kong,Hong Kong,2020-02-15,-26,-34,-18,14,53
+Hong Kong,Hong Kong,2020-02-16,-28,-36,-19,13,53
+Hong Kong,Hong Kong,2020-02-17,-23,-32,-21,15,53
+Hong Kong,Hong Kong,2020-02-18,-24,-33,-21,16,53
+Hong Kong,Hong Kong,2020-02-19,-24,-31,-17,14,53
+Hong Kong,Hong Kong,2020-02-20,-24,-28,-11,12,53
+Hong Kong,Hong Kong,2020-02-21,-24,-31,-21,17,53
+Hong Kong,Hong Kong,2020-02-22,-23,-30,-16,13,53
+Hong Kong,Hong Kong,2020-02-23,-24,-31,-17,11,53
+Hong Kong,Hong Kong,2020-02-24,-23,-31,-19,14,53
+Hong Kong,Hong Kong,2020-02-25,-24,-31,-19,15,53
+Hong Kong,Hong Kong,2020-02-26,-24,-30,-15,14,53
+Hong Kong,Hong Kong,2020-02-27,-24,-27,-9,12,53
+Hong Kong,Hong Kong,2020-02-28,-23,-29,-19,16,53
+Hong Kong,Hong Kong,2020-02-29,-22,-25,-14,12,53
+Hong Kong,Hong Kong,2020-03-01,-22,-27,-15,10,53
+Hong Kong,Hong Kong,2020-03-02,-22,-27,-14,13,45
+Hong Kong,Hong Kong,2020-03-03,-22,-28,-14,14,45
+Hong Kong,Hong Kong,2020-03-04,-24,-27,-11,13,45
+Hong Kong,Hong Kong,2020-03-05,-22,-24,-5,11,45
+Hong Kong,Hong Kong,2020-03-06,-20,-26,-14,15,45
+Hong Kong,Hong Kong,2020-03-07,-20,-24,-12,11,45
+Hong Kong,Hong Kong,2020-03-08,-21,-26,-15,10,45
+Hong Kong,Hong Kong,2020-03-09,-21,-26,-13,13,45
+Hong Kong,Hong Kong,2020-03-10,-20,-26,-12,13,45
+Hong Kong,Hong Kong,2020-03-11,-21,-26,-9,12,45
+Hong Kong,Hong Kong,2020-03-12,-22,-22,-3,10,45
+Hong Kong,Hong Kong,2020-03-13,-20,-26,-13,14,45
+Hong Kong,Hong Kong,2020-03-14,-20,-24,-12,11,45
+Hong Kong,Hong Kong,2020-03-15,-18,-23,-14,9,45
+Hong Kong,Hong Kong,2020-03-16,-20,-25,-12,12,45
+Hong Kong,Hong Kong,2020-03-17,-22,-28,-12,13,45
+Hong Kong,Hong Kong,2020-03-18,-25,-29,-9,13,45
+Hong Kong,Hong Kong,2020-03-19,-25,-25,-3,11,45
+Hong Kong,Hong Kong,2020-03-20,-22,-28,-13,15,45
+Hong Kong,Hong Kong,2020-03-21,-24,-30,-13,13,45
+Hong Kong,Hong Kong,2020-03-22,-25,-32,-15,12,45
+Hong Kong,Hong Kong,2020-03-23,-24,-32,-17,14,53
+Hong Kong,Hong Kong,2020-03-24,-27,-34,-19,16,53
+Hong Kong,Hong Kong,2020-03-25,-27,-33,-16,15,53
+Hong Kong,Hong Kong,2020-03-26,-28,-31,-11,13,53
+Hong Kong,Hong Kong,2020-03-27,-26,-33,-20,18,53
+Hong Kong,Hong Kong,2020-03-28,-31,-37,-17,16,53
+Hong Kong,Hong Kong,2020-03-29,-35,-45,-24,16,64
+Hong Kong,Hong Kong,2020-03-30,-32,-37,-23,17,64
+Hong Kong,Hong Kong,2020-03-31,-31,-36,-23,18,64
+Hong Kong,Hong Kong,2020-04-01,-29,-34,-20,16,64
+Hong Kong,Hong Kong,2020-04-02,-29,-31,-15,14,64
+Hong Kong,Hong Kong,2020-04-03,-28,-34,-24,19,64
+Hong Kong,Hong Kong,2020-04-04,-32,-42,-43,19,64
+Hong Kong,Hong Kong,2020-04-05,-37,-47,-27,17,64
+Hong Kong,Hong Kong,2020-04-06,-34,-39,-25,18,67
+Hong Kong,Hong Kong,2020-04-07,-27,-35,-23,17,67
+Hong Kong,Hong Kong,2020-04-08,-26,-33,-19,15,67
+Hong Kong,Hong Kong,2020-04-09,-24,-27,-14,12,67
+Hong Kong,Hong Kong,2020-04-10,-28,-43,-58,27,67
+Hong Kong,Hong Kong,2020-04-11,-31,-41,-38,19,67
+Hong Kong,Hong Kong,2020-04-12,-27,-34,-22,13,67
+Hong Kong,Hong Kong,2020-04-13,-26,-45,-60,25,67
+Hong Kong,Hong Kong,2020-04-14,-25,-32,-20,16,67
+Hong Kong,Hong Kong,2020-04-15,-24,-30,-17,15,67
+Hong Kong,Hong Kong,2020-04-16,-24,-29,-12,12,67
+Hong Kong,Hong Kong,2020-04-17,-23,-37,-21,18,67
+Hong Kong,Hong Kong,2020-04-18,-26,-31,-16,14,67
+Hong Kong,Hong Kong,2020-04-19,-26,-33,-19,13,67
+Hong Kong,Hong Kong,2020-04-20,-24,-34,-19,14,67
+Hong Kong,Hong Kong,2020-04-21,-25,-35,-19,15,67
+Hong Kong,Hong Kong,2020-04-22,-29,-38,-16,15,67
+Hong Kong,Hong Kong,2020-04-23,-26,-33,-9,13,67
+Hong Kong,Hong Kong,2020-04-24,-25,-36,-19,18,67
+Hong Kong,Hong Kong,2020-04-25,-23,-31,-15,13,67
+Hong Kong,Hong Kong,2020-04-26,-23,-32,-17,12,67
+Hong Kong,Hong Kong,2020-04-27,-22,-34,-17,14,67
+Hong Kong,Hong Kong,2020-04-28,-22,-33,-17,13,67
+Hong Kong,Hong Kong,2020-04-29,-19,-29,-13,9,67
+Hong Kong,Hong Kong,2020-04-30,-20,-33,-51,18,67
+Hong Kong,Hong Kong,2020-05-01,-22,-40,-61,25,67
+Hong Kong,Hong Kong,2020-05-02,-21,-28,-16,12,67
+Hong Kong,Hong Kong,2020-05-03,-22,-31,-16,11,67
+Hong Kong,Hong Kong,2020-05-04,-21,-31,-13,12,67
+Hong Kong,Hong Kong,2020-05-05,-21,-31,-12,13,67
+Hong Kong,Hong Kong,2020-05-06,-21,-29,-9,12,67
+Hong Kong,Hong Kong,2020-05-07,-20,-24,-3,9,67
+Hong Kong,Hong Kong,2020-05-08,-17,-25,-12,13,64
+Hong Kong,Hong Kong,2020-05-09,-16,-22,-10,10,64
+Hong Kong,Hong Kong,2020-05-10,-13,-21,-9,8,64
+Hong Kong,Hong Kong,2020-05-11,-18,-27,-11,11,64
+Hong Kong,Hong Kong,2020-05-12,-19,-27,-11,12,64
+Hong Kong,Hong Kong,2020-05-13,-19,-25,-7,11,64
+Hong Kong,Hong Kong,2020-05-14,-19,-21,0,8,64
+Hong Kong,Hong Kong,2020-05-15,-17,-23,-12,11,64
+Hong Kong,Hong Kong,2020-05-16,-17,-20,-10,10,64
+Hong Kong,Hong Kong,2020-05-17,-17,-23,-11,9,64
+Hong Kong,Hong Kong,2020-05-18,-22,-27,-12,12,64
+Hong Kong,Hong Kong,2020-05-19,-19,-25,-10,12,64
+Hong Kong,Hong Kong,2020-05-20,-18,-23,-6,10,64
+Hong Kong,Hong Kong,2020-05-21,-20,-21,-1,9,64
+Hong Kong,Hong Kong,2020-05-22,-17,-24,-12,13,64
+Hong Kong,Hong Kong,2020-05-23,-16,-21,-10,10,64
+Hong Kong,Hong Kong,2020-05-24,-16,-21,-10,9,64
+Hong Kong,Hong Kong,2020-05-25,-21,-26,-12,12,64
+Hong Kong,Hong Kong,2020-05-26,-18,-25,-9,11,64
+Hong Kong,Hong Kong,2020-05-27,-18,-23,-6,10,60
+Hong Kong,Hong Kong,2020-05-28,-16,-17,2,7,60
+Hong Kong,Hong Kong,2020-05-29,-13,-19,-9,11,53
+Hong Kong,Hong Kong,2020-05-30,-22,-27,-13,12,53
+Hong Kong,Hong Kong,2020-05-31,-14,-21,-9,9,53
+Hong Kong,Hong Kong,2020-06-01,-15,-21,-7,9,53
+Hong Kong,Hong Kong,2020-06-02,-17,-22,-6,9,53
+Hong Kong,Hong Kong,2020-06-03,-15,-20,-2,8,53
+Hong Kong,Hong Kong,2020-06-04,-16,-18,4,7,53
+Hong Kong,Hong Kong,2020-06-05,-13,-19,-8,10,53
+Hong Kong,Hong Kong,2020-06-06,-18,-22,-11,10,53
+Hong Kong,Hong Kong,2020-06-07,-24,-33,-16,12,53
+Hong Kong,Hong Kong,2020-06-08,-20,-24,-8,10,53
+Hong Kong,Hong Kong,2020-06-09,-15,-20,-4,9,53
+Hong Kong,Hong Kong,2020-06-10,-14,-18,-1,7,53
+Hong Kong,Hong Kong,2020-06-11,-13,-14,6,5,53
+Hong Kong,Hong Kong,2020-06-12,-11,-16,-6,9,53
+Hong Kong,Hong Kong,2020-06-13,-14,-19,-8,9,53
+Hong Kong,Hong Kong,2020-06-14,-19,-28,-12,11,53
+Singapore,Singapore,2020-02-15,-14,-17,-4,8,25
+Singapore,Singapore,2020-02-16,-19,-22,-7,8,25
+Singapore,Singapore,2020-02-17,-12,-14,-4,7,25
+Singapore,Singapore,2020-02-18,-13,-15,-5,7,25
+Singapore,Singapore,2020-02-19,-14,-15,-5,8,25
+Singapore,Singapore,2020-02-20,-14,-12,-5,7,25
+Singapore,Singapore,2020-02-21,-11,-12,0,8,25
+Singapore,Singapore,2020-02-22,-11,-16,-3,6,25
+Singapore,Singapore,2020-02-23,-14,-19,-5,6,25
+Singapore,Singapore,2020-02-24,-12,-14,-3,7,25
+Singapore,Singapore,2020-02-25,-10,-13,-3,6,25
+Singapore,Singapore,2020-02-26,-12,-14,-4,7,25
+Singapore,Singapore,2020-02-27,-12,-9,-4,6,25
+Singapore,Singapore,2020-02-28,-8,-11,1,7,25
+Singapore,Singapore,2020-02-29,-8,-13,0,5,25
+Singapore,Singapore,2020-03-01,-11,-16,-3,5,25
+Singapore,Singapore,2020-03-02,-8,-12,-2,6,25
+Singapore,Singapore,2020-03-03,-8,-13,-1,6,25
+Singapore,Singapore,2020-03-04,-11,-12,-2,6,25
+Singapore,Singapore,2020-03-05,-12,-9,-2,6,25
+Singapore,Singapore,2020-03-06,-8,-10,3,7,25
+Singapore,Singapore,2020-03-07,-10,-15,0,6,25
+Singapore,Singapore,2020-03-08,-11,-16,-2,5,25
+Singapore,Singapore,2020-03-09,-11,-14,-1,6,25
+Singapore,Singapore,2020-03-10,-11,-13,-1,6,25
+Singapore,Singapore,2020-03-11,-13,-13,-2,7,25
+Singapore,Singapore,2020-03-12,-13,-9,-2,6,25
+Singapore,Singapore,2020-03-13,-10,-12,1,8,36
+Singapore,Singapore,2020-03-14,-11,-15,0,6,36
+Singapore,Singapore,2020-03-15,-14,-18,-3,6,36
+Singapore,Singapore,2020-03-16,-10,-16,-11,9,36
+Singapore,Singapore,2020-03-17,-8,-16,-12,9,36
+Singapore,Singapore,2020-03-18,-11,-19,-14,11,36
+Singapore,Singapore,2020-03-19,-13,-19,-16,12,36
+Singapore,Singapore,2020-03-20,-11,-21,-13,15,36
+Singapore,Singapore,2020-03-21,-13,-23,-3,11,36
+Singapore,Singapore,2020-03-22,-18,-31,-8,11,36
+Singapore,Singapore,2020-03-23,-16,-24,-11,12,36
+Singapore,Singapore,2020-03-24,-13,-23,-13,12,36
+Singapore,Singapore,2020-03-25,-16,-25,-15,14,36
+Singapore,Singapore,2020-03-26,-18,-25,-16,14,36
+Singapore,Singapore,2020-03-27,-20,-27,-14,18,39
+Singapore,Singapore,2020-03-28,-23,-33,-8,15,39
+Singapore,Singapore,2020-03-29,-28,-40,-15,15,39
+Singapore,Singapore,2020-03-30,-21,-29,-18,16,39
+Singapore,Singapore,2020-03-31,-20,-29,-18,15,39
+Singapore,Singapore,2020-04-01,-23,-31,-22,18,39
+Singapore,Singapore,2020-04-02,-25,-33,-27,19,39
+Singapore,Singapore,2020-04-03,-21,-32,-20,21,48
+Singapore,Singapore,2020-04-04,-24,-36,-7,15,48
+Singapore,Singapore,2020-04-05,-23,-40,-10,14,48
+Singapore,Singapore,2020-04-06,-15,-32,-24,16,48
+Singapore,Singapore,2020-04-07,-51,-54,-52,32,59
+Singapore,Singapore,2020-04-08,-59,-63,-63,39,82
+Singapore,Singapore,2020-04-09,-57,-63,-64,38,82
+Singapore,Singapore,2020-04-10,-63,-75,-83,53,80
+Singapore,Singapore,2020-04-11,-61,-66,-51,32,80
+Singapore,Singapore,2020-04-12,-64,-70,-49,27,80
+Singapore,Singapore,2020-04-13,-60,-66,-64,40,80
+Singapore,Singapore,2020-04-14,-58,-65,-65,40,85
+Singapore,Singapore,2020-04-15,-60,-66,-66,42,85
+Singapore,Singapore,2020-04-16,-61,-66,-66,42,85
+Singapore,Singapore,2020-04-17,-60,-65,-65,47,85
+Singapore,Singapore,2020-04-18,-65,-66,-51,32,85
+Singapore,Singapore,2020-04-19,-66,-69,-49,27,85
+Singapore,Singapore,2020-04-20,-65,-68,-66,41,85
+Singapore,Singapore,2020-04-21,-64,-69,-67,42,85
+Singapore,Singapore,2020-04-22,-66,-69,-68,44,85
+Singapore,Singapore,2020-04-23,-68,-70,-69,44,85
+Singapore,Singapore,2020-04-24,-70,-71,-67,49,85
+Singapore,Singapore,2020-04-25,-68,-70,-55,34,85
+Singapore,Singapore,2020-04-26,-70,-72,-52,28,85
+Singapore,Singapore,2020-04-27,-67,-70,-68,43,85
+Singapore,Singapore,2020-04-28,-66,-69,-68,42,85
+Singapore,Singapore,2020-04-29,-67,-69,-69,43,85
+Singapore,Singapore,2020-04-30,-67,-67,-69,43,85
+Singapore,Singapore,2020-05-01,-68,-74,-83,55,85
+Singapore,Singapore,2020-05-02,-67,-67,-54,33,85
+Singapore,Singapore,2020-05-03,-69,-69,-49,28,85
+Singapore,Singapore,2020-05-04,-66,-68,-67,42,85
+Singapore,Singapore,2020-05-05,-65,-67,-67,42,85
+Singapore,Singapore,2020-05-06,-64,-66,-67,43,85
+Singapore,Singapore,2020-05-07,-66,-72,-83,48,85
+Singapore,Singapore,2020-05-08,-67,-66,-66,48,85
+Singapore,Singapore,2020-05-09,-65,-64,-51,32,85
+Singapore,Singapore,2020-05-10,-65,-67,-46,27,85
+Singapore,Singapore,2020-05-11,-66,-66,-66,42,85
+Singapore,Singapore,2020-05-12,-61,-64,-65,41,81
+Singapore,Singapore,2020-05-13,-63,-64,-65,43,81
+Singapore,Singapore,2020-05-14,-64,-64,-66,41,81
+Singapore,Singapore,2020-05-15,-63,-64,-64,45,81
+Singapore,Singapore,2020-05-16,-62,-62,-48,31,81
+Singapore,Singapore,2020-05-17,-65,-67,-43,27,81
+Singapore,Singapore,2020-05-18,-62,-64,-64,41,81
+Singapore,Singapore,2020-05-19,-62,-63,-63,41,81
+Singapore,Singapore,2020-05-20,-62,-63,-63,42,81
+Singapore,Singapore,2020-05-21,-63,-62,-64,41,81
+Singapore,Singapore,2020-05-22,-63,-64,-61,46,81
+Singapore,Singapore,2020-05-23,-61,-61,-47,31,81
+Singapore,Singapore,2020-05-24,-66,-67,-46,27,81
+Singapore,Singapore,2020-05-25,-62,-72,-82,48,81
+Singapore,Singapore,2020-05-26,-61,-63,-61,40,81
+Singapore,Singapore,2020-05-27,-61,-62,-61,41,81
+Singapore,Singapore,2020-05-28,-63,-61,-61,41,81
+Singapore,Singapore,2020-05-29,-62,-62,-58,45,81
+Singapore,Singapore,2020-05-30,-60,-61,-42,31,81
+Singapore,Singapore,2020-05-31,-62,-64,-37,26,81
+Singapore,Singapore,2020-06-01,-61,-62,-60,40,81
+Singapore,Singapore,2020-06-02,-55,-51,-45,33,78
+Singapore,Singapore,2020-06-03,-57,-52,-47,35,78
+Singapore,Singapore,2020-06-04,-59,-52,-47,35,78
+Singapore,Singapore,2020-06-05,-56,-52,-44,38,78
+Singapore,Singapore,2020-06-06,-56,-56,-36,28,78
+Singapore,Singapore,2020-06-07,-60,-60,-34,24,78
+Singapore,Singapore,2020-06-08,-56,-52,-46,33,78
+Singapore,Singapore,2020-06-09,-56,-52,-46,33,78
+Singapore,Singapore,2020-06-10,-58,-53,-47,35,78
+Singapore,Singapore,2020-06-11,-58,-51,-47,34,78
+Singapore,Singapore,2020-06-12,-57,-52,-44,38,78
+Singapore,Singapore,2020-06-13,-59,-57,-35,28,78
+Singapore,Singapore,2020-06-14,-60,-60,-31,24,78
+Mongolia,Ulaanbaatar,2020-02-15,-9,-4,-1,4,49
+Mongolia,Ulaanbaatar,2020-02-16,-8,-4,0,1,49
+Mongolia,Ulaanbaatar,2020-02-17,-6,-6,-3,4,49
+Mongolia,Ulaanbaatar,2020-02-18,-5,-8,-4,4,49
+Mongolia,Ulaanbaatar,2020-02-19,-3,-3,-3,4,49
+Mongolia,Ulaanbaatar,2020-02-20,-5,-3,-5,4,49
+Mongolia,Ulaanbaatar,2020-02-21,-2,-1,-7,4,66
+Mongolia,Ulaanbaatar,2020-02-22,-1,3,-7,2,66
+Mongolia,Ulaanbaatar,2020-02-23,-28,-21,-13,6,66
+Mongolia,Ulaanbaatar,2020-02-24,-70,-39,-74,18,66
+Mongolia,Ulaanbaatar,2020-02-25,-73,-57,-78,26,66
+Mongolia,Ulaanbaatar,2020-02-26,-71,-59,-74,27,66
+Mongolia,Ulaanbaatar,2020-02-27,-46,-44,-29,14,66
+Mongolia,Ulaanbaatar,2020-02-28,-41,-43,-25,15,66
+Mongolia,Ulaanbaatar,2020-02-29,-37,-38,-19,10,66
+Mongolia,Ulaanbaatar,2020-03-01,-38,-42,-14,8,66
+Mongolia,Ulaanbaatar,2020-03-02,-29,-32,-12,9,66
+Mongolia,Ulaanbaatar,2020-03-03,-22,-20,-12,4,57
+Mongolia,Ulaanbaatar,2020-03-04,-18,-15,-6,6,57
+Mongolia,Ulaanbaatar,2020-03-05,-14,-15,-6,6,57
+Mongolia,Ulaanbaatar,2020-03-06,-12,-16,-5,6,57
+Mongolia,Ulaanbaatar,2020-03-07,-7,-11,-3,4,57
+Mongolia,Ulaanbaatar,2020-03-08,-5,-11,-9,2,57
+Mongolia,Ulaanbaatar,2020-03-09,-15,-17,-4,6,57
+Mongolia,Ulaanbaatar,2020-03-10,-33,-24,-15,12,57
+Mongolia,Ulaanbaatar,2020-03-11,-51,-44,-31,21,57
+Mongolia,Ulaanbaatar,2020-03-12,-54,-44,-35,20,57
+Mongolia,Ulaanbaatar,2020-03-13,-53,-42,-33,21,57
+Mongolia,Ulaanbaatar,2020-03-14,-52,-39,-32,13,57
+Mongolia,Ulaanbaatar,2020-03-15,-51,-38,-29,9,57
+Mongolia,Ulaanbaatar,2020-03-16,-15,-13,-12,8,57
+Mongolia,Ulaanbaatar,2020-03-17,-18,-16,-13,9,49
+Mongolia,Ulaanbaatar,2020-03-18,-15,-17,-13,9,49
+Mongolia,Ulaanbaatar,2020-03-19,-27,-24,-16,11,49
+Mongolia,Ulaanbaatar,2020-03-20,-24,-22,-13,11,49
+Mongolia,Ulaanbaatar,2020-03-21,-20,-16,-8,6,49
+Mongolia,Ulaanbaatar,2020-03-22,-19,-16,-8,2,49
+Mongolia,Ulaanbaatar,2020-03-23,-17,-14,-10,6,60
+Mongolia,Ulaanbaatar,2020-03-24,-20,-17,-11,7,63
+Mongolia,Ulaanbaatar,2020-03-25,-23,-22,-10,9,63
+Mongolia,Ulaanbaatar,2020-03-26,-22,-22,-12,9,63
+Mongolia,Ulaanbaatar,2020-03-27,-22,-20,-10,9,63
+Mongolia,Ulaanbaatar,2020-03-28,-20,-16,-6,5,63
+Mongolia,Ulaanbaatar,2020-03-29,-19,-16,-5,2,63
+Mongolia,Ulaanbaatar,2020-03-30,-20,-16,-7,7,63
+Mongolia,Ulaanbaatar,2020-03-31,-18,-16,-7,6,63
+Mongolia,Ulaanbaatar,2020-04-01,-12,-10,-7,5,63
+Mongolia,Ulaanbaatar,2020-04-02,-13,-12,-8,5,63
+Mongolia,Ulaanbaatar,2020-04-03,-14,-12,-7,6,63
+Mongolia,Ulaanbaatar,2020-04-04,-13,-6,-7,0,63
+Mongolia,Ulaanbaatar,2020-04-05,-15,-10,-5,-1,66
+Mongolia,Ulaanbaatar,2020-04-06,-15,-14,-6,5,66
+Mongolia,Ulaanbaatar,2020-04-07,-14,-12,-7,5,66
+Mongolia,Ulaanbaatar,2020-04-08,-11,-8,-5,5,66
+Mongolia,Ulaanbaatar,2020-04-09,-14,-14,-7,5,66
+Mongolia,Ulaanbaatar,2020-04-10,-13,-12,-6,5,66
+Mongolia,Ulaanbaatar,2020-04-11,-10,-5,-4,1,66
+Mongolia,Ulaanbaatar,2020-04-12,-15,-7,-1,0,66
+Mongolia,Ulaanbaatar,2020-04-13,-13,-9,-4,4,66
+Mongolia,Ulaanbaatar,2020-04-14,-19,-14,-5,5,66
+Mongolia,Ulaanbaatar,2020-04-15,-18,-13,-7,8,66
+Mongolia,Ulaanbaatar,2020-04-16,-12,-9,-5,5,66
+Mongolia,Ulaanbaatar,2020-04-17,-12,-8,-5,5,66
+Mongolia,Ulaanbaatar,2020-04-18,-12,-5,1,2,66
+Mongolia,Ulaanbaatar,2020-04-19,-19,-16,1,3,66
+Mongolia,Ulaanbaatar,2020-04-20,-8,-7,-2,4,66
+Mongolia,Ulaanbaatar,2020-04-21,-9,-9,-4,5,66
+Mongolia,Ulaanbaatar,2020-04-22,-11,-14,-3,6,66
+Mongolia,Ulaanbaatar,2020-04-23,-10,-14,-4,5,66
+Mongolia,Ulaanbaatar,2020-04-24,-11,-14,-2,6,66
+Mongolia,Ulaanbaatar,2020-04-25,-7,2,6,-1,66
+Mongolia,Ulaanbaatar,2020-04-26,-6,0,6,-4,66
+Mongolia,Ulaanbaatar,2020-04-27,-5,-1,-1,2,66
+Mongolia,Ulaanbaatar,2020-04-28,-5,-3,-2,1,74
+Mongolia,Ulaanbaatar,2020-04-29,-5,-2,0,1,74
+Mongolia,Ulaanbaatar,2020-04-30,-2,-1,-1,0,74
+Mongolia,Ulaanbaatar,2020-05-01,-2,3,-1,0,74
+Mongolia,Ulaanbaatar,2020-05-02,-1,3,6,-1,74
+Mongolia,Ulaanbaatar,2020-05-03,1,12,8,-5,74
+Mongolia,Ulaanbaatar,2020-05-04,1,3,1,0,74
+Mongolia,Ulaanbaatar,2020-05-05,3,6,2,0,91
+Mongolia,Ulaanbaatar,2020-05-06,2,7,1,1,91
+Mongolia,Ulaanbaatar,2020-05-07,-5,4,-10,4,91
+Mongolia,Ulaanbaatar,2020-05-08,2,9,1,1,74
+Mongolia,Ulaanbaatar,2020-05-09,-2,3,5,1,71
+Mongolia,Ulaanbaatar,2020-05-10,1,9,10,-2,71
+Mongolia,Ulaanbaatar,2020-05-11,3,8,5,1,71
+Mongolia,Ulaanbaatar,2020-05-12,7,12,5,-1,71
+Mongolia,Ulaanbaatar,2020-05-13,5,12,4,0,71
+Mongolia,Ulaanbaatar,2020-05-14,2,7,4,-2,71
+Mongolia,Ulaanbaatar,2020-05-15,-8,-3,2,4,71
+Mongolia,Ulaanbaatar,2020-05-16,-4,1,7,4,71
+Mongolia,Ulaanbaatar,2020-05-17,8,12,15,-1,71
+Mongolia,Ulaanbaatar,2020-05-18,8,16,5,-1,71
+Mongolia,Ulaanbaatar,2020-05-19,7,15,5,-2,71
+Mongolia,Ulaanbaatar,2020-05-20,7,14,4,0,71
+Mongolia,Ulaanbaatar,2020-05-21,7,12,3,0,71
+Mongolia,Ulaanbaatar,2020-05-22,3,10,4,0,71
+Mongolia,Ulaanbaatar,2020-05-23,7,18,11,-4,71
+Mongolia,Ulaanbaatar,2020-05-24,7,13,12,-7,71
+Mongolia,Ulaanbaatar,2020-05-25,7,16,0,-4,71
+Mongolia,Ulaanbaatar,2020-05-26,5,9,6,-2,71
+Mongolia,Ulaanbaatar,2020-05-27,9,12,6,-3,71
+Mongolia,Ulaanbaatar,2020-05-28,4,9,5,-2,71
+Mongolia,Ulaanbaatar,2020-05-29,5,12,3,1,71
+Mongolia,Ulaanbaatar,2020-05-30,14,20,17,-4,71
+Mongolia,Ulaanbaatar,2020-05-31,22,28,20,-10,71
+Mongolia,Ulaanbaatar,2020-06-01,-15,-2,-60,3,71
+Mongolia,Ulaanbaatar,2020-06-02,4,12,5,-4,71
+Mongolia,Ulaanbaatar,2020-06-03,8,16,6,-3,71
+Mongolia,Ulaanbaatar,2020-06-04,11,18,4,-5,71
+Mongolia,Ulaanbaatar,2020-06-05,-14,4,-41,3,71
+Mongolia,Ulaanbaatar,2020-06-06,0,13,6,-8,71
+Mongolia,Ulaanbaatar,2020-06-07,6,16,17,-10,71
+Mongolia,Ulaanbaatar,2020-06-08,5,17,6,-4,71
+Mongolia,Ulaanbaatar,2020-06-09,9,19,6,-4,71
+Mongolia,Ulaanbaatar,2020-06-10,12,21,7,-5,71
+Mongolia,Ulaanbaatar,2020-06-11,9,17,5,-5,71
+Mongolia,Ulaanbaatar,2020-06-12,4,13,3,-3,71
+Mongolia,Ulaanbaatar,2020-06-13,7,19,15,-9,71
+Mongolia,Ulaanbaatar,2020-06-14,7,18,20,-12,71
+France,Paris,2020-02-15,-12,4,-8,-1,14
+France,Paris,2020-02-16,-6,4,-1,-2,14
+France,Paris,2020-02-17,-2,-11,-20,4,14
+France,Paris,2020-02-18,-1,-8,-18,3,14
+France,Paris,2020-02-19,-7,-10,-15,2,14
+France,Paris,2020-02-20,-3,-8,-19,4,14
+France,Paris,2020-02-21,-4,-6,-18,4,14
+France,Paris,2020-02-22,-8,6,-8,0,14
+France,Paris,2020-02-23,-2,7,-2,0,14
+France,Paris,2020-02-24,-1,0,2,1,14
+France,Paris,2020-02-25,-3,1,2,0,17
+France,Paris,2020-02-26,-4,-3,2,1,17
+France,Paris,2020-02-27,-2,0,1,1,17
+France,Paris,2020-02-28,-2,3,3,1,17
+France,Paris,2020-02-29,-4,5,1,1,31
+France,Paris,2020-03-01,-11,-2,-2,1,31
+France,Paris,2020-03-02,-6,-4,2,2,40
+France,Paris,2020-03-03,-4,-3,2,0,40
+France,Paris,2020-03-04,-8,-7,2,1,40
+France,Paris,2020-03-05,-8,-4,1,2,40
+France,Paris,2020-03-06,-6,-2,3,1,40
+France,Paris,2020-03-07,-8,1,0,1,40
+France,Paris,2020-03-08,-11,-6,-3,1,40
+France,Paris,2020-03-09,-7,-8,0,2,40
+France,Paris,2020-03-10,-10,-8,-1,2,40
+France,Paris,2020-03-11,-9,-9,-1,1,40
+France,Paris,2020-03-12,-9,-9,-2,2,40
+France,Paris,2020-03-13,-14,-12,-3,4,43
+France,Paris,2020-03-14,-28,-20,-8,6,48
+France,Paris,2020-03-15,-53,-24,-17,5,48
+France,Paris,2020-03-16,-47,-42,-47,18,56
+France,Paris,2020-03-17,-73,-66,-68,30,91
+France,Paris,2020-03-18,-84,-78,-76,35,91
+France,Paris,2020-03-19,-83,-79,-78,38,91
+France,Paris,2020-03-20,-84,-81,-78,41,91
+France,Paris,2020-03-21,-88,-82,-64,26,91
+France,Paris,2020-03-22,-89,-83,-59,19,91
+France,Paris,2020-03-23,-83,-83,-80,38,91
+France,Paris,2020-03-24,-84,-83,-81,40,91
+France,Paris,2020-03-25,-85,-84,-81,38,91
+France,Paris,2020-03-26,-84,-84,-81,40,91
+France,Paris,2020-03-27,-85,-84,-80,42,91
+France,Paris,2020-03-28,-88,-83,-66,26,91
+France,Paris,2020-03-29,-91,-87,-63,20,91
+France,Paris,2020-03-30,-86,-84,-81,39,91
+France,Paris,2020-03-31,-92,-84,-82,40,91
+France,Paris,2020-04-01,-92,-84,-80,37,91
+France,Paris,2020-04-02,-92,-84,-81,40,91
+France,Paris,2020-04-03,-88,-83,-80,42,91
+France,Paris,2020-04-04,-89,-80,-65,26,91
+France,Paris,2020-04-05,-90,-82,-59,19,91
+France,Paris,2020-04-06,-86,-83,-81,38,91
+France,Paris,2020-04-07,-85,-82,-81,39,91
+France,Paris,2020-04-08,-86,-82,-80,36,91
+France,Paris,2020-04-09,-85,-82,-81,39,91
+France,Paris,2020-04-10,-85,-82,-79,41,91
+France,Paris,2020-04-11,-87,-79,-63,25,91
+France,Paris,2020-04-12,-89,-82,-58,19,91
+France,Paris,2020-04-13,-91,-88,-91,42,91
+France,Paris,2020-04-14,-82,-80,-79,37,91
+France,Paris,2020-04-15,-84,-80,-78,36,91
+France,Paris,2020-04-16,-83,-80,-79,38,91
+France,Paris,2020-04-17,-84,-80,-78,40,91
+France,Paris,2020-04-18,-87,-78,-60,25,91
+France,Paris,2020-04-19,-89,-80,-54,18,91
+France,Paris,2020-04-20,-82,-80,-78,36,91
+France,Paris,2020-04-21,-82,-79,-77,37,91
+France,Paris,2020-04-22,-83,-79,-75,34,91
+France,Paris,2020-04-23,-82,-78,-76,37,91
+France,Paris,2020-04-24,-83,-79,-75,39,91
+France,Paris,2020-04-25,-85,-76,-57,24,91
+France,Paris,2020-04-26,-87,-77,-51,17,91
+France,Paris,2020-04-27,-81,-79,-75,35,91
+France,Paris,2020-04-28,-81,-78,-75,34,91
+France,Paris,2020-04-29,-82,-79,-74,34,91
+France,Paris,2020-04-30,-77,-78,-74,35,91
+France,Paris,2020-05-01,-91,-86,-90,45,91
+France,Paris,2020-05-02,-80,-73,-54,23,91
+France,Paris,2020-05-03,-87,-77,-49,18,91
+France,Paris,2020-05-04,-75,-75,-72,33,91
+France,Paris,2020-05-05,-77,-75,-72,34,91
+France,Paris,2020-05-06,-76,-72,-70,31,91
+France,Paris,2020-05-07,-74,-72,-71,32,91
+France,Paris,2020-05-08,-83,-81,-86,41,91
+France,Paris,2020-05-09,-80,-71,-50,22,91
+France,Paris,2020-05-10,-84,-72,-43,16,91
+France,Paris,2020-05-11,-58,-61,-61,25,77
+France,Paris,2020-05-12,-57,-57,-60,25,77
+France,Paris,2020-05-13,-59,-57,-59,23,77
+France,Paris,2020-05-14,-57,-57,-60,24,77
+France,Paris,2020-05-15,-58,-55,-58,25,77
+France,Paris,2020-05-16,-59,-44,-33,11,77
+France,Paris,2020-05-17,-61,-48,-24,8,77
+France,Paris,2020-05-18,-51,-54,-57,23,77
+France,Paris,2020-05-19,-52,-53,-57,23,77
+France,Paris,2020-05-20,-49,-51,-56,19,77
+France,Paris,2020-05-21,-56,-63,-82,28,77
+France,Paris,2020-05-22,-51,-57,-65,26,77
+France,Paris,2020-05-23,-56,-46,-28,12,77
+France,Paris,2020-05-24,-59,-44,-17,5,77
+France,Paris,2020-05-25,-47,-52,-56,21,77
+France,Paris,2020-05-26,-48,-50,-53,21,75
+France,Paris,2020-05-27,-49,-49,-51,19,75
+France,Paris,2020-05-28,-46,-49,-52,21,75
+France,Paris,2020-05-29,-48,-47,-51,21,75
+France,Paris,2020-05-30,-48,-34,-12,7,75
+France,Paris,2020-05-31,-48,-36,-1,3,75
+France,Paris,2020-06-01,-45,-57,-75,24,75
+France,Paris,2020-06-02,-38,-40,-47,16,66
+France,Paris,2020-06-03,-41,-42,-46,16,66
+France,Paris,2020-06-04,-44,-45,-48,19,66
+France,Paris,2020-06-05,-43,-43,-46,18,66
+France,Paris,2020-06-06,-38,-29,-11,6,66
+France,Paris,2020-06-07,-40,-33,4,2,66
+France,Paris,2020-06-08,-37,-43,-46,16,66
+France,Paris,2020-06-09,-37,-40,-45,16,66
+France,Paris,2020-06-10,-38,-40,-44,14,66
+France,Paris,2020-06-11,-35,-40,-45,16,66
+France,Paris,2020-06-12,-41,-40,-44,16,66
+France,Paris,2020-06-13,-38,-25,-5,4,66
+France,Paris,2020-06-14,-39,-30,6,2,66
+Ireland,Dublin,2020-02-15,-10,-9,-4,2,4
+Ireland,Dublin,2020-02-16,-4,-5,-1,2,4
+Ireland,Dublin,2020-02-17,5,1,-7,2,4
+Ireland,Dublin,2020-02-18,4,0,-5,1,4
+Ireland,Dublin,2020-02-19,2,-1,-7,2,4
+Ireland,Dublin,2020-02-20,6,-1,-8,2,4
+Ireland,Dublin,2020-02-21,3,1,-9,2,4
+Ireland,Dublin,2020-02-22,-1,1,-2,0,4
+Ireland,Dublin,2020-02-23,-5,1,0,0,4
+Ireland,Dublin,2020-02-24,-2,1,1,0,4
+Ireland,Dublin,2020-02-25,-1,0,3,0,13
+Ireland,Dublin,2020-02-26,0,1,2,0,13
+Ireland,Dublin,2020-02-27,4,3,2,0,13
+Ireland,Dublin,2020-02-28,5,5,1,0,13
+Ireland,Dublin,2020-02-29,-7,-6,-2,2,17
+Ireland,Dublin,2020-03-01,0,1,1,0,17
+Ireland,Dublin,2020-03-02,2,2,1,0,17
+Ireland,Dublin,2020-03-03,6,0,1,0,17
+Ireland,Dublin,2020-03-04,4,-1,0,1,17
+Ireland,Dublin,2020-03-05,4,-1,1,0,17
+Ireland,Dublin,2020-03-06,3,-1,0,0,17
+Ireland,Dublin,2020-03-07,-3,-3,0,1,17
+Ireland,Dublin,2020-03-08,-1,-4,-1,0,17
+Ireland,Dublin,2020-03-09,-4,-6,-1,2,17
+Ireland,Dublin,2020-03-10,1,-5,0,1,17
+Ireland,Dublin,2020-03-11,-5,-11,-4,3,17
+Ireland,Dublin,2020-03-12,-7,-17,-6,4,31
+Ireland,Dublin,2020-03-13,-22,-34,-30,14,38
+Ireland,Dublin,2020-03-14,-36,-36,-14,9,38
+Ireland,Dublin,2020-03-15,-40,-39,-18,9,46
+Ireland,Dublin,2020-03-16,-34,-50,-54,20,46
+Ireland,Dublin,2020-03-17,-59,-65,-83,30,46
+Ireland,Dublin,2020-03-18,-51,-57,-54,24,46
+Ireland,Dublin,2020-03-19,-53,-61,-56,26,46
+Ireland,Dublin,2020-03-20,-57,-64,-56,28,46
+Ireland,Dublin,2020-03-21,-62,-65,-44,18,46
+Ireland,Dublin,2020-03-22,-63,-63,-44,14,46
+Ireland,Dublin,2020-03-23,-56,-67,-60,26,46
+Ireland,Dublin,2020-03-24,-57,-69,-62,27,55
+Ireland,Dublin,2020-03-25,-66,-70,-64,29,55
+Ireland,Dublin,2020-03-26,-67,-72,-65,30,62
+Ireland,Dublin,2020-03-27,-68,-74,-65,31,74
+Ireland,Dublin,2020-03-28,-82,-80,-59,23,81
+Ireland,Dublin,2020-03-29,-85,-82,-58,21,81
+Ireland,Dublin,2020-03-30,-78,-81,-76,34,81
+Ireland,Dublin,2020-03-31,-77,-80,-77,34,81
+Ireland,Dublin,2020-04-01,-78,-81,-77,36,81
+Ireland,Dublin,2020-04-02,-78,-82,-77,38,81
+Ireland,Dublin,2020-04-03,-77,-82,-76,38,81
+Ireland,Dublin,2020-04-04,-80,-79,-62,23,81
+Ireland,Dublin,2020-04-05,-81,-81,-57,21,81
+Ireland,Dublin,2020-04-06,-73,-80,-76,34,85
+Ireland,Dublin,2020-04-07,-72,-77,-76,33,85
+Ireland,Dublin,2020-04-08,-74,-79,-76,34,85
+Ireland,Dublin,2020-04-09,-73,-80,-76,36,85
+Ireland,Dublin,2020-04-10,-75,-81,-81,38,85
+Ireland,Dublin,2020-04-11,-77,-76,-60,22,85
+Ireland,Dublin,2020-04-12,-91,-85,-61,22,85
+Ireland,Dublin,2020-04-13,-80,-85,-89,38,85
+Ireland,Dublin,2020-04-14,-74,-78,-75,33,85
+Ireland,Dublin,2020-04-15,-75,-78,-75,34,85
+Ireland,Dublin,2020-04-16,-87,-75,-74,36,85
+Ireland,Dublin,2020-04-17,-87,-75,-74,37,85
+Ireland,Dublin,2020-04-18,-89,-73,-57,23,85
+Ireland,Dublin,2020-04-19,-89,-73,-53,20,85
+Ireland,Dublin,2020-04-20,-87,-74,-74,32,85
+Ireland,Dublin,2020-04-21,-86,-73,-73,32,85
+Ireland,Dublin,2020-04-22,-86,-73,-74,33,85
+Ireland,Dublin,2020-04-23,-86,-74,-73,32,85
+Ireland,Dublin,2020-04-24,-86,-74,-73,35,85
+Ireland,Dublin,2020-04-25,-87,-67,-55,21,85
+Ireland,Dublin,2020-04-26,-89,-74,-52,20,85
+Ireland,Dublin,2020-04-27,-85,-72,-73,31,85
+Ireland,Dublin,2020-04-28,-85,-73,-73,28,85
+Ireland,Dublin,2020-04-29,-86,-76,-74,34,85
+Ireland,Dublin,2020-04-30,-77,-76,-73,32,85
+Ireland,Dublin,2020-05-01,-76,-75,-72,36,85
+Ireland,Dublin,2020-05-02,-78,-66,-52,21,85
+Ireland,Dublin,2020-05-03,-78,-67,-47,18,85
+Ireland,Dublin,2020-05-04,-76,-76,-86,35,85
+Ireland,Dublin,2020-05-05,-72,-69,-71,30,85
+Ireland,Dublin,2020-05-06,-73,-69,-71,32,85
+Ireland,Dublin,2020-05-07,-74,-73,-71,33,85
+Ireland,Dublin,2020-05-08,-73,-70,-69,33,85
+Ireland,Dublin,2020-05-09,-76,-61,-48,18,85
+Ireland,Dublin,2020-05-10,-80,-76,-47,19,85
+Ireland,Dublin,2020-05-11,-72,-71,-70,30,85
+Ireland,Dublin,2020-05-12,-71,-70,-69,30,85
+Ireland,Dublin,2020-05-13,-72,-69,-69,32,85
+Ireland,Dublin,2020-05-14,-73,-66,-69,30,85
+Ireland,Dublin,2020-05-15,-74,-69,-68,33,85
+Ireland,Dublin,2020-05-16,-76,-59,-47,18,85
+Ireland,Dublin,2020-05-17,-77,-62,-40,17,85
+Ireland,Dublin,2020-05-18,-66,-62,-66,28,82
+Ireland,Dublin,2020-05-19,-65,-56,-65,26,82
+Ireland,Dublin,2020-05-20,-64,-55,-65,27,82
+Ireland,Dublin,2020-05-21,-65,-62,-65,29,82
+Ireland,Dublin,2020-05-22,-67,-66,-63,31,82
+Ireland,Dublin,2020-05-23,-70,-59,-40,18,82
+Ireland,Dublin,2020-05-24,-68,-48,-32,13,82
+Ireland,Dublin,2020-05-25,-61,-57,-64,25,82
+Ireland,Dublin,2020-05-26,-61,-56,-61,25,82
+Ireland,Dublin,2020-05-27,-62,-54,-62,26,82
+Ireland,Dublin,2020-05-28,-62,-54,-61,26,82
+Ireland,Dublin,2020-05-29,-62,-55,-61,26,82
+Ireland,Dublin,2020-05-30,-67,-43,-27,12,82
+Ireland,Dublin,2020-05-31,-66,-45,-20,11,82
+Ireland,Dublin,2020-06-01,-61,-56,-81,27,82
+Ireland,Dublin,2020-06-02,-58,-50,-60,23,82
+Ireland,Dublin,2020-06-03,-63,-59,-61,27,82
+Ireland,Dublin,2020-06-04,-62,-60,-60,28,82
+Ireland,Dublin,2020-06-05,-61,-63,-59,28,76
+Ireland,Dublin,2020-06-06,-65,-63,-30,16,76
+Ireland,Dublin,2020-06-07,-63,-56,-22,13,76
+Ireland,Dublin,2020-06-08,-49,-53,-58,22,76
+Ireland,Dublin,2020-06-09,-51,-58,-58,23,76
+Ireland,Dublin,2020-06-10,-54,-60,-59,25,76
+Ireland,Dublin,2020-06-11,-56,-63,-59,27,76
+Ireland,Dublin,2020-06-12,-56,-60,-57,26,76
+Ireland,Dublin,2020-06-13,-56,-46,-22,11,76
+Ireland,Dublin,2020-06-14,-56,-45,-16,10,76
+Kuwait,Al Ahmadi,2020-02-15,2,8,5,1,6
+Kuwait,Al Ahmadi,2020-02-16,-2,9,8,0,6
+Kuwait,Al Ahmadi,2020-02-17,-2,5,7,0,6
+Kuwait,Al Ahmadi,2020-02-18,0,4,7,0,11
+Kuwait,Al Ahmadi,2020-02-19,0,8,7,0,11
+Kuwait,Al Ahmadi,2020-02-20,1,10,7,0,11
+Kuwait,Al Ahmadi,2020-02-21,3,8,4,1,14
+Kuwait,Al Ahmadi,2020-02-22,6,13,5,0,14
+Kuwait,Al Ahmadi,2020-02-23,5,14,5,-1,14
+Kuwait,Al Ahmadi,2020-02-24,8,12,5,-2,14
+Kuwait,Al Ahmadi,2020-02-25,3,4,-43,14,14
+Kuwait,Al Ahmadi,2020-02-26,-4,-9,-41,16,14
+Kuwait,Al Ahmadi,2020-02-27,-16,-12,-18,10,14
+Kuwait,Al Ahmadi,2020-02-28,-23,-12,1,6,14
+Kuwait,Al Ahmadi,2020-02-29,-12,0,3,3,14
+Kuwait,Al Ahmadi,2020-03-01,-9,3,1,3,28
+Kuwait,Al Ahmadi,2020-03-02,-8,4,1,3,28
+Kuwait,Al Ahmadi,2020-03-03,-5,6,0,4,28
+Kuwait,Al Ahmadi,2020-03-04,-5,6,1,3,28
+Kuwait,Al Ahmadi,2020-03-05,-8,6,0,4,28
+Kuwait,Al Ahmadi,2020-03-06,-11,-3,1,4,28
+Kuwait,Al Ahmadi,2020-03-07,-8,4,4,3,36
+Kuwait,Al Ahmadi,2020-03-08,-8,6,2,3,36
+Kuwait,Al Ahmadi,2020-03-09,-8,3,1,4,36
+Kuwait,Al Ahmadi,2020-03-10,-8,5,-1,5,42
+Kuwait,Al Ahmadi,2020-03-11,-3,7,0,3,60
+Kuwait,Al Ahmadi,2020-03-12,-24,-6,-16,12,71
+Kuwait,Al Ahmadi,2020-03-13,-38,-21,-7,10,74
+Kuwait,Al Ahmadi,2020-03-14,-33,-18,-10,10,74
+Kuwait,Al Ahmadi,2020-03-15,-35,-17,-22,13,74
+Kuwait,Al Ahmadi,2020-03-16,-39,-21,-25,14,74
+Kuwait,Al Ahmadi,2020-03-17,-40,-27,-26,15,74
+Kuwait,Al Ahmadi,2020-03-18,-43,-31,-28,17,74
+Kuwait,Al Ahmadi,2020-03-19,-43,-26,-27,17,74
+Kuwait,Al Ahmadi,2020-03-20,-51,-39,-21,15,74
+Kuwait,Al Ahmadi,2020-03-21,-40,-24,-19,12,74
+Kuwait,Al Ahmadi,2020-03-22,-59,-50,-56,29,81
+Kuwait,Al Ahmadi,2020-03-23,-54,-42,-33,21,81
+Kuwait,Al Ahmadi,2020-03-24,-50,-41,-33,21,81
+Kuwait,Al Ahmadi,2020-03-25,-50,-39,-33,21,81
+Kuwait,Al Ahmadi,2020-03-26,-53,-40,-33,22,81
+Kuwait,Al Ahmadi,2020-03-27,-59,-48,-29,18,81
+Kuwait,Al Ahmadi,2020-03-28,-53,-37,-26,17,81
+Kuwait,Al Ahmadi,2020-03-29,-52,-37,-34,20,81
+Kuwait,Al Ahmadi,2020-03-30,-56,-40,-34,21,81
+Kuwait,Al Ahmadi,2020-03-31,-55,-43,-36,22,81
+Kuwait,Al Ahmadi,2020-04-01,-56,-45,-37,22,81
+Kuwait,Al Ahmadi,2020-04-02,-60,-44,-38,25,81
+Kuwait,Al Ahmadi,2020-04-03,-66,-55,-32,20,81
+Kuwait,Al Ahmadi,2020-04-04,-58,-39,-30,19,81
+Kuwait,Al Ahmadi,2020-04-05,-57,-38,-39,23,81
+Kuwait,Al Ahmadi,2020-04-06,-56,-35,-40,22,94
+Kuwait,Al Ahmadi,2020-04-07,-62,-41,-53,30,94
+Kuwait,Al Ahmadi,2020-04-08,-63,-42,-52,30,94
+Kuwait,Al Ahmadi,2020-04-09,-65,-46,-53,33,94
+Kuwait,Al Ahmadi,2020-04-10,-68,-53,-42,22,94
+Kuwait,Al Ahmadi,2020-04-11,-59,-37,-46,25,94
+Kuwait,Al Ahmadi,2020-04-12,-59,-36,-52,29,94
+Kuwait,Al Ahmadi,2020-04-13,-62,-43,-52,30,94
+Kuwait,Al Ahmadi,2020-04-14,-61,-39,-52,31,94
+Kuwait,Al Ahmadi,2020-04-15,-62,-41,-52,31,94
+Kuwait,Al Ahmadi,2020-04-16,-65,-43,-52,34,94
+Kuwait,Al Ahmadi,2020-04-17,-70,-53,-43,23,94
+Kuwait,Al Ahmadi,2020-04-18,-63,-45,-48,26,94
+Kuwait,Al Ahmadi,2020-04-19,-62,-43,-54,30,94
+Kuwait,Al Ahmadi,2020-04-20,-62,-43,-53,30,94
+Kuwait,Al Ahmadi,2020-04-21,-60,-38,-52,29,89
+Kuwait,Al Ahmadi,2020-04-22,-58,-40,-51,29,89
+Kuwait,Al Ahmadi,2020-04-23,-61,-42,-53,32,89
+Kuwait,Al Ahmadi,2020-04-24,-72,-56,-48,25,89
+Kuwait,Al Ahmadi,2020-04-25,-66,-45,-51,29,89
+Kuwait,Al Ahmadi,2020-04-26,-65,-44,-56,33,89
+Kuwait,Al Ahmadi,2020-04-27,-67,-46,-57,33,89
+Kuwait,Al Ahmadi,2020-04-28,-65,-42,-57,33,89
+Kuwait,Al Ahmadi,2020-04-29,-65,-45,-57,33,89
+Kuwait,Al Ahmadi,2020-04-30,-68,-44,-57,36,89
+Kuwait,Al Ahmadi,2020-05-01,-71,-50,-47,24,89
+Kuwait,Al Ahmadi,2020-05-02,-65,-39,-50,28,89
+Kuwait,Al Ahmadi,2020-05-03,-64,-38,-55,31,89
+Kuwait,Al Ahmadi,2020-05-04,-65,-39,-55,32,89
+Kuwait,Al Ahmadi,2020-05-05,-64,-41,-56,33,89
+Kuwait,Al Ahmadi,2020-05-06,-65,-45,-56,34,89
+Kuwait,Al Ahmadi,2020-05-07,-65,-45,-56,36,89
+Kuwait,Al Ahmadi,2020-05-08,-65,-50,-45,24,89
+Kuwait,Al Ahmadi,2020-05-09,-51,-33,-48,26,89
+Kuwait,Al Ahmadi,2020-05-10,-55,-40,-57,29,100
+Kuwait,Al Ahmadi,2020-05-11,-85,-71,-73,41,100
+Kuwait,Al Ahmadi,2020-05-12,-84,-72,-72,41,100
+Kuwait,Al Ahmadi,2020-05-13,-83,-70,-71,41,100
+Kuwait,Al Ahmadi,2020-05-14,-84,-71,-72,44,100
+Kuwait,Al Ahmadi,2020-05-15,-85,-76,-60,31,100
+Kuwait,Al Ahmadi,2020-05-16,-82,-67,-65,35,100
+Kuwait,Al Ahmadi,2020-05-17,-81,-69,-70,39,100
+Kuwait,Al Ahmadi,2020-05-18,-81,-69,-69,39,100
+Kuwait,Al Ahmadi,2020-05-19,-80,-69,-69,40,100
+Kuwait,Al Ahmadi,2020-05-20,-80,-67,-69,40,100
+Kuwait,Al Ahmadi,2020-05-21,-82,-68,-69,43,100
+Kuwait,Al Ahmadi,2020-05-22,-83,-74,-58,30,100
+Kuwait,Al Ahmadi,2020-05-23,-80,-68,-64,34,100
+Kuwait,Al Ahmadi,2020-05-24,-82,-73,-79,42,100
+Kuwait,Al Ahmadi,2020-05-25,-81,-69,-76,42,100
+Kuwait,Al Ahmadi,2020-05-26,-81,-70,-75,42,100
+Kuwait,Al Ahmadi,2020-05-27,-80,-72,-67,38,100
+Kuwait,Al Ahmadi,2020-05-28,-82,-71,-67,42,100
+Kuwait,Al Ahmadi,2020-05-29,-84,-73,-56,29,100
+Kuwait,Al Ahmadi,2020-05-30,-81,-65,-62,34,100
+Kuwait,Al Ahmadi,2020-05-31,-59,-43,-52,28,84
+Kuwait,Al Ahmadi,2020-06-01,-59,-40,-51,29,84
+Kuwait,Al Ahmadi,2020-06-02,-56,-34,-52,29,84
+Kuwait,Al Ahmadi,2020-06-03,-55,-39,-51,29,84
+Kuwait,Al Ahmadi,2020-06-04,-60,-42,-52,32,84
+Kuwait,Al Ahmadi,2020-06-05,-65,-53,-40,23,84
+Kuwait,Al Ahmadi,2020-06-06,-59,-36,-45,25,84
+Kuwait,Al Ahmadi,2020-06-07,-57,-34,-49,28,84
+Kuwait,Al Ahmadi,2020-06-08,-59,-37,-49,28,84
+Kuwait,Al Ahmadi,2020-06-09,-56,-36,-48,28,85
+Kuwait,Al Ahmadi,2020-06-10,-56,-37,-48,28,85
+Kuwait,Al Ahmadi,2020-06-11,-59,-39,-49,31,85
+Kuwait,Al Ahmadi,2020-06-12,-64,-49,-37,22,85
+Kuwait,Al Ahmadi,2020-06-13,-57,-33,-41,24,85
+Kuwait,Al Ahmadi,2020-06-14,-56,-36,-47,26,85
+Bolivia,La Paz,2020-02-15,7,1,12,0,0
+Bolivia,La Paz,2020-02-16,8,-3,4,2,0
+Bolivia,La Paz,2020-02-17,-2,1,24,-3,0
+Bolivia,La Paz,2020-02-18,-2,-2,24,-3,0
+Bolivia,La Paz,2020-02-19,-3,4,29,-4,0
+Bolivia,La Paz,2020-02-20,1,4,24,-4,0
+Bolivia,La Paz,2020-02-21,-2,10,20,-4,0
+Bolivia,La Paz,2020-02-22,-13,0,-3,0,0
+Bolivia,La Paz,2020-02-23,-9,-8,-3,-1,0
+Bolivia,La Paz,2020-02-24,-31,-19,-67,11,0
+Bolivia,La Paz,2020-02-25,-52,-30,-75,15,0
+Bolivia,La Paz,2020-02-26,-21,-10,14,0,0
+Bolivia,La Paz,2020-02-27,-12,-9,20,-1,0
+Bolivia,La Paz,2020-02-28,-6,-10,22,-2,0
+Bolivia,La Paz,2020-02-29,-4,-6,14,1,0
+Bolivia,La Paz,2020-03-01,-8,-14,1,4,0
+Bolivia,La Paz,2020-03-02,-8,-12,25,-3,0
+Bolivia,La Paz,2020-03-03,-6,-10,25,-3,0
+Bolivia,La Paz,2020-03-04,-4,-5,29,-3,0
+Bolivia,La Paz,2020-03-05,-4,-2,27,-3,0
+Bolivia,La Paz,2020-03-06,0,-6,24,-3,0
+Bolivia,La Paz,2020-03-07,4,1,14,-1,0
+Bolivia,La Paz,2020-03-08,0,-1,3,3,0
+Bolivia,La Paz,2020-03-09,-2,-7,27,-3,0
+Bolivia,La Paz,2020-03-10,-5,-11,25,-3,6
+Bolivia,La Paz,2020-03-11,-5,-4,29,-3,6
+Bolivia,La Paz,2020-03-12,-4,-4,24,-2,31
+Bolivia,La Paz,2020-03-13,-12,-9,2,5,42
+Bolivia,La Paz,2020-03-14,-17,-8,0,5,44
+Bolivia,La Paz,2020-03-15,-29,-23,-6,7,44
+Bolivia,La Paz,2020-03-16,-33,-20,-10,11,53
+Bolivia,La Paz,2020-03-17,-36,-27,-14,11,69
+Bolivia,La Paz,2020-03-18,-51,-36,-18,18,75
+Bolivia,La Paz,2020-03-19,-49,-38,-21,18,72
+Bolivia,La Paz,2020-03-20,-57,-45,-23,22,72
+Bolivia,La Paz,2020-03-21,-44,-34,-17,12,83
+Bolivia,La Paz,2020-03-22,-89,-82,-59,28,94
+Bolivia,La Paz,2020-03-23,-89,-80,-80,39,94
+Bolivia,La Paz,2020-03-24,-89,-80,-81,38,94
+Bolivia,La Paz,2020-03-25,-89,-80,-80,38,94
+Bolivia,La Paz,2020-03-26,-91,-84,-83,41,94
+Bolivia,La Paz,2020-03-27,-91,-83,-83,44,94
+Bolivia,La Paz,2020-03-28,-96,-91,-84,41,94
+Bolivia,La Paz,2020-03-29,-95,-92,-72,33,94
+Bolivia,La Paz,2020-03-30,-88,-80,-82,39,94
+Bolivia,La Paz,2020-03-31,-89,-80,-82,38,96
+Bolivia,La Paz,2020-04-01,-88,-79,-81,38,96
+Bolivia,La Paz,2020-04-02,-88,-80,-81,39,96
+Bolivia,La Paz,2020-04-03,-87,-78,-79,40,96
+Bolivia,La Paz,2020-04-04,-95,-91,-83,41,96
+Bolivia,La Paz,2020-04-05,-95,-91,-72,33,96
+Bolivia,La Paz,2020-04-06,-85,-76,-78,36,96
+Bolivia,La Paz,2020-04-07,-87,-77,-79,36,96
+Bolivia,La Paz,2020-04-08,-86,-76,-77,36,96
+Bolivia,La Paz,2020-04-09,-85,-76,-78,36,96
+Bolivia,La Paz,2020-04-10,-95,-90,-89,48,96
+Bolivia,La Paz,2020-04-11,-86,-78,-70,33,96
+Bolivia,La Paz,2020-04-12,-94,-91,-70,33,96
+Bolivia,La Paz,2020-04-13,-85,-75,-76,36,96
+Bolivia,La Paz,2020-04-14,-86,-76,-78,36,96
+Bolivia,La Paz,2020-04-15,-86,-75,-76,37,96
+Bolivia,La Paz,2020-04-16,-86,-78,-77,38,96
+Bolivia,La Paz,2020-04-17,-87,-78,-77,41,96
+Bolivia,La Paz,2020-04-18,-95,-91,-82,40,96
+Bolivia,La Paz,2020-04-19,-95,-91,-70,33,96
+Bolivia,La Paz,2020-04-20,-84,-75,-75,36,96
+Bolivia,La Paz,2020-04-21,-86,-76,-77,36,96
+Bolivia,La Paz,2020-04-22,-86,-76,-75,37,96
+Bolivia,La Paz,2020-04-23,-86,-78,-76,37,96
+Bolivia,La Paz,2020-04-24,-86,-76,-75,39,96
+Bolivia,La Paz,2020-04-25,-95,-91,-81,40,96
+Bolivia,La Paz,2020-04-26,-95,-92,-69,32,96
+Bolivia,La Paz,2020-04-27,-83,-74,-73,35,96
+Bolivia,La Paz,2020-04-28,-84,-75,-74,33,96
+Bolivia,La Paz,2020-04-29,-85,-74,-73,35,96
+Bolivia,La Paz,2020-04-30,-83,-74,-72,35,96
+Bolivia,La Paz,2020-05-01,-95,-88,-86,46,96
+Bolivia,La Paz,2020-05-02,-84,-75,-64,31,96
+Bolivia,La Paz,2020-05-03,-94,-91,-66,31,96
+Bolivia,La Paz,2020-05-04,-82,-72,-70,33,96
+Bolivia,La Paz,2020-05-05,-82,-73,-71,34,96
+Bolivia,La Paz,2020-05-06,-82,-70,-69,35,96
+Bolivia,La Paz,2020-05-07,-82,-73,-70,35,96
+Bolivia,La Paz,2020-05-08,-81,-69,-68,36,96
+Bolivia,La Paz,2020-05-09,-93,-86,-76,38,96
+Bolivia,La Paz,2020-05-10,-92,-88,-61,31,96
+Bolivia,La Paz,2020-05-11,-77,-66,-64,32,96
+Bolivia,La Paz,2020-05-12,-78,-66,-65,32,96
+Bolivia,La Paz,2020-05-13,-78,-67,-63,33,96
+Bolivia,La Paz,2020-05-14,-77,-67,-63,32,96
+Bolivia,La Paz,2020-05-15,-77,-64,-61,33,96
+Bolivia,La Paz,2020-05-16,-92,-84,-73,37,96
+Bolivia,La Paz,2020-05-17,-91,-87,-57,30,96
+Bolivia,La Paz,2020-05-18,-73,-63,-58,30,96
+Bolivia,La Paz,2020-05-19,-74,-64,-60,30,96
+Bolivia,La Paz,2020-05-20,-75,-62,-57,31,96
+Bolivia,La Paz,2020-05-21,-73,-64,-59,32,96
+Bolivia,La Paz,2020-05-22,-74,-62,-56,32,96
+Bolivia,La Paz,2020-05-23,-91,-83,-69,36,96
+Bolivia,La Paz,2020-05-24,-90,-86,-52,29,96
+Bolivia,La Paz,2020-05-25,-66,-53,-52,28,94
+Bolivia,La Paz,2020-05-26,-66,-53,-52,26,94
+Bolivia,La Paz,2020-05-27,-66,-50,-50,25,94
+Bolivia,La Paz,2020-05-28,-69,-57,-53,28,94
+Bolivia,La Paz,2020-05-29,-69,-56,-51,30,94
+Bolivia,La Paz,2020-05-30,-90,-82,-66,35,94
+Bolivia,La Paz,2020-05-31,-89,-85,-49,28,94
+Bolivia,La Paz,2020-06-01,-44,-42,-32,19,85
+Bolivia,La Paz,2020-06-02,-49,-43,-35,20,85
+Bolivia,La Paz,2020-06-03,-52,-43,-33,21,85
+Bolivia,La Paz,2020-06-04,-49,-41,-36,21,85
+Bolivia,La Paz,2020-06-05,-49,-42,-33,20,85
+Bolivia,La Paz,2020-06-06,-89,-81,-65,34,85
+Bolivia,La Paz,2020-06-07,-87,-84,-47,28,85
+Bolivia,La Paz,2020-06-08,-43,-40,-28,18,85
+Bolivia,La Paz,2020-06-09,-47,-41,-32,19,85
+Bolivia,La Paz,2020-06-10,-46,-38,-30,18,85
+Bolivia,La Paz,2020-06-11,-71,-60,-67,32,85
+Bolivia,La Paz,2020-06-12,-45,-38,-30,18,85
+Bolivia,La Paz,2020-06-13,-86,-77,-59,32,85
+Bolivia,La Paz,2020-06-14,-87,-83,-44,27,85
+Turkey,Istanbul,2020-02-15,0,-3,6,1,19
+Turkey,Istanbul,2020-02-16,7,6,5,0,19
+Turkey,Istanbul,2020-02-17,4,6,9,-2,19
+Turkey,Istanbul,2020-02-18,3,7,9,-2,19
+Turkey,Istanbul,2020-02-19,-1,2,9,-1,19
+Turkey,Istanbul,2020-02-20,-5,3,10,-1,19
+Turkey,Istanbul,2020-02-21,-5,-1,7,0,19
+Turkey,Istanbul,2020-02-22,1,-2,7,1,19
+Turkey,Istanbul,2020-02-23,8,10,6,-1,19
+Turkey,Istanbul,2020-02-24,0,3,9,-1,19
+Turkey,Istanbul,2020-02-25,2,8,10,-2,19
+Turkey,Istanbul,2020-02-26,1,6,10,-2,19
+Turkey,Istanbul,2020-02-27,-4,6,12,-2,19
+Turkey,Istanbul,2020-02-28,-5,2,8,-1,19
+Turkey,Istanbul,2020-02-29,-8,-10,7,2,19
+Turkey,Istanbul,2020-03-01,8,9,6,-1,19
+Turkey,Istanbul,2020-03-02,4,7,10,-2,19
+Turkey,Istanbul,2020-03-03,5,9,11,-3,19
+Turkey,Istanbul,2020-03-04,2,7,11,-2,19
+Turkey,Istanbul,2020-03-05,2,8,12,-2,19
+Turkey,Istanbul,2020-03-06,3,7,9,-1,19
+Turkey,Istanbul,2020-03-07,12,12,9,-2,19
+Turkey,Istanbul,2020-03-08,15,19,8,-3,19
+Turkey,Istanbul,2020-03-09,6,7,11,-2,23
+Turkey,Istanbul,2020-03-10,-4,1,10,-1,23
+Turkey,Istanbul,2020-03-11,0,4,11,-1,23
+Turkey,Istanbul,2020-03-12,2,6,11,-2,23
+Turkey,Istanbul,2020-03-13,-8,-2,6,1,23
+Turkey,Istanbul,2020-03-14,-15,-12,3,3,23
+Turkey,Istanbul,2020-03-15,-32,-26,-3,5,23
+Turkey,Istanbul,2020-03-16,-21,-22,-10,6,53
+Turkey,Istanbul,2020-03-17,-32,-28,-17,9,53
+Turkey,Istanbul,2020-03-18,-43,-38,-22,13,58
+Turkey,Istanbul,2020-03-19,-47,-41,-26,14,58
+Turkey,Istanbul,2020-03-20,-53,-44,-31,18,58
+Turkey,Istanbul,2020-03-21,-60,-50,-31,18,62
+Turkey,Istanbul,2020-03-22,-72,-57,-40,16,62
+Turkey,Istanbul,2020-03-23,-62,-54,-42,21,62
+Turkey,Istanbul,2020-03-24,-68,-59,-48,23,68
+Turkey,Istanbul,2020-03-25,-68,-60,-49,25,68
+Turkey,Istanbul,2020-03-26,-68,-59,-49,24,68
+Turkey,Istanbul,2020-03-27,-69,-61,-51,27,70
+Turkey,Istanbul,2020-03-28,-75,-67,-49,24,76
+Turkey,Istanbul,2020-03-29,-82,-74,-52,20,76
+Turkey,Istanbul,2020-03-30,-66,-60,-53,25,76
+Turkey,Istanbul,2020-03-31,-70,-65,-55,26,76
+Turkey,Istanbul,2020-04-01,-71,-66,-56,28,76
+Turkey,Istanbul,2020-04-02,-73,-68,-57,28,76
+Turkey,Istanbul,2020-04-03,-71,-66,-58,30,76
+Turkey,Istanbul,2020-04-04,-78,-73,-56,27,76
+Turkey,Istanbul,2020-04-05,-84,-78,-56,22,76
+Turkey,Istanbul,2020-04-06,-71,-69,-58,28,76
+Turkey,Istanbul,2020-04-07,-73,-67,-59,28,76
+Turkey,Istanbul,2020-04-08,-74,-68,-59,29,76
+Turkey,Istanbul,2020-04-09,-72,-65,-58,28,76
+Turkey,Istanbul,2020-04-10,-70,-63,-59,29,76
+Turkey,Istanbul,2020-04-11,-97,-93,-88,38,78
+Turkey,Istanbul,2020-04-12,-97,-92,-81,28,78
+Turkey,Istanbul,2020-04-13,-62,-59,-55,25,76
+Turkey,Istanbul,2020-04-14,-68,-62,-56,26,76
+Turkey,Istanbul,2020-04-15,-72,-68,-57,29,76
+Turkey,Istanbul,2020-04-16,-65,-60,-55,26,76
+Turkey,Istanbul,2020-04-17,-64,-59,-55,27,76
+Turkey,Istanbul,2020-04-18,-97,-93,-87,37,78
+Turkey,Istanbul,2020-04-19,-97,-91,-78,26,78
+Turkey,Istanbul,2020-04-20,-62,-57,-51,22,76
+Turkey,Istanbul,2020-04-21,-61,-58,-53,23,76
+Turkey,Istanbul,2020-04-22,-58,-54,-53,22,76
+Turkey,Istanbul,2020-04-23,-94,-90,-88,42,76
+Turkey,Istanbul,2020-04-24,-93,-90,-87,46,76
+Turkey,Istanbul,2020-04-25,-96,-92,-85,38,76
+Turkey,Istanbul,2020-04-26,-95,-90,-75,26,76
+Turkey,Istanbul,2020-04-27,-56,-52,-50,22,76
+Turkey,Istanbul,2020-04-28,-62,-56,-51,23,76
+Turkey,Istanbul,2020-04-29,-63,-56,-51,25,76
+Turkey,Istanbul,2020-04-30,-57,-50,-49,21,76
+Turkey,Istanbul,2020-05-01,-93,-90,-88,46,76
+Turkey,Istanbul,2020-05-02,-96,-91,-84,37,76
+Turkey,Istanbul,2020-05-03,-95,-90,-74,26,76
+Turkey,Istanbul,2020-05-04,-59,-55,-47,21,76
+Turkey,Istanbul,2020-05-05,-60,-53,-48,22,76
+Turkey,Istanbul,2020-05-06,-61,-52,-47,23,76
+Turkey,Istanbul,2020-05-07,-59,-50,-46,22,76
+Turkey,Istanbul,2020-05-08,-57,-50,-47,23,76
+Turkey,Istanbul,2020-05-09,-95,-90,-82,36,76
+Turkey,Istanbul,2020-05-10,-92,-85,-70,25,76
+Turkey,Istanbul,2020-05-11,-49,-44,-42,18,76
+Turkey,Istanbul,2020-05-12,-54,-47,-43,20,76
+Turkey,Istanbul,2020-05-13,-52,-45,-42,20,76
+Turkey,Istanbul,2020-05-14,-52,-44,-42,18,76
+Turkey,Istanbul,2020-05-15,-47,-40,-42,18,76
+Turkey,Istanbul,2020-05-16,-94,-89,-79,35,76
+Turkey,Istanbul,2020-05-17,-93,-86,-68,26,76
+Turkey,Istanbul,2020-05-18,-87,-84,-81,39,76
+Turkey,Istanbul,2020-05-19,-88,-84,-83,39,76
+Turkey,Istanbul,2020-05-20,-41,-33,-39,15,76
+Turkey,Istanbul,2020-05-21,-46,-39,-41,17,76
+Turkey,Istanbul,2020-05-22,-43,-38,-41,17,76
+Turkey,Istanbul,2020-05-23,-88,-84,-76,33,76
+Turkey,Istanbul,2020-05-24,-93,-85,-69,24,76
+Turkey,Istanbul,2020-05-25,-93,-89,-89,41,76
+Turkey,Istanbul,2020-05-26,-92,-87,-87,39,76
+Turkey,Istanbul,2020-05-27,-47,-41,-36,15,76
+Turkey,Istanbul,2020-05-28,-47,-38,-36,15,76
+Turkey,Istanbul,2020-05-29,-42,-34,-36,15,76
+Turkey,Istanbul,2020-05-30,-90,-84,-68,32,76
+Turkey,Istanbul,2020-05-31,-90,-81,-57,22,76
+Turkey,Istanbul,2020-06-01,-32,-28,-26,9,64
+Turkey,Istanbul,2020-06-02,-36,-31,-27,10,64
+Turkey,Istanbul,2020-06-03,-32,-29,-26,10,64
+Turkey,Istanbul,2020-06-04,-34,-26,-25,9,64
+Turkey,Istanbul,2020-06-05,-32,-24,-27,8,64
+Turkey,Istanbul,2020-06-06,-44,-35,-20,9,64
+Turkey,Istanbul,2020-06-07,-44,-28,-13,4,64
+Turkey,Istanbul,2020-06-08,-32,-28,-23,8,64
+Turkey,Istanbul,2020-06-09,-34,-29,-24,8,64
+Turkey,Istanbul,2020-06-10,-29,-26,-23,7,64
+Turkey,Istanbul,2020-06-11,-29,-24,-22,7,64
+Turkey,Istanbul,2020-06-12,-32,-27,-24,8,64
+Turkey,Istanbul,2020-06-13,-35,-29,-12,6,64
+Turkey,Istanbul,2020-06-14,-39,-28,-7,3,64
+Peru,Lima,2020-02-15,12,11,0,-1,0
+Peru,Lima,2020-02-16,11,12,0,0,0
+Peru,Lima,2020-02-17,6,9,1,0,0
+Peru,Lima,2020-02-18,6,3,1,0,0
+Peru,Lima,2020-02-19,2,5,0,1,0
+Peru,Lima,2020-02-20,4,9,0,0,0
+Peru,Lima,2020-02-21,3,7,2,0,0
+Peru,Lima,2020-02-22,9,17,0,0,0
+Peru,Lima,2020-02-23,9,14,-1,0,0
+Peru,Lima,2020-02-24,5,8,0,1,0
+Peru,Lima,2020-02-25,5,6,0,0,0
+Peru,Lima,2020-02-26,2,3,-1,0,0
+Peru,Lima,2020-02-27,6,9,-1,1,0
+Peru,Lima,2020-02-28,3,3,1,0,0
+Peru,Lima,2020-02-29,8,15,0,-1,0
+Peru,Lima,2020-03-01,7,16,1,0,0
+Peru,Lima,2020-03-02,1,3,3,0,0
+Peru,Lima,2020-03-03,-2,-2,2,0,0
+Peru,Lima,2020-03-04,-4,-4,2,0,0
+Peru,Lima,2020-03-05,-5,-5,2,1,11
+Peru,Lima,2020-03-06,-7,-7,5,0,14
+Peru,Lima,2020-03-07,-4,-2,2,1,14
+Peru,Lima,2020-03-08,-1,-5,2,1,14
+Peru,Lima,2020-03-09,-4,-4,3,0,14
+Peru,Lima,2020-03-10,-4,-8,2,0,14
+Peru,Lima,2020-03-11,-9,-9,2,1,17
+Peru,Lima,2020-03-12,-9,-11,0,3,44
+Peru,Lima,2020-03-13,-13,-16,-1,3,44
+Peru,Lima,2020-03-14,-15,-17,-3,4,50
+Peru,Lima,2020-03-15,-17,-27,-3,4,74
+Peru,Lima,2020-03-16,-17,11,-29,11,91
+Peru,Lima,2020-03-17,-58,-75,-55,26,91
+Peru,Lima,2020-03-18,-65,-81,-58,29,94
+Peru,Lima,2020-03-19,-69,-83,-60,31,94
+Peru,Lima,2020-03-20,-73,-84,-60,32,94
+Peru,Lima,2020-03-21,-77,-87,-56,31,94
+Peru,Lima,2020-03-22,-79,-90,-49,26,94
+Peru,Lima,2020-03-23,-67,-84,-59,32,94
+Peru,Lima,2020-03-24,-68,-83,-60,30,94
+Peru,Lima,2020-03-25,-68,-83,-60,31,94
+Peru,Lima,2020-03-26,-68,-83,-60,31,94
+Peru,Lima,2020-03-27,-71,-84,-58,32,94
+Peru,Lima,2020-03-28,-75,-85,-52,30,94
+Peru,Lima,2020-03-29,-77,-88,-46,27,94
+Peru,Lima,2020-03-30,-65,-83,-56,30,94
+Peru,Lima,2020-03-31,-66,-81,-58,29,94
+Peru,Lima,2020-04-01,-66,-81,-58,29,94
+Peru,Lima,2020-04-02,-67,-82,-58,30,94
+Peru,Lima,2020-04-03,-73,-85,-60,32,94
+Peru,Lima,2020-04-04,-79,-88,-56,31,94
+Peru,Lima,2020-04-05,-91,-95,-69,35,94
+Peru,Lima,2020-04-06,-66,-85,-59,31,94
+Peru,Lima,2020-04-07,-68,-84,-59,30,94
+Peru,Lima,2020-04-08,-61,-78,-58,27,94
+Peru,Lima,2020-04-09,-88,-92,-81,42,94
+Peru,Lima,2020-04-10,-90,-94,-81,45,94
+Peru,Lima,2020-04-11,-75,-85,-51,29,94
+Peru,Lima,2020-04-12,-91,-94,-68,35,94
+Peru,Lima,2020-04-13,-62,-82,-55,30,94
+Peru,Lima,2020-04-14,-65,-81,-57,29,94
+Peru,Lima,2020-04-15,-67,-81,-57,30,94
+Peru,Lima,2020-04-16,-69,-81,-57,31,94
+Peru,Lima,2020-04-17,-73,-83,-56,33,94
+Peru,Lima,2020-04-18,-76,-86,-50,29,94
+Peru,Lima,2020-04-19,-91,-95,-68,34,94
+Peru,Lima,2020-04-20,-64,-83,-53,29,94
+Peru,Lima,2020-04-21,-71,-84,-60,31,94
+Peru,Lima,2020-04-22,-67,-81,-56,29,94
+Peru,Lima,2020-04-23,-68,-79,-56,30,94
+Peru,Lima,2020-04-24,-72,-82,-54,31,94
+Peru,Lima,2020-04-25,-75,-83,-48,28,94
+Peru,Lima,2020-04-26,-91,-94,-67,34,94
+Peru,Lima,2020-04-27,-63,-79,-52,30,94
+Peru,Lima,2020-04-28,-65,-78,-54,25,94
+Peru,Lima,2020-04-29,-66,-79,-54,29,94
+Peru,Lima,2020-04-30,-65,-75,-52,29,94
+Peru,Lima,2020-05-01,-74,-83,-61,33,96
+Peru,Lima,2020-05-02,-74,-83,-47,28,96
+Peru,Lima,2020-05-03,-91,-94,-66,34,96
+Peru,Lima,2020-05-04,-62,-79,-48,28,96
+Peru,Lima,2020-05-05,-63,-77,-50,28,96
+Peru,Lima,2020-05-06,-68,-75,-50,28,96
+Peru,Lima,2020-05-07,-79,-75,-50,29,96
+Peru,Lima,2020-05-08,-81,-78,-48,30,96
+Peru,Lima,2020-05-09,-80,-79,-38,25,96
+Peru,Lima,2020-05-10,-96,-94,-62,32,96
+Peru,Lima,2020-05-11,-76,-76,-47,27,93
+Peru,Lima,2020-05-12,-77,-73,-47,26,93
+Peru,Lima,2020-05-13,-77,-73,-48,27,93
+Peru,Lima,2020-05-14,-77,-74,-48,26,93
+Peru,Lima,2020-05-15,-79,-77,-46,30,93
+Peru,Lima,2020-05-16,-81,-79,-39,26,93
+Peru,Lima,2020-05-17,-96,-94,-62,34,93
+Peru,Lima,2020-05-18,-73,-73,-43,27,93
+Peru,Lima,2020-05-19,-74,-71,-45,27,93
+Peru,Lima,2020-05-20,-75,-70,-46,28,93
+Peru,Lima,2020-05-21,-75,-70,-46,29,93
+Peru,Lima,2020-05-22,-79,-75,-43,29,93
+Peru,Lima,2020-05-23,-79,-76,-35,25,93
+Peru,Lima,2020-05-24,-95,-93,-62,33,93
+Peru,Lima,2020-05-25,-70,-69,-41,26,90
+Peru,Lima,2020-05-26,-72,-67,-41,25,90
+Peru,Lima,2020-05-27,-73,-66,-42,26,90
+Peru,Lima,2020-05-28,-74,-68,-42,27,90
+Peru,Lima,2020-05-29,-77,-72,-39,28,90
+Peru,Lima,2020-05-30,-78,-75,-31,24,90
+Peru,Lima,2020-05-31,-95,-93,-62,34,90
+Peru,Lima,2020-06-01,-70,-69,-37,25,90
+Peru,Lima,2020-06-02,-72,-66,-39,25,90
+Peru,Lima,2020-06-03,-72,-65,-40,25,90
+Peru,Lima,2020-06-04,-73,-64,-40,26,90
+Peru,Lima,2020-06-05,-76,-71,-38,27,90
+Peru,Lima,2020-06-06,-77,-72,-29,23,90
+Peru,Lima,2020-06-07,-95,-92,-60,33,90
+Peru,Lima,2020-06-08,-69,-66,-35,24,90
+Peru,Lima,2020-06-09,-71,-63,-38,23,90
+Peru,Lima,2020-06-10,-71,-62,-38,24,90
+Peru,Lima,2020-06-11,-72,-61,-39,25,90
+Peru,Lima,2020-06-12,-75,-69,-37,26,90
+Peru,Lima,2020-06-13,-76,-71,-28,22,90
+Peru,Lima,2020-06-14,-95,-93,-59,32,90
+Sweden,Stockholm,2020-02-15,3,5,-1,1,0
+Sweden,Stockholm,2020-02-16,-7,-4,-3,2,0
+Sweden,Stockholm,2020-02-17,-3,-1,1,1,0
+Sweden,Stockholm,2020-02-18,0,-1,2,0,0
+Sweden,Stockholm,2020-02-19,2,-1,2,0,0
+Sweden,Stockholm,2020-02-20,1,-1,1,0,0
+Sweden,Stockholm,2020-02-21,5,3,1,0,0
+Sweden,Stockholm,2020-02-22,-2,-2,-4,1,0
+Sweden,Stockholm,2020-02-23,0,2,0,-1,0
+Sweden,Stockholm,2020-02-24,1,-7,-16,2,0
+Sweden,Stockholm,2020-02-25,6,-8,-16,2,0
+Sweden,Stockholm,2020-02-26,-1,-12,-17,2,0
+Sweden,Stockholm,2020-02-27,-3,-10,-19,3,0
+Sweden,Stockholm,2020-02-28,1,-7,-21,3,0
+Sweden,Stockholm,2020-02-29,-2,1,-2,-1,0
+Sweden,Stockholm,2020-03-01,-8,-6,-4,0,0
+Sweden,Stockholm,2020-03-02,-1,-2,0,1,0
+Sweden,Stockholm,2020-03-03,-3,-5,1,1,0
+Sweden,Stockholm,2020-03-04,-6,-6,0,2,0
+Sweden,Stockholm,2020-03-05,-2,-6,0,1,0
+Sweden,Stockholm,2020-03-06,3,0,0,1,0
+Sweden,Stockholm,2020-03-07,4,3,1,1,0
+Sweden,Stockholm,2020-03-08,0,-3,-1,1,0
+Sweden,Stockholm,2020-03-09,-3,-5,-1,1,11
+Sweden,Stockholm,2020-03-10,-5,-7,-1,1,11
+Sweden,Stockholm,2020-03-11,-7,-10,-3,3,11
+Sweden,Stockholm,2020-03-12,-16,-20,-9,6,17
+Sweden,Stockholm,2020-03-13,-16,-22,-18,9,17
+Sweden,Stockholm,2020-03-14,-20,-21,-7,5,17
+Sweden,Stockholm,2020-03-15,-28,-32,-12,5,17
+Sweden,Stockholm,2020-03-16,-23,-31,-26,11,17
+Sweden,Stockholm,2020-03-17,-29,-40,-34,14,17
+Sweden,Stockholm,2020-03-18,-32,-45,-40,17,20
+Sweden,Stockholm,2020-03-19,-28,-43,-41,16,29
+Sweden,Stockholm,2020-03-20,-32,-45,-41,17,29
+Sweden,Stockholm,2020-03-21,-33,-40,-17,8,29
+Sweden,Stockholm,2020-03-22,-32,-41,-19,6,29
+Sweden,Stockholm,2020-03-23,-33,-46,-41,17,29
+Sweden,Stockholm,2020-03-24,-32,-46,-41,17,29
+Sweden,Stockholm,2020-03-25,-28,-45,-41,16,32
+Sweden,Stockholm,2020-03-26,-27,-44,-42,16,32
+Sweden,Stockholm,2020-03-27,-29,-44,-41,17,32
+Sweden,Stockholm,2020-03-28,-32,-42,-18,8,32
+Sweden,Stockholm,2020-03-29,-31,-45,-21,7,35
+Sweden,Stockholm,2020-03-30,-34,-49,-43,17,35
+Sweden,Stockholm,2020-03-31,-30,-47,-42,16,35
+Sweden,Stockholm,2020-04-01,-30,-46,-42,16,41
+Sweden,Stockholm,2020-04-02,-33,-50,-43,18,41
+Sweden,Stockholm,2020-04-03,-33,-49,-44,18,41
+Sweden,Stockholm,2020-04-04,-32,-42,-19,8,46
+Sweden,Stockholm,2020-04-05,-34,-51,-22,8,46
+Sweden,Stockholm,2020-04-06,-22,-45,-49,16,46
+Sweden,Stockholm,2020-04-07,-26,-49,-49,17,46
+Sweden,Stockholm,2020-04-08,-19,-45,-49,15,46
+Sweden,Stockholm,2020-04-09,-15,-48,-55,17,46
+Sweden,Stockholm,2020-04-10,-46,-60,-82,26,46
+Sweden,Stockholm,2020-04-11,-42,-45,-27,7,46
+Sweden,Stockholm,2020-04-12,-41,-54,-27,8,46
+Sweden,Stockholm,2020-04-13,-41,-65,-84,26,46
+Sweden,Stockholm,2020-04-14,-29,-48,-42,16,46
+Sweden,Stockholm,2020-04-15,-25,-43,-41,15,46
+Sweden,Stockholm,2020-04-16,-27,-47,-41,16,46
+Sweden,Stockholm,2020-04-17,-27,-44,-42,16,46
+Sweden,Stockholm,2020-04-18,-30,-38,-15,7,46
+Sweden,Stockholm,2020-04-19,-30,-43,-17,6,46
+Sweden,Stockholm,2020-04-20,-24,-43,-40,15,46
+Sweden,Stockholm,2020-04-21,-22,-39,-38,13,46
+Sweden,Stockholm,2020-04-22,-23,-40,-37,13,46
+Sweden,Stockholm,2020-04-23,-22,-40,-38,14,46
+Sweden,Stockholm,2020-04-24,-24,-42,-38,14,46
+Sweden,Stockholm,2020-04-25,-26,-37,-15,7,46
+Sweden,Stockholm,2020-04-26,-22,-40,-14,5,46
+Sweden,Stockholm,2020-04-27,-23,-43,-38,14,46
+Sweden,Stockholm,2020-04-28,-28,-46,-39,13,46
+Sweden,Stockholm,2020-04-29,-24,-43,-37,14,46
+Sweden,Stockholm,2020-04-30,-18,-42,-43,13,46
+Sweden,Stockholm,2020-05-01,-52,-66,-82,28,46
+Sweden,Stockholm,2020-05-02,-28,-34,-14,5,46
+Sweden,Stockholm,2020-05-03,-29,-43,-13,5,46
+Sweden,Stockholm,2020-05-04,-26,-45,-38,15,46
+Sweden,Stockholm,2020-05-05,-22,-42,-36,13,46
+Sweden,Stockholm,2020-05-06,-22,-40,-35,13,46
+Sweden,Stockholm,2020-05-07,-21,-41,-36,13,46
+Sweden,Stockholm,2020-05-08,-22,-37,-36,12,46
+Sweden,Stockholm,2020-05-09,-23,-29,-8,4,46
+Sweden,Stockholm,2020-05-10,-27,-44,-12,6,46
+Sweden,Stockholm,2020-05-11,-22,-42,-37,14,46
+Sweden,Stockholm,2020-05-12,-25,-42,-35,14,46
+Sweden,Stockholm,2020-05-13,-28,-45,-36,15,46
+Sweden,Stockholm,2020-05-14,-24,-42,-35,13,46
+Sweden,Stockholm,2020-05-15,-24,-39,-36,13,46
+Sweden,Stockholm,2020-05-16,-24,-33,-10,5,46
+Sweden,Stockholm,2020-05-17,-24,-40,-6,5,46
+Sweden,Stockholm,2020-05-18,-20,-39,-36,13,46
+Sweden,Stockholm,2020-05-19,-19,-39,-34,12,46
+Sweden,Stockholm,2020-05-20,-9,-33,-35,9,46
+Sweden,Stockholm,2020-05-21,-27,-49,-78,19,46
+Sweden,Stockholm,2020-05-22,-23,-41,-61,15,46
+Sweden,Stockholm,2020-05-23,-32,-43,-9,6,46
+Sweden,Stockholm,2020-05-24,-20,-34,-2,1,46
+Sweden,Stockholm,2020-05-25,-11,-36,-36,11,46
+Sweden,Stockholm,2020-05-26,-9,-32,-32,9,46
+Sweden,Stockholm,2020-05-27,-14,-37,-32,12,46
+Sweden,Stockholm,2020-05-28,-11,-36,-32,11,46
+Sweden,Stockholm,2020-05-29,-13,-32,-33,10,46
+Sweden,Stockholm,2020-05-30,-15,-22,8,1,46
+Sweden,Stockholm,2020-05-31,-8,-24,11,-1,46
+Sweden,Stockholm,2020-06-01,-8,-31,-33,9,46
+Sweden,Stockholm,2020-06-02,-10,-32,-32,9,46
+Sweden,Stockholm,2020-06-03,-10,-32,-32,9,46
+Sweden,Stockholm,2020-06-04,-11,-33,-32,10,46
+Sweden,Stockholm,2020-06-05,-14,-33,-35,10,46
+Sweden,Stockholm,2020-06-06,-25,-37,-5,5,46
+Sweden,Stockholm,2020-06-07,-12,-28,7,1,46
+Sweden,Stockholm,2020-06-08,-8,-33,-34,10,46
+Sweden,Stockholm,2020-06-09,-4,-30,-33,9,46
+Sweden,Stockholm,2020-06-10,-6,-30,-34,9,46
+Sweden,Stockholm,2020-06-11,-5,-31,-36,9,46
+Sweden,Stockholm,2020-06-12,-11,-30,-38,8,46
+Sweden,Stockholm,2020-06-13,-17,-16,10,-1,41
+Sweden,Stockholm,2020-06-14,-12,-23,12,-2,41
+Saudi Arabia,Riyadh,2020-02-15,-1,-4,2,1,11
+Saudi Arabia,Riyadh,2020-02-16,-4,-5,5,1,11
+Saudi Arabia,Riyadh,2020-02-17,-5,-6,5,1,11
+Saudi Arabia,Riyadh,2020-02-18,-5,-3,5,2,11
+Saudi Arabia,Riyadh,2020-02-19,-5,-4,5,1,11
+Saudi Arabia,Riyadh,2020-02-20,-4,-3,4,1,11
+Saudi Arabia,Riyadh,2020-02-21,-1,-13,-3,2,11
+Saudi Arabia,Riyadh,2020-02-22,-5,-6,2,2,11
+Saudi Arabia,Riyadh,2020-02-23,-5,-7,5,1,11
+Saudi Arabia,Riyadh,2020-02-24,-7,-8,5,2,11
+Saudi Arabia,Riyadh,2020-02-25,-7,-3,4,2,11
+Saudi Arabia,Riyadh,2020-02-26,-2,-1,-6,4,11
+Saudi Arabia,Riyadh,2020-02-27,3,0,4,0,11
+Saudi Arabia,Riyadh,2020-02-28,7,-8,-2,1,11
+Saudi Arabia,Riyadh,2020-02-29,4,-2,3,0,11
+Saudi Arabia,Riyadh,2020-03-01,2,-3,6,0,11
+Saudi Arabia,Riyadh,2020-03-02,0,-5,6,1,11
+Saudi Arabia,Riyadh,2020-03-03,1,-4,6,1,11
+Saudi Arabia,Riyadh,2020-03-04,1,-4,5,1,11
+Saudi Arabia,Riyadh,2020-03-05,3,-5,5,1,11
+Saudi Arabia,Riyadh,2020-03-06,5,-12,-1,2,11
+Saudi Arabia,Riyadh,2020-03-07,-1,-8,3,2,11
+Saudi Arabia,Riyadh,2020-03-08,-1,-13,5,1,19
+Saudi Arabia,Riyadh,2020-03-09,-4,-16,-4,5,31
+Saudi Arabia,Riyadh,2020-03-10,-2,-15,-4,4,31
+Saudi Arabia,Riyadh,2020-03-11,-4,-18,-4,5,31
+Saudi Arabia,Riyadh,2020-03-12,-6,-21,-5,6,31
+Saudi Arabia,Riyadh,2020-03-13,-10,-28,-2,5,42
+Saudi Arabia,Riyadh,2020-03-14,-11,-22,2,4,42
+Saudi Arabia,Riyadh,2020-03-15,-12,-35,-8,6,53
+Saudi Arabia,Riyadh,2020-03-16,-26,-44,-17,10,69
+Saudi Arabia,Riyadh,2020-03-17,-33,-49,-23,12,69
+Saudi Arabia,Riyadh,2020-03-18,-36,-54,-27,14,69
+Saudi Arabia,Riyadh,2020-03-19,-40,-60,-31,17,69
+Saudi Arabia,Riyadh,2020-03-20,-47,-64,-20,14,69
+Saudi Arabia,Riyadh,2020-03-21,-47,-72,-19,14,80
+Saudi Arabia,Riyadh,2020-03-22,-49,-75,-39,19,80
+Saudi Arabia,Riyadh,2020-03-23,-57,-78,-44,23,87
+Saudi Arabia,Riyadh,2020-03-24,-56,-77,-45,24,87
+Saudi Arabia,Riyadh,2020-03-25,-54,-77,-46,24,90
+Saudi Arabia,Riyadh,2020-03-26,-63,-82,-51,30,90
+Saudi Arabia,Riyadh,2020-03-27,-68,-87,-42,23,90
+Saudi Arabia,Riyadh,2020-03-28,-59,-81,-34,21,90
+Saudi Arabia,Riyadh,2020-03-29,-56,-79,-48,25,90
+Saudi Arabia,Riyadh,2020-03-30,-58,-80,-50,26,90
+Saudi Arabia,Riyadh,2020-03-31,-58,-79,-49,26,90
+Saudi Arabia,Riyadh,2020-04-01,-58,-80,-49,26,90
+Saudi Arabia,Riyadh,2020-04-02,-59,-81,-49,29,90
+Saudi Arabia,Riyadh,2020-04-03,-65,-87,-40,21,90
+Saudi Arabia,Riyadh,2020-04-04,-57,-81,-33,21,90
+Saudi Arabia,Riyadh,2020-04-05,-55,-79,-48,24,90
+Saudi Arabia,Riyadh,2020-04-06,-56,-79,-49,24,92
+Saudi Arabia,Riyadh,2020-04-07,-81,-89,-73,34,92
+Saudi Arabia,Riyadh,2020-04-08,-79,-88,-70,33,92
+Saudi Arabia,Riyadh,2020-04-09,-78,-88,-68,36,92
+Saudi Arabia,Riyadh,2020-04-10,-80,-89,-52,26,92
+Saudi Arabia,Riyadh,2020-04-11,-76,-88,-56,27,92
+Saudi Arabia,Riyadh,2020-04-12,-73,-86,-65,31,92
+Saudi Arabia,Riyadh,2020-04-13,-77,-87,-67,32,92
+Saudi Arabia,Riyadh,2020-04-14,-82,-89,-76,36,92
+Saudi Arabia,Riyadh,2020-04-15,-80,-89,-74,36,92
+Saudi Arabia,Riyadh,2020-04-16,-79,-89,-71,38,92
+Saudi Arabia,Riyadh,2020-04-17,-81,-90,-53,26,92
+Saudi Arabia,Riyadh,2020-04-18,-78,-89,-59,28,92
+Saudi Arabia,Riyadh,2020-04-19,-75,-87,-68,32,92
+Saudi Arabia,Riyadh,2020-04-20,-75,-87,-68,32,92
+Saudi Arabia,Riyadh,2020-04-21,-76,-86,-67,32,92
+Saudi Arabia,Riyadh,2020-04-22,-75,-85,-66,32,92
+Saudi Arabia,Riyadh,2020-04-23,-73,-87,-66,34,92
+Saudi Arabia,Riyadh,2020-04-24,-79,-90,-53,26,92
+Saudi Arabia,Riyadh,2020-04-25,-77,-88,-56,28,92
+Saudi Arabia,Riyadh,2020-04-26,-72,-85,-62,30,94
+Saudi Arabia,Riyadh,2020-04-27,-69,-83,-57,29,94
+Saudi Arabia,Riyadh,2020-04-28,-68,-82,-56,28,94
+Saudi Arabia,Riyadh,2020-04-29,-59,-80,-51,27,94
+Saudi Arabia,Riyadh,2020-04-30,-61,-82,-50,30,92
+Saudi Arabia,Riyadh,2020-05-01,-64,-87,-37,21,92
+Saudi Arabia,Riyadh,2020-05-02,-59,-82,-35,21,92
+Saudi Arabia,Riyadh,2020-05-03,-57,-80,-48,25,92
+Saudi Arabia,Riyadh,2020-05-04,-58,-81,-49,26,92
+Saudi Arabia,Riyadh,2020-05-05,-59,-80,-49,27,92
+Saudi Arabia,Riyadh,2020-05-06,-59,-80,-48,27,92
+Saudi Arabia,Riyadh,2020-05-07,-59,-81,-48,30,90
+Saudi Arabia,Riyadh,2020-05-08,-61,-86,-34,22,90
+Saudi Arabia,Riyadh,2020-05-09,-57,-82,-32,21,90
+Saudi Arabia,Riyadh,2020-05-10,-53,-80,-46,25,90
+Saudi Arabia,Riyadh,2020-05-11,-53,-79,-47,25,90
+Saudi Arabia,Riyadh,2020-05-12,-51,-79,-47,25,90
+Saudi Arabia,Riyadh,2020-05-13,-56,-80,-47,27,90
+Saudi Arabia,Riyadh,2020-05-14,-59,-81,-48,30,90
+Saudi Arabia,Riyadh,2020-05-15,-61,-86,-33,22,90
+Saudi Arabia,Riyadh,2020-05-16,-57,-81,-31,22,90
+Saudi Arabia,Riyadh,2020-05-17,-55,-80,-48,26,90
+Saudi Arabia,Riyadh,2020-05-18,-55,-79,-49,27,90
+Saudi Arabia,Riyadh,2020-05-19,-54,-79,-50,27,90
+Saudi Arabia,Riyadh,2020-05-20,-52,-79,-50,27,90
+Saudi Arabia,Riyadh,2020-05-21,-50,-81,-51,29,90
+Saudi Arabia,Riyadh,2020-05-22,-44,-83,-26,17,90
+Saudi Arabia,Riyadh,2020-05-23,-84,-91,-68,31,92
+Saudi Arabia,Riyadh,2020-05-24,-86,-91,-82,37,92
+Saudi Arabia,Riyadh,2020-05-25,-84,-90,-80,37,92
+Saudi Arabia,Riyadh,2020-05-26,-83,-90,-79,38,92
+Saudi Arabia,Riyadh,2020-05-27,-81,-89,-75,37,92
+Saudi Arabia,Riyadh,2020-05-28,-58,-82,-53,28,92
+Saudi Arabia,Riyadh,2020-05-29,-62,-85,-29,20,92
+Saudi Arabia,Riyadh,2020-05-30,-54,-79,-25,19,92
+Saudi Arabia,Riyadh,2020-05-31,-33,-66,-31,16,75
+Saudi Arabia,Riyadh,2020-06-01,-36,-65,-32,17,75
+Saudi Arabia,Riyadh,2020-06-02,-37,-63,-32,17,75
+Saudi Arabia,Riyadh,2020-06-03,-37,-65,-33,18,75
+Saudi Arabia,Riyadh,2020-06-04,-41,-68,-33,21,75
+Saudi Arabia,Riyadh,2020-06-05,-45,-74,-20,17,75
+Saudi Arabia,Riyadh,2020-06-06,-39,-66,-18,15,73
+Saudi Arabia,Riyadh,2020-06-07,-36,-64,-34,17,73
+Saudi Arabia,Riyadh,2020-06-08,-39,-64,-33,18,70
+Saudi Arabia,Riyadh,2020-06-09,-40,-64,-33,19,70
+Saudi Arabia,Riyadh,2020-06-10,-39,-63,-34,19,70
+Saudi Arabia,Riyadh,2020-06-11,-42,-65,-34,21,70
+Saudi Arabia,Riyadh,2020-06-12,-47,-72,-19,17,70
+Saudi Arabia,Riyadh,2020-06-13,-40,-65,-16,15,70
+Saudi Arabia,Riyadh,2020-06-14,-37,-63,-33,17,70
+United Kingdom,London,2020-02-15,-11,-10,-3,2,11
+United Kingdom,London,2020-02-16,-9,-9,-4,1,11
+United Kingdom,London,2020-02-17,11,-3,-13,2,11
+United Kingdom,London,2020-02-18,4,-4,-13,2,11
+United Kingdom,London,2020-02-19,3,-5,-13,3,11
+United Kingdom,London,2020-02-20,2,-6,-13,3,11
+United Kingdom,London,2020-02-21,3,-5,-14,3,11
+United Kingdom,London,2020-02-22,-4,-2,-1,0,11
+United Kingdom,London,2020-02-23,-1,1,-1,0,11
+United Kingdom,London,2020-02-24,-3,-3,-1,1,11
+United Kingdom,London,2020-02-25,-1,0,1,0,11
+United Kingdom,London,2020-02-26,-2,-2,1,0,11
+United Kingdom,London,2020-02-27,0,-1,0,1,11
+United Kingdom,London,2020-02-28,-2,-2,0,1,11
+United Kingdom,London,2020-02-29,-2,-5,0,1,11
+United Kingdom,London,2020-03-01,9,5,1,-1,11
+United Kingdom,London,2020-03-02,2,-3,1,0,11
+United Kingdom,London,2020-03-03,-1,-4,1,0,11
+United Kingdom,London,2020-03-04,-3,-4,0,1,11
+United Kingdom,London,2020-03-05,-9,-6,-1,2,11
+United Kingdom,London,2020-03-06,1,-3,0,1,11
+United Kingdom,London,2020-03-07,-2,-4,1,0,11
+United Kingdom,London,2020-03-08,-1,-4,0,0,11
+United Kingdom,London,2020-03-09,-3,-6,-1,1,11
+United Kingdom,London,2020-03-10,-6,-7,-2,2,11
+United Kingdom,London,2020-03-11,-6,-10,-3,2,11
+United Kingdom,London,2020-03-12,-8,-13,-5,3,11
+United Kingdom,London,2020-03-13,-13,-18,-9,5,11
+United Kingdom,London,2020-03-14,-20,-22,-4,4,11
+United Kingdom,London,2020-03-15,-24,-24,-7,4,11
+United Kingdom,London,2020-03-16,-14,-25,-18,7,15
+United Kingdom,London,2020-03-17,-28,-37,-29,12,20
+United Kingdom,London,2020-03-18,-33,-43,-36,16,20
+United Kingdom,London,2020-03-19,-36,-47,-41,18,20
+United Kingdom,London,2020-03-20,-46,-51,-44,20,20
+United Kingdom,London,2020-03-21,-62,-58,-34,15,30
+United Kingdom,London,2020-03-22,-67,-61,-40,13,35
+United Kingdom,London,2020-03-23,-59,-63,-60,25,70
+United Kingdom,London,2020-03-24,-76,-72,-70,31,70
+United Kingdom,London,2020-03-25,-79,-76,-73,33,70
+United Kingdom,London,2020-03-26,-80,-77,-75,34,76
+United Kingdom,London,2020-03-27,-81,-77,-75,35,76
+United Kingdom,London,2020-03-28,-85,-78,-63,23,76
+United Kingdom,London,2020-03-29,-87,-80,-62,19,76
+United Kingdom,London,2020-03-30,-79,-79,-77,33,76
+United Kingdom,London,2020-03-31,-79,-79,-78,34,76
+United Kingdom,London,2020-04-01,-81,-80,-78,35,76
+United Kingdom,London,2020-04-02,-81,-80,-78,36,76
+United Kingdom,London,2020-04-03,-81,-79,-77,36,76
+United Kingdom,London,2020-04-04,-84,-77,-63,23,76
+United Kingdom,London,2020-04-05,-84,-76,-61,18,76
+United Kingdom,London,2020-04-06,-78,-79,-77,33,76
+United Kingdom,London,2020-04-07,-79,-78,-78,34,76
+United Kingdom,London,2020-04-08,-80,-79,-78,34,76
+United Kingdom,London,2020-04-09,-78,-78,-78,34,76
+United Kingdom,London,2020-04-10,-83,-82,-85,38,76
+United Kingdom,London,2020-04-11,-84,-77,-64,23,76
+United Kingdom,London,2020-04-12,-89,-78,-64,19,76
+United Kingdom,London,2020-04-13,-83,-85,-87,37,76
+United Kingdom,London,2020-04-14,-78,-78,-77,33,76
+United Kingdom,London,2020-04-15,-79,-78,-77,34,76
+United Kingdom,London,2020-04-16,-79,-79,-76,34,76
+United Kingdom,London,2020-04-17,-81,-79,-75,36,76
+United Kingdom,London,2020-04-18,-84,-77,-59,23,76
+United Kingdom,London,2020-04-19,-83,-75,-56,17,76
+United Kingdom,London,2020-04-20,-77,-77,-75,32,76
+United Kingdom,London,2020-04-21,-78,-77,-75,33,76
+United Kingdom,London,2020-04-22,-79,-77,-74,33,76
+United Kingdom,London,2020-04-23,-78,-77,-74,33,76
+United Kingdom,London,2020-04-24,-79,-75,-73,34,76
+United Kingdom,London,2020-04-25,-82,-74,-57,21,76
+United Kingdom,London,2020-04-26,-81,-72,-54,16,76
+United Kingdom,London,2020-04-27,-76,-76,-73,31,76
+United Kingdom,London,2020-04-28,-82,-80,-75,32,76
+United Kingdom,London,2020-04-29,-79,-77,-73,33,76
+United Kingdom,London,2020-04-30,-81,-78,-74,34,76
+United Kingdom,London,2020-05-01,-80,-75,-72,34,76
+United Kingdom,London,2020-05-02,-81,-71,-54,20,76
+United Kingdom,London,2020-05-03,-82,-74,-53,17,76
+United Kingdom,London,2020-05-04,-75,-74,-72,30,76
+United Kingdom,London,2020-05-05,-77,-75,-72,31,76
+United Kingdom,London,2020-05-06,-77,-74,-71,31,76
+United Kingdom,London,2020-05-07,-75,-73,-71,31,76
+United Kingdom,London,2020-05-08,-79,-76,-81,35,76
+United Kingdom,London,2020-05-09,-80,-70,-53,19,76
+United Kingdom,London,2020-05-10,-83,-75,-51,17,76
+United Kingdom,London,2020-05-11,-75,-74,-71,30,76
+United Kingdom,London,2020-05-12,-75,-73,-70,30,76
+United Kingdom,London,2020-05-13,-77,-74,-70,31,69
+United Kingdom,London,2020-05-14,-75,-74,-70,30,69
+United Kingdom,London,2020-05-15,-75,-71,-68,30,69
+United Kingdom,London,2020-05-16,-78,-68,-49,18,69
+United Kingdom,London,2020-05-17,-77,-67,-46,14,69
+United Kingdom,London,2020-05-18,-70,-70,-68,28,69
+United Kingdom,London,2020-05-19,-71,-69,-68,28,69
+United Kingdom,London,2020-05-20,-72,-69,-68,28,69
+United Kingdom,London,2020-05-21,-72,-70,-68,29,69
+United Kingdom,London,2020-05-22,-73,-69,-66,29,69
+United Kingdom,London,2020-05-23,-76,-67,-45,18,69
+United Kingdom,London,2020-05-24,-74,-63,-43,12,69
+United Kingdom,London,2020-05-25,-70,-72,-82,28,69
+United Kingdom,London,2020-05-26,-70,-68,-67,27,69
+United Kingdom,London,2020-05-27,-71,-69,-66,27,69
+United Kingdom,London,2020-05-28,-70,-68,-66,28,69
+United Kingdom,London,2020-05-29,-71,-66,-64,27,69
+United Kingdom,London,2020-05-30,-74,-61,-35,14,69
+United Kingdom,London,2020-05-31,-73,-61,-33,11,69
+United Kingdom,London,2020-06-01,-65,-65,-63,25,68
+United Kingdom,London,2020-06-02,-68,-66,-63,25,68
+United Kingdom,London,2020-06-03,-71,-68,-63,27,68
+United Kingdom,London,2020-06-04,-70,-68,-63,28,68
+United Kingdom,London,2020-06-05,-71,-67,-62,28,68
+United Kingdom,London,2020-06-06,-75,-65,-38,17,68
+United Kingdom,London,2020-06-07,-72,-62,-35,12,68
+United Kingdom,London,2020-06-08,-65,-66,-61,25,73
+United Kingdom,London,2020-06-09,-67,-66,-61,25,73
+United Kingdom,London,2020-06-10,-71,-69,-62,28,73
+United Kingdom,London,2020-06-11,-68,-68,-62,27,73
+United Kingdom,London,2020-06-12,-69,-66,-60,27,73
+United Kingdom,London,2020-06-13,-69,-58,-28,12,73
+United Kingdom,London,2020-06-14,-68,-58,-27,10,73
+Qatar,Doha,2020-02-15,-3,1,5,1,14
+Qatar,Doha,2020-02-16,-1,3,3,1,14
+Qatar,Doha,2020-02-17,-1,1,4,1,14
+Qatar,Doha,2020-02-18,-3,1,4,1,14
+Qatar,Doha,2020-02-19,-3,-1,4,1,14
+Qatar,Doha,2020-02-20,-1,-2,3,2,14
+Qatar,Doha,2020-02-21,-1,-2,2,1,14
+Qatar,Doha,2020-02-22,-1,-1,5,1,14
+Qatar,Doha,2020-02-23,-1,0,5,1,14
+Qatar,Doha,2020-02-24,-1,0,5,1,14
+Qatar,Doha,2020-02-25,-2,0,4,1,14
+Qatar,Doha,2020-02-26,-3,-2,4,1,14
+Qatar,Doha,2020-02-27,4,-1,4,1,14
+Qatar,Doha,2020-02-28,2,-2,4,1,14
+Qatar,Doha,2020-02-29,3,0,6,1,14
+Qatar,Doha,2020-03-01,4,1,4,1,14
+Qatar,Doha,2020-03-02,2,0,5,1,14
+Qatar,Doha,2020-03-03,1,-1,5,1,14
+Qatar,Doha,2020-03-04,0,-2,5,2,14
+Qatar,Doha,2020-03-05,2,-4,5,2,14
+Qatar,Doha,2020-03-06,-1,-5,4,2,14
+Qatar,Doha,2020-03-07,0,-3,7,2,14
+Qatar,Doha,2020-03-08,2,-2,6,1,14
+Qatar,Doha,2020-03-09,-2,-8,6,2,14
+Qatar,Doha,2020-03-10,-6,-9,2,4,25
+Qatar,Doha,2020-03-11,-11,-14,2,4,25
+Qatar,Doha,2020-03-12,-18,-21,0,8,31
+Qatar,Doha,2020-03-13,-35,-37,-4,10,31
+Qatar,Doha,2020-03-14,-25,-30,0,8,31
+Qatar,Doha,2020-03-15,-17,-23,-5,9,42
+Qatar,Doha,2020-03-16,-26,-28,-8,10,42
+Qatar,Doha,2020-03-17,-31,-33,-15,13,61
+Qatar,Doha,2020-03-18,-41,-39,-20,16,64
+Qatar,Doha,2020-03-19,-43,-43,-22,19,64
+Qatar,Doha,2020-03-20,-58,-52,-24,16,64
+Qatar,Doha,2020-03-21,-46,-43,-18,15,64
+Qatar,Doha,2020-03-22,-48,-48,-26,20,81
+Qatar,Doha,2020-03-23,-49,-48,-27,20,81
+Qatar,Doha,2020-03-24,-49,-48,-29,20,81
+Qatar,Doha,2020-03-25,-50,-49,-29,21,81
+Qatar,Doha,2020-03-26,-50,-52,-30,23,81
+Qatar,Doha,2020-03-27,-68,-63,-32,19,81
+Qatar,Doha,2020-03-28,-57,-53,-25,19,86
+Qatar,Doha,2020-03-29,-51,-52,-31,22,86
+Qatar,Doha,2020-03-30,-52,-51,-31,21,86
+Qatar,Doha,2020-03-31,-52,-51,-32,21,86
+Qatar,Doha,2020-04-01,-52,-52,-33,21,86
+Qatar,Doha,2020-04-02,-55,-56,-35,26,86
+Qatar,Doha,2020-04-03,-67,-65,-36,20,86
+Qatar,Doha,2020-04-04,-56,-54,-29,20,86
+Qatar,Doha,2020-04-05,-50,-52,-36,24,86
+Qatar,Doha,2020-04-06,-52,-53,-36,24,86
+Qatar,Doha,2020-04-07,-53,-55,-37,24,86
+Qatar,Doha,2020-04-08,-54,-56,-37,24,86
+Qatar,Doha,2020-04-09,-54,-58,-37,27,86
+Qatar,Doha,2020-04-10,-72,-69,-40,21,86
+Qatar,Doha,2020-04-11,-63,-60,-39,23,86
+Qatar,Doha,2020-04-12,-48,-54,-36,23,86
+Qatar,Doha,2020-04-13,-54,-57,-37,24,86
+Qatar,Doha,2020-04-14,-51,-54,-37,23,86
+Qatar,Doha,2020-04-15,-55,-58,-39,26,86
+Qatar,Doha,2020-04-16,-53,-57,-37,27,86
+Qatar,Doha,2020-04-17,-69,-68,-38,21,86
+Qatar,Doha,2020-04-18,-62,-59,-37,22,86
+Qatar,Doha,2020-04-19,-49,-55,-35,23,86
+Qatar,Doha,2020-04-20,-51,-54,-36,23,86
+Qatar,Doha,2020-04-21,-52,-54,-36,23,86
+Qatar,Doha,2020-04-22,-53,-54,-37,23,83
+Qatar,Doha,2020-04-23,-52,-56,-37,26,83
+Qatar,Doha,2020-04-24,-72,-69,-40,22,83
+Qatar,Doha,2020-04-25,-66,-61,-39,25,83
+Qatar,Doha,2020-04-26,-54,-57,-38,27,83
+Qatar,Doha,2020-04-27,-57,-57,-39,28,83
+Qatar,Doha,2020-04-28,-56,-55,-39,25,83
+Qatar,Doha,2020-04-29,-56,-55,-39,27,83
+Qatar,Doha,2020-04-30,-57,-56,-39,29,83
+Qatar,Doha,2020-05-01,-68,-64,-38,20,83
+Qatar,Doha,2020-05-02,-62,-56,-39,23,83
+Qatar,Doha,2020-05-03,-49,-53,-38,25,83
+Qatar,Doha,2020-05-04,-52,-53,-39,26,83
+Qatar,Doha,2020-05-05,-53,-52,-38,26,83
+Qatar,Doha,2020-05-06,-52,-50,-38,26,83
+Qatar,Doha,2020-05-07,-53,-52,-36,29,83
+Qatar,Doha,2020-05-08,-67,-63,-36,20,83
+Qatar,Doha,2020-05-09,-60,-54,-36,23,83
+Qatar,Doha,2020-05-10,-46,-49,-35,25,83
+Qatar,Doha,2020-05-11,-48,-48,-36,25,83
+Qatar,Doha,2020-05-12,-49,-47,-35,25,83
+Qatar,Doha,2020-05-13,-49,-50,-36,25,83
+Qatar,Doha,2020-05-14,-52,-53,-36,28,83
+Qatar,Doha,2020-05-15,-66,-64,-34,20,83
+Qatar,Doha,2020-05-16,-57,-54,-34,23,83
+Qatar,Doha,2020-05-17,-44,-49,-34,25,83
+Qatar,Doha,2020-05-18,-46,-47,-35,25,83
+Qatar,Doha,2020-05-19,-48,-44,-39,22,83
+Qatar,Doha,2020-05-20,-48,-42,-40,24,83
+Qatar,Doha,2020-05-21,-48,-40,-40,27,83
+Qatar,Doha,2020-05-22,-58,-54,-27,17,83
+Qatar,Doha,2020-05-23,-47,-42,-38,21,83
+Qatar,Doha,2020-05-24,-57,-53,-74,34,83
+Qatar,Doha,2020-05-25,-54,-53,-71,33,83
+Qatar,Doha,2020-05-26,-53,-52,-64,31,83
+Qatar,Doha,2020-05-27,-47,-43,-39,22,83
+Qatar,Doha,2020-05-28,-49,-47,-38,26,83
+Qatar,Doha,2020-05-29,-61,-60,-28,18,83
+Qatar,Doha,2020-05-30,-50,-45,-23,18,83
+Qatar,Doha,2020-05-31,-30,-39,-23,18,83
+Qatar,Doha,2020-06-01,-30,-35,-23,18,83
+Qatar,Doha,2020-06-02,-31,-35,-23,18,83
+Qatar,Doha,2020-06-03,-30,-35,-23,18,83
+Qatar,Doha,2020-06-04,-29,-37,-22,19,83
+Qatar,Doha,2020-06-05,-49,-53,-21,16,83
+Qatar,Doha,2020-06-06,-37,-38,-17,15,83
+Qatar,Doha,2020-06-07,-17,-30,-19,15,83
+Qatar,Doha,2020-06-08,-20,-30,-17,16,83
+Qatar,Doha,2020-06-09,-23,-31,-17,16,83
+Qatar,Doha,2020-06-10,-23,-31,-18,16,83
+Qatar,Doha,2020-06-11,-26,-35,-17,18,83
+Qatar,Doha,2020-06-12,-45,-50,-17,15,83
+Qatar,Doha,2020-06-13,-35,-37,-13,15,83
+Qatar,Doha,2020-06-14,-15,-31,-16,15,83
+United States,New York,2020-02-15,2,-1,0,0,6
+United States,New York,2020-02-16,6,1,-2,0,6
+United States,New York,2020-02-17,-5,-25,-51,10,6
+United States,New York,2020-02-18,0,-5,-6,2,6
+United States,New York,2020-02-19,2,-1,-4,1,6
+United States,New York,2020-02-20,3,-1,-5,1,6
+United States,New York,2020-02-21,-2,-4,-5,2,6
+United States,New York,2020-02-22,6,5,7,-1,6
+United States,New York,2020-02-23,0,1,2,-1,6
+United States,New York,2020-02-24,1,1,4,0,6
+United States,New York,2020-02-25,-3,-1,3,1,6
+United States,New York,2020-02-26,-1,-1,3,0,6
+United States,New York,2020-02-27,1,0,3,0,6
+United States,New York,2020-02-28,0,0,3,0,6
+United States,New York,2020-02-29,1,-1,6,0,6
+United States,New York,2020-03-01,-3,-3,1,0,8
+United States,New York,2020-03-02,3,-3,4,0,11
+United States,New York,2020-03-03,0,-1,3,0,11
+United States,New York,2020-03-04,3,-3,2,0,11
+United States,New York,2020-03-05,2,-2,2,0,20
+United States,New York,2020-03-06,-8,-4,-1,3,20
+United States,New York,2020-03-07,1,-2,7,0,20
+United States,New York,2020-03-08,-5,-4,0,0,20
+United States,New York,2020-03-09,0,-7,-3,2,20
+United States,New York,2020-03-10,-6,-11,-7,4,20
+United States,New York,2020-03-11,-10,-15,-12,5,22
+United States,New York,2020-03-12,-19,-20,-18,8,30
+United States,New York,2020-03-13,-30,-30,-26,10,30
+United States,New York,2020-03-14,-37,-35,-9,5,36
+United States,New York,2020-03-15,-46,-42,-17,7,41
+United States,New York,2020-03-16,-48,-48,-48,18,52
+United States,New York,2020-03-17,-61,-55,-55,21,55
+United States,New York,2020-03-18,-65,-59,-58,22,55
+United States,New York,2020-03-19,-70,-63,-62,25,67
+United States,New York,2020-03-20,-71,-64,-63,26,67
+United States,New York,2020-03-21,-76,-67,-41,15,73
+United States,New York,2020-03-22,-81,-73,-48,16,73
+United States,New York,2020-03-23,-83,-77,-75,32,73
+United States,New York,2020-03-24,-79,-73,-74,29,73
+United States,New York,2020-03-25,-82,-75,-75,31,73
+United States,New York,2020-03-26,-81,-75,-75,31,73
+United States,New York,2020-03-27,-81,-75,-74,32,73
+United States,New York,2020-03-28,-86,-77,-56,20,73
+United States,New York,2020-03-29,-86,-78,-57,19,73
+United States,New York,2020-03-30,-82,-77,-77,31,73
+United States,New York,2020-03-31,-83,-78,-78,32,73
+United States,New York,2020-04-01,-82,-78,-77,31,73
+United States,New York,2020-04-02,-84,-79,-78,33,73
+United States,New York,2020-04-03,-85,-79,-78,34,73
+United States,New York,2020-04-04,-85,-77,-57,19,73
+United States,New York,2020-04-05,-85,-78,-56,18,73
+United States,New York,2020-04-06,-83,-79,-77,31,73
+United States,New York,2020-04-07,-85,-80,-78,32,73
+United States,New York,2020-04-08,-87,-81,-79,32,73
+United States,New York,2020-04-09,-87,-81,-80,34,73
+United States,New York,2020-04-10,-88,-81,-79,35,73
+United States,New York,2020-04-11,-86,-78,-55,19,73
+United States,New York,2020-04-12,-88,-78,-56,18,73
+United States,New York,2020-04-13,-89,-83,-79,34,73
+United States,New York,2020-04-14,-85,-79,-77,31,73
+United States,New York,2020-04-15,-85,-80,-77,32,73
+United States,New York,2020-04-16,-86,-80,-77,32,73
+United States,New York,2020-04-17,-87,-80,-76,33,73
+United States,New York,2020-04-18,-88,-79,-54,20,73
+United States,New York,2020-04-19,-86,-76,-51,17,73
+United States,New York,2020-04-20,-85,-79,-76,31,73
+United States,New York,2020-04-21,-87,-81,-77,32,73
+United States,New York,2020-04-22,-85,-80,-76,31,73
+United States,New York,2020-04-23,-86,-80,-77,32,73
+United States,New York,2020-04-24,-87,-81,-76,34,73
+United States,New York,2020-04-25,-84,-75,-49,17,73
+United States,New York,2020-04-26,-89,-79,-55,19,73
+United States,New York,2020-04-27,-84,-79,-75,31,73
+United States,New York,2020-04-28,-83,-78,-75,23,73
+United States,New York,2020-04-29,-85,-79,-76,31,73
+United States,New York,2020-04-30,-85,-80,-77,32,73
+United States,New York,2020-05-01,-84,-78,-74,31,73
+United States,New York,2020-05-02,-81,-73,-45,15,73
+United States,New York,2020-05-03,-82,-74,-47,14,73
+United States,New York,2020-05-04,-81,-77,-74,29,73
+United States,New York,2020-05-05,-81,-77,-74,29,73
+United States,New York,2020-05-06,-84,-78,-75,31,73
+United States,New York,2020-05-07,-81,-76,-74,29,73
+United States,New York,2020-05-08,-84,-78,-73,32,73
+United States,New York,2020-05-09,-83,-75,-48,17,73
+United States,New York,2020-05-10,-81,-73,-46,14,73
+United States,New York,2020-05-11,-82,-77,-73,29,73
+United States,New York,2020-05-12,-81,-76,-73,28,73
+United States,New York,2020-05-13,-81,-75,-73,28,73
+United States,New York,2020-05-14,-80,-76,-73,29,73
+United States,New York,2020-05-15,-80,-74,-71,28,73
+United States,New York,2020-05-16,-79,-71,-43,13,73
+United States,New York,2020-05-17,-80,-72,-44,13,73
+United States,New York,2020-05-18,-79,-75,-71,28,73
+United States,New York,2020-05-19,-79,-74,-72,28,73
+United States,New York,2020-05-20,-79,-74,-71,27,73
+United States,New York,2020-05-21,-78,-74,-71,27,73
+United States,New York,2020-05-22,-79,-73,-69,27,73
+United States,New York,2020-05-23,-83,-75,-44,17,73
+United States,New York,2020-05-24,-78,-70,-41,11,73
+United States,New York,2020-05-25,-81,-80,-80,26,73
+United States,New York,2020-05-26,-77,-72,-69,25,73
+United States,New York,2020-05-27,-77,-72,-69,26,73
+United States,New York,2020-05-28,-78,-73,-70,27,73
+United States,New York,2020-05-29,-79,-72,-68,27,73
+United States,New York,2020-05-30,-76,-66,-30,11,73
+United States,New York,2020-05-31,-77,-67,-32,11,73
+United States,New York,2020-06-01,-76,-71,-68,25,73
+United States,New York,2020-06-02,-78,-72,-69,27,73
+United States,New York,2020-06-03,-79,-73,-69,27,73
+United States,New York,2020-06-04,-78,-72,-68,26,73
+United States,New York,2020-06-05,-80,-73,-67,28,73
+United States,New York,2020-06-06,-78,-66,-31,12,73
+United States,New York,2020-06-07,-76,-65,-31,9,73
+United States,New York,2020-06-08,-74,-68,-65,23,73
+United States,New York,2020-06-09,-74,-69,-66,23,73
+United States,New York,2020-06-10,-75,-69,-66,23,73
+United States,New York,2020-06-11,-77,-71,-67,26,73
+United States,New York,2020-06-12,-74,-67,-63,23,73
+United States,New York,2020-06-13,-74,-62,-25,9,73
+United States,New York,2020-06-14,-74,-63,-27,9,73
+United States,Los Angeles,2020-02-15,1,-1,-1,0,6
+United States,Los Angeles,2020-02-16,4,-1,0,-1,6
+United States,Los Angeles,2020-02-17,7,-11,-32,7,6
+United States,Los Angeles,2020-02-18,-1,2,2,0,6
+United States,Los Angeles,2020-02-19,-1,1,2,0,6
+United States,Los Angeles,2020-02-20,1,2,2,-1,6
+United States,Los Angeles,2020-02-21,1,0,2,0,6
+United States,Los Angeles,2020-02-22,-1,-5,1,1,6
+United States,Los Angeles,2020-02-23,4,0,2,0,6
+United States,Los Angeles,2020-02-24,1,2,4,-1,6
+United States,Los Angeles,2020-02-25,2,3,3,-1,6
+United States,Los Angeles,2020-02-26,3,2,3,-1,6
+United States,Los Angeles,2020-02-27,3,3,2,-1,6
+United States,Los Angeles,2020-02-28,4,2,3,-1,6
+United States,Los Angeles,2020-02-29,3,0,2,-1,6
+United States,Los Angeles,2020-03-01,4,-3,1,0,8
+United States,Los Angeles,2020-03-02,5,1,4,-1,11
+United States,Los Angeles,2020-03-03,8,2,3,-1,11
+United States,Los Angeles,2020-03-04,4,-1,2,0,11
+United States,Los Angeles,2020-03-05,4,0,2,0,20
+United States,Los Angeles,2020-03-06,3,-2,2,0,20
+United States,Los Angeles,2020-03-07,1,-4,2,0,20
+United States,Los Angeles,2020-03-08,3,-4,1,0,20
+United States,Los Angeles,2020-03-09,3,-4,3,0,20
+United States,Los Angeles,2020-03-10,-3,-13,-2,3,20
+United States,Los Angeles,2020-03-11,2,-6,0,1,22
+United States,Los Angeles,2020-03-12,-8,-19,-3,4,30
+United States,Los Angeles,2020-03-13,-5,-21,-7,6,30
+United States,Los Angeles,2020-03-14,-14,-23,-7,7,36
+United States,Los Angeles,2020-03-15,-16,-21,-9,6,41
+United States,Los Angeles,2020-03-16,-19,-29,-22,11,52
+United States,Los Angeles,2020-03-17,-24,-30,-29,14,55
+United States,Los Angeles,2020-03-18,-28,-33,-33,16,55
+United States,Los Angeles,2020-03-19,-32,-39,-35,18,67
+United States,Los Angeles,2020-03-20,-40,-44,-41,22,67
+United States,Los Angeles,2020-03-21,-48,-46,-34,18,73
+United States,Los Angeles,2020-03-22,-52,-54,-38,16,73
+United States,Los Angeles,2020-03-23,-42,-49,-47,22,73
+United States,Los Angeles,2020-03-24,-43,-50,-49,23,73
+United States,Los Angeles,2020-03-25,-43,-50,-49,23,73
+United States,Los Angeles,2020-03-26,-43,-51,-50,24,73
+United States,Los Angeles,2020-03-27,-45,-51,-49,25,73
+United States,Los Angeles,2020-03-28,-50,-52,-39,20,73
+United States,Los Angeles,2020-03-29,-51,-54,-41,17,73
+United States,Los Angeles,2020-03-30,-42,-52,-51,22,73
+United States,Los Angeles,2020-03-31,-42,-50,-51,23,73
+United States,Los Angeles,2020-04-01,-41,-49,-52,23,73
+United States,Los Angeles,2020-04-02,-43,-52,-52,25,73
+United States,Los Angeles,2020-04-03,-43,-51,-51,25,73
+United States,Los Angeles,2020-04-04,-50,-51,-41,20,73
+United States,Los Angeles,2020-04-05,-53,-57,-43,17,73
+United States,Los Angeles,2020-04-06,-49,-59,-54,25,73
+United States,Los Angeles,2020-04-07,-51,-58,-54,26,73
+United States,Los Angeles,2020-04-08,-49,-57,-55,26,73
+United States,Los Angeles,2020-04-09,-55,-65,-57,29,73
+United States,Los Angeles,2020-04-10,-49,-58,-57,29,73
+United States,Los Angeles,2020-04-11,-51,-52,-43,20,73
+United States,Los Angeles,2020-04-12,-64,-60,-46,18,73
+United States,Los Angeles,2020-04-13,-47,-54,-51,23,73
+United States,Los Angeles,2020-04-14,-45,-51,-51,24,73
+United States,Los Angeles,2020-04-15,-47,-50,-51,24,73
+United States,Los Angeles,2020-04-16,-55,-51,-51,24,73
+United States,Los Angeles,2020-04-17,-56,-52,-50,25,73
+United States,Los Angeles,2020-04-18,-59,-50,-38,19,73
+United States,Los Angeles,2020-04-19,-60,-53,-39,16,73
+United States,Los Angeles,2020-04-20,-54,-50,-49,22,73
+United States,Los Angeles,2020-04-21,-54,-51,-50,23,73
+United States,Los Angeles,2020-04-22,-54,-51,-50,23,73
+United States,Los Angeles,2020-04-23,-54,-51,-51,24,73
+United States,Los Angeles,2020-04-24,-54,-51,-49,24,73
+United States,Los Angeles,2020-04-25,-57,-48,-37,17,73
+United States,Los Angeles,2020-04-26,-57,-52,-39,15,73
+United States,Los Angeles,2020-04-27,-52,-49,-48,21,73
+United States,Los Angeles,2020-04-28,-52,-48,-49,14,73
+United States,Los Angeles,2020-04-29,-50,-49,-49,22,73
+United States,Los Angeles,2020-04-30,-48,-48,-50,22,73
+United States,Los Angeles,2020-05-01,-48,-46,-48,23,73
+United States,Los Angeles,2020-05-02,-51,-43,-35,16,73
+United States,Los Angeles,2020-05-03,-51,-47,-34,13,73
+United States,Los Angeles,2020-05-04,-46,-46,-46,19,73
+United States,Los Angeles,2020-05-05,-46,-45,-47,20,73
+United States,Los Angeles,2020-05-06,-47,-47,-48,21,73
+United States,Los Angeles,2020-05-07,-46,-47,-48,21,73
+United States,Los Angeles,2020-05-08,-46,-45,-46,21,73
+United States,Los Angeles,2020-05-09,-47,-39,-32,14,73
+United States,Los Angeles,2020-05-10,-48,-40,-31,10,73
+United States,Los Angeles,2020-05-11,-46,-46,-45,19,73
+United States,Los Angeles,2020-05-12,-46,-45,-46,20,73
+United States,Los Angeles,2020-05-13,-45,-44,-46,20,73
+United States,Los Angeles,2020-05-14,-45,-45,-46,21,73
+United States,Los Angeles,2020-05-15,-46,-44,-45,21,73
+United States,Los Angeles,2020-05-16,-48,-40,-30,14,73
+United States,Los Angeles,2020-05-17,-48,-44,-30,12,73
+United States,Los Angeles,2020-05-18,-45,-49,-44,19,73
+United States,Los Angeles,2020-05-19,-42,-44,-44,19,73
+United States,Los Angeles,2020-05-20,-42,-43,-44,19,73
+United States,Los Angeles,2020-05-21,-42,-43,-44,19,73
+United States,Los Angeles,2020-05-22,-43,-43,-42,19,73
+United States,Los Angeles,2020-05-23,-46,-39,-28,12,73
+United States,Los Angeles,2020-05-24,-47,-43,-29,10,73
+United States,Los Angeles,2020-05-25,-46,-52,-72,24,73
+United States,Los Angeles,2020-05-26,-43,-43,-42,18,73
+United States,Los Angeles,2020-05-27,-42,-42,-42,18,73
+United States,Los Angeles,2020-05-28,-41,-43,-42,19,73
+United States,Los Angeles,2020-05-29,-43,-42,-40,19,73
+United States,Los Angeles,2020-05-30,-45,-39,-21,13,73
+United States,Los Angeles,2020-05-31,-51,-45,-25,12,73
+United States,Los Angeles,2020-06-01,-48,-47,-43,20,73
+United States,Los Angeles,2020-06-02,-45,-45,-43,20,73
+United States,Los Angeles,2020-06-03,-39,-43,-42,18,73
+United States,Los Angeles,2020-06-04,-38,-42,-42,18,73
+United States,Los Angeles,2020-06-05,-39,-42,-40,18,73
+United States,Los Angeles,2020-06-06,-40,-36,-21,11,73
+United States,Los Angeles,2020-06-07,-38,-38,-21,9,73
+United States,Los Angeles,2020-06-08,-34,-40,-39,15,73
+United States,Los Angeles,2020-06-09,-34,-40,-40,16,73
+United States,Los Angeles,2020-06-10,-33,-39,-40,16,73
+United States,Los Angeles,2020-06-11,-32,-39,-40,16,73
+United States,Los Angeles,2020-06-12,-33,-38,-39,16,73
+United States,Los Angeles,2020-06-13,-36,-32,-18,9,73
+United States,Los Angeles,2020-06-14,-34,-34,-19,7,73
+Japan,Tokyo,2020-02-15,-2,1,4,1,19
+Japan,Tokyo,2020-02-16,-13,-9,-1,3,19
+Japan,Tokyo,2020-02-17,-4,-1,1,0,19
+Japan,Tokyo,2020-02-18,-2,-3,0,1,19
+Japan,Tokyo,2020-02-19,-4,-5,-1,1,19
+Japan,Tokyo,2020-02-20,-4,-5,-1,1,25
+Japan,Tokyo,2020-02-21,-4,-5,-2,2,25
+Japan,Tokyo,2020-02-22,-9,-5,-1,2,25
+Japan,Tokyo,2020-02-23,-3,-5,-1,0,25
+Japan,Tokyo,2020-02-24,-5,-40,-66,19,25
+Japan,Tokyo,2020-02-25,-6,-5,-1,1,34
+Japan,Tokyo,2020-02-26,-11,-8,-1,2,34
+Japan,Tokyo,2020-02-27,-8,-10,-2,3,34
+Japan,Tokyo,2020-02-28,-9,-12,-1,4,34
+Japan,Tokyo,2020-02-29,-13,-19,1,5,34
+Japan,Tokyo,2020-03-01,-15,-25,-1,4,34
+Japan,Tokyo,2020-03-02,-21,-16,-5,6,44
+Japan,Tokyo,2020-03-03,-8,-16,-6,5,44
+Japan,Tokyo,2020-03-04,-20,-20,-8,7,44
+Japan,Tokyo,2020-03-05,-14,-18,-7,7,44
+Japan,Tokyo,2020-03-06,-14,-20,-8,7,44
+Japan,Tokyo,2020-03-07,-18,-25,-6,6,44
+Japan,Tokyo,2020-03-08,-26,-34,-8,7,44
+Japan,Tokyo,2020-03-09,-13,-17,-6,5,41
+Japan,Tokyo,2020-03-10,-20,-19,-10,8,41
+Japan,Tokyo,2020-03-11,-9,-18,-8,5,41
+Japan,Tokyo,2020-03-12,-10,-18,-8,6,41
+Japan,Tokyo,2020-03-13,-10,-19,-8,7,41
+Japan,Tokyo,2020-03-14,-29,-30,-11,9,41
+Japan,Tokyo,2020-03-15,-10,-24,-3,4,41
+Japan,Tokyo,2020-03-16,-13,-16,-5,5,41
+Japan,Tokyo,2020-03-17,-9,-17,-7,5,41
+Japan,Tokyo,2020-03-18,-9,-15,-7,5,41
+Japan,Tokyo,2020-03-19,-3,-13,-8,4,41
+Japan,Tokyo,2020-03-20,-15,-44,-66,22,41
+Japan,Tokyo,2020-03-21,-13,-21,-10,4,41
+Japan,Tokyo,2020-03-22,-13,-21,-5,2,41
+Japan,Tokyo,2020-03-23,-13,-15,-6,5,41
+Japan,Tokyo,2020-03-24,-8,-16,-9,6,41
+Japan,Tokyo,2020-03-25,-6,-14,-8,4,41
+Japan,Tokyo,2020-03-26,-10,-17,-10,6,41
+Japan,Tokyo,2020-03-27,-20,-25,-15,10,41
+Japan,Tokyo,2020-03-28,-46,-46,-19,13,41
+Japan,Tokyo,2020-03-29,-63,-59,-27,14,41
+Japan,Tokyo,2020-03-30,-24,-27,-16,10,41
+Japan,Tokyo,2020-03-31,-23,-27,-16,10,41
+Japan,Tokyo,2020-04-01,-38,-31,-20,13,41
+Japan,Tokyo,2020-04-02,-28,-32,-21,12,41
+Japan,Tokyo,2020-04-03,-30,-33,-22,14,44
+Japan,Tokyo,2020-04-04,-42,-48,-25,13,44
+Japan,Tokyo,2020-04-05,-50,-58,-27,12,44
+Japan,Tokyo,2020-04-06,-29,-32,-22,12,44
+Japan,Tokyo,2020-04-07,-32,-38,-27,15,45
+Japan,Tokyo,2020-04-08,-45,-46,-35,18,45
+Japan,Tokyo,2020-04-09,-47,-49,-38,21,45
+Japan,Tokyo,2020-04-10,-48,-51,-39,23,45
+Japan,Tokyo,2020-04-11,-52,-59,-37,17,45
+Japan,Tokyo,2020-04-12,-59,-66,-38,15,45
+Japan,Tokyo,2020-04-13,-65,-56,-43,25,45
+Japan,Tokyo,2020-04-14,-47,-54,-44,23,45
+Japan,Tokyo,2020-04-15,-49,-53,-45,23,45
+Japan,Tokyo,2020-04-16,-52,-56,-46,24,47
+Japan,Tokyo,2020-04-17,-53,-57,-46,26,47
+Japan,Tokyo,2020-04-18,-72,-70,-44,22,47
+Japan,Tokyo,2020-04-19,-54,-61,-36,13,47
+Japan,Tokyo,2020-04-20,-63,-58,-46,25,47
+Japan,Tokyo,2020-04-21,-53,-56,-47,24,47
+Japan,Tokyo,2020-04-22,-57,-58,-48,25,47
+Japan,Tokyo,2020-04-23,-56,-58,-48,25,47
+Japan,Tokyo,2020-04-24,-57,-57,-46,27,47
+Japan,Tokyo,2020-04-25,-59,-60,-39,18,47
+Japan,Tokyo,2020-04-26,-61,-65,-39,15,47
+Japan,Tokyo,2020-04-27,-59,-57,-46,25,47
+Japan,Tokyo,2020-04-28,-53,-56,-47,24,47
+Japan,Tokyo,2020-04-29,-57,-73,-78,32,47
+Japan,Tokyo,2020-04-30,-54,-57,-50,26,47
+Japan,Tokyo,2020-05-01,-57,-59,-51,28,47
+Japan,Tokyo,2020-05-02,-61,-62,-41,19,47
+Japan,Tokyo,2020-05-03,-60,-64,-40,15,47
+Japan,Tokyo,2020-05-04,-60,-76,-80,36,47
+Japan,Tokyo,2020-05-05,-57,-75,-81,36,47
+Japan,Tokyo,2020-05-06,-68,-78,-80,37,47
+Japan,Tokyo,2020-05-07,-53,-51,-42,22,47
+Japan,Tokyo,2020-05-08,-55,-54,-43,25,47
+Japan,Tokyo,2020-05-09,-55,-56,-33,17,47
+Japan,Tokyo,2020-05-10,-55,-60,-34,14,47
+Japan,Tokyo,2020-05-11,-54,-50,-40,21,47
+Japan,Tokyo,2020-05-12,-53,-53,-44,23,47
+Japan,Tokyo,2020-05-13,-53,-54,-44,23,47
+Japan,Tokyo,2020-05-14,-53,-53,-44,23,41
+Japan,Tokyo,2020-05-15,-54,-53,-43,25,41
+Japan,Tokyo,2020-05-16,-64,-62,-37,19,41
+Japan,Tokyo,2020-05-17,-48,-56,-31,12,41
+Japan,Tokyo,2020-05-18,-55,-51,-41,22,41
+Japan,Tokyo,2020-05-19,-57,-55,-45,25,41
+Japan,Tokyo,2020-05-20,-52,-52,-43,23,41
+Japan,Tokyo,2020-05-21,-54,-53,-43,24,41
+Japan,Tokyo,2020-05-22,-53,-52,-41,25,41
+Japan,Tokyo,2020-05-23,-49,-52,-31,16,41
+Japan,Tokyo,2020-05-24,-46,-53,-29,12,41
+Japan,Tokyo,2020-05-25,-46,-46,-38,20,31
+Japan,Tokyo,2020-05-26,-47,-48,-39,21,34
+Japan,Tokyo,2020-05-27,-43,-46,-38,19,34
+Japan,Tokyo,2020-05-28,-44,-46,-37,20,34
+Japan,Tokyo,2020-05-29,-42,-44,-35,20,34
+Japan,Tokyo,2020-05-30,-38,-43,-24,12,34
+Japan,Tokyo,2020-05-31,-39,-47,-22,10,34
+Japan,Tokyo,2020-06-01,-41,-34,-26,15,31
+Japan,Tokyo,2020-06-02,-35,-36,-28,15,31
+Japan,Tokyo,2020-06-03,-37,-37,-29,15,31
+Japan,Tokyo,2020-06-04,-37,-37,-29,16,31
+Japan,Tokyo,2020-06-05,-37,-37,-28,17,31
+Japan,Tokyo,2020-06-06,-35,-39,-22,11,31
+Japan,Tokyo,2020-06-07,-30,-41,-19,8,31
+Japan,Tokyo,2020-06-08,-34,-34,-25,14,31
+Japan,Tokyo,2020-06-09,-33,-35,-27,15,31
+Japan,Tokyo,2020-06-10,-33,-35,-27,14,31
+Japan,Tokyo,2020-06-11,-38,-37,-28,16,31
+Japan,Tokyo,2020-06-12,-33,-36,-27,16,31
+Japan,Tokyo,2020-06-13,-40,-42,-24,13,31
+Japan,Tokyo,2020-06-14,-31,-42,-18,9,31
+India,Mumbai,2020-02-15,-3,3,2,0,10
+India,Mumbai,2020-02-16,0,2,0,0,10
+India,Mumbai,2020-02-17,-2,0,1,1,10
+India,Mumbai,2020-02-18,0,2,1,0,10
+India,Mumbai,2020-02-19,-1,-3,-12,3,10
+India,Mumbai,2020-02-20,0,2,0,0,10
+India,Mumbai,2020-02-21,-7,-9,-22,6,10
+India,Mumbai,2020-02-22,-7,-4,-5,2,10
+India,Mumbai,2020-02-23,-4,-1,3,1,10
+India,Mumbai,2020-02-24,-3,0,2,1,10
+India,Mumbai,2020-02-25,-3,-1,2,1,10
+India,Mumbai,2020-02-26,-1,2,3,0,10
+India,Mumbai,2020-02-27,-2,-1,1,1,10
+India,Mumbai,2020-02-28,-3,-1,4,1,10
+India,Mumbai,2020-02-29,-5,0,6,1,10
+India,Mumbai,2020-03-01,-2,-1,5,1,10
+India,Mumbai,2020-03-02,-2,0,4,1,10
+India,Mumbai,2020-03-03,-1,-1,3,1,10
+India,Mumbai,2020-03-04,0,2,6,0,16
+India,Mumbai,2020-03-05,-1,0,4,1,27
+India,Mumbai,2020-03-06,0,1,5,1,27
+India,Mumbai,2020-03-07,-2,3,4,1,27
+India,Mumbai,2020-03-08,1,-2,6,1,27
+India,Mumbai,2020-03-09,-1,-4,-4,2,27
+India,Mumbai,2020-03-10,-17,-32,-60,18,27
+India,Mumbai,2020-03-11,-5,0,0,0,27
+India,Mumbai,2020-03-12,-6,-3,-1,1,27
+India,Mumbai,2020-03-13,-9,-7,-2,3,33
+India,Mumbai,2020-03-14,-14,-9,-5,5,36
+India,Mumbai,2020-03-15,-17,-11,1,4,39
+India,Mumbai,2020-03-16,-12,-10,-8,5,48
+India,Mumbai,2020-03-17,-18,-15,-14,7,48
+India,Mumbai,2020-03-18,-22,-19,-18,8,50
+India,Mumbai,2020-03-19,-28,-26,-24,10,60
+India,Mumbai,2020-03-20,-41,-33,-31,14,71
+India,Mumbai,2020-03-21,-60,-45,-43,17,76
+India,Mumbai,2020-03-22,-86,-78,-62,26,100
+India,Mumbai,2020-03-23,-69,-69,-69,29,87
+India,Mumbai,2020-03-24,-76,-76,-77,34,87
+India,Mumbai,2020-03-25,-82,-81,-81,37,100
+India,Mumbai,2020-03-26,-80,-79,-78,36,100
+India,Mumbai,2020-03-27,-80,-79,-77,36,100
+India,Mumbai,2020-03-28,-82,-79,-74,34,100
+India,Mumbai,2020-03-29,-82,-77,-57,25,100
+India,Mumbai,2020-03-30,-79,-79,-76,35,100
+India,Mumbai,2020-03-31,-80,-80,-76,35,100
+India,Mumbai,2020-04-01,-80,-80,-77,35,100
+India,Mumbai,2020-04-02,-81,-81,-79,37,100
+India,Mumbai,2020-04-03,-80,-80,-76,36,100
+India,Mumbai,2020-04-04,-82,-79,-71,34,100
+India,Mumbai,2020-04-05,-82,-78,-55,25,100
+India,Mumbai,2020-04-06,-80,-80,-78,36,100
+India,Mumbai,2020-04-07,-82,-76,-76,35,100
+India,Mumbai,2020-04-08,-83,-76,-76,35,100
+India,Mumbai,2020-04-09,-83,-77,-77,37,100
+India,Mumbai,2020-04-10,-83,-78,-79,39,100
+India,Mumbai,2020-04-11,-85,-77,-73,36,100
+India,Mumbai,2020-04-12,-85,-75,-56,25,100
+India,Mumbai,2020-04-13,-82,-77,-75,37,100
+India,Mumbai,2020-04-14,-83,-78,-78,37,100
+India,Mumbai,2020-04-15,-82,-75,-74,35,100
+India,Mumbai,2020-04-16,-87,-75,-75,36,100
+India,Mumbai,2020-04-17,-87,-75,-74,37,100
+India,Mumbai,2020-04-18,-89,-75,-69,34,100
+India,Mumbai,2020-04-19,-89,-73,-53,25,100
+India,Mumbai,2020-04-20,-87,-75,-73,36,96
+India,Mumbai,2020-04-21,-87,-75,-74,36,96
+India,Mumbai,2020-04-22,-87,-75,-74,36,96
+India,Mumbai,2020-04-23,-88,-76,-74,37,96
+India,Mumbai,2020-04-24,-87,-76,-74,37,96
+India,Mumbai,2020-04-25,-89,-75,-70,35,96
+India,Mumbai,2020-04-26,-89,-74,-53,26,96
+India,Mumbai,2020-04-27,-87,-76,-73,37,96
+India,Mumbai,2020-04-28,-87,-75,-74,36,96
+India,Mumbai,2020-04-29,-87,-74,-73,36,96
+India,Mumbai,2020-04-30,-87,-75,-73,36,96
+India,Mumbai,2020-05-01,-87,-76,-77,38,96
+India,Mumbai,2020-05-02,-88,-74,-67,34,96
+India,Mumbai,2020-05-03,-88,-72,-50,25,96
+India,Mumbai,2020-05-04,-84,-71,-70,34,82
+India,Mumbai,2020-05-05,-84,-70,-70,34,82
+India,Mumbai,2020-05-06,-83,-68,-68,33,82
+India,Mumbai,2020-05-07,-83,-70,-71,34,82
+India,Mumbai,2020-05-08,-82,-68,-67,34,82
+India,Mumbai,2020-05-09,-85,-68,-64,32,82
+India,Mumbai,2020-05-10,-85,-67,-44,23,82
+India,Mumbai,2020-05-11,-82,-68,-67,33,82
+India,Mumbai,2020-05-12,-82,-68,-67,33,82
+India,Mumbai,2020-05-13,-82,-66,-66,32,82
+India,Mumbai,2020-05-14,-81,-68,-66,31,82
+India,Mumbai,2020-05-15,-81,-66,-65,32,82
+India,Mumbai,2020-05-16,-83,-66,-59,29,82
+India,Mumbai,2020-05-17,-83,-65,-41,21,82
+India,Mumbai,2020-05-18,-80,-67,-63,31,79
+India,Mumbai,2020-05-19,-80,-67,-64,31,79
+India,Mumbai,2020-05-20,-80,-65,-63,31,79
+India,Mumbai,2020-05-21,-80,-66,-63,31,79
+India,Mumbai,2020-05-22,-80,-66,-61,31,79
+India,Mumbai,2020-05-23,-81,-65,-57,29,79
+India,Mumbai,2020-05-24,-81,-62,-36,20,79
+India,Mumbai,2020-05-25,-80,-68,-67,32,79
+India,Mumbai,2020-05-26,-78,-65,-60,29,79
+India,Mumbai,2020-05-27,-78,-63,-59,28,79
+India,Mumbai,2020-05-28,-78,-64,-59,29,79
+India,Mumbai,2020-05-29,-78,-64,-58,30,79
+India,Mumbai,2020-05-30,-79,-62,-50,26,79
+India,Mumbai,2020-05-31,-79,-61,-29,19,79
+India,Mumbai,2020-06-01,-75,-61,-55,27,75
+India,Mumbai,2020-06-02,-76,-62,-56,27,75
+India,Mumbai,2020-06-03,-82,-69,-61,30,75
+India,Mumbai,2020-06-04,-76,-62,-58,26,75
+India,Mumbai,2020-06-05,-73,-59,-54,26,75
+India,Mumbai,2020-06-06,-74,-57,-46,23,75
+India,Mumbai,2020-06-07,-75,-55,-26,17,75
+India,Mumbai,2020-06-08,-69,-56,-51,24,75
+India,Mumbai,2020-06-09,-70,-56,-51,24,77
+India,Mumbai,2020-06-10,-69,-54,-50,23,77
+India,Mumbai,2020-06-11,-68,-56,-52,24,77
+India,Mumbai,2020-06-12,-69,-56,-51,24,77
+India,Mumbai,2020-06-13,-71,-55,-45,22,77
+India,Mumbai,2020-06-14,-72,-52,-24,16,77
+India,Delhi,2020-02-15,1,6,4,0,10
+India,Delhi,2020-02-16,2,6,2,0,10
+India,Delhi,2020-02-17,0,2,1,0,10
+India,Delhi,2020-02-18,0,3,3,0,10
+India,Delhi,2020-02-19,-1,2,3,0,10
+India,Delhi,2020-02-20,0,4,4,0,10
+India,Delhi,2020-02-21,-7,-8,-14,6,10
+India,Delhi,2020-02-22,0,0,1,1,10
+India,Delhi,2020-02-23,0,3,4,0,10
+India,Delhi,2020-02-24,-1,2,2,0,10
+India,Delhi,2020-02-25,-5,-2,-3,2,10
+India,Delhi,2020-02-26,-8,-7,-5,2,10
+India,Delhi,2020-02-27,-5,-5,-1,1,10
+India,Delhi,2020-02-28,-4,-4,0,1,10
+India,Delhi,2020-02-29,-13,-5,5,2,10
+India,Delhi,2020-03-01,-5,-3,3,2,10
+India,Delhi,2020-03-02,-3,-5,0,2,10
+India,Delhi,2020-03-03,-2,-2,4,0,10
+India,Delhi,2020-03-04,-5,-3,3,1,16
+India,Delhi,2020-03-05,-8,-4,3,1,27
+India,Delhi,2020-03-06,-15,-5,0,3,27
+India,Delhi,2020-03-07,-6,1,6,1,27
+India,Delhi,2020-03-08,-6,-7,7,1,27
+India,Delhi,2020-03-09,-2,-20,-18,5,27
+India,Delhi,2020-03-10,-51,-60,-79,24,27
+India,Delhi,2020-03-11,-15,-15,-11,2,27
+India,Delhi,2020-03-12,-10,-10,-2,1,27
+India,Delhi,2020-03-13,-11,-12,-2,2,33
+India,Delhi,2020-03-14,-20,-17,-7,4,36
+India,Delhi,2020-03-15,-15,-15,1,3,39
+India,Delhi,2020-03-16,-10,-13,-5,2,48
+India,Delhi,2020-03-17,-12,-17,-8,3,48
+India,Delhi,2020-03-18,-15,-20,-10,4,50
+India,Delhi,2020-03-19,-17,-24,-12,5,60
+India,Delhi,2020-03-20,-27,-31,-19,8,71
+India,Delhi,2020-03-21,-44,-40,-27,10,76
+India,Delhi,2020-03-22,-87,-81,-68,21,100
+India,Delhi,2020-03-23,-71,-74,-73,28,87
+India,Delhi,2020-03-24,-80,-82,-82,32,87
+India,Delhi,2020-03-25,-86,-87,-85,34,100
+India,Delhi,2020-03-26,-86,-87,-84,35,100
+India,Delhi,2020-03-27,-86,-87,-84,36,100
+India,Delhi,2020-03-28,-86,-85,-80,31,100
+India,Delhi,2020-03-29,-86,-84,-69,23,100
+India,Delhi,2020-03-30,-83,-86,-82,34,100
+India,Delhi,2020-03-31,-84,-86,-83,34,100
+India,Delhi,2020-04-01,-85,-87,-83,34,100
+India,Delhi,2020-04-02,-85,-88,-84,36,100
+India,Delhi,2020-04-03,-84,-87,-82,35,100
+India,Delhi,2020-04-04,-85,-86,-78,31,100
+India,Delhi,2020-04-05,-86,-86,-67,23,100
+India,Delhi,2020-04-06,-84,-87,-84,35,100
+India,Delhi,2020-04-07,-85,-84,-82,33,100
+India,Delhi,2020-04-08,-86,-84,-82,34,100
+India,Delhi,2020-04-09,-86,-85,-83,35,100
+India,Delhi,2020-04-10,-87,-86,-85,37,100
+India,Delhi,2020-04-11,-88,-85,-80,32,100
+India,Delhi,2020-04-12,-89,-84,-69,24,100
+India,Delhi,2020-04-13,-86,-85,-82,35,100
+India,Delhi,2020-04-14,-87,-85,-84,34,100
+India,Delhi,2020-04-15,-87,-84,-81,34,100
+India,Delhi,2020-04-16,-89,-83,-82,35,100
+India,Delhi,2020-04-17,-90,-83,-81,36,100
+India,Delhi,2020-04-18,-91,-83,-78,32,100
+India,Delhi,2020-04-19,-91,-82,-69,24,100
+India,Delhi,2020-04-20,-90,-83,-81,35,96
+India,Delhi,2020-04-21,-90,-84,-82,35,96
+India,Delhi,2020-04-22,-90,-84,-82,35,96
+India,Delhi,2020-04-23,-90,-84,-82,36,96
+India,Delhi,2020-04-24,-90,-84,-81,37,96
+India,Delhi,2020-04-25,-91,-83,-79,33,96
+India,Delhi,2020-04-26,-91,-82,-68,25,96
+India,Delhi,2020-04-27,-89,-83,-80,35,96
+India,Delhi,2020-04-28,-90,-83,-81,34,96
+India,Delhi,2020-04-29,-89,-82,-81,35,96
+India,Delhi,2020-04-30,-89,-82,-81,35,96
+India,Delhi,2020-05-01,-89,-82,-81,36,96
+India,Delhi,2020-05-02,-89,-81,-77,32,96
+India,Delhi,2020-05-03,-90,-80,-67,24,96
+India,Delhi,2020-05-04,-84,-77,-75,32,82
+India,Delhi,2020-05-05,-85,-77,-75,32,82
+India,Delhi,2020-05-06,-84,-76,-73,32,82
+India,Delhi,2020-05-07,-85,-78,-77,33,82
+India,Delhi,2020-05-08,-83,-76,-72,32,82
+India,Delhi,2020-05-09,-85,-75,-70,29,82
+India,Delhi,2020-05-10,-85,-74,-59,22,82
+India,Delhi,2020-05-11,-82,-75,-70,31,82
+India,Delhi,2020-05-12,-83,-75,-71,31,82
+India,Delhi,2020-05-13,-82,-73,-70,30,82
+India,Delhi,2020-05-14,-82,-74,-70,30,82
+India,Delhi,2020-05-15,-81,-73,-68,30,82
+India,Delhi,2020-05-16,-82,-72,-64,27,82
+India,Delhi,2020-05-17,-83,-71,-54,21,82
+India,Delhi,2020-05-18,-79,-71,-63,28,79
+India,Delhi,2020-05-19,-76,-67,-60,27,79
+India,Delhi,2020-05-20,-74,-65,-59,26,79
+India,Delhi,2020-05-21,-73,-65,-58,26,79
+India,Delhi,2020-05-22,-74,-65,-57,26,79
+India,Delhi,2020-05-23,-75,-65,-52,24,79
+India,Delhi,2020-05-24,-76,-64,-43,18,79
+India,Delhi,2020-05-25,-75,-69,-66,28,79
+India,Delhi,2020-05-26,-73,-63,-55,24,79
+India,Delhi,2020-05-27,-73,-63,-55,24,79
+India,Delhi,2020-05-28,-73,-63,-55,25,79
+India,Delhi,2020-05-29,-73,-64,-54,26,79
+India,Delhi,2020-05-30,-74,-62,-46,22,79
+India,Delhi,2020-05-31,-76,-63,-36,18,79
+India,Delhi,2020-06-01,-68,-59,-49,22,75
+India,Delhi,2020-06-02,-69,-59,-50,22,75
+India,Delhi,2020-06-03,-69,-58,-49,22,75
+India,Delhi,2020-06-04,-69,-59,-50,23,75
+India,Delhi,2020-06-05,-67,-59,-49,23,75
+India,Delhi,2020-06-06,-69,-58,-42,20,75
+India,Delhi,2020-06-07,-70,-58,-33,16,75
+India,Delhi,2020-06-08,-65,-58,-47,21,75
+India,Delhi,2020-06-09,-66,-58,-48,21,77
+India,Delhi,2020-06-10,-65,-57,-49,21,77
+India,Delhi,2020-06-11,-62,-58,-49,22,77
+India,Delhi,2020-06-12,-62,-58,-48,22,77
+India,Delhi,2020-06-13,-65,-57,-44,20,77
+India,Delhi,2020-06-14,-67,-57,-31,15,77

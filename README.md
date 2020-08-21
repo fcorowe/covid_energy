@@ -25,6 +25,16 @@ Analysis:
 
 - [Timeline of first confirmed case by country](https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory)
 
+- [Subnational COVID data](https://github.com/epiforecasts/covidregionaldata/tree/v0.6.0)
+
+- [Data hub](https://cgdv.github.io/challenges/COVID-19/datasource/)
+
+- [Google trend data store](https://googletrends.github.io/data/)
+
+- [Mobility data: Apple, Google and Waze](https://github.com/ActiveConclusion/COVID19_mobility)
+
+- [COVID-19 Open Data: Cities](https://github.com/GoogleCloudPlatform/covid-19-open-data#hospitalizations)
+
 # References
 
 Ruan, G., Wu, D., Zheng, X., Sivaranjani, S., Zhong, H., Kang, C., Dahleh, M.A. and Xie, L., 2020. [A Cross-Domain Approach to Analyzing the Short-Run Impact of COVID-19 on the US Electricity Sector.](http://www.enerarxiv.org/thesis/1594622565.pdf)
