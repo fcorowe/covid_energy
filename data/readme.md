@@ -1,4 +1,6 @@
-Combined dataset of government stringency and mobility available [here]().
+The list of UN cities in the dataset is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/uncities_final.xlsx).
+
+The combined dataset of government stringency and mobility is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/mobility_and_stringency_uncities.xlsx) for 1st January - 31st May.
 
 ### Notes on stringency data:
 Stringency of response data from is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/stringency_uncities.xlsx) from January 1st until May 31st. Stringency data is at country scale. The second column `City` is the name of our selected UN city.
