@@ -1,6 +1,6 @@
-#### Notes on Google Mobility Data for selected cities:
+### Notes on Google Mobility Data for selected cities:
 
-**Shanghai (China), Beijing (China), Wuhan (China). Kinshasa (Democratic Rupublic of the Congo), Tehran (Iran)**
+**Shanghai (China), Beijing (China), Wuhan (China), Kinshasa (Democratic Rupublic of the Congo), Tehran (Iran)**
 All countries missing from the Google dataset. 
 
 **Dhaka (Bangladesh), Bangkok (Thailand)**
