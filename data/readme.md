@@ -7,7 +7,7 @@ Google mobility data is available here.
 **Shanghai (China), Beijing (China), Wuhan (China), Kinshasa (Democratic Rupublic of the Congo), Tehran (Iran) -**
 All countries missing from the Google dataset. 
 
-**Dhaka (Bangladesh), Bangkok (Thailand) -**
+**Dhaka (Bangladesh), Bangkok (Thailand), Baghdad (Iraq) -**
 Only country-scale data available.
 
 **New York (United States) -**
