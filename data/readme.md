@@ -3,10 +3,10 @@ The list of UN cities in the dataset is available [here](https://github.com/fcor
 The combined dataset of government stringency and mobility is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/mobility_and_stringency_uncities.xlsx) for 1st January - 31st May.
 
 ### Notes on stringency data:
-Stringency of response data from is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/stringency_uncities.xlsx) from January 1st until May 31st. Stringency data is at country scale. The second column `City` is the name of our selected UN city.
+Stringency of response data from is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/stringency_uncities.xlsx) for January 1st until May 31st. Stringency data is at country scale. The second column `City` is the name of our selected UN city.
 
 ### Notes on Google Mobility Data for selected cities:
-Google mobility data is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/mobility_uncities.xlsx). The first column `City` is the name of our selected UN city.
+Google mobility data is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/mobility_uncities.xlsx). The first column `City` is the name of our selected UN city. The majority of the data is based on data specific to the city region, with a couple of exceptions listed below.
 
 **Shanghai (China), Beijing (China), Wuhan (China), Kinshasa (Democratic Rupublic of the Congo), Tehran (Iran) -**
 All countries missing from the Google dataset. 
