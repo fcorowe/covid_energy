@@ -1,7 +1,8 @@
 ### Notes on stringency data:
-Stringency of response data from is available [here]()
+Stringency of response data from is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/stringency_uncities.xlsx) from January 1st until May 31st. Stringency data is at country scale.
 
 ### Notes on Google Mobility Data for selected cities:
+Google mobility data is available here.
 
 **Shanghai (China), Beijing (China), Wuhan (China), Kinshasa (Democratic Rupublic of the Congo), Tehran (Iran) -**
 All countries missing from the Google dataset. 
