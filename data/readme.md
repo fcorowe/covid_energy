@@ -24,7 +24,7 @@ Based on data for Ontario province.
 Based on data for Guateng province.
 
 **Lima (Peru) -**
-Chose Lima Region, rather than the individual provinces.
+Chose Lima Region, rather than individual provinces.
 
 **Kabul (Afghanistan) -**
-Data cut short in spreadsheet, but shouldn't impact our analysis (ends on 15th May)
+Data cut short in spreadsheet, but shouldn't impact our analysis (ends on 15th May).
