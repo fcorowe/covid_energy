@@ -1,5 +1,5 @@
 ### Notes on stringency data:
-Stringency of response data from is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/stringency_uncities.xlsx) from January 1st until May 31st. Stringency data is at country scale.
+Stringency of response data from is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/stringency_uncities.xlsx) from January 1st until May 31st. Stringency data is at country scale. The second column `City` is the name of our selected UN city.
 
 ### Notes on Google Mobility Data for selected cities:
 Google mobility data is available [here](https://github.com/fcorowe/covid_energy/blob/master/data/mobility_uncities.xlsx). The first column `City` is the name of our selected UN city.
