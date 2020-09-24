@@ -1,3 +1,6 @@
+### Notes on stringency data:
+Stringency of response data from is available [here]()
+
 ### Notes on Google Mobility Data for selected cities:
 
 **Shanghai (China), Beijing (China), Wuhan (China), Kinshasa (Democratic Rupublic of the Congo), Tehran (Iran) -**
