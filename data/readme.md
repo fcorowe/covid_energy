@@ -13,8 +13,11 @@ Only country-scale data available.
 **New York (United States) -**
 Chosen only New York County, but could also combine with data about Kings County, Bronx County, Richmond County, Queens County, depending on the city boundaries used.
 
-**Toronto (Canada):**
+**Toronto (Canada) -**
 Based on data for Ontario province.
+
+**Johannesburg (South Africa) -**
+Based on data for Guateng province.
 
 **Lima (Peru) -**
 Chose Lima Region, rather than the individual provinces.
