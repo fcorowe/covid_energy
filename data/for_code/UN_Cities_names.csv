@@ -1,0 +1,51 @@
+City,Country,Population,first case rank
+Shanghai,China,27058.48,1
+Beijing,China,20462.61,1
+Wuhan,China,8364.98,1
+Bangkok,Thailand,10539.42,2
+Tokyo,Japan,37393.13,3
+Osaka [Kyoto],Japan,19165.34,3
+New York,United States of America,18803.55,4
+Los Angeles,United States of America,12446.6,4
+Seoul,Republic of Korea,9963.45,4
+Hong Kong,Hong Kong,7547.65,5
+Singapore,Singapore,5935.05,6
+Ho Chi Minh City,Vietnam,8602.32,6
+Paris,France,12537.95,7
+Melbourne,Australia,4967.73,8
+Toronto,Canada,6196.73,9
+Kuala Lumpur,Malaysia,7996.83,10
+Delhi [New Delhi],India,30290.94,11
+Mumbai,India,20411.27,11
+Rome,Italy,4257.06,12
+Milan,Italy,3140.18,12
+Quezon City [Manila],Philippines,13923.45,13
+Moscow,Russia,12537.95,14
+Madrid,Spain,6617.51,15
+London,United Kingdom,9304.02,16
+Cairo,Egypt,20900.6,17
+Tehran,Iran,9134.71,18
+Kabul,Afghanistan,14850.07,19
+Baghdad,Iraq,7144.26,20
+São Paulo,Brazil,22043.03,21
+Rio de Janeiro,Brazil,13458.08,21
+Karachi,Pakistan,16093.79,22
+Lahore,Pakistan,12642.42,22
+Lagos,Nigeria,14368.33,23
+Mexico City,Mexico,21782.38,24
+Jakarta,Indonesia,10770.49,25
+Riyadh,Saudia Arabia,7231.45,26
+Buenos Aires,Argentina,15153.73,27
+Santiago,Chile,6767.22,27
+Johannesburg,South Africa,5782.75,28
+Bogota,Colombia,12446.6,29
+Lima,Peru,10719.19,30
+Dhaka,Bangladesh,21005.86,31
+Istanbul,Turkey,15190.34,32
+Kinshasa,Democratic Republic of the Congo,14342.44,32
+Abidjan,Côte d'Ivoire,5179.48,33
+Addis Ababa,Ethiopia,4793.7,34
+Nairobi,Kenya,4734.88,34
+Dar es Salaam,United Republic of Tanzania,6701.65,35
+Luanda,Angola,8329.8,36
+Yangon,Myanmar,5331.8,37
