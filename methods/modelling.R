@@ -1,5 +1,6 @@
 library(countrycode)
 library(tidyverse)
+library(timetk)
 
 rm(list=ls())
 
@@ -68,22 +69,46 @@ cdf <- cdf %>% group_by(City) %>%
 
 cdf <- cdf %>% mutate(gr_cases = ( (total_cases - t_cases_lag) / t_cases_lag) *100 )
 
-# doubling time
+# doubling time: time taken for a population to double in size
 cdf <- cdf %>% mutate(dng_time = log(2) / log( 1 + gr_cases) ) 
 cdf$dng_time[is.infinite(cdf$dng_time)] <- 0
 
 # troubleshooting
 #cdf[1:15, c(3, 4, 5, 6, 49, 46)]
 #cdf[85:100, c(3, 4, 5, 6, 49, 46)]
+rm(case_data,
+   case_data_subset,
+   cities_data,
+   mob_data)
 
 #######
 # 3. Exploratory data analysis
+
 
 ## 3.1. N of observations by city
 table(cdf$City)
 
 ## 3.2 Autocorrelation in mobility
-
+cdf %>% dplyr::filter(City %in% c("Bangkok", "Tokyo", "New York")) %>% 
+  group_by(City) %>% 
+  plot_acf_diagnostics(date, Workplaces, 
+                       .lags = "7 days",
+                       .interactive = FALSE
+  )
+ #   lag.max = NULL, 
+#    type = "correlation", 
+ #   plot = TRUE)
 
 #######
 # 4. Multilevel modelling
+
+
+
+
+grouped_acf_values <- sample_data %>%
+  tidyr::nest(-group) %>%
+  dplyr::mutate(acf_results = purrr::map(data, ~ acf(.x$value, plot = F)),
+                acf_values = purrr::map(acf_results, ~ drop(.x$acf))) %>%
+  tidyr::unnest(acf_values) %>%
+  dplyr::group_by(group) %>%
+  dplyr::mutate(lag = seq(0, n() - 1))
