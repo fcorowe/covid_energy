@@ -5,10 +5,25 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 mi,t = mi,t-1 + ci,t + di,t + si,t +  lags\
+\f0\fs24 \cf0 mi,t = mi,t-1 + ci,t + di,t + si,t +  lags + pace of change\
 \
-m = workplace mobility, combined mobility\
+m: workplace mobility, combined mobility\
+c: new cases per million\
+d: new deaths per million\
+s: stringency index\
+Growth rate_t = ct - ct-1 / ct-1\
+Doubling time = ln(2) / ln(1 + grt) - doubling time is usually used as a dynamic measure to inform the impact of interventions on epidemic transmission especially at the initial stage of the exponential growth\
 \
 lags = n of lags to be determined for c, d and s \
 \
-variability in the relationship between m and c, d and s across i and t}
+variability in the relationship between m and c, d and s across i and t\
+\
+Pace of change = how can this be captured?\
+\
+Controls:\
+- new_tests_per_thousand \
+- population_density\
+- aged_65_older\
+- gdp_per_capita\
+- cardiovasc_death_rate \
+- diabetes_prevalence}
