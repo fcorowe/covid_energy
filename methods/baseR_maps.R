@@ -3,15 +3,16 @@ library(viridis)
 library(tmaptools)
 library(sf)
 library(countrycode)
-
+#"../data/for_code/NTL/jan_data.tif"
 # read the raster data
 dec_data <- raster("../data/for_code/NTL/dec_data.tif")
 jan_data <- raster("../data/for_code/NTL/jan_data.tif")
 feb_data <- raster("../data/for_code/NTL/feb_data.tif")
 mar_data <- raster("../data/for_code/NTL/mar_data.tif")
+apr_data <- raster("../data/for_code/NTL/apr_data.tif")
 
 # stack all the months
-multiple_years <- stack(dec_data, jan_data, feb_data, mar_data)
+multiple_years <- stack(dec_data, jan_data, feb_data, mar_data, apr_data)
 
 
 # read the FUAs polygons
@@ -39,18 +40,18 @@ country <- country[46:50]
 
 png("testing_mapBASE.png",units="in", width=10, height=10, res=300)
 #Set layout
-par(mai=c(0,0,0,0),mfrow = c(5,4), bg='black', bty='n')
+par(mai=c(0,0,0,0),mfrow = c(5,5), bg='black', bty='n')
 
 for(i in 1:length(cities)){
-
-
+  
+  
   for (k in 1:nlayers(multiple_years)) {
     
     city_subset <- subset(fua, eFUA_name==cities[i] & Cntry_ISO ==country[i])
     
     
     
-
+    
     
     bbox_extent <- st_bbox(city_subset)
     
@@ -58,7 +59,7 @@ for(i in 1:length(cities)){
     
     r <- crop(multiple_years[[k]], crop_extent)
     
-
+    
     plot(r,
          col = magma(255, direction = 1),
          legend = F,
@@ -66,18 +67,17 @@ for(i in 1:length(cities)){
          xaxt ='n',
          frame = F,
          asp = 0)
-
     
-
     
-
+    
+    
+    
     
   }
-
   
-
+  
+  
 }
 
 
 dev.off()
-
