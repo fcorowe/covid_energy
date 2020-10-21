@@ -12,7 +12,7 @@ dec_data <- raster("../data/for_code/NTL/dec_data.tif")
 jan_data <- raster("../data/for_code/NTL/jan_data.tif")
 feb_data <- raster("../data/for_code/NTL/feb_data.tif")
 mar_data <- raster("../data/for_code/NTL/mar_data.tif")
-
+apr_data <- raster("../data/for_code/NTL/apr_data.tif")
 
 
 
@@ -25,7 +25,7 @@ fua <- st_transform(fua, WGS84)
 
 
 # function that creates the density plots by month
-create_density_plot <- function(month1raster, month2raster, month3raster, month4raster,  city_name, country_code) {
+create_density_plot <- function(month1raster, month2raster, month3raster, month4raster, month5raster,  city_name, country_code) {
   
   city_subset <- subset(fua, eFUA_name==city_name & Cntry_ISO ==country_code)
   
@@ -33,9 +33,10 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
   month2_crop <- crop(month2raster, extent(city_subset))
   month3_crop <- crop(month3raster, extent(city_subset))
   month4_crop <- crop(month4raster, extent(city_subset))
+  month5_crop <- crop(month5raster, extent(city_subset))
   
   #create stack for all months
-  multiple_months <- stack(month1_crop, month2_crop, month3_crop, month4_crop)
+  multiple_months <- stack(month1_crop, month2_crop, month3_crop, month4_crop, month5_crop)
   
   # convert to data frame
   r_df <- as.data.frame(multiple_months, xy = TRUE)
@@ -43,10 +44,11 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
   colnames(r_df)[4] <- "January"
   colnames(r_df)[5] <- "February"
   colnames(r_df)[6] <- "March"
+  colnames(r_df)[7] <- "April"
   
   # convert from wide to long format
 
-  r_df_long <- gather(r_df, month, measurement, 3:6, factor_key=TRUE)
+  r_df_long <- gather(r_df, month, measurement, 3:7, factor_key=TRUE)
   
 
   
@@ -84,7 +86,7 @@ plotList <- list()
 
 for(i in 1:length(cities)){
   plotList[[i]] <- create_density_plot(month1raster = dec_data, month2raster = jan_data,
-                               month3raster = feb_data, month4raster = mar_data,
+                               month3raster = feb_data, month4raster = mar_data, month5raster = apr_data,
                                city_name = cities[i], country_code = country[i])
 }
 
@@ -99,3 +101,4 @@ annotate_figure(combined_plots,
                 left = text_grob("Density", size = 10, rot = 90)
 )
 dev.off() 
+
