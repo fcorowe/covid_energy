@@ -69,7 +69,7 @@ for(i in 1:length(cities)){
   
   combined <- cbind(pop_df, month_df)
   
-  # se;ect the columns needed
+  # select the columns needed
   combined <- combined[,c(1:3,6)]
   
   

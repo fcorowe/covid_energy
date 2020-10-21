@@ -1,6 +1,8 @@
 library(countrycode)
 library(tidyverse)
 library(timetk)
+library(ggpubr)
+library(lme4)
 
 rm(list=ls())
 
@@ -21,6 +23,7 @@ mob_data <- read.csv("../data/for_code/mobility_and_stringency_uncities.csv")
 
 ## 2.1 COVID data
 # define a vector of city names
+cities_data <- cities_data %>% arrange(first.case.rank)
 cities <- as.vector(cities_data[,1])
 
 # define a vector of country names
@@ -58,10 +61,14 @@ mob_data <- mob_data %>%
 ## 2.3 Create a single data frame
 cdf <- left_join(case_data_subset, mob_data,by = c("iso_code" = "iso_code", "date" = "Date"))
 
-## 2.4 Restrict sample to 14/02 when mobility data start
+## 2.4 Use a factor to sort data by cities
+cdf <- cdf[order(cdf$City),]
+cdf$City <- ordered(cdf$City, levels = cities)
+
+## 2.5 Restrict sample to 14/02 when mobility data start
 cdf <- cdf %>% filter(date > "2020-02-14")
 
-## 2.5 Creating additional variables
+## 2.6 Creating additional variables
 # growth rate
 cdf <- cdf %>% group_by(City) %>% 
   filter(total_cases > 0) %>% 
@@ -76,6 +83,11 @@ cdf$dng_time[is.infinite(cdf$dng_time)] <- 0
 # troubleshooting
 #cdf[1:15, c(3, 4, 5, 6, 49, 46)]
 #cdf[85:100, c(3, 4, 5, 6, 49, 46)]
+
+## 2.7 Filter out Chinese Cities
+cdf <-cdf %>% dplyr::filter( location !=  "China")
+
+## 2.8 remove dfs
 rm(case_data,
    case_data_subset,
    cities_data,
@@ -89,26 +101,122 @@ rm(case_data,
 table(cdf$City)
 
 ## 3.2 Autocorrelation in mobility
-cdf %>% dplyr::filter(City %in% c("Bangkok", "Tokyo", "New York")) %>% 
+p1 <- cdf %>% dplyr::filter(as.integer(City) %in% c(1:12)) %>% 
   group_by(City) %>% 
   plot_acf_diagnostics(date, Workplaces, 
-                       .lags = "7 days",
+                       .lags = "14 days",
+                       .line_size = 2,
+                       .show_white_noise_bars = TRUE,
                        .interactive = FALSE
   )
- #   lag.max = NULL, 
-#    type = "correlation", 
- #   plot = TRUE)
+
+p2 <- cdf %>% dplyr::filter(as.integer(City) %in% c(12:20)) %>% 
+  group_by(City) %>% 
+  plot_acf_diagnostics(date, Workplaces, 
+                       .lags = "14 days",
+                       .line_size = 2,
+                       .show_white_noise_bars = TRUE,
+                       .interactive = FALSE
+  )
+
+p3 <- cdf %>% dplyr::filter(as.integer(City) %in% c(21:29)) %>% 
+  group_by(City) %>% 
+  plot_acf_diagnostics(date, Workplaces, 
+                       .lags = "14 days",
+                       .line_size = 2,
+                       .show_white_noise_bars = TRUE,
+                       .interactive = FALSE
+  )
+
+p4 <- cdf %>% dplyr::filter(as.integer(City) %in% c(30:38)) %>% 
+  group_by(City) %>% 
+  plot_acf_diagnostics(date, Workplaces, 
+                       .lags = "14 days",
+                       .line_size = 2,
+                       .show_white_noise_bars = TRUE,
+                       .interactive = FALSE
+  )
+
+p5 <- cdf %>% dplyr::filter(as.integer(City) %in% c(39:47)) %>% 
+  group_by(City) %>% 
+  plot_acf_diagnostics(date, Workplaces, 
+                       .lags = "14 days",
+                       .line_size = 2,
+                       .show_white_noise_bars = TRUE,
+                       .interactive = FALSE
+  )
+
+p6 <- cdf %>% dplyr::filter(as.integer(City) %in% c(48:50)) %>% 
+  group_by(City) %>% 
+  plot_acf_diagnostics(date, Workplaces, 
+                       .lags = "14 days",
+                       .line_size = 2,
+                       .show_white_noise_bars = TRUE,
+                       .interactive = FALSE
+  )
+png("../outputs/modelling/pacf1.png",units="in", width=10, height=10, res=300)
+p1
+dev.off()
+
+png("../outputs/modelling/pacf2.png",units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+png("../outputs/modelling/pacf3.png",units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+png("../outputs/modelling/pacf4.png",units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+png("../outputs/modelling/pacf5.png",units="in", width=10, height=10, res=300)
+p5
+dev.off()
+
+png("../outputs/modelling/pacf5.png",units="in", width=10, height=10, res=300)
+p6
+dev.off()
+
+rm(p1,p2,p3,p4,p5,p6)
+
+
+## 3.4 Correlation
+corr <- cdf %>%
+  group_by(City) %>% 
+  dplyr::summarise(r = cor(Workplaces, 
+                    Residential, 
+                    new_cases_per_million, 
+                    new_deaths_per_million, 
+                    stringency_index))
+
+
+vars_keep <- names(mtcars)[c(1, 3, 4)]
+some <- mtcars %>% split(.$cyl) %>% map(select, vars_keep) %>% map(cor)
+
+df <- some %>% reshape2::melt() %>% rename(cyl = L1)
+ggplot(df, aes(x = Var1, y = Var2, fill = value)) + geom_tile() + facet_wrap(~cyl, 
+                                                                             nrow = 1)
+
 
 #######
 # 4. Multilevel modelling
 
+## 4.1 Model with varying intercept
+# specify a model equation
+eq1 <- Workplaces ~ 1 + (1 | City) + (1 | date)
+model1 <- lmer(eq1, data = cdf)
+
+# estimates
+summary(model1)
 
 
 
-grouped_acf_values <- sample_data %>%
-  tidyr::nest(-group) %>%
-  dplyr::mutate(acf_results = purrr::map(data, ~ acf(.x$value, plot = F)),
-                acf_values = purrr::map(acf_results, ~ drop(.x$acf))) %>%
-  tidyr::unnest(acf_values) %>%
-  dplyr::group_by(group) %>%
-  dplyr::mutate(lag = seq(0, n() - 1))
+## 4.2 Model with varying intercept
+# specify a model equation
+eq2 <- Workplaces ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + new_deaths_per_million + stringency_index
+model2 <- lmer(eq1, data = cdf)
+
+# estimates
+summary(model2)
+
