@@ -210,7 +210,7 @@ plotList2 <- list()
 
 for (j in levels(cdf$City)[1:25]) {
   
-  plotList[[1]] <- ggplot(cdf, aes(x = date, y = measure, colour= variable)) +
+  plotList[[1]] <- ggplot(cdf, aes(x = date, y = Residential, colour= "#74787b")) +
     geom_smooth(method = "loess", se = FALSE, size=1, span = 0.3) +
     xlab("") +
     ylab("") +
@@ -223,7 +223,7 @@ for (j in levels(cdf$City)[1:25]) {
     scale_color_manual(values = cpal) +
     guides(color=guide_legend(""))
   
-  plotList[[2]] <- ggplot(data4, aes(x = Date, y = Residential, colour= "#74787b")) +
+  plotList[[2]] <- ggplot(data4, aes(x = Date, y = Residential, colour= "#000000")) +
     geom_smooth(method = "loess", se = FALSE, size=1, span = 0.3) +
     xlab("") +
     ylab("") +
