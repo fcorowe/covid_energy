@@ -7,6 +7,7 @@ library(ggcorrplot)
 library(corrplot)
 library(viridis)
 library(sf)
+library(ggthemes)
 
 rm(list=ls())
 
@@ -81,20 +82,55 @@ cdf$City <- ordered(cdf$City, levels = cities)
 cdf <- cdf %>% filter(date > "2020-02-14")
 
 ## 2.6 Creating additional variables
-# growth rate
+
+# COVID cases at t1-7
+cdf <- cdf %>% group_by(City) %>% 
+  mutate(
+    casespm_t1lag = lag(new_cases_per_million, n=1, default = NA),
+    casespm_t2lag = lag(new_cases_per_million, n=2, default = NA),
+    casespm_t3lag = lag(new_cases_per_million, n=3, default = NA),
+    casespm_t4lag = lag(new_cases_per_million, n=4, default = NA),
+    casespm_t5lag = lag(new_cases_per_million, n=5, default = NA),
+    casespm_t6lag = lag(new_cases_per_million, n=6, default = NA),
+    casespm_t7lag = lag(new_cases_per_million, n=7, default = NA)
+    )
+
+# Cases growth rate
 cdf <- cdf %>% group_by(City) %>% 
   filter(total_cases > 0) %>% 
   mutate(cases_t1lag = lag(total_cases, n=1, default = NA))
-
 cdf <- cdf %>% mutate(gr_cases = ( (total_cases - cases_t1lag) / cases_t1lag) *100 )
 
-# doubling time: time taken for a population to double in size
+# Cases doubling time: time taken for a population to double in size
 cdf <- cdf %>% mutate(dng_time = log(2) / log( 1 + gr_cases) ) 
 cdf$dng_time[is.infinite(cdf$dng_time)] <- 0
 
 # troubleshooting
 #cdf[1:15, c(3, 4, 5, 6, 49, 46)]
 #cdf[85:100, c(3, 4, 5, 6, 49, 46)]
+
+# COVID deaths at t1-7
+cdf <- cdf %>% group_by(City) %>% 
+  mutate(deathspm_t1lag = lag(new_deaths_per_million, n=1, default = NA),
+         deathspm_t2lag = lag(new_deaths_per_million, n=2, default = NA),
+         deathspm_t3lag = lag(new_deaths_per_million, n=3, default = NA),
+         deathspm_t4lag = lag(new_deaths_per_million, n=4, default = NA),
+         deathspm_t5lag = lag(new_deaths_per_million, n=5, default = NA),
+         deathspm_t6lag = lag(new_deaths_per_million, n=6, default = NA),
+         deathspm_t7lag = lag(new_deaths_per_million, n=7, default = NA)
+         )
+
+# Stringency measures at t1-7
+cdf <- cdf %>% group_by(City) %>% 
+  mutate(
+    stringency_t1lag = lag(stringency_index, n=1, default = NA),
+    stringency_t2lag = lag(stringency_index, n=2, default = NA),
+    stringency_t3lag = lag(stringency_index, n=3, default = NA),
+    stringency_t4lag = lag(stringency_index, n=4, default = NA),
+    stringency_t5lag = lag(stringency_index, n=5, default = NA),
+    stringency_t6lag = lag(stringency_index, n=6, default = NA),
+    stringency_t7lag = lag(stringency_index, n=7, default = NA)
+         )
 
 ## 2.7 Filter out Chinese Cities
 cdf <-cdf %>% dplyr::filter( location !=  "China")
@@ -166,27 +202,27 @@ p6 <- cdf %>% dplyr::filter(as.integer(City) %in% c(48:50)) %>%
                        .show_white_noise_bars = TRUE,
                        .interactive = FALSE
   )
-png("../outputs/modelling/pacf1.png",units="in", width=10, height=10, res=300)
+png("../outputs/modelling/autocorrelation/pacf1.png",units="in", width=10, height=10, res=300)
 p1
 dev.off()
 
-png("../outputs/modelling/pacf2.png",units="in", width=10, height=10, res=300)
+png("../outputs/modelling/autocorrelation/pacf2.png",units="in", width=10, height=10, res=300)
 p2
 dev.off()
 
-png("../outputs/modelling/pacf3.png",units="in", width=10, height=10, res=300)
+png("../outputs/modelling/autocorrelation/pacf3.png",units="in", width=10, height=10, res=300)
 p3
 dev.off()
 
-png("../outputs/modelling/pacf4.png",units="in", width=10, height=10, res=300)
+png("../outputs/modelling/autocorrelation/pacf4.png",units="in", width=10, height=10, res=300)
 p4
 dev.off()
 
-png("../outputs/modelling/pacf5.png",units="in", width=10, height=10, res=300)
+png("../outputs/modelling/autocorrelation/pacf5.png",units="in", width=10, height=10, res=300)
 p5
 dev.off()
 
-png("../outputs/modelling/pacf5.png",units="in", width=10, height=10, res=300)
+png("../outputs/modelling/autocorrelation/pacf6.png",units="in", width=10, height=10, res=300)
 p6
 dev.off()
 
@@ -195,13 +231,37 @@ rm(p1,p2,p3,p4,p5,p6)
 
 # To do list
 #  * create a correlogram for each city
-#  * create lags at t0, t7, t14 for COVID cases, deaths and stringency
 #  * create scatter plots bwt mobility vs COVID cases, deaths and stringency at lags t1, t7 and t14
 #  * add spline line mobility variable
 #  * run models:
 #      * 
 
-## 
+## Scatteplot Mobility vs COVID cases, deaths and stringency
+p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
+  geom_point(colour = "darkblue", alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million \n (Weekly Moving Average)",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
+p1_mc0
+dev.off()
+
+p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
+  geom_point(colour = "darkblue", alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million \n (Weekly Moving Average)",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
+p1_mc0
+dev.off()
 
 plotList <- list()
 plotList2 <- list()
