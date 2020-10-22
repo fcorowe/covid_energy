@@ -8,6 +8,7 @@ dec_data <- raster("../data/for_code/NTL/dec_data.tif")
 jan_data <- raster("../data/for_code/NTL/jan_data.tif")
 feb_data <- raster("../data/for_code/NTL/feb_data.tif")
 mar_data <- raster("../data/for_code/NTL/mar_data.tif")
+apr_data <- raster("../data/for_code/NTL/apr_data.tif")
 
 # read in the population grids
 pop1 <- raster('../data/for_code/worldpop/pop_dens_worldpop-0000000000-0000000000 11.18.10.tif')
@@ -47,6 +48,7 @@ for(i in 1:length(cities)){
   Month2_cropped <- crop(jan_data, extent(city_subset))
   Month3_cropped <- crop(feb_data, extent(city_subset))
   Month4_cropped <- crop(mar_data, extent(city_subset))
+  Month5_cropped <- crop(apr_data, extent(city_subset))
   
   
   if (!is.null(raster::intersect(Month1_cropped@extent, pop1@extent))) {
@@ -67,7 +69,7 @@ for(i in 1:length(cities)){
   
   
   #create stack for all months
-  multiple_months <- stack(Month1_cropped, Month2_cropped, Month3_cropped, Month4_cropped)
+  multiple_months <- stack(Month1_cropped, Month2_cropped, Month3_cropped, Month4_cropped, Month5_cropped)
   
   # convert to data frame
   r_df <- as.data.frame(multiple_months, xy = TRUE)
@@ -75,6 +77,7 @@ for(i in 1:length(cities)){
   colnames(r_df)[4] <- "January"
   colnames(r_df)[5] <- "February"
   colnames(r_df)[6] <- "March"
+  colnames(r_df)[7] <- "April"
   
   # r_df$JanDec <- r_df$January / r_df$December
   # r_df$FebDec <- r_df$February / r_df$December
@@ -86,6 +89,7 @@ for(i in 1:length(cities)){
   r_df$JanDec <- r_df$January - r_df$December
   r_df$FebDec <- r_df$February - r_df$December
   r_df$MarDec <- r_df$March - r_df$December
+  r_df$AprDec <- r_df$April - r_df$December
 
   r_df$class_JanDec <- ifelse(sign(r_df$JanDec) == -1, "negative",
                               ifelse(sign(r_df$JanDec) == 0, "neutral", "positive"))
@@ -96,6 +100,9 @@ for(i in 1:length(cities)){
   
   r_df$class_MarDec <- ifelse(sign(r_df$MarDec) == -1, "negative",
                               ifelse(sign(r_df$MarDec) == 0, "neutral", "positive"))
+  
+  r_df$class_AprDec <- ifelse(sign(r_df$AprDec) == -1, "negative",
+                              ifelse(sign(r_df$AprDec) == 0, "neutral", "positive"))
 
 
 
@@ -113,6 +120,10 @@ for(i in 1:length(cities)){
   stats_MarDec <- r_df %>% group_by(class_MarDec) %>% 
     summarise(count=n(),
               medianMarJan = median(MarDec, na.rm=TRUE))
+  
+  stats_AprDec <- r_df %>% group_by(class_AprDec) %>% 
+    summarise(count=n(),
+              medianAprJan = median(AprDec, na.rm=TRUE))
 
   
 
@@ -136,6 +147,12 @@ for(i in 1:length(cities)){
   city_subset$MarDec_negative_median <- as.numeric(stats_MarDec[1,3])
   city_subset$MarDec_neutral_median <- as.numeric(stats_MarDec[2,3])
   city_subset$MarDec_postitive_median <- as.numeric(stats_MarDec[3,3])
+  city_subset$AprDec_negative <- as.numeric(stats_AprDec[1,2])
+  city_subset$AprDec_neutral <- as.numeric(stats_AprDec[2,2])
+  city_subset$AprDec_postitive <- as.numeric(stats_AprDec[3,2])
+  city_subset$AprDec_negative_median <- as.numeric(stats_AprDec[1,3])
+  city_subset$AprDec_neutral_median <- as.numeric(stats_AprDec[2,3])
+  city_subset$AprDec_postitive_median <- as.numeric(stats_AprDec[3,3])
   
   # add vector to a dataframe
   df <- data.frame(city_subset)
@@ -157,7 +174,7 @@ mob_data$iso_code <- countrycode(mob_data[,2], "country.name", "iso3c")
 mob_data$Date <- as.Date(mob_data$Date, "%d/%m/%Y")
 
 # set the maximum date to end of March
-mob_data <- subset(mob_data, Date <= as.Date("2020-03-31") )
+mob_data <- subset(mob_data, Date <= as.Date("2020-04-30") )
 
 # extract the month
 mob_data$month <- strftime(mob_data$Date, "%m")
@@ -177,13 +194,13 @@ summary_mean <- mob_data %>%
 # and then combine it with all other data to export it
 library(reshape2)
 Stringency_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Stringency"))
-colnames(Stringency_wide_mean) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar")
+colnames(Stringency_wide_mean) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
 
 Workplaces_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Workplaces"))
-colnames(Workplaces_wide_mean) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar")
+colnames(Workplaces_wide_mean) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar", "Workplaces_Apr")
 
 Residential_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Residential"))
-colnames(Residential_wide_mean) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar")
+colnames(Residential_wide_mean) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
 
 join1_mean <- left_join(Stringency_wide_mean, Workplaces_wide_mean, by = "City")
 join2_mean <- left_join(join1_mean, Residential_wide_mean, by = "City")
@@ -198,13 +215,13 @@ summary_median <- mob_data %>%
   summarise_at(c("Stringency", "Workplaces", "Residential"), median, na.rm = TRUE)
 
 Stringency_wide_median <- dcast(summary_median, City ~ month, value.var=c("Stringency"))
-colnames(Stringency_wide_median) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar")
+colnames(Stringency_wide_median) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
 
 Workplaces_wide_median <- dcast(summary_median, City ~ month, value.var=c("Workplaces"))
-colnames(Workplaces_wide_median) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar")
+colnames(Workplaces_wide_median) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar", "Workplaces_Apr")
 
 Residential_wide_median <- dcast(summary_median, City ~ month, value.var=c("Residential"))
-colnames(Residential_wide_median) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar")
+colnames(Residential_wide_median) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
 
 join1_median <- left_join(Stringency_wide_median, Workplaces_wide_median, by = "City")
 join2_median <- left_join(join1_median, Residential_wide_median, by = "City")
@@ -223,13 +240,13 @@ summary_IQR <- mob_data %>%
 
 
 Stringency_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Stringency"))
-colnames(Stringency_wide_IQR) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar")
+colnames(Stringency_wide_IQR) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
 
 Workplaces_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Workplaces"))
 colnames(Workplaces_wide_IQR) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar")
 
 Residential_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Residential"))
-colnames(Residential_wide_IQR) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar")
+colnames(Residential_wide_IQR) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
 
 join1_IQR <- left_join(Stringency_wide_IQR, Workplaces_wide_IQR, by = "City")
 join2_IQR <- left_join(join1_IQR, Residential_wide_IQR, by = "City")
@@ -238,5 +255,4 @@ join2_IQR <- left_join(join1_IQR, Residential_wide_IQR, by = "City")
 # this is the dataset with the IQR value for Stringency and mobility data 
 IQR_data <- left_join(join2_IQR, data_total, by = c("City" = "eFUA_name"))
 st_write(IQR_data, "IQR_data.csv")
-
 

@@ -48,7 +48,7 @@ mob_data$iso_code <- countrycode(mob_data[,2], "country.name", "iso3c")
 mob_data$Date <- as.Date(mob_data$Date, "%d/%m/%Y")
 
 # set the maximum date to end of March
-mob_data <- subset(mob_data, Date <= as.Date("2020-03-31") )
+mob_data <- subset(mob_data, Date <= as.Date("2020-04-30") )
 
 # extract the month
 mob_data$month <- strftime(mob_data$Date, "%m")

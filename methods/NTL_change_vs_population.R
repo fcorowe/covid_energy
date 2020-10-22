@@ -8,6 +8,7 @@ dec_data <- raster("../data/for_code/NTL/dec_data.tif")
 jan_data <- raster("../data/for_code/NTL/jan_data.tif")
 feb_data <- raster("../data/for_code/NTL/feb_data.tif")
 mar_data <- raster("../data/for_code/NTL/mar_data.tif")
+apr_data <- raster("../data/for_code/NTL/apr_data.tif")
 
 # read in the population grids
 pop1 <- raster('../data/for_code/worldpop/pop_dens_worldpop-0000000000-0000000000 11.18.10.tif')
@@ -44,10 +45,10 @@ for(i in 1:length(cities)){
   Month2_cropped <- crop(jan_data, extent(city_subset))
   Month3_cropped <- crop(feb_data, extent(city_subset))
   Month4_cropped <- crop(mar_data, extent(city_subset))
+  Month5_cropped <- crop(apr_data, extent(city_subset))
   
   
-  
-  month_diff <- Month4_cropped - Month1_cropped 
+  month_diff <- Month5_cropped - Month1_cropped 
   
   if (!is.null(raster::intersect(Month1_cropped@extent, pop1@extent))) {
     pop_cropped <- crop(pop1, extent(Month1_cropped))
@@ -69,7 +70,7 @@ for(i in 1:length(cities)){
   
   combined <- cbind(pop_df, month_df)
   
-  # select the columns needed
+  # se;ect the columns needed
   combined <- combined[,c(1:3,6)]
   
   
@@ -95,6 +96,6 @@ library(grid)
 png("NTL_change_vs_population.png",units="in", width=10, height=15, res=300)
 grid.arrange(arrangeGrob(grobs = myplots, ncol = 5), 
              bottom = textGrob("Population (log)"), 
-             left= textGrob("Change in nigthtime light intensity \n (March-December)", rot = 90, vjust = 1))
+             left= textGrob("Change in nigthtime light intensity \n (April-December)", rot = 90, vjust = 1))
 dev.off()
 
