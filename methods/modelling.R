@@ -141,6 +141,9 @@ rm(case_data,
    cities_data,
    mob_data)
 
+## 2.9 Impute Stay-at-Home data
+cdf$stayhome <- na.locf(cdf$Residential)
+
 #######
 # 3. Exploratory data analysis
 
@@ -229,89 +232,106 @@ dev.off()
 rm(p1,p2,p3,p4,p5,p6)
 
 
+## 3.1 Scatteplot Mobility vs COVID cases, deaths and stringency
+
+  # Stay-at-home vs COVID cases t
+p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
+  geom_point(colour = "darkblue", alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
+p1_mc0
+dev.off()
+
+  # Stay-at-home vs COVID cases t7
+p1_mc7 <- ggplot(cdf, aes(x = casespm_t7lag, y = Residential)) +
+  geom_point(colour = "darkblue", alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue", linetype = "dashed") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million t=7",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/scatterplot/p1_mc7.png",units="in", width=10, height=10, res=300)
+p1_mc7
+dev.off()
+
+  # Stay-at-home vs Deaths
+p1_md <- ggplot(cdf, aes(x = new_deaths/1000 , y = Residential)) +
+  geom_point(colour = "darkred", alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkred") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "New COVID-19 Death Numbers (1,000)",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/scatterplot/p1_md.png",units="in", width=10, height=10, res=300)
+p1_md 
+dev.off()
+
+
+  # Stay-at-home vs Stringency
+p1_ms <- ggplot(cdf, aes(x = stringency_index, y = Residential)) +
+  geom_point(colour = "darkorange3", alpha = 0.1) + 
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkorange3") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Stringency Index",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/scatterplot/p1_ms.png",units="in", width=10, height=10, res=300)
+p1_ms 
+dev.off()
+
+
+## 3.2 Line plot Mobility vs COVID cases, deaths and stringency
+
+# Stay-at-home vs COVID cases t & t7
+p1_mc0 <- ggplot(cdf) +
+  geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+  geom_smooth(aes(x = date, y = new_cases_per_million), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkblue") +
+  geom_smooth(aes(x = date, y = casespm_t7lag), method = "loess", se = FALSE, size=1, span = 0.3, color="darkblue", linetype = "dashed") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/lineplot/p1_mc0.png",units="in", width=10, height=10, res=300)
+p1_mc0
+dev.off()
+
+# Stay-at-home vs Stringency t & t7
+p1_ms07 <- ggplot(cdf) +
+  geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+  geom_smooth(aes(x = date, y = stringency_index), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkorange3") +
+  geom_smooth(aes(x = date, y = stringency_t7lag), method = "loess", se = FALSE, size=1, span = 0.3, color="darkorange3", linetype = "dashed") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Stringency Index",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/lineplot/p1_ms07.png",units="in", width=10, height=10, res=300)
+p1_ms07
+dev.off()
+
+
 # To do list
 #  * create a correlogram for each city
-#  * create scatter plots bwt mobility vs COVID cases, deaths and stringency at lags t1, t7 and t14
 #  * add spline line mobility variable
 #  * run models:
 #      * 
 
-## Scatteplot Mobility vs COVID cases, deaths and stringency
-p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
-  geom_point(colour = "darkblue", alpha = 0.1) + 
-  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
-  facet_wrap(~ City, nrow = 7) + 
-  theme_tufte() + 
-  theme(legend.position = "none") +
-  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million \n (Weekly Moving Average)",
-       y = "Stay-at-Home Rate (%)")
-
-png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
-p1_mc0
-dev.off()
-
-p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
-  geom_point(colour = "darkblue", alpha = 0.1) + 
-  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
-  facet_wrap(~ City, nrow = 7) + 
-  theme_tufte() + 
-  theme(legend.position = "none") +
-  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million \n (Weekly Moving Average)",
-       y = "Stay-at-Home Rate (%)")
-
-png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
-p1_mc0
-dev.off()
-
-plotList <- list()
-plotList2 <- list()
-
-# we run this code for two groups of  25 cities
-
-for (j in levels(cdf$City)[1:25]) {
-  
-  plotList[[1]] <- ggplot(cdf, aes(x = date, y = Residential, colour= "#74787b")) +
-    geom_smooth(method = "loess", se = FALSE, size=1, span = 0.3) +
-    xlab("") +
-    ylab("") +
-    theme_minimal() +
-    theme(text = element_text(size = 20),
-          axis.text.x = element_blank(),
-          axis.text.y = element_blank(),
-          legend.position = "none",
-          plot.margin=unit(c(0.1,0.1,-0.5,0.1), "cm")) + # set the bottom margin to negative
-    scale_color_manual(values = cpal) +
-    guides(color=guide_legend(""))
-  
-  plotList[[2]] <- ggplot(data4, aes(x = Date, y = Residential, colour= "#000000")) +
-    geom_smooth(method = "loess", se = FALSE, size=1, span = 0.3) +
-    xlab("") +
-    ylab("") +
-    theme_minimal() +
-    theme(text = element_text(size = 20),
-          axis.text.x = element_blank(),
-          axis.text.y = element_blank(),
-          legend.position = "none",
-          plot.margin=unit(c(-0.5,0.1,0.1,0.1), "cm")) + # set the upper margin to negative
-    scale_color_manual(values = cpal) +
-    guides(color=guide_legend(""))
-  
-  
-  
-  
-  
-  plotList2[[j]] <- annotate_figure(ggarrange(plotlist = plotList, ncol=1, nrow=2), 
-                                    top = text_grob(j, size = 10))
-  
-}
-
-
-png("mobility_plot_v1.png",units="in", width=10, height=10, res=300)
-ggarrange(plotlist = plotList2, ncol=5, nrow=5)
-dev.off() #
-
-
-## 3.4 Correlation
+## 3.3 Correlation
     ### Full sample
 pc <- cor( cdf[ , c("Residential", 
                     "Workplaces", 
@@ -327,7 +347,7 @@ pc <- cor( cdf[ , c("Residential",
                     "cardiovasc_death_rate",
                     "life_expectancy") ], 
           use = "complete.obs",
-           method="pearson" )
+          method="pearson" )
 
 # Change labels
 colnames(pc) <- c("Stay-at-home", "Workplace", "New cases", "New cases t-1", "Cases growth rate", "Cases doubling time", "Deaths", "Stringency", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
@@ -356,7 +376,7 @@ corr <- cdf %>%
                     stringency_index))
 
 
-vars_keep <- names(cdf)[c("Workplaces", "Residential", "new_cases_per_million")]
+vars_keep <- names(cdf)[c("Residential", "new_cases_per_million")]
 some <- cdf %>% split(.$City) %>% 
   map(select, vars_keep) %>%
   map(cor)
