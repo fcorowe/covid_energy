@@ -8,6 +8,7 @@ library(corrplot)
 library(viridis)
 library(sf)
 library(ggthemes)
+library(zoo)
 
 rm(list=ls())
 
@@ -295,29 +296,53 @@ dev.off()
 ## 3.2 Line plot Mobility vs COVID cases, deaths and stringency
 
 # Stay-at-home vs COVID cases t & t7
-p1_mc0 <- ggplot(cdf) +
+wgt <- 5
+p1_mc07 <- ggplot(cdf) + 
   geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
-  geom_smooth(aes(x = date, y = new_cases_per_million), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkblue") +
-  geom_smooth(aes(x = date, y = casespm_t7lag), method = "loess", se = FALSE, size=1, span = 0.3, color="darkblue", linetype = "dashed") +
+  geom_smooth(aes(x = date, y = new_cases_per_million / weight), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkblue") +
+  geom_smooth(aes(x = date, y = casespm_t7lag / wgt), method = "loess", se = FALSE, size=1, span = 0.3, color="grey", linetype = "dashed") +
   facet_wrap(~ City, nrow = 7) + 
+  scale_y_continuous(sec.axis = sec_axis(trans=~.*wgt, 
+                                         name="Daily New Confirmed COVID-19 Cases Number Per Million")) +
   theme_tufte() + 
   theme(legend.position = "none") +
-  labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million",
+  labs(x= "Date",
        y = "Stay-at-Home Rate (%)")
 
-png("../outputs/modelling/lineplot/p1_mc0.png",units="in", width=10, height=10, res=300)
-p1_mc0
+png("../outputs/modelling/lineplot/p1_mc07.png",units="in", width=10, height=10, res=300)
+p1_mc07
+dev.off()
+
+# Stay-at-home vs Deaths t & t7
+wgt1 <- 1000
+p1_md07 <- ggplot(cdf) +
+  geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+  geom_smooth(aes(x = date, y = new_deaths/1000), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkred") +
+  geom_smooth(aes(x = date, y = lag(new_deaths/1000, n=7, default = NA)), method = "loess", se = FALSE, size=1, span = 0.3, color="darkred", linetype = "dashed") +
+  facet_wrap(~ City, nrow = 7) + 
+  scale_y_continuous(sec.axis = sec_axis(trans=~.*.125, 
+                                         name="New COVID-19 Death Numbers (1,000)")) +
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Date",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/lineplot/p1_md07.png",units="in", width=10, height=10, res=300)
+p1_md07
 dev.off()
 
 # Stay-at-home vs Stringency t & t7
+wgt2 <- 2.5
 p1_ms07 <- ggplot(cdf) +
   geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
-  geom_smooth(aes(x = date, y = stringency_index), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkorange3") +
-  geom_smooth(aes(x = date, y = stringency_t7lag), method = "loess", se = FALSE, size=1, span = 0.3, color="darkorange3", linetype = "dashed") +
+  geom_smooth(aes(x = date, y = stringency_index / wgt2), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkorange3") +
+  geom_smooth(aes(x = date, y = stringency_t7lag / wgt2), method = "loess", se = FALSE, size=1, span = 0.3, color="grey", linetype = "dashed") +
   facet_wrap(~ City, nrow = 7) + 
+  scale_y_continuous(sec.axis = sec_axis(trans=~.*wgt2, 
+                                         name="Stringency Index")) +
   theme_tufte() + 
   theme(legend.position = "none") +
-  labs(x= "Stringency Index",
+  labs(x= "Date",
        y = "Stay-at-Home Rate (%)")
 
 png("../outputs/modelling/lineplot/p1_ms07.png",units="in", width=10, height=10, res=300)
@@ -375,6 +400,8 @@ corr <- cdf %>%
                     new_deaths_per_million, 
                     stringency_index))
 
+cdf <- cdf %>% 
+  filter(!grepl('REVERSE', City))
 
 vars_keep <- names(cdf)[c("Residential", "new_cases_per_million")]
 some <- cdf %>% split(.$City) %>% 
