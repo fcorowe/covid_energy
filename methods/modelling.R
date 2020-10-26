@@ -237,7 +237,7 @@ rm(p1,p2,p3,p4,p5,p6)
 
   # Stay-at-home vs COVID cases t
 p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
-  geom_point(colour = "darkblue", alpha = 0.1) + 
+  geom_point(colour = "darkblue", alpha = 0.2, aes(size = new_cases)) + 
   geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() + 
@@ -251,7 +251,7 @@ dev.off()
 
   # Stay-at-home vs COVID cases t7
 p1_mc7 <- ggplot(cdf, aes(x = casespm_t7lag, y = Residential)) +
-  geom_point(colour = "darkblue", alpha = 0.1) + 
+  geom_point(colour = "darkblue", alpha = 0.2, aes(size = new_cases)) + 
   geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue", linetype = "dashed") +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() + 
@@ -265,7 +265,7 @@ dev.off()
 
   # Stay-at-home vs Deaths
 p1_md <- ggplot(cdf, aes(x = new_deaths/1000 , y = Residential)) +
-  geom_point(colour = "darkred", alpha = 0.1) + 
+  geom_point(colour = "darkred", alpha = 0.2, aes(size = new_cases)) + 
   geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkred") +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() + 
@@ -280,7 +280,7 @@ dev.off()
 
   # Stay-at-home vs Stringency
 p1_ms <- ggplot(cdf, aes(x = stringency_index, y = Residential)) +
-  geom_point(colour = "darkorange3", alpha = 0.1) + 
+  geom_point(colour = "darkorange3", alpha = 0.2, aes(size = new_cases)) + 
   geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkorange3") +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() + 
@@ -359,13 +359,26 @@ dev.off()
 ## 3.3 Correlation
     ### Full sample
 pc <- cor( cdf[ , c("Residential", 
-                    "Workplaces", 
                     "new_cases_per_million",
-                    "cases_t1lag",
+                    "casespm_t1lag",
+                    "casespm_t2lag",
+                    "casespm_t3lag",
+                    "casespm_t4lag",
+                    "casespm_t5lag",
+                    "casespm_t6lag",
+                    "casespm_t7lag",
                     "gr_cases",
                     "dng_time",
                     "new_deaths_per_million",
                     "stringency_index",
+                    "stringency_t1lag",
+                    "stringency_t2lag",
+                    "stringency_t3lag",
+                    "stringency_t4lag",
+                    "stringency_t5lag",
+                    "stringency_t6lag",
+                    "stringency_t7lag",
+                    "Workplaces", 
                     "population_density",
                     "gdp_per_capita",
                     "aged_65_older",
@@ -375,9 +388,16 @@ pc <- cor( cdf[ , c("Residential",
           method="pearson" )
 
 # Change labels
-colnames(pc) <- c("Stay-at-home", "Workplace", "New cases", "New cases t-1", "Cases growth rate", "Cases doubling time", "Deaths", "Stringency", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
-rownames(pc) <- c("Stay-at-home", "Workplace", "New cases", "New cases t-1", "Cases growth rate", "Cases doubling time", "Deaths", "Stringency", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
-
+colnames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", "New cases t-2", 
+                  "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", "New cases t-7", 
+                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
+                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
+                  "Stringency t-7", "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
+rownames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", "New cases t-2", 
+                  "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", "New cases t-7", 
+                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
+                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
+                  "Stringency t-7", "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
 # significance test
 sig <- corrplot::cor.mtest(pc, conf.level = .95)
 
@@ -392,21 +412,44 @@ corrplot::corrplot(pc, type="lower",
 
 
    ### By city
-corr <- cdf %>%
-  group_by(City) %>% 
-  dplyr::summarise(r = cor(Workplaces, 
-                    Residential, 
-                    new_cases_per_million, 
-                    new_deaths_per_million, 
-                    stringency_index))
+sel_vars <- cdf[ , c("City",
+              "Residential", 
+              "new_cases_per_million",
+              "casespm_t1lag",
+              "casespm_t2lag",
+              "casespm_t3lag",
+              "casespm_t4lag",
+              "casespm_t5lag",
+              "casespm_t6lag",
+              "casespm_t7lag",
+              "gr_cases",
+              "dng_time",
+              "new_deaths_per_million",
+              "stringency_index",
+              "stringency_t1lag",
+              "stringency_t2lag",
+              "stringency_t3lag",
+              "stringency_t4lag",
+              "stringency_t5lag",
+              "stringency_t6lag",
+              "stringency_t7lag",
+              "Workplaces", 
+              "population_density",
+              "gdp_per_capita",
+              "aged_65_older",
+              "cardiovasc_death_rate",
+              "life_expectancy") ]
 
-cdf <- cdf %>% 
-  filter(!grepl('REVERSE', City))
+corr_by_group <- sel_vars %>%
+  split(.$City) %>%
+  map(subset, select = -c(1)) %>%
+  map(drop_na) %>% 
+  map(cor) 
 
-vars_keep <- names(cdf)[c("Residential", "new_cases_per_million")]
-some <- cdf %>% split(.$City) %>% 
-  map(select, vars_keep) %>%
-  map(cor)
+map(corrplot, is.corr = FALSE)
+
+cor_matrix <- corr_by_group %>% reshape2::melt() %>% rename(City = city_nm)
+
 
 vars_keep <- names(mtcars)[c(1, 3, 4)]
 some <- mtcars %>% split(.$cyl) %>% map(select, vars_keep) %>% map(cor)
