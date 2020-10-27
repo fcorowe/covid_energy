@@ -361,22 +361,22 @@ dev.off()
 pc <- cor( cdf[ , c("Residential", 
                     "new_cases_per_million",
                     "casespm_t1lag",
-                    "casespm_t2lag",
-                    "casespm_t3lag",
-                    "casespm_t4lag",
-                    "casespm_t5lag",
-                    "casespm_t6lag",
+                    #"casespm_t2lag",
+                    #"casespm_t3lag",
+                    #"casespm_t4lag",
+                    #"casespm_t5lag",
+                    #"casespm_t6lag",
                     "casespm_t7lag",
                     "gr_cases",
                     "dng_time",
                     "new_deaths_per_million",
                     "stringency_index",
-                    "stringency_t1lag",
-                    "stringency_t2lag",
-                    "stringency_t3lag",
-                    "stringency_t4lag",
-                    "stringency_t5lag",
-                    "stringency_t6lag",
+                    #"stringency_t1lag",
+                    #"stringency_t2lag",
+                    #"stringency_t3lag",
+                    #"stringency_t4lag",
+                    #"stringency_t5lag",
+                    #"stringency_t6lag",
                     "stringency_t7lag",
                     "Workplaces", 
                     "population_density",
@@ -388,15 +388,17 @@ pc <- cor( cdf[ , c("Residential",
           method="pearson" )
 
 # Change labels
-colnames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", "New cases t-2", 
-                  "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", "New cases t-7", 
-                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
-                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
+colnames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", 
+#                  "New cases t-2", "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", 
+                  "New cases t-7", 
+                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", #"Stringency t-1",
+#                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
                   "Stringency t-7", "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
-rownames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", "New cases t-2", 
-                  "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", "New cases t-7", 
-                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
-                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
+rownames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", 
+#                  "New cases t-2", "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", 
+                  "New cases t-7", 
+                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", #"Stringency t-1",
+#                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
                   "Stringency t-7", "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
 # significance test
 sig <- corrplot::cor.mtest(pc, conf.level = .95)
@@ -444,20 +446,7 @@ corr_by_group <- sel_vars %>%
   split(.$City) %>%
   map(subset, select = -c(1)) %>%
   map(drop_na) %>% 
-  map(cor) 
-
-map(corrplot, is.corr = FALSE)
-
-cor_matrix <- corr_by_group %>% reshape2::melt() %>% rename(City = city_nm)
-
-
-vars_keep <- names(mtcars)[c(1, 3, 4)]
-some <- mtcars %>% split(.$cyl) %>% map(select, vars_keep) %>% map(cor)
-
-df <- some %>% reshape2::melt() %>% rename(cyl = L1)
-ggplot(df, aes(x = Var1, y = Var2, fill = value)) + geom_tile() + facet_wrap(~cyl, 
-                                                                             nrow = 1)
-
+  map(cor)
 
 #######
 # 4. Multilevel modelling
@@ -489,7 +478,7 @@ use this last line of code
 
 
 # read the FUAs polygons
-fua <- st_read("../data/for_code/FUA_layer/GHS_FUA_UCDB2015_GLOBE_R2019A_54009_1K_V1_0_MERGED.gpkg")
+fua <- st_read("../data/for_code/GHS_FUA_UCDB2015_GLOBE_R2019A_54009_1K_V1_0_MERGED.gpkg")
 WGS84 = "+init=epsg:4326"
 # make sure that all layers have consistent CRS- in this case is WGS84
 fua <- st_transform(fua, WGS84)
