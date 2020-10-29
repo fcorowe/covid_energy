@@ -3,6 +3,7 @@ library(tidyverse)
 library(timetk)
 library(ggpubr)
 library(lme4)
+library(merTools)
 library(ggcorrplot)
 library(corrplot)
 library(viridis)
@@ -451,14 +452,72 @@ corr_by_group <- sel_vars %>%
 #######
 # 4. Multilevel modelling
 
-## 4.1 Model with varying intercept
+# data frame for regression
+reg_df <- cdf %>% dplyr::select(c(
+                  "City",
+                  "date",
+                   "Residential", 
+                   "new_cases_per_million",
+                   "casespm_t1lag",
+                   "casespm_t2lag",
+                   "casespm_t3lag",
+                   "casespm_t4lag",
+                   "casespm_t5lag",
+                   "casespm_t6lag",
+                   "casespm_t7lag",
+                   "gr_cases",
+                   "dng_time",
+                   "new_deaths_per_million",
+                   "stringency_index",
+                   "stringency_t1lag",
+                   "stringency_t2lag",
+                   "stringency_t3lag",
+                   "stringency_t4lag",
+                   "stringency_t5lag",
+                   "stringency_t6lag",
+                   "stringency_t7lag",
+                   "Workplaces", 
+                   "population_density",
+                   "gdp_per_capita",
+                   "aged_65_older",
+                   "cardiovasc_death_rate",
+                   "life_expectancy"))
+
+## 4.1 Model with varying intercept: city and time
 # specify a model equation
-eq1 <- Workplaces ~ 1 + (1 | City) + (1 | date)
-model1 <- lmer(eq1, data = cdf)
+eq1 <- Residential ~ 1 + (1 | City) + (1 | date)
+m1 <- lmer(eq1, data = reg_df)
 
 # estimates
 summary(model1)
 
+# prediction 
+reg_df$m1_stayhome <- predict(m1)
+
+# confidence intervals for predictions
+  #With simple linear regression, standard errors and confidence intervals for fitted (and predicted) values are easily computed. In R, we can use the se.fit argument in predict.lm, which returns the standard error for the fitted values, and interval = "confidence" to return confidence intervals. With linear mixed-effects models, however, it is not so easy. Neither predict.lme (from nlme) nor predict.merMod (from lme4) provide these methods, as confidence intervals on mixed-effects model predictions are harder to produce.
+  #The solution is to use the parametric bootstrap, which is conveniently implemented in bootMer to be applied to models fit with the lme4 package (lmer, not glmer). Here I describe a simple wrapper around bootMer, providing an alternative for predict.merMod that calculates standard errors (and confidence intervals) for predictions.
+  #see: https://cran.r-project.org/web/packages/merTools/vignettes/Using_predictInterval.html
+reg_df$m1_ci <- predictInterval(m1)
+
+reg_df %>% dplyr::select( c("Residential", "m1_stayhome", "m1_ci") ) %>% 
+  head()
+
+head(reg_df$m1_ci$lwr, 5)
+
+p1_m1 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
+  geom_point(aes(x = date, y = Residential), size=0.5, color="grey50") +
+  geom_line(aes(x = date, y = m1_ci$fit), size=1.5, color="darkblue") +
+  geom_ribbon(aes(ymin = m1_ci$lwr, ymax = m1_ci$upr), linetype = 2, alpha=0.2) +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Date",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/prediction/p1_m1.png",units="in", width=10, height=10, res=300)
+p1_m1
+dev.off()
 
 
 ## 4.2 Model with varying intercept
@@ -472,6 +531,17 @@ summary(model2)
 
 
 
+library(ciTools)
+
+## Not run: 
+dat <- lme4::sleepstudy
+# Fit a linear mixed model (random intercept model)
+fit <- lme4::lmer(Reaction ~ Days + (1|Subject), data = lme4::sleepstudy)
+# Get the fitted values for each observation in dat, and
+# append CIs for those fitted values to dat
+add_ci(dat, fit, alpha = 0.5)
+# Try the parametric bootstrap method, and make prediction at the population level
+add_ci(dat, fit, alpha = 0.5, type = "boot", includeRanef = FALSE, nSims = 100)
 
 
 use this last line of code 
