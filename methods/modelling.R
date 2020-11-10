@@ -10,6 +10,7 @@ library(viridis)
 library(sf)
 library(ggthemes)
 library(zoo)
+library(showtext)
 
 rm(list=ls())
 
@@ -19,10 +20,13 @@ rm(list=ls())
 # we focus on the residential category, which is defined as the time users spent at home, 
 # using the home addresses provided to or estimated by Google Maps. 
 # Our focus on a variable related to time use and duration of events is consistent 
-# with the epidemiological literature on time use and the spread of close-contact infectious diseases.
+# with the ep/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methodsidemiological literature on time use and the spread of close-contact infectious diseases.
 
 #######
 # 1. Read data
+
+# Set wdir
+setwd("/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methods")
 
 # COVID data
 case_data <- read.csv('../data/for_code/owid-covid-data.csv')
@@ -135,7 +139,7 @@ cdf <- cdf %>% group_by(City) %>%
          )
 
 ## 2.7 Filter out Chinese Cities
-cdf <-cdf %>% dplyr::filter( location !=  "China")
+cdf <- cdf %>% dplyr::filter( location !=  "China")
 
 ## 2.8 remove dfs
 rm(case_data,
@@ -145,6 +149,19 @@ rm(case_data,
 
 ## 2.9 Impute Stay-at-Home data
 cdf$stayhome <- na.locf(cdf$Residential)
+
+## 2.10 rename cities
+cdf$City <- recode_factor(cdf$City, `Osaka [Kyoto]` = "Osaka", `Quezon City [Manila]` = "Manila", `Delhi [New Delhi]` = "Delhi", `S\xe3o Paulo` = "Sao Paulo")
+cities <- recode(cities, `Osaka [Kyoto]` = "Osaka", `Quezon City [Manila]` = "Manila", `Delhi [New Delhi]` = "Delhi", `S\xe3o Paulo` = "Sao Paulo")
+cdf$City <- ordered(cdf$City, levels = cities)
+
+## 2.11 Set font for graphics
+# load font
+font_add_google("Roboto Condensed", "robotocondensed")
+# automatically use showtext to render text
+showtext_auto()
+
+
 
 #######
 # 3. Exploratory data analysis
@@ -156,6 +173,7 @@ table(cdf$City)
 ## 3.2 Autocorrelation in mobility
 p1 <- cdf %>% dplyr::filter(as.integer(City) %in% c(1:12)) %>% 
   group_by(City) %>% 
+  arrange(City) %>% 
   plot_acf_diagnostics(date, Residential, 
                        .lags = "14 days",
                        .line_size = 2,
@@ -164,7 +182,8 @@ p1 <- cdf %>% dplyr::filter(as.integer(City) %in% c(1:12)) %>%
   )
 
 p2 <- cdf %>% dplyr::filter(as.integer(City) %in% c(12:20)) %>% 
-  group_by(City) %>% 
+  group_by(City) %>%
+  arrange(City) %>%
   plot_acf_diagnostics(date, Residential, 
                        .lags = "14 days",
                        .line_size = 2,
@@ -173,7 +192,8 @@ p2 <- cdf %>% dplyr::filter(as.integer(City) %in% c(12:20)) %>%
   )
 
 p3 <- cdf %>% dplyr::filter(as.integer(City) %in% c(21:29)) %>% 
-  group_by(City) %>% 
+  group_by(City) %>%
+  arrange(City) %>%
   plot_acf_diagnostics(date, Residential, 
                        .lags = "14 days",
                        .line_size = 2,
@@ -182,7 +202,8 @@ p3 <- cdf %>% dplyr::filter(as.integer(City) %in% c(21:29)) %>%
   )
 
 p4 <- cdf %>% dplyr::filter(as.integer(City) %in% c(30:38)) %>% 
-  group_by(City) %>% 
+  group_by(City) %>%
+  arrange(City) %>%
   plot_acf_diagnostics(date, Residential, 
                        .lags = "14 days",
                        .line_size = 2,
@@ -191,7 +212,8 @@ p4 <- cdf %>% dplyr::filter(as.integer(City) %in% c(30:38)) %>%
   )
 
 p5 <- cdf %>% dplyr::filter(as.integer(City) %in% c(39:47)) %>% 
-  group_by(City) %>% 
+  group_by(City) %>%
+  arrange(City) %>%
   plot_acf_diagnostics(date, Residential, 
                        .lags = "14 days",
                        .line_size = 2,
@@ -200,7 +222,8 @@ p5 <- cdf %>% dplyr::filter(as.integer(City) %in% c(39:47)) %>%
   )
 
 p6 <- cdf %>% dplyr::filter(as.integer(City) %in% c(48:50)) %>% 
-  group_by(City) %>% 
+  group_by(City) %>%
+  arrange(City) %>%
   plot_acf_diagnostics(date, Residential, 
                        .lags = "14 days",
                        .line_size = 2,
@@ -239,9 +262,10 @@ rm(p1,p2,p3,p4,p5,p6)
   # Stay-at-home vs COVID cases t
 p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
   geom_point(colour = "darkblue", alpha = 0.2, aes(size = new_cases)) + 
-  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue") +
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkblue") +
   facet_wrap(~ City, nrow = 7) + 
-  theme_tufte() + 
+  theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
   theme(legend.position = "none") +
   labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million",
        y = "Stay-at-Home Rate (%)")
@@ -253,9 +277,10 @@ dev.off()
   # Stay-at-home vs COVID cases t7
 p1_mc7 <- ggplot(cdf, aes(x = casespm_t7lag, y = Residential)) +
   geom_point(colour = "darkblue", alpha = 0.2, aes(size = new_cases)) + 
-  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkblue", linetype = "dashed") +
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkblue", linetype = "dashed") +
   facet_wrap(~ City, nrow = 7) + 
-  theme_tufte() + 
+  theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
   theme(legend.position = "none") +
   labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million t=7",
        y = "Stay-at-Home Rate (%)")
@@ -267,9 +292,10 @@ dev.off()
   # Stay-at-home vs Deaths
 p1_md <- ggplot(cdf, aes(x = new_deaths/1000 , y = Residential)) +
   geom_point(colour = "darkred", alpha = 0.2, aes(size = new_cases)) + 
-  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkred") +
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkred") +
   facet_wrap(~ City, nrow = 7) + 
-  theme_tufte() + 
+  theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
   theme(legend.position = "none") +
   labs(x= "New COVID-19 Death Numbers (1,000)",
        y = "Stay-at-Home Rate (%)")
@@ -282,9 +308,10 @@ dev.off()
   # Stay-at-home vs Stringency
 p1_ms <- ggplot(cdf, aes(x = stringency_index, y = Residential)) +
   geom_point(colour = "darkorange3", alpha = 0.2, aes(size = new_cases)) + 
-  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.3, color="darkorange3") +
+  geom_smooth(method = "loess", se = FALSE, size=2, span = 0.9, color="darkorange3") +
   facet_wrap(~ City, nrow = 7) + 
-  theme_tufte() + 
+  theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
   theme(legend.position = "none") +
   labs(x= "Stringency Index",
        y = "Stay-at-Home Rate (%)")
@@ -298,9 +325,10 @@ dev.off()
 
 # Stay-at-home vs COVID cases t & t7
 wgt <- 5
+
 p1_mc07 <- ggplot(cdf) + 
   geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
-  geom_smooth(aes(x = date, y = new_cases_per_million / weight), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkblue") +
+  geom_smooth(aes(x = date, y = new_cases_per_million / wgt), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkblue") +
   geom_smooth(aes(x = date, y = casespm_t7lag / wgt), method = "loess", se = FALSE, size=1, span = 0.3, color="grey", linetype = "dashed") +
   facet_wrap(~ City, nrow = 7) + 
   scale_y_continuous(sec.axis = sec_axis(trans=~.*wgt, 
@@ -352,7 +380,6 @@ dev.off()
 
 
 # To do list
-#  * create a correlogram for each city
 #  * add spline line mobility variable
 #  * run models:
 #      * 
@@ -362,23 +389,23 @@ dev.off()
 pc <- cor( cdf[ , c("Residential", 
                     "new_cases_per_million",
                     "casespm_t1lag",
-                    #"casespm_t2lag",
-                    #"casespm_t3lag",
-                    #"casespm_t4lag",
-                    #"casespm_t5lag",
-                    #"casespm_t6lag",
+                    "casespm_t2lag",
+                    "casespm_t3lag",
+                    "casespm_t4lag",
+                    "casespm_t5lag",
+                    "casespm_t6lag",
                     "casespm_t7lag",
                     "gr_cases",
                     "dng_time",
                     "new_deaths_per_million",
                     "stringency_index",
-                    #"stringency_t1lag",
-                    #"stringency_t2lag",
-                    #"stringency_t3lag",
+                    "stringency_t1lag",
+                    "stringency_t2lag",
+                    "stringency_t3lag",
                     #"stringency_t4lag",
                     #"stringency_t5lag",
                     #"stringency_t6lag",
-                    "stringency_t7lag",
+                    #"stringency_t7lag",
                     "Workplaces", 
                     "population_density",
                     "gdp_per_capita",
@@ -390,17 +417,18 @@ pc <- cor( cdf[ , c("Residential",
 
 # Change labels
 colnames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", 
-#                  "New cases t-2", "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", 
+                 "New cases t-2", "New cases t-3", 
+                 "New cases t-4", "New cases t-5", "New cases t-6", 
                   "New cases t-7", 
-                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", #"Stringency t-1",
-#                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
-                  "Stringency t-7", "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
+                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
+                  "Stringency t-2", "Stringency t-3", #"Stringency t-4", "Stringency t-5", "Stringency t-6", "Stringency t-7",
+                   "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
 rownames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1", 
-#                  "New cases t-2", "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", 
+                  "New cases t-2", "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6", 
                   "New cases t-7", 
-                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", #"Stringency t-1",
-#                  "Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6",
-                  "Stringency t-7", "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
+                  "Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
+                  "Stringency t-2", "Stringency t-3", #"Stringency t-4", "Stringency t-5", "Stringency t-6", "Stringency t-7", 
+                  "Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
 # significance test
 sig <- corrplot::cor.mtest(pc, conf.level = .95)
 
@@ -483,13 +511,15 @@ reg_df <- cdf %>% dplyr::select(c(
                    "cardiovasc_death_rate",
                    "life_expectancy"))
 
+glimpse(reg_df)
+
 ## 4.1 Model with varying intercept: city and time
 # specify a model equation
 eq1 <- Residential ~ 1 + (1 | City) + (1 | date)
 m1 <- lmer(eq1, data = reg_df)
 
 # estimates
-summary(model1)
+summary(m1)
 
 # prediction 
 reg_df$m1_stayhome <- predict(m1)
@@ -522,14 +552,62 @@ dev.off()
 
 ## 4.2 Model with varying intercept
 # specify a model equation
-eq2 <- Workplaces ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + new_deaths_per_million + stringency_index
-model2 <- lmer(eq1, data = cdf)
+eq2 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + new_deaths_per_million + stringency_index
+m2 <- lmer(eq2, data = cdf)
 
 # estimates
-summary(model2)
+summary(m2)
+
+# prediction 
+reg_df$m2_stayhome <- predict(m2)
+
+# confidence intervals for predictions
+reg_df$m2_ci <- predictInterval(m2)
+
+reg_df %>% dplyr::select( c("Residential", "m2_stayhome", "m2_ci") ) %>% 
+  head()
+
+p2_m2 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
+  geom_point(aes(x = date, y = Residential), size=0.5, color="grey50") +
+  geom_line(aes(x = date, y = m2_ci$fit), size=1.5, color="darkblue") +
+  geom_ribbon(aes(ymin = m2_ci$lwr, ymax = m2_ci$upr), linetype = 2, alpha=0.2) +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Date",
+       y = "Stay-at-Home Rate (%)")
+
+png("../outputs/modelling/prediction/p2_m2.png",units="in", width=10, height=10, res=300)
+p2_m2
+dev.off()
 
 
+eq3 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + new_deaths_per_million + stringency_index + Workplaces
 
+eq4 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + casespm_t1lag + casespm_t2lag + casespm_t3lag + new_deaths_per_million + stringency_index + Workplaces
+m4 <- lmer(eq4, data = cdf)
+summary(m4)
+
+eq5 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + casespm_t1lag + casespm_t2lag + casespm_t3lag + casespm_t4lag + casespm_t5lag +
+  new_deaths_per_million + stringency_index + stringency_t1lag + stringency_t3lag + stringency_t4lag + stringency_t5lag + Workplaces
+m5 <- lmer(eq5, data = cdf)
+summary(m5)
+
+eq6 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + casespm_t1lag + casespm_t2lag + casespm_t3lag + casespm_t4lag + casespm_t5lag + casespm_t6lag + casespm_t7lag +
+  new_deaths_per_million + 
+  stringency_index + stringency_t1lag + stringency_t2lag + stringency_t3lag + stringency_t4lag + stringency_t5lag + stringency_t6lag + stringency_t7lag +
+  Workplaces
+m6 <- lmer(eq6, data = cdf)
+summary(m6)
+
+eq7 <- Residential ~ 1 + (1 + stringency_t3lag | City) + (1 | date) + new_cases_per_million + casespm_t1lag + casespm_t2lag + casespm_t3lag +
+  new_deaths_per_million + 
+  stringency_index + stringency_t1lag + stringency_t3lag +
+  Workplaces
+m7 <- lmer(eq7, data = cdf)
+summary(m7)
+
+Variation in the relationship stay at home and stringency across cities 
 
 library(ciTools)
 
