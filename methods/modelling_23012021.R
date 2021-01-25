@@ -11,6 +11,7 @@ library(sf)
 library(ggthemes)
 library(zoo)
 library(showtext)
+library(equatiomatic)
 
 rm(list=ls())
 
@@ -546,32 +547,32 @@ dev.off()
 ## 4.2 Model with varying intercept
 # specify a model equation
 eq3 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + new_deaths_per_million + stringency_index + Workplaces
-m2 <- lmer(eq2, data = cdf)
+m3 <- lmer(eq3, data = cdf)
 
 # estimates
-summary(m2)
+summary(m3)
 
 # prediction 
-reg_df$m2_stayhome <- predict(m2)
+reg_df$m3_stayhome <- predict(m3)
 
 # confidence intervals for predictions
-reg_df$m2_ci <- predictInterval(m2)
+reg_df$m3_ci <- predictInterval(m3)
 
-reg_df %>% dplyr::select( c("Residential", "m2_stayhome", "m2_ci") ) %>% 
+reg_df %>% dplyr::select( c("Residential", "m3_stayhome", "m3_ci") ) %>% 
   head()
 
-p2_m2 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
+p3_m3 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
   geom_point(aes(x = date, y = Residential), size=0.5, color="grey50") +
-  geom_line(aes(x = date, y = m2_ci$fit), size=1.5, color="darkblue") +
-  geom_ribbon(aes(ymin = m2_ci$lwr, ymax = m2_ci$upr), linetype = 2, alpha=0.2) +
+  geom_line(aes(x = date, y = m3_ci$fit), size=1.5, color="darkblue") +
+  geom_ribbon(aes(ymin = m3_ci$lwr, ymax = m3_ci$upr), linetype = 2, alpha=0.2) +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() + 
   theme(legend.position = "none") +
   labs(x= "Date",
        y = "Stay-at-Home Rate (%)")
 
-png("../outputs/modelling/prediction/p2_m2.png",units="in", width=10, height=10, res=300)
-p2_m2
+png("../outputs/modelling/prediction/p3_m3.png",units="in", width=10, height=10, res=300)
+p3_m3
 dev.off()
 
 eq4 <- Residential ~ 1 + (1 | City) + (1 | date) + new_cases_per_million + casespm_t1lag + casespm_t2lag + casespm_t3lag + new_deaths_per_million + stringency_index + Workplaces
@@ -597,7 +598,9 @@ eq7 <- Residential ~ 1 + (1 + stringency_t3lag | City) + (1 | date) + new_cases_
 m7 <- lmer(eq7, data = cdf)
 summary(m7)
 
-Variation in the relationship stay at home and stringency across cities 
+
+
+equatiomatic::extract_eq(m1)
 
 library(ciTools)
 
@@ -617,6 +620,7 @@ use this last line of code
 To do list:
   - add pop density
   - compare models using AIC 
+  - estimate a model showing variations in the relationship stay at home and stringency across cities - that would be a random slope for stringency across cities
 
 # read the FUAs polygons
 fua <- st_read("../data/for_code/GHS_FUA_UCDB2015_GLOBE_R2019A_54009_1K_V1_0_MERGED.gpkg")
