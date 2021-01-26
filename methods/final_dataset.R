@@ -45,10 +45,19 @@ for(i in 1:length(cities)){
   city_subset <- subset(fua, eFUA_name==cities[i] & Cntry_ISO ==country[i])
   
   Month1_cropped <- crop(dec_data, extent(city_subset))
+  Month1_cropped <- mask(Month1_cropped, city_subset)
+  
   Month2_cropped <- crop(jan_data, extent(city_subset))
+  Month2_cropped <- mask(Month2_cropped, city_subset)
+  
   Month3_cropped <- crop(feb_data, extent(city_subset))
+  Month3_cropped <- mask(Month3_cropped, city_subset)
+  
   Month4_cropped <- crop(mar_data, extent(city_subset))
+  Month4_cropped <- mask(Month4_cropped, city_subset)
+  
   Month5_cropped <- crop(apr_data, extent(city_subset))
+  Month5_cropped <- mask(Month5_cropped, city_subset)
   
   
   if (!is.null(raster::intersect(Month1_cropped@extent, pop1@extent))) {

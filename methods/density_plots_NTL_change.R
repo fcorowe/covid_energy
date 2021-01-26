@@ -31,10 +31,19 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
   city_subset <- subset(fua, eFUA_name==city_name & Cntry_ISO ==country_code)
   
   month1_crop <- crop(month1raster, extent(city_subset))
+  month1_crop <- mask(month1_crop, city_subset)
+  
   month2_crop <- crop(month2raster, extent(city_subset))
+  month2_crop <- mask(month2_crop, city_subset)
+  
   month3_crop <- crop(month3raster, extent(city_subset))
+  month3_crop <- mask(month3_crop, city_subset)
+  
   month4_crop <- crop(month4raster, extent(city_subset))
+  month4_crop <- mask(month4_crop, city_subset)
+  
   month5_crop <- crop(month5raster, extent(city_subset))
+  month5_crop <- mask(month5_crop, city_subset)
   
   #create stack for all months
   multiple_months <- stack(month1_crop, month2_crop, month3_crop, month4_crop, month5_crop)
