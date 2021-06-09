@@ -4,6 +4,7 @@ library(timetk)
 library(ggpubr)
 library(lme4)
 library(merTools)
+library(glmmTMB)
 library(ggcorrplot)
 library(corrplot)
 library(viridis)
@@ -27,7 +28,7 @@ rm(list=ls())
 # 1. Read data
 
 # Set wdir
-setwd("/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methods")
+setwd("/Users/Franciscorowe/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methods")
 
 # COVID data
 case_data <- read.csv('../data/for_code/owid-covid-data.csv')
@@ -480,16 +481,105 @@ levels(reg_df$City)[levels(reg_df$City)=="Shanghai"] <- NA
 levels(reg_df$City)[levels(reg_df$City)=="Beijing"] <- NA
 levels(reg_df$City)[levels(reg_df$City)=="Hong Kong"] <- NA
 
+# data transformation
+reg_df$time <- as.numeric(ordered(reg_df$date))
+#reg_df$group <- factor(reg_df$City, ordered = FALSE)
+
 glimpse(reg_df)
 
-## 4.1 Model with varying intercept: city and time - nested random effects
+## 4.1 Model with varying intercept: linear 
 # add vars
 
 # specify a model equation
-eq1 <- Residential ~ 1 + (1 | City / date)
-
-reg_df$time <- as.factor(date)
+eq1 <- Residential ~ 1 + time + (1 | City)
 m1 <- lmer(eq1, data = reg_df)
+
+# estimates
+summary(m1)
+
+# prediction 
+reg_df$m1_stayhome <- predict(m1)
+
+# confidence intervals for predictions
+#With simple linear regression, standard errors and confidence intervals for fitted (and predicted) values are easily computed. In R, we can use the se.fit argument in predict.lm, which returns the standard error for the fitted values, and interval = "confidence" to return confidence intervals. With linear mixed-effects models, however, it is not so easy. Neither predict.lme (from nlme) nor predict.merMod (from lme4) provide these methods, as confidence intervals on mixed-effects model predictions are harder to produce.
+#The solution is to use the parametric bootstrap, which is conveniently implemented in bootMer to be applied to models fit with the lme4 package (lmer, not glmer). Here I describe a simple wrapper around bootMer, providing an alternative for predict.merMod that calculates standard errors (and confidence intervals) for predictions.
+#see: https://cran.r-project.org/web/packages/merTools/vignettes/Using_predictInterval.html
+reg_df$m1_ci <- predictInterval(m1)
+
+reg_df %>% dplyr::select( c("Residential", "m1_stayhome", "m1_ci") ) %>% 
+  head()
+
+p1_m1 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
+  geom_point(aes(x = date, y = Residential), size=0.5, color="grey50") +
+  geom_line(aes(x = date, y = m1_ci$fit), size=1.5, color="darkblue") +
+  geom_ribbon(aes(ymin = m1_ci$lwr, ymax = m1_ci$upr), linetype = 2, alpha=0.2) +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Date",
+       y = "Stay-at-Home Rate (%)")
+
+## 4.2 Model with varying intercept & slope
+# add vars
+
+# specify a model equation
+eq2 <- Residential ~ 1 + time + (1 + time | City)
+m2 <- glmmTMB(eq2, data = reg_df)
+
+# estimates
+summary(m2)
+
+# prediction 
+reg_df$m2_stayhome <- predict(m2)
+
+# confidence intervals for predictions
+#With simple linear regression, standard errors and confidence intervals for fitted (and predicted) values are easily computed. In R, we can use the se.fit argument in predict.lm, which returns the standard error for the fitted values, and interval = "confidence" to return confidence intervals. With linear mixed-effects models, however, it is not so easy. Neither predict.lme (from nlme) nor predict.merMod (from lme4) provide these methods, as confidence intervals on mixed-effects model predictions are harder to produce.
+#The solution is to use the parametric bootstrap, which is conveniently implemented in bootMer to be applied to models fit with the lme4 package (lmer, not glmer). Here I describe a simple wrapper around bootMer, providing an alternative for predict.merMod that calculates standard errors (and confidence intervals) for predictions.
+#see: https://cran.r-project.org/web/packages/merTools/vignettes/Using_predictInterval.html
+reg_df$m2_ci <- predictInterval(m2)
+
+reg_df %>% dplyr::select( c("Residential", "m2_stayhome", "m2_ci") ) %>% 
+  head()
+
+p2_m2 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
+  geom_point(aes(x = date, y = Residential), size=0.5, color="grey50") +
+  geom_line(aes(x = date, y = m2_ci$fit), size=1.5, color="darkblue") +
+  geom_ribbon(aes(ymin = m2_ci$lwr, ymax = m2_ci$upr), linetype = 2, alpha=0.2) +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Date",
+       y = "Stay-at-Home Rate (%)")
+
+
+## 4.3 Model with varying intercept & slope
+# add vars
+
+# specify a model equation
+eq3 <- Residential ~ 1 + splines::ns(time, 2) + (1 | City) + (0 + splines::ns(time, 2) | City)
+m3 <- lmer(eq3, data = reg_df)
+
+# estimates
+summary(m3)
+
+# prediction 
+reg_df$m3_stayhome <- predict(m3)
+
+# confidence intervals for predictions
+reg_df$m3_ci <- predictInterval(m3)
+
+reg_df %>% dplyr::select( c("Residential", "m3_stayhome", "m3_ci") ) %>% 
+  head()
+
+p3_m3 <-  ggplot(reg_df, aes(x = date, y = Residential)) + 
+  geom_point(aes(x = date, y = Residential), size=0.5, color="grey50") +
+  geom_line(aes(x = date, y = m3_ci$fit), size=1.5, color="darkblue") +
+  geom_ribbon(aes(ymin = m3_ci$lwr, ymax = m3_ci$upr), linetype = 2, alpha=0.2) +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() + 
+  theme(legend.position = "none") +
+  labs(x= "Date",
+       y = "Stay-at-Home Rate (%)")
 
 
 

@@ -1,0 +1,512 @@
+.lags = "14 days",
+.line_size = 2,
+.show_white_noise_bars = TRUE,
+.interactive = FALSE
+)
+p4 <- cdf %>% dplyr::filter(as.integer(City) %in% c(30:38)) %>%
+group_by(City) %>%
+arrange(City) %>%
+plot_acf_diagnostics(date, Residential,
+.lags = "14 days",
+.line_size = 2,
+.show_white_noise_bars = TRUE,
+.interactive = FALSE
+)
+p5 <- cdf %>% dplyr::filter(as.integer(City) %in% c(39:47)) %>%
+group_by(City) %>%
+arrange(City) %>%
+plot_acf_diagnostics(date, Residential,
+.lags = "14 days",
+.line_size = 2,
+.show_white_noise_bars = TRUE,
+.interactive = FALSE
+)
+p6 <- cdf %>% dplyr::filter(as.integer(City) %in% c(48:50)) %>%
+group_by(City) %>%
+arrange(City) %>%
+plot_acf_diagnostics(date, Residential,
+.lags = "14 days",
+.line_size = 2,
+.show_white_noise_bars = TRUE,
+.interactive = FALSE
+)
+png("../outputs/modelling/autocorrelation/pacf1.png",units="in", width=10, height=10, res=300)
+p1
+dev.off()
+png("../outputs/modelling/autocorrelation/pacf2.png",units="in", width=10, height=10, res=300)
+p2
+dev.off()
+png("../outputs/modelling/autocorrelation/pacf3.png",units="in", width=10, height=10, res=300)
+p3
+dev.off()
+png("../outputs/modelling/autocorrelation/pacf4.png",units="in", width=10, height=10, res=300)
+p4
+dev.off()
+png("../outputs/modelling/autocorrelation/pacf5.png",units="in", width=10, height=10, res=300)
+p5
+dev.off()
+png("../outputs/modelling/autocorrelation/pacf6.png",units="in", width=10, height=10, res=300)
+p6
+dev.off()
+rm(p1,p2,p3,p4,p5,p6)
+## 3.1 Scatteplot Mobility vs COVID cases, deaths and stringency
+# Stay-at-home vs COVID cases t
+p1_mc0 <- ggplot(cdf, aes(x = new_cases_per_million, y = Residential)) +
+geom_point(colour = "darkblue", alpha = 0.2, aes(size = new_cases)) +
+geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkblue") +
+facet_wrap(~ City, nrow = 7) +
+theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
+theme(legend.position = "none") +
+labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
+p1_mc0
+dev.off()
+# Stay-at-home vs COVID cases t7
+p1_mc7 <- ggplot(cdf, aes(x = casespm_t7lag, y = Residential)) +
+geom_point(colour = "darkblue", alpha = 0.2, aes(size = new_cases)) +
+geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkblue", linetype = "dashed") +
+facet_wrap(~ City, nrow = 7) +
+theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
+theme(legend.position = "none") +
+labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million t=7",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/scatterplot/p1_mc7.png",units="in", width=10, height=10, res=300)
+p1_mc7
+dev.off()
+# Stay-at-home vs Deaths
+p1_md <- ggplot(cdf, aes(x = new_deaths/1000 , y = Residential)) +
+geom_point(colour = "darkred", alpha = 0.2, aes(size = new_cases)) +
+geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkred") +
+facet_wrap(~ City, nrow = 7) +
+theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
+theme(legend.position = "none") +
+labs(x= "New COVID-19 Death Numbers (1,000)",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/scatterplot/p1_md.png",units="in", width=10, height=10, res=300)
+p1_md
+dev.off()
+# Stay-at-home vs Stringency
+p1_ms <- ggplot(cdf, aes(x = stringency_index, y = Residential)) +
+geom_point(colour = "darkorange3", alpha = 0.2, aes(size = new_cases)) +
+geom_smooth(method = "loess", se = FALSE, size=2, span = 0.9, color="darkorange3") +
+facet_wrap(~ City, nrow = 7) +
+theme_tufte() +
+#  theme(text = element_text(family="robotocondensed")) +
+theme(legend.position = "none") +
+labs(x= "Stringency Index",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/scatterplot/p1_ms.png",units="in", width=10, height=10, res=300)
+p1_ms
+dev.off()
+## 3.2 Line plot Mobility vs COVID cases, deaths and stringency
+# Stay-at-home vs COVID cases t & t7
+wgt <- 5
+p1_mc07 <- ggplot(cdf) +
+geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+geom_smooth(aes(x = date, y = new_cases_per_million / wgt), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkblue") +
+geom_smooth(aes(x = date, y = casespm_t7lag / wgt), method = "loess", se = FALSE, size=1, span = 0.3, color="grey", linetype = "dashed") +
+facet_wrap(~ City, nrow = 7) +
+scale_y_continuous(sec.axis = sec_axis(trans=~.*wgt,
+name="Daily New Confirmed COVID-19 Cases Number Per Million")) +
+theme_tufte() +
+theme(legend.position = "none") +
+labs(x= "Date",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/lineplot/p1_mc07.png",units="in", width=10, height=10, res=300)
+p1_mc07
+dev.off()
+# Stay-at-home vs Deaths t & t7
+wgt1 <- 1000
+p1_md07 <- ggplot(cdf) +
+geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+geom_smooth(aes(x = date, y = new_deaths/1000), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkred") +
+geom_smooth(aes(x = date, y = lag(new_deaths/1000, n=7, default = NA)), method = "loess", se = FALSE, size=1, span = 0.3, color="darkred", linetype = "dashed") +
+facet_wrap(~ City, nrow = 7) +
+scale_y_continuous(sec.axis = sec_axis(trans=~.*.125,
+name="New COVID-19 Death Numbers (1,000)")) +
+theme_tufte() +
+theme(legend.position = "none") +
+labs(x= "Date",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/lineplot/p1_md07.png",units="in", width=10, height=10, res=300)
+p1_md07
+dev.off()
+# Stay-at-home vs Stringency t & t7
+wgt2 <- 2.5
+p1_ms07 <- ggplot(cdf) +
+geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+geom_smooth(aes(x = date, y = stringency_index / wgt2), method = "loess", se = FALSE, size=1.5, span = 0.3, color="darkorange3") +
+geom_smooth(aes(x = date, y = stringency_t7lag / wgt2), method = "loess", se = FALSE, size=1, span = 0.3, color="grey", linetype = "dashed") +
+facet_wrap(~ City, nrow = 7) +
+scale_y_continuous(sec.axis = sec_axis(trans=~.*wgt2,
+name="Stringency Index")) +
+theme_tufte() +
+theme(legend.position = "none") +
+labs(x= "Date",
+y = "Stay-at-Home Rate (%)")
+png("../outputs/modelling/lineplot/p1_ms07.png",units="in", width=10, height=10, res=300)
+p1_ms07
+dev.off()
+## 3.3 Correlation
+### Full sample
+pc <- cor( cdf[ , c("Residential",
+"new_cases_per_million",
+"casespm_t1lag",
+"casespm_t2lag",
+"casespm_t3lag",
+"casespm_t4lag",
+"casespm_t5lag",
+"casespm_t6lag",
+"casespm_t7lag",
+"gr_cases",
+"new_deaths_per_million",
+"stringency_index",
+"stringency_t1lag",
+"stringency_t2lag",
+"stringency_t3lag",
+"stringency_t4lag",
+"stringency_t5lag",
+"stringency_t6lag",
+"stringency_t7lag",
+"Workplaces",
+"population_density",
+"gdp_per_capita",
+"aged_65_older",
+"cardiovasc_death_rate",
+"life_expectancy") ],
+use = "complete.obs",
+method="pearson" )
+# Change labels
+colnames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1",
+"New cases t-2", "New cases t-3",
+"New cases t-4", "New cases t-5", "New cases t-6",
+"New cases t-7",
+"Cases growth rate", "Deaths", "Stringency t", "Stringency t-1",
+"Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6", "Stringency t-7",
+"Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
+rownames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1",
+"New cases t-2", "New cases t-3", "New cases t-4", "New cases t-5", "New cases t-6",
+"New cases t-7",
+"Cases growth rate", "Cases doubling time", "Deaths", "Stringency t", "Stringency t-1",
+"Stringency t-2", "Stringency t-3", "Stringency t-4", "Stringency t-5", "Stringency t-6", "Stringency t-7",
+"Workplace", "Pop density", "GDP", "Pop 65+", "Cardiovascular death", "Life expectancy")
+# significance test
+sig <- corrplot::cor.mtest(pc, conf.level = .95)
+# create a correlogram
+corrplot::corrplot(pc, type="lower",
+method = "circle",
+order = "original",
+tl.cex = 0.7,
+p.mat = sig$p, sig.level = .05,
+col = viridis::viridis(100, option = "plasma"),
+diag = FALSE)
+# data wrangling
+library(tidyverse)
+# data utilities
+library(countrycode)
+library(timetk)
+# estimating mixed effects models
+library(lme4)
+library(merTools)
+library(glmmTMB)
+library(nlme)
+# correlograms
+library(ggcorrplot)
+library(corrplot)
+# data visualisation
+library(viridis)
+library(ggthemes)
+library(ggpubr)
+library(zoo)
+library(showtext)
+# display regression equation
+library(equatiomatic)
+# standardise input variables
+#library(arm)
+# reporting regression results
+library(broom.mixed)
+library(gtsummary)
+#library(parameters)
+#library(jtools)
+#library(AICcmodavg)
+#library(mixedup)
+rm(list=ls())
+# Google’s COVID-19 Community Mobility Reports show how visits and length of stay in
+# various place categories have changed compared to a baseline period before the pandemic.
+# we focus on the residential category, which is defined as the time users spent at home,
+# using the home addresses provided to or estimated by Google Maps.
+# Our focus on a variable related to time use and duration of events is consistent
+# with the ep/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methodsidemiological literature on time use and the spread of close-contact infectious diseases.
+reg_df <- read_csv("../data/modelling_df.csv")
+# 4. Multilevel modelling
+## 4.1 Model with varying intercept: linear
+# specify a model equation
+eq1 <- Residential ~ 1 + time + (1 | City)
+m1 <- lmer(eq1, data = reg_df)
+# estimates
+summary(m1)
+time_lag <- 7
+### specify a model equation
+eq13 <- Residential ~ 1 + splines::ns(time, 3) + z_stringency_index +  lag(z_stringency_index, time_lag) + z_cases + #fixed
+(1 + lag(z_stringency_index, time_lag) | City) + # random
+ar1( factor(time) + 0 | City) # autoregressive term
+m13 <- glmmTMB(eq13,
+dispformula = ~ 0,
+REML = TRUE,
+data = reg_df,
+na.action = na.omit)
+### estimates
+summary(m13)
+time_lag <- 1
+### specify a model equation
+eq6 <- Residential ~ 1 + splines::ns(time, 3) + z_stringency_index + z_cases + # fixed - main effects
+lag(z_stringency_index, time_lag) +  lag(z_cases, time_lag) + #fixed
+(1 + lag(z_stringency_index, time_lag) | City) + # random
+ar1( factor(time) + 0 | City) # autoregressive term
+m6 <- glmmTMB(eq6,
+dispformula = ~ 0,
+REML = TRUE,
+data = reg_df,
+na.action = na.omit)
+### estimates
+summary(m6)
+time_lag <- 1
+### specify a model equation
+eq6 <- Residential ~ 1 + splines::ns(time, 3) + z_stringency_index + z_cases + # fixed - main effects
+lag(z_stringency_index, time_lag) + #fixed
+(1 + lag(z_stringency_index, time_lag) | City) + # random
+ar1( factor(time) + 0 | City) # autoregressive term
+m6 <- glmmTMB(eq6,
+dispformula = ~ 0,
+REML = TRUE,
+data = reg_df,
+na.action = na.omit)
+### estimates
+summary(m6)
+library(sjPlot)
+sessionInfo()
+plot_model(m1, sort.est = TRUE)
+plot_model(m6, sort.est = TRUE)
+summary(m6)
+time_lag <- 1
+### specify a model equation
+eq6 <- Residential ~ 1 + splines::ns(time, 3) + z_stringency_index + z_cases + # fixed - main effects
+lag(z_stringency_index, time_lag) + #fixed
+(1 + lag(z_stringency_index, time_lag) | City) + # random
+ar1( factor(time) + 0 | City) # autoregressive term
+m6 <- glmmTMB(eq6,
+dispformula = ~ 0,
+REML = TRUE,
+data = reg_df,
+na.action = na.omit)
+### estimates
+summary(m6)
+plot_model(m6, sort.est = TRUE)
+plot_model(m6)
+plot_model(m1)
+plot_model(m2)
+eq2 <- Residential ~ 1 + time + (1 + time | City)
+m2 <- glmmTMB(eq2, data = reg_df)
+# estimates
+summary(m2)
+tbl_m2 <- tbl_regression(m2) %>%
+add_significance_stars()
+plot_model(m2)
+tab_model(m1, m2, show.ci = FALSE)
+tab_model(m1, show.ci = FALSE)
+tab_model(m2, show.ci = FALSE)
+# data wrangling
+library(tidyverse)
+# data utilities
+library(countrycode)
+library(timetk)
+# estimating mixed effects models
+library(lme4)
+library(merTools)
+library(glmmTMB)
+library(nlme)
+# correlograms
+library(ggcorrplot)
+library(corrplot)
+# data visualisation
+library(viridis)
+library(ggthemes)
+library(ggpubr)
+library(zoo)
+library(showtext)
+# display regression equation
+library(equatiomatic)
+# standardise input variables
+#library(arm)
+# reporting regression results
+library(broom.mixed)
+library(gtsummary)
+#library(parameters)
+#library(jtools)
+#library(AICcmodavg)
+#library(mixedup)
+rm(list=ls())
+# Google’s COVID-19 Community Mobility Reports show how visits and length of stay in
+# various place categories have changed compared to a baseline period before the pandemic.
+# we focus on the residential category, which is defined as the time users spent at home,
+# using the home addresses provided to or estimated by Google Maps.
+# Our focus on a variable related to time use and duration of events is consistent
+# with the ep/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methodsidemiological literature on time use and the spread of close-contact infectious diseases.
+reg_df <- read_csv("../data/modelling_df.csv")
+# specify a model equation
+eq2 <- Residential ~ 1 + time + (1 + time | City)
+m2 <- glmmTMB(eq2, data = reg_df)
+tab_model(m2)
+eq1 <- Residential ~ 1 + time + (1 | City)
+m1 <- lmer(eq1, data = reg_df)
+tab_model(m1)
+tab_model(m2)
+m2 <- lmer(Reaction ~ Days + (1 + Days | Subject), data = sleepstudy)
+summary(m2)
+tab_model(m2)
+data <- sleepstudy
+head(data)
+head(reg_df)
+str(data)
+str(reg_df)
+reg_df <- read_csv("../data/modelling_df.csv") %>% as.data.frame()
+str(reg_df)
+reg_df <- read_csv("../data/modelling_df.csv")
+attr(reg_df, 'spec') <- NULL
+str(reg)df
+str(reg_df)
+# data wrangling
+library(tidyverse)
+# data utilities
+library(countrycode)
+library(timetk)
+# estimating mixed effects models
+library(lme4)
+library(merTools)
+library(glmmTMB)
+library(nlme)
+# correlograms
+library(ggcorrplot)
+library(corrplot)
+# data visualisation
+library(viridis)
+library(ggthemes)
+library(ggpubr)
+library(zoo)
+library(showtext)
+# display regression equation
+library(equatiomatic)
+# standardise input variables
+#library(arm)
+# reporting regression results
+library(broom.mixed)
+library(gtsummary)
+#library(parameters)
+#library(jtools)
+#library(AICcmodavg)
+#library(mixedup)
+rm(list=ls())
+# Google’s COVID-19 Community Mobility Reports show how visits and length of stay in
+# various place categories have changed compared to a baseline period before the pandemic.
+# we focus on the residential category, which is defined as the time users spent at home,
+# using the home addresses provided to or estimated by Google Maps.
+# Our focus on a variable related to time use and duration of events is consistent
+# with the ep/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methodsidemiological literature on time use and the spread of close-contact infectious diseases.
+reg_df <- read_csv("../data/modelling_df.csv")
+attr(reg_df, 'spec') <- NULL
+eq2 <- Residential ~ 1 + time + (1 + time | City)
+m2 <- glmmTMB(eq2, data = reg_df)
+tab_model(m2)
+str(m2)
+# data wrangling
+library(tidyverse)
+# data utilities
+library(countrycode)
+library(timetk)
+# estimating mixed effects models
+library(lme4)
+library(merTools)
+library(glmmTMB)
+library(nlme)
+# correlograms
+library(ggcorrplot)
+library(corrplot)
+# data visualisation
+library(viridis)
+library(ggthemes)
+library(ggpubr)
+library(zoo)
+library(showtext)
+# display regression equation
+library(equatiomatic)
+# standardise input variables
+#library(arm)
+# reporting regression results
+library(broom.mixed)
+library(gtsummary)
+#library(parameters)
+#library(jtools)
+#library(AICcmodavg)
+#library(mixedup)
+rm(list=ls())
+# Google’s COVID-19 Community Mobility Reports show how visits and length of stay in
+# various place categories have changed compared to a baseline period before the pandemic.
+# we focus on the residential category, which is defined as the time users spent at home,
+# using the home addresses provided to or estimated by Google Maps.
+# Our focus on a variable related to time use and duration of events is consistent
+# with the ep/Users/Franciscorowe 1/Dropbox/Francisco/Research/in_progress/covid19_energy/github/covid_energy/methodsidemiological literature on time use and the spread of close-contact infectious diseases.
+reg_df <- read_csv("../data/modelling_df.csv") %>% as.data.frame()
+attr(reg_df, 'spec') <- NULL
+str(reg_df)
+data <- sleepstudy
+str(data)
+m2 <- lmer(Reaction ~ Days + (1 + Days | Subject), data = sleepstudy)
+tab_model(m2)
+str(m2)
+eq2 <- Residential ~ 1 + time + (1 + time | City)
+m2 <- glmmTMB(eq2, data = reg_df)
+# estimates
+summary(m2)
+tab_model(m2)
+str(reg_df)
+names(reg_df)
+ranef(m2)
+sessionInfo()
+plotREsim(REsim(m2))
+tab_model(m2)
+tab_model(m2, file = "other_mlm.html")
+write_csv(reg_df, "data.csv")
+library(lme4)
+m <- lmer(Reaction ~ Days + (Days | Subject), sleepstudy)
+plot_model(m, type = "re")
+library(lme4)
+m <- glmmTMB(Reaction ~ Days + (Days | Subject), sleepstudy)
+plot_model(m, type = "re")
+tab_model(m)
+tab_model(m, auto.label = FALSE)
+sessionInfo()
+install.packages("sjPlot")
+install.packages("sjPlot")
+library(sjPlot)
+sessionInfo()
+data("Salamanders")
+m4 <- glmmTMB(
+count ~ spp + mined + (1 | site),
+ziformula = ~ spp + mined,
+family = truncated_poisson(link = "log"),
+data = Salamanders
+)
+tab_model
+tab_model(m4)
+m4 <- glmmTMB(
+count ~ spp + mined + (1 | site),
+ziformula = ~ spp + mined,
+family = truncated_poisson(link = "log"),
+data = Salamanders
+)
+tab_model
+tab_model(m4)
