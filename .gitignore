@@ -2,3 +2,4 @@
 *.Rhistory
 *.gpkg
 *.tif
+./covid_energy/outputs/ntl_analysis/tests
