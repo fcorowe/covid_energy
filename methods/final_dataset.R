@@ -1,43 +1,46 @@
+# 1. Dependencies
 library(raster)
 library(sf)
 library(countrycode)
 library(dplyr)
 
-# read the raster data
+# 2. Read data
+## 2.1 raster data
 dec_data <- raster("../data/for_code/NTL/dec_data.tif")
 jan_data <- raster("../data/for_code/NTL/jan_data.tif")
 feb_data <- raster("../data/for_code/NTL/feb_data.tif")
 mar_data <- raster("../data/for_code/NTL/mar_data.tif")
 apr_data <- raster("../data/for_code/NTL/apr_data.tif")
+may_data <- raster("../data/for_code/NTL/may_data.tif")
+jun_data <- raster("../data/for_code/NTL/jun_data.tif")
 
-# read in the population grids
-pop1 <- raster('../data/for_code/worldpop/pop_dens_worldpop-0000000000-0000000000 11.18.10.tif')
-pop2 <- raster('../data/for_code/worldpop/pop2_3.tif')
+## 2.2 Gridded population data
+pop1 <- raster('../data/worldpop/pop_dens_worldpop-0000000000-0000000000 11.18.10.tif')
+pop2 <- raster('../data/worldpop/pop2_3.tif')
 
-# read the FUAs polygons
-fua <- st_read("../data/for_code/FUA_layer/GHS_FUA_UCDB2015_GLOBE_R2019A_54009_1K_V1_0_MERGED.gpkg")
+## 2.3 OECD Functional Urban Areas (FUAs) polygons
+fua <- st_read("../data/fua_layer/GHS_FUA_UCDB2015_GLOBE_R2019A_54009_1K_V1_0_MERGED.gpkg")
 WGS84 = "+init=epsg:4326"
-# make sure that all layers have consistent CRS- in this case is WGS84
+
+  ### Ensure consistency in CRS: WGS84
 fua <- st_transform(fua, WGS84)
 
+## 2.4 Selected cities for analysis
+cities_data <- read.csv("../data/un_cities_names.csv", encoding = "iso-8859-1")
 
+# 3. Data wrangling
+## 3.1 define a vector with city names
+cities <- as.vector(cities_data[,5])
 
-
-
-
-
-# read the file with the cities included in the analysis
-cities_data <- read.csv("../data/for_code/UN_Cities_names.csv")
-
-
-# define a vector with city names
-cities <- as.vector(cities_data[,1])
-
-# define a vector with country names
+## 3.2 define a vector with country names
 country <- countrycode(cities_data[,2], "country.name", "iso3c")
 
-
-
+## 3.3. rename cities to be consistent with the cities df
+fua$eFUA_name[fua$eFUA_name=="Quezon City [Manila]"] <- "Manila"
+fua$eFUA_name[fua$eFUA_name=="Osaka [Kyoto]"] <- "Osaka"
+fua$eFUA_name[fua$eFUA_name=="Delhi [New Delhi]"] <- "Delhi"
+fua$eFUA_name[fua$eFUA_name=="S\x8bo Paulo"] <- "São Paulo"
+cities[cities=29] <- "São Paulo"
 
 data_total <- data.frame() # new empty data frame
 
@@ -59,6 +62,11 @@ for(i in 1:length(cities)){
   Month5_cropped <- crop(apr_data, extent(city_subset))
   Month5_cropped <- mask(Month5_cropped, city_subset)
   
+  Month6_cropped <- crop(may_data, extent(city_subset))
+  Month6_cropped <- mask(Month6_cropped, city_subset)
+
+  Month7_cropped <- crop(jun_data, extent(city_subset))
+  Month7_cropped <- mask(Month7_cropped, city_subset)
   
   if (!is.null(raster::intersect(Month1_cropped@extent, pop1@extent))) {
     pop_cropped <- crop(pop1, extent(Month1_cropped))
@@ -67,18 +75,20 @@ for(i in 1:length(cities)){
   }
   
   
-  
   pop_df <- as.data.frame(pop_cropped, xy = TRUE)
   colnames(pop_df)[3] <- "pop"
   
   # calculate median population density
   median_pop <- median(pop_df$pop, na.rm = TRUE)
   
-  
-  
-  
   #create stack for all months
-  multiple_months <- stack(Month1_cropped, Month2_cropped, Month3_cropped, Month4_cropped, Month5_cropped)
+  multiple_months <- stack(Month1_cropped, 
+                           Month2_cropped, 
+                           Month3_cropped, 
+                           Month4_cropped, 
+                           Month5_cropped, 
+                           Month6_cropped, 
+                           Month7_cropped)
   
   # convert to data frame
   r_df <- as.data.frame(multiple_months, xy = TRUE)
@@ -87,6 +97,8 @@ for(i in 1:length(cities)){
   colnames(r_df)[5] <- "February"
   colnames(r_df)[6] <- "March"
   colnames(r_df)[7] <- "April"
+  colnames(r_df)[8] <- "May"
+  colnames(r_df)[9] <- "June"
   
   # r_df$JanDec <- r_df$January / r_df$December
   # r_df$FebDec <- r_df$February / r_df$December
@@ -99,6 +111,8 @@ for(i in 1:length(cities)){
   r_df$FebDec <- r_df$February - r_df$December
   r_df$MarDec <- r_df$March - r_df$December
   r_df$AprDec <- r_df$April - r_df$December
+  r_df$MayDec <- r_df$May - r_df$December
+  r_df$JunDec <- r_df$June - r_df$December
 
   r_df$class_JanDec <- ifelse(sign(r_df$JanDec) == -1, "negative",
                               ifelse(sign(r_df$JanDec) == 0, "neutral", "positive"))
@@ -112,8 +126,12 @@ for(i in 1:length(cities)){
   
   r_df$class_AprDec <- ifelse(sign(r_df$AprDec) == -1, "negative",
                               ifelse(sign(r_df$AprDec) == 0, "neutral", "positive"))
-
-
+  
+  r_df$class_MayDec <- ifelse(sign(r_df$MayDec) == -1, "negative",
+                              ifelse(sign(r_df$MayDec) == 0, "neutral", "positive"))
+  
+  r_df$class_JunDec <- ifelse(sign(r_df$JunDec) == -1, "negative",
+                              ifelse(sign(r_df$JunDec) == 0, "neutral", "positive"))
 
 
 
@@ -133,8 +151,14 @@ for(i in 1:length(cities)){
   stats_AprDec <- r_df %>% group_by(class_AprDec) %>% 
     summarise(count=n(),
               medianAprJan = median(AprDec, na.rm=TRUE))
-
+ 
+  stats_MayDec <- r_df %>% group_by(class_MayDec) %>% 
+    summarise(count=n(),
+              medianMayJan = median(MayDec, na.rm=TRUE))
   
+  stats_JunDec <- r_df %>% group_by(class_JunDec) %>% 
+    summarise(count=n(),
+              medianJunJan = median(JunDec, na.rm=TRUE))
 
   # attach the numbers in new columns
   city_subset$med_pop <- median_pop
@@ -162,6 +186,20 @@ for(i in 1:length(cities)){
   city_subset$AprDec_negative_median <- as.numeric(stats_AprDec[1,3])
   city_subset$AprDec_neutral_median <- as.numeric(stats_AprDec[2,3])
   city_subset$AprDec_postitive_median <- as.numeric(stats_AprDec[3,3])
+
+  city_subset$MayDec_negative <- as.numeric(stats_MayDec[1,2])
+  city_subset$MayDec_neutral <- as.numeric(stats_MayDec[2,2])
+  city_subset$MayDec_postitive <- as.numeric(stats_MayDec[3,2])
+  city_subset$MayDec_negative_median <- as.numeric(stats_MayDec[1,3])
+  city_subset$MayDec_neutral_median <- as.numeric(stats_MayDec[2,3])
+  city_subset$MayDec_postitive_median <- as.numeric(stats_MayDec[3,3])
+  
+  city_subset$JunDec_negative <- as.numeric(stats_JunDec[1,2])
+  city_subset$JunDec_neutral <- as.numeric(stats_JunDec[2,2])
+  city_subset$JunDec_postitive <- as.numeric(stats_JunDec[3,2])
+  city_subset$JunDec_negative_median <- as.numeric(stats_JunDec[1,3])
+  city_subset$JunDec_neutral_median <- as.numeric(stats_JunDec[2,3])
+  city_subset$JunDec_postitive_median <- as.numeric(stats_JunDec[3,3])
   
   # add vector to a dataframe
   df <- data.frame(city_subset)

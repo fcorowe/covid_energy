@@ -40,8 +40,6 @@ cities_data <- read.csv("../data/un_cities_names.csv", encoding = "iso-8859-1")
 cities <- as.vector(cities_data[,1])
 cities[cities=29] <- "São Paulo"
 
-r_df[r_df < 1.5] <- 0
-
   ## Define a vector with country names
 country <- countrycode(cities_data[,2], "country.name", "iso3c")
 
@@ -96,7 +94,13 @@ for(i in 1:length(cities)){
   colnames(r_df)[9] <- "June"
   
   # 3.3 Exclude noises caused by aurora and dim light noises caused by temporal lights from fires and boats
-  r_df[r_df < 1.5] <- 0
+  r_df$December[r_df$December < 1.5] <- 0
+  r_df$January[r_df$January < 1.5] <- 0
+  r_df$February[r_df$February < 1.5] <- 0
+  r_df$March[r_df$March < 1.5] <- 0
+  r_df$April[r_df$April < 1.5] <- 0
+  r_df$May[r_df$May < 1.5] <- 0
+  r_df$June[r_df$June < 1.5] <- 0
   
   # 3.4 Difference in light intensity - base month: Dec 2019
   r_df$JanDec_dif <- r_df$January - r_df$December

@@ -26,11 +26,15 @@ colnames(r_df)[5] <- "February"
 colnames(r_df)[6] <- "March"
 colnames(r_df)[7] <- "April"
 
-r_df[is.na(r_df)] <- 0
-
 
 # 1.5 excluded noises caused by aurora and remove dim light noises caused by temporal lights from fires and boats
-r_df[r_df < 1.5] <- 0
+r_df$December[r_df$December < 1.5] <- 0
+r_df$January[r_df$January < 1.5] <- 0
+r_df$February[r_df$February < 1.5] <- 0
+r_df$March[r_df$March < 1.5] <- 0
+r_df$April[r_df$April < 1.5] <- 0
+
+r_df[is.na(r_df)] <- 0
 
 r_df$JanDec_dif <- r_df$January - r_df$December
 r_df$FebDec_dif <- r_df$February - r_df$December
@@ -140,6 +144,24 @@ p1d <- ggmap(map, darken = 0.9) +
         legend.title = element_blank(),
         legend.position = "none",
         strip.text = element_blank())
+
+ggplot(data=data_long) +
+  geom_tile(aes(x=x,y=y,fill=change)) +
+  scale_fill_manual(values=colors) +
+  #geom_sf(data = city_subset, fill = NA, color = 'gray34') +
+  facet_grid(~time) +
+  #scale_fill_brewer("Legend_title", type = "seq", palette = "Greys") +
+  coord_equal() +
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank(),
+        legend.title = element_blank(),
+        legend.position = "none",
+        strip.text = element_blank()) +
+  xlab("") + ylab(cities[24])
 
 png("../outputs/ntl_analysis/tests/p1d_tonerbackground30.png",units="in", width=10, height=10, res=300)
   p1d
