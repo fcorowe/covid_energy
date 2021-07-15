@@ -3,6 +3,7 @@ library(raster)
 library(sf)
 library(countrycode)
 library(dplyr)
+library(patchwork)
 
 # 2. Read data
 ## 2.1 raster data
@@ -236,9 +237,9 @@ data_total <- data_total %>% mutate(
   mean_neu = rowMeans(cbind(JanDec_neutral, FebDec_neutral, MarDec_neutral, AprDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
   mean_pos = rowMeans(cbind(JanDec_positive, FebDec_positive, MarDec_positive, AprDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
   
-  mean_per_neg = rowMeans(cbind(JanDec_negative, FebDec_negative, MarDec_negative, AprDec_negative, MayDec_negative, JunDec_negative), na.rm=TRUE),
-  mean_per_neu = rowMeans(cbind(JanDec_neutral, FebDec_neutral, MarDec_neutral, AprDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
-  mean_per_pos = rowMeans(cbind(JanDec_positive, FebDec_positive, MarDec_positive, AprDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
+  mean_per_neg = rowMeans(cbind(JanDec_negative_per, FebDec_negative_per, MarDec_negative_per, AprDec_negative_per, MayDec_negative_per, JunDec_negative_per), na.rm=TRUE),
+  mean_per_neu = rowMeans(cbind(JanDec_neutral_per, FebDec_neutral_per, MarDec_neutral_per, AprDec_neutral_per, MayDec_neutral_per, JunDec_neutral_per), na.rm=TRUE),
+  mean_per_pos = rowMeans(cbind(JanDec_positive_per, FebDec_positive_per, MarDec_positive_per, AprDec_positive_per, MayDec_positive_per, JunDec_positive_per), na.rm=TRUE),
   
   mean_median_neg = rowMeans(cbind(JanDec_negative_median, FebDec_negative_median, MarDec_negative_median, AprDec_negative_median, MayDec_negative_median, JunDec_negative_median), na.rm=TRUE),
   mean_median_neu = rowMeans(cbind(JanDec_neutral_median, FebDec_neutral_median, MarDec_neutral_median, AprDec_neutral_median, MayDec_neutral_median, JunDec_neutral_median), na.rm=TRUE),
@@ -263,9 +264,86 @@ data_total %>% dplyr::select(c(
 
 # 5. Creating heat maps
 
+## 5.1 Mean change
+mean_change_df <- data_total %>% dplyr::select(c("eFUA_name", "mean_neg", "mean_neu", "mean_pos")) %>% 
+  pivot_longer(cols = starts_with("mean_"), names_to = "category", values_to ="mean_change")
+
+hm_count <- ggplot(data = mean_change_df, 
+       mapping = aes(x= category, y= eFUA_name, fill= mean_change)) +
+  geom_tile() +
+  scale_fill_viridis(name=" ", option ="viridis", begin = 0, end = 1, direction = 1) +
+  theme_tufte() + 
+  scale_x_discrete(labels=c("mean_neg" = "Negative", "mean_neu" = "No change",
+                            "mean_pos" = "Positive")) +
+  scale_y_discrete(limits=rev) +
+  labs(title= "Change in Night-time light intensity", subtitle = "A", x="Mean Number of Pixels", y="City") +
+  theme(plot.title = element_text(size=20),
+        plot.subtitle = element_text(size=15)) +
+  theme(legend.position = "bottom") +
+  theme(legend.title = element_text(size=13)) +
+  theme(axis.text.y = element_text(size=14)) +
+  theme(axis.text.x = element_text(size=15)) +
+  theme(axis.title=element_text(size=16, face="plain")) +
+  theme(legend.key.width = unit(1.5, "cm"), 
+        legend.key.height = unit(.8, "cm"),
+        legend.text=element_text(size=12)) 
+
+
+## 5.2 Mean percentage change
+mean_perchange_df <- data_total %>% dplyr::select(c("eFUA_name", "mean_per_neg", "mean_per_neu", "mean_per_pos")) %>% 
+  pivot_longer(cols = starts_with("mean_per"), names_to = "category", values_to ="mean_per_change")
+
+hm_per <- ggplot(data = mean_perchange_df, 
+                 mapping = aes(x= category, y= eFUA_name, fill= mean_per_change)) +
+  geom_tile() +
+  scale_fill_viridis(name=" ", option ="viridis", begin = 0, end = 1, direction = 1) +
+  theme_tufte() + 
+  scale_x_discrete(labels=c("mean_per_neg" = "Negative", "mean_per_neu" = "No change",
+                            "mean_per_pos" = "Positive")) +
+  scale_y_discrete(limits=rev) +
+  labs(title= paste(" "), subtitle = "B", x="Mean Percentage of Pixels", y="City") +
+  theme(plot.title = element_text(size=20),
+        plot.subtitle = element_text(size=15)) +
+  theme(legend.position = "bottom") +
+  theme(legend.title = element_text(size=13)) +
+  theme(axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  theme(axis.text.x = element_text(size=15)) +
+  theme(axis.title=element_text(size=16, face="plain")) +
+  theme(legend.key.width = unit(1.5, "cm"), 
+        legend.key.height = unit(.8, "cm"),
+        legend.text=element_text(size=12)) 
+
+## 5.2 Median change
+median_df <- data_total %>% dplyr::select(c("eFUA_name", "mean_median_neg", "mean_median_pos")) %>% 
+  pivot_longer(cols = starts_with("mean_median"), names_to = "category", values_to ="median_change")
+
+hm_median <- ggplot(data = median_df, 
+                 mapping = aes(x= category, y= eFUA_name, fill= median_change)) +
+  geom_tile() +
+  scale_fill_viridis(name=" ", option ="viridis", begin = 0, end = 1, direction = 1) +
+  theme_tufte() + 
+  scale_x_discrete(labels=c("mean_median_neg" = "Negative", 
+                            "mean_median_pos" = "Positive")) +
+  scale_y_discrete(limits=rev) +
+  labs(title= paste(" "), subtitle = "C", x="Median Percentage Change", y="City") +
+  theme(plot.title = element_text(size=20),
+        plot.subtitle = element_text(size=15)) +
+  theme(legend.position = "bottom") +
+  theme(legend.title = element_text(size=13)) +
+  theme(axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) +
+  theme(axis.text.x = element_text(size=15)) +
+  theme(axis.title=element_text(size=16, face="plain")) +
+  theme(legend.key.width = unit(1.5, "cm"), 
+        legend.key.height = unit(.8, "cm"),
+        legend.text=element_text(size=12)) 
 
 
 
+hm_count + hm_per + hm_median
 
 # read in mobility data ---------------------------------------------------
 
