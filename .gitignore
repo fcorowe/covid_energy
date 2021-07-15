@@ -4,3 +4,5 @@
 *.tif
 ./covid_energy/outputs/ntl_analysis/tests
 data/google_mobility/
+methods/premium-20201028
+methods/superseded

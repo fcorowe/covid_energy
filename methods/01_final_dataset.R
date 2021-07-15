@@ -342,100 +342,101 @@ hm_median <- ggplot(data = median_df,
         legend.text=element_text(size=12)) 
 
 
-
-hm_count + hm_per + hm_median
+png("../outputs/summary/heatmaps_ntlchange.png",units="in", width=12, height=15, res=300)
+  hm_count + hm_per + hm_median
+dev.off()
 
 # read in mobility data ---------------------------------------------------
 
 # read mobility data
-mob_data <- read.csv("../data/for_code/mobility_and_stringency_uncities.csv")
-
-#attach the country code
-mob_data$iso_code <- countrycode(mob_data[,2], "country.name", "iso3c")
-
-# modify the date column
-mob_data$Date <- as.Date(mob_data$Date, "%d/%m/%Y")
-
-# set the maximum date to end of March
-mob_data <- subset(mob_data, Date <= as.Date("2020-04-30") )
-
-# extract the month
-mob_data$month <- strftime(mob_data$Date, "%m")
-
-
-# # rename months of we want
-# mob_data$month[mob_data$month == "01"] <- "January"
-# mob_data$month[mob_data$month == "02"] <- "Febrary"
-# mob_data$month[mob_data$month == "03"] <- "March"
-
-
-summary_mean <- mob_data %>% 
-  group_by(City, month) %>%
-  summarise_at(c("Stringency", "Workplaces", "Residential"), mean, na.rm = TRUE)
-
-# in this part of code we convert the summary table from long to wide format 
-# and then combine it with all other data to export it
-library(reshape2)
-Stringency_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Stringency"))
-colnames(Stringency_wide_mean) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
-
-Workplaces_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Workplaces"))
-colnames(Workplaces_wide_mean) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar", "Workplaces_Apr")
-
-Residential_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Residential"))
-colnames(Residential_wide_mean) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
-
-join1_mean <- left_join(Stringency_wide_mean, Workplaces_wide_mean, by = "City")
-join2_mean <- left_join(join1_mean, Residential_wide_mean, by = "City")
-
-# this is the dataset with the mean value for Stringency and mobility data 
-mean_data <- left_join(join2_mean, data_total, by = c("City" = "eFUA_name"))
-st_write(mean_data, "mean_data.csv")
-
-
-summary_median <- mob_data %>% 
-  group_by(City, month) %>%
-  summarise_at(c("Stringency", "Workplaces", "Residential"), median, na.rm = TRUE)
-
-Stringency_wide_median <- dcast(summary_median, City ~ month, value.var=c("Stringency"))
-colnames(Stringency_wide_median) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
-
-Workplaces_wide_median <- dcast(summary_median, City ~ month, value.var=c("Workplaces"))
-colnames(Workplaces_wide_median) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar", "Workplaces_Apr")
-
-Residential_wide_median <- dcast(summary_median, City ~ month, value.var=c("Residential"))
-colnames(Residential_wide_median) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
-
-join1_median <- left_join(Stringency_wide_median, Workplaces_wide_median, by = "City")
-join2_median <- left_join(join1_median, Residential_wide_median, by = "City")
-
-# this is the dataset with the median value for Stringency and mobility data 
-median_data <- left_join(join2_median, data_total, by = c("City" = "eFUA_name"))
-st_write(median_data, "median_data.csv")
-
-
-
-summary_IQR <- mob_data %>% 
-  group_by(City, month) %>%
-  summarize(Stringency = IQR(Stringency, na.rm = TRUE),
-            Workplaces = IQR(Workplaces, na.rm = TRUE),
-            Residential = IQR(Residential, na.rm = TRUE))
-
-
-Stringency_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Stringency"))
-colnames(Stringency_wide_IQR) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
-
-Workplaces_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Workplaces"))
-colnames(Workplaces_wide_IQR) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar")
-
-Residential_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Residential"))
-colnames(Residential_wide_IQR) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
-
-join1_IQR <- left_join(Stringency_wide_IQR, Workplaces_wide_IQR, by = "City")
-join2_IQR <- left_join(join1_IQR, Residential_wide_IQR, by = "City")
-
-
-# this is the dataset with the IQR value for Stringency and mobility data 
-IQR_data <- left_join(join2_IQR, data_total, by = c("City" = "eFUA_name"))
-st_write(IQR_data, "IQR_data.csv")
-
+# mob_data <- read.csv("../data/for_code/mobility_and_stringency_uncities.csv")
+# 
+# #attach the country code
+# mob_data$iso_code <- countrycode(mob_data[,2], "country.name", "iso3c")
+# 
+# # modify the date column
+# mob_data$Date <- as.Date(mob_data$Date, "%d/%m/%Y")
+# 
+# # set the maximum date to end of March
+# mob_data <- subset(mob_data, Date <= as.Date("2020-04-30") )
+# 
+# # extract the month
+# mob_data$month <- strftime(mob_data$Date, "%m")
+# 
+# 
+# # # rename months of we want
+# # mob_data$month[mob_data$month == "01"] <- "January"
+# # mob_data$month[mob_data$month == "02"] <- "Febrary"
+# # mob_data$month[mob_data$month == "03"] <- "March"
+# 
+# 
+# summary_mean <- mob_data %>% 
+#   group_by(City, month) %>%
+#   summarise_at(c("Stringency", "Workplaces", "Residential"), mean, na.rm = TRUE)
+# 
+# # in this part of code we convert the summary table from long to wide format 
+# # and then combine it with all other data to export it
+# library(reshape2)
+# Stringency_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Stringency"))
+# colnames(Stringency_wide_mean) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
+# 
+# Workplaces_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Workplaces"))
+# colnames(Workplaces_wide_mean) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar", "Workplaces_Apr")
+# 
+# Residential_wide_mean <- dcast(summary_mean, City ~ month, value.var=c("Residential"))
+# colnames(Residential_wide_mean) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
+# 
+# join1_mean <- left_join(Stringency_wide_mean, Workplaces_wide_mean, by = "City")
+# join2_mean <- left_join(join1_mean, Residential_wide_mean, by = "City")
+# 
+# # this is the dataset with the mean value for Stringency and mobility data 
+# mean_data <- left_join(join2_mean, data_total, by = c("City" = "eFUA_name"))
+# st_write(mean_data, "mean_data.csv")
+# 
+# 
+# summary_median <- mob_data %>% 
+#   group_by(City, month) %>%
+#   summarise_at(c("Stringency", "Workplaces", "Residential"), median, na.rm = TRUE)
+# 
+# Stringency_wide_median <- dcast(summary_median, City ~ month, value.var=c("Stringency"))
+# colnames(Stringency_wide_median) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
+# 
+# Workplaces_wide_median <- dcast(summary_median, City ~ month, value.var=c("Workplaces"))
+# colnames(Workplaces_wide_median) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar", "Workplaces_Apr")
+# 
+# Residential_wide_median <- dcast(summary_median, City ~ month, value.var=c("Residential"))
+# colnames(Residential_wide_median) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
+# 
+# join1_median <- left_join(Stringency_wide_median, Workplaces_wide_median, by = "City")
+# join2_median <- left_join(join1_median, Residential_wide_median, by = "City")
+# 
+# # this is the dataset with the median value for Stringency and mobility data 
+# median_data <- left_join(join2_median, data_total, by = c("City" = "eFUA_name"))
+# st_write(median_data, "median_data.csv")
+# 
+# 
+# 
+# summary_IQR <- mob_data %>% 
+#   group_by(City, month) %>%
+#   summarize(Stringency = IQR(Stringency, na.rm = TRUE),
+#             Workplaces = IQR(Workplaces, na.rm = TRUE),
+#             Residential = IQR(Residential, na.rm = TRUE))
+# 
+# 
+# Stringency_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Stringency"))
+# colnames(Stringency_wide_IQR) <- c("City", "Stringency_Jan", "Stringency_Feb", "Stringency_Mar", "Stringency_Apr")
+# 
+# Workplaces_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Workplaces"))
+# colnames(Workplaces_wide_IQR) <- c("City", "Workplaces_Jan", "Workplaces_Feb", "Workplaces_Mar")
+# 
+# Residential_wide_IQR <- dcast(summary_IQR, City ~ month, value.var=c("Residential"))
+# colnames(Residential_wide_IQR) <- c("City", "Residential_Jan", "Residential_Feb", "Residential_Mar", "Residential_Apr")
+# 
+# join1_IQR <- left_join(Stringency_wide_IQR, Workplaces_wide_IQR, by = "City")
+# join2_IQR <- left_join(join1_IQR, Residential_wide_IQR, by = "City")
+# 
+# 
+# # this is the dataset with the IQR value for Stringency and mobility data 
+# IQR_data <- left_join(join2_IQR, data_total, by = c("City" = "eFUA_name"))
+# st_write(IQR_data, "IQR_data.csv")
+# 
