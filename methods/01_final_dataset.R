@@ -254,6 +254,7 @@ data_total %>% dplyr::select(c(
   "mean_neg",
   "mean_neu",
   "mean_pos",
+  "mean_per_neg",
   "mean_per_neu",
   "mean_per_pos",
   "mean_median_neg",

@@ -37,11 +37,17 @@ fua <- st_transform(fua, WGS84)
 cities_data <- read.csv("../data/un_cities_names.csv", encoding = "iso-8859-1")
 
   ## Define a vector with city names
-cities <- as.vector(cities_data[,1])
-cities[cities=29] <- "São Paulo"
+cities <- as.vector(cities_data[,5])
 
   ## Define a vector with country names
 country <- countrycode(cities_data[,2], "country.name", "iso3c")
+
+## Rename cities to be consistent with the cities df
+fua$eFUA_name[fua$eFUA_name=="Quezon City [Manila]"] <- "Manila"
+fua$eFUA_name[fua$eFUA_name=="Osaka [Kyoto]"] <- "Osaka"
+fua$eFUA_name[fua$eFUA_name=="Delhi [New Delhi]"] <- "Delhi"
+fua$eFUA_name[fua$eFUA_name=="S\x8bo Paulo"] <- "São Paulo"
+cities[cities=29] <- "São Paulo"
 
   ## Create an empty list to store plots
 plotList <- list()
@@ -367,5 +373,29 @@ final_plots <- plot_grid(plotlist = plotList[46:50],
 final_plots_legend <- plot_grid(final_plots, legend, ncol = 1, rel_heights = c(1, .05))
 
 png("../outputs/ntl_analysis/ntl_plots_set10.png",units="in", width=10, height=10, res=300)
+final_plots_legend
+dev.off() 
+
+# Figure for the main manuscript
+  ## 1
+final_plots <- plot_grid(plotlist = plotList[c(3, 8, 17, 13, 40)],
+                         ncol = 1,
+                         align = "hv")
+
+final_plots_legend <- plot_grid(final_plots, legend, ncol = 1, rel_heights = c(1, .05))
+
+png("../outputs/ntl_analysis/ntl_plots_main1.png",units="in", width=10, height=10, res=300)
+final_plots_legend
+dev.off() 
+
+# Figure for the main manuscript
+## 2
+final_plots <- plot_grid(plotlist = plotList[c(48, 11, 22, 41, 10)],
+                         ncol = 1,
+                         align = "hv")
+
+final_plots_legend <- plot_grid(final_plots, legend, ncol = 1, rel_heights = c(1, .05))
+
+png("../outputs/ntl_analysis/ntl_plots_main2.png",units="in", width=10, height=10, res=300)
 final_plots_legend
 dev.off() 
