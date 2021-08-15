@@ -1,9 +1,12 @@
 # 1. Dependencies
+library(tidyverse)
 library(raster)
 library(sf)
 library(countrycode)
 library(dplyr)
 library(patchwork)
+library(viridis)
+library(viridisLite)
 
 # 2. Read data
 ## 2.1 raster data
@@ -145,23 +148,23 @@ for(i in 1:length(cities)){
   
   stats_FebDec <- r_df %>% group_by(class_FebDec) %>% 
     summarise(count=n(),
-              medianFebJan = median(FebDec, na.rm=TRUE))
+              medianFebDec = median(FebDec, na.rm=TRUE))
   
   stats_MarDec <- r_df %>% group_by(class_MarDec) %>% 
     summarise(count=n(),
-              medianMarJan = median(MarDec, na.rm=TRUE))
+              medianMarDec = median(MarDec, na.rm=TRUE))
   
   stats_AprDec <- r_df %>% group_by(class_AprDec) %>% 
     summarise(count=n(),
-              medianAprJan = median(AprDec, na.rm=TRUE))
+              medianAprDec = median(AprDec, na.rm=TRUE))
  
   stats_MayDec <- r_df %>% group_by(class_MayDec) %>% 
     summarise(count=n(),
-              medianMayJan = median(MayDec, na.rm=TRUE))
+              medianMayDec = median(MayDec, na.rm=TRUE))
   
   stats_JunDec <- r_df %>% group_by(class_JunDec) %>% 
     summarise(count=n(),
-              medianJunJan = median(JunDec, na.rm=TRUE))
+              medianJunDec = median(JunDec, na.rm=TRUE))
 
   # attach the numbers in new columns
   city_subset$med_pop <- median_pop
@@ -277,14 +280,15 @@ hm_count <- ggplot(data = mean_change_df,
   scale_x_discrete(labels=c("mean_neg" = "Negative", "mean_neu" = "No change",
                             "mean_pos" = "Positive")) +
   scale_y_discrete(limits=rev) +
-  labs(title= "Change in Night-time light intensity", subtitle = "A", x="Mean Number of Pixels", y="City") +
+  labs(title= "Change in Night-time light intensity", subtitle = "a", x="Mean Number of Pixels", y="City") +
   theme(plot.title = element_text(size=20),
         plot.subtitle = element_text(size=15)) +
   theme(legend.position = "bottom") +
-  theme(legend.title = element_text(size=13)) +
-  theme(axis.text.y = element_text(size=14)) +
-  theme(axis.text.x = element_text(size=15)) +
+  theme(legend.title = element_text(size=14)) +
+  theme(axis.text.y = element_text(size=16)) +
+  theme(axis.text.x = element_text(size=16)) +
   theme(axis.title=element_text(size=16, face="plain")) +
+  theme(axis.title.y = element_text(size = 22)) +
   theme(legend.key.width = unit(1.5, "cm"), 
         legend.key.height = unit(.8, "cm"),
         legend.text=element_text(size=12)) 
@@ -302,7 +306,7 @@ hm_per <- ggplot(data = mean_perchange_df,
   scale_x_discrete(labels=c("mean_per_neg" = "Negative", "mean_per_neu" = "No change",
                             "mean_per_pos" = "Positive")) +
   scale_y_discrete(limits=rev) +
-  labs(title= paste(" "), subtitle = "B", x="Mean Percentage of Pixels", y="City") +
+  labs(title= paste(" "), subtitle = "b", x="Mean Percentage of Pixels", y="City") +
   theme(plot.title = element_text(size=20),
         plot.subtitle = element_text(size=15)) +
   theme(legend.position = "bottom") +
@@ -310,7 +314,7 @@ hm_per <- ggplot(data = mean_perchange_df,
   theme(axis.title.y = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank()) +
-  theme(axis.text.x = element_text(size=15)) +
+  theme(axis.text.x = element_text(size=16)) +
   theme(axis.title=element_text(size=16, face="plain")) +
   theme(legend.key.width = unit(1.5, "cm"), 
         legend.key.height = unit(.8, "cm"),
@@ -328,7 +332,7 @@ hm_median <- ggplot(data = median_df,
   scale_x_discrete(labels=c("mean_median_neg" = "Negative", 
                             "mean_median_pos" = "Positive")) +
   scale_y_discrete(limits=rev) +
-  labs(title= paste(" "), subtitle = "C", x="Median Percentage Change", y="City") +
+  labs(title= paste(" "), subtitle = "c", x="Median Percentage Change", y="City") +
   theme(plot.title = element_text(size=20),
         plot.subtitle = element_text(size=15)) +
   theme(legend.position = "bottom") +
@@ -336,7 +340,7 @@ hm_median <- ggplot(data = median_df,
   theme(axis.title.y = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank()) +
-  theme(axis.text.x = element_text(size=15)) +
+  theme(axis.text.x = element_text(size=16)) +
   theme(axis.title=element_text(size=16, face="plain")) +
   theme(legend.key.width = unit(1.5, "cm"), 
         legend.key.height = unit(.8, "cm"),

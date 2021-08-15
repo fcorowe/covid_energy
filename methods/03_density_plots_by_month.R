@@ -131,7 +131,7 @@ for(i in 1:length(cities)){
 }
   
 library(ggpubr)
-combined_plots <- ggarrange(plotlist = plotList, ncol=5, nrow=10, common.legend = TRUE, legend="right")
+combined_plots <- ggarrange(plotlist = plotList, ncol=5, nrow=10, common.legend = TRUE, legend="bottom")
 
 
 png("../outputs/dist_analysis/density_plots.png",units="in", width=15, height=15, res=300)

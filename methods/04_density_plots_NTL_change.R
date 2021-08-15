@@ -34,7 +34,13 @@ fua <- st_transform(fua, WGS84)
 cities_data <- read.csv("../data/un_cities_names.csv", encoding = "iso-8859-1")
 
 ## Define a vector with city names
-cities <- as.vector(cities_data[,1])
+cities <- as.vector(cities_data[,5])
+
+## Rename cities to be consistent with the cities df
+fua$eFUA_name[fua$eFUA_name=="Quezon City [Manila]"] <- "Manila"
+fua$eFUA_name[fua$eFUA_name=="Osaka [Kyoto]"] <- "Osaka"
+fua$eFUA_name[fua$eFUA_name=="Delhi [New Delhi]"] <- "Delhi"
+fua$eFUA_name[fua$eFUA_name=="S\x8bo Paulo"] <- "São Paulo"
 cities[cities=29] <- "São Paulo"
 
 ## Define a vector with country names
@@ -116,7 +122,15 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
     theme_tufte() + 
     xlab("") +
     ylab("") +
-    scale_color_viridis( discrete = TRUE, option = "viridis") +
+    scale_color_viridis( discrete = TRUE, option = "viridis",
+                         name = "Difference",
+                         breaks = c("JanDec_dif", "FebDec_dif", "MarDec_dif", "AprDec_dif", "MayDec_dif", "JunDec_dif"), 
+                         labels = c("Jan20 - Dec19", "Feb20 - Dec19", "Mar20 - Dec19", "Apr20 - Dec19", "May20 - Dec19", "Jun20 - Dec19"),
+                         ) +
+    theme(text = element_text(size = 13),
+          legend.title = element_text(size = 15),
+          legend.text = element_text(size = 14)
+          ) +
     #scale_y_continuous(limits = c(0,0.6)) +
     #scale_x_continuous(limits = c(-100,100)) +
     ggtitle(city_name)
@@ -142,10 +156,10 @@ library(ggpubr)
 combined_plots <- ggarrange(plotlist = plotList, ncol=5, nrow=10, common.legend = TRUE, legend="right")
 
 
-png("../outputs/dist_analysis/density_plots_ntlchange.png",units="in", width=15, height=15, res=300)
+png("../outputs/dist_analysis/density_plots_ntlchange.png", units="in", width=15, height=15, res=300)
 annotate_figure(combined_plots,
-                bottom = text_grob("Night-time light intensity (nanoWatts/cm2/sr)", size = 10),
-                left = text_grob("Density", size = 10, rot = 90)
+                bottom = text_grob("Night-time light intensity (nanoWatts/cm2/sr)", size = 16),
+                left = text_grob("Density", size = 16, rot = 90)
                 )
 dev.off() # Close the file
 

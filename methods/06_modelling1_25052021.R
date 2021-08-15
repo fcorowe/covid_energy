@@ -17,6 +17,7 @@ library(ggthemes)
 library(ggpubr)
 library(zoo)
 library(showtext)
+library(patchwork)
 # display regression equation
 library(equatiomatic)
 # standardise input variables
@@ -284,10 +285,14 @@ p1_mc0 <- ggplot(cdf, aes(x = new_cases_smoothed_per_million, y = Residential)) 
   geom_smooth(method = "loess", se = FALSE, size=2, span = 0.5, color="darkblue") +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() +
-#  theme(text = element_text(family="robotocondensed")) +
-  theme(legend.position = "none") +
+  #theme(text = element_text(family="robotocondensed")) +
+  theme(legend.position = "none",
+        text=element_text(size=18),
+        axis.text=element_text(size=13),
+        axis.title=element_text(size=18)) +
   labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million",
-       y = "Stay-at-Home Rate (%)")
+       y = "Stay-at-Home Rate (%)",
+       subtitle = "a")
 
 png("../outputs/modelling/scatterplot/p1_mc0.png",units="in", width=10, height=10, res=300)
 p1_mc0
@@ -302,7 +307,7 @@ p1_mc7 <- ggplot(cdf, aes(x = casespm_t7lag, y = Residential)) +
 #  theme(text = element_text(family="robotocondensed")) +
   theme(legend.position = "none") +
   labs(x= "Daily New Confirmed COVID-19 Cases Number Per Million t=7",
-       y = "Stay-at-Home Rate (%)")
+       y = "Stay-at-Home Rate (%)") 
 
 png("../outputs/modelling/scatterplot/p1_mc7.png",units="in", width=10, height=10, res=300)
 p1_mc7
@@ -316,7 +321,8 @@ p1_md <- cdf %>% filter(new_deaths_smoothed_per_million >= 0) %>%
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() +
 #  theme(text = element_text(family="robotocondensed")) +
-  theme(legend.position = "none") +
+  theme(legend.position = "none",
+        text=element_text(size=17)) +
   labs(x= "New COVID-19 Death Numbers (1,000)",
        y = "Stay-at-Home Rate (%)")
 
@@ -331,14 +337,23 @@ p1_ms <- ggplot(cdf, aes(x = stringency_index, y = Residential)) +
   geom_smooth(method = "loess", se = FALSE, size=2, span = 0.9, color="darkorange3") +
   facet_wrap(~ City, nrow = 7) + 
   theme_tufte() +
-#  theme(text = element_text(family="robotocondensed")) +
-  theme(legend.position = "none") +
+  #theme(text = element_text(family="robotocondensed")) +
+  theme(legend.position = "none",
+        text=element_text(size=18),
+        axis.text=element_text(size=13),
+        axis.title=element_text(size=18),
+        #axis.title.y = element_blank(),
+        #axis.ticks.y = element_blank(),
+        #axis.text.y = element_blank()
+        ) +
   labs(x= "Stringency Index",
-       y = "Stay-at-Home Rate (%)")
+       #y = "Stay-at-Home Rate (%)",
+       subtitle = "b")
 
 png("../outputs/modelling/scatterplot/p1_ms.png",units="in", width=10, height=10, res=300)
 p1_ms 
 dev.off()
+
 
 
 ## 3.2 Line plot Mobility vs COVID cases, deaths and stringency

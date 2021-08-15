@@ -150,7 +150,13 @@ for(i in 1:length(cities)){
     scale_x_continuous(limits = c(1,12)) +
     scale_y_continuous(limits = c(-80, 80)) +
     theme(axis.text.x=element_text(angle=45, hjust=1),
-          plot.margin = unit(c(0, 0, 0, 0), "cm"))
+          plot.margin = unit(c(0, 0, 0, 0), "cm")) +
+    theme(text = element_text(size = 13),
+          legend.title = element_text(size = 13),
+          legend.text = element_text(size = 13)) +
+    theme(axis.text.y = element_text(size=12)) +
+    theme(axis.text.x = element_text(size=12)) +
+    theme(axis.title=element_text(size=12))
 
   myplots[[i]] <- p  # add each plot into plot list
   
@@ -158,7 +164,7 @@ for(i in 1:length(cities)){
 
 png("../outputs/pop_density/ntl_n_popdensity.png",units="in", width=10, height=15, res=300)
 grid.arrange(arrangeGrob(grobs = myplots, ncol = 5), 
-             bottom = textGrob("Population (log)"), 
-             left= textGrob("Mean change in nigth-time light intensity (December 2019 - June 2020)", rot = 90, vjust = 1))
+             bottom = textGrob("Population (log)", gp=gpar(fontsize=15,font=8)), 
+             left= textGrob("Mean change in nigth-time light intensity (Dec19 - Jun20)", gp=gpar(fontsize=15,font=8), rot = 90, vjust = 1))
 dev.off()
 

@@ -18,6 +18,7 @@ library(ggpubr)
 library(zoo)
 library(showtext)
 library(patchwork)
+library(ggrepel)
 # display regression equation
 library(equatiomatic)
 # standardise input variables
@@ -134,7 +135,8 @@ tab_model(m1, m2, m3,
           pred.labels = c("Intercept", "Stringency t", "New Cases t", "Stringency t-1",
                           "Spline 1st degree", "Spline 2nd degree", 
                           "Spline 3rd degree", "New cases t-1"),
-          dv.labels = c("Autoregressive", "Stringency random effects", "New COVID-19 cases random effects")
+          dv.labels = c("Autoregressive", "Stringency random effects", "New COVID-19 cases random effects"),
+          file = "../outputs/modelling/estimates/reg_table.html"
 )
 
 ## regression plots
@@ -171,7 +173,7 @@ p1_m1me <- plot_model(m1,terms = c("z_stringency_index", "z_cases", "lag(z_strin
              color = "grey20",
              size=1,
              alpha =.2) +
-  labs(title = "A",
+  labs(title = "c",
        subtitle = " Main fixed effects")
 
   ### stringency random effects
@@ -197,7 +199,7 @@ p2_m2re <- m2_re %>% filter(facet =="z_stringency_index") %>%
              color = "grey20",
              size=1,
              alpha =.2) +
-  labs(title = "B",
+  labs(title = "d",
        subtitle = "Stringency")
 
 
@@ -224,12 +226,67 @@ p3_m3re <- m3_re %>% filter(facet =="z_cases") %>%
              color = "grey20",
              size=1,
              alpha =.2) +
-  labs(title = "C",
+  labs(title = "e",
        subtitle = "COVID-19 cases")
 
 p1_m1me + p2_m2re + p3_m3re
 
-png("../outputs/modelling/estimates/glmmtmb_plots.png",units="in", width=15, height=8, res=300)
+png("../outputs/modelling/estimates/glmmtmb_plots.png", units="in", width=15, height=8, res=300)
 p1_m1me + p2_m2re + p3_m3re
+dev.off()
+
+
+# Creating a classification of cities
+  ## Creating the dfs for random effects
+  m2_re_subset <- m2_re %>% filter(facet == "z_stringency_index")
+
+  m3_re_subset <- m3_re %>% dplyr::select(estimate, facet, term) %>% 
+    filter(facet == "z_cases") %>% 
+    rename(
+      cases = estimate,
+      facet_cases = facet,
+      term_cases = term 
+    )
+  
+   ## Sorting data by city
+    ## list of cities
+  cities_data <- read.csv("../data/for_code/UN_Cities_names.csv")
+
+    ### define a vector of city names
+  cities_data <- cities_data %>% arrange(first.case.rank)
+  cities <- as.vector(cities_data[,5]) 
+  cities[cities=="S\x8bo Paulo"] <- "São Paulo"
+
+    ### Use a factor to sort data by cities
+  m2_re_subset <- m2_re_subset[order(m2_re_subset$term),]
+  m2_re_subset$term <- ordered(m2_re_subset$term, levels = cities)
+
+  m3_re_subset <- m3_re_subset[order(m3_re_subset$term_cases),]
+  m3_re_subset$term_cases <- ordered(m3_re_subset$term_cases, levels = cities)
+
+re_df <- left_join(x = m2_re_subset, y = m3_re_subset,  by = c("term" = "term_cases"))
+
+re_df <- cbind(m2_re_subset, m3_re_subset)
+
+class_p <- ggplot(re_df, 
+       aes(x = estimate, y = cases)) + 
+  geom_point(size = 4, color="#F0E442") +
+  geom_text_repel(aes(label=term)) +
+  geom_vline(xintercept=0, 
+             linetype="solid", 
+             color = "grey20",
+             size=1,
+             alpha =.2) +
+  geom_hline(yintercept=0, 
+             linetype="solid", 
+             color = "grey20",
+             size=1,
+             alpha =.2) +
+  labs(title="f",
+       x="Stringency random effects", y = "COVID-19 cases random effects") +
+  theme(axis.title=element_text(size=18))
+
+png("../outputs/modelling/estimates/reclassification_plot.png", units="in", width=15, height=8, res=300)
+class_p 
 dev.off()
 
