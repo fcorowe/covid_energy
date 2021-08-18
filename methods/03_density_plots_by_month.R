@@ -102,9 +102,25 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
   r_df_long$measurement[r_df_long$measurement > 30] <- 30
   r_df_long$measurement[r_df_long$measurement < -20] <- -30
   
+  if (city_name == "Moscow") {
+    
+    r_df_long <- r_df_long %>%
+      subset(month != "JunDec_dif")
+  } else if (city_name == "Jakarta") {
+    r_df_long <- r_df_long %>%
+      subset(month != "FebDec_dif" & month != "MarDec_dif")
+  } else if (city_name == "Kinshasa") {
+    r_df_long <- r_df_long %>%
+      subset(month != "FebDec_dif" & month != "MarDec_dif")
+  } else if (city_name == "Nairobi") {
+    r_df_long <- r_df_long %>%
+      subset(month != "AprDec_dif ")
+  } else {
+    r_df_long <- r_df_long
+  }
+  
   p1 <- ggplot(data = r_df_long, mapping = aes(x = measurement, color = month)) +
-    stat_ecdf(geom = "step",
-              size = 1) +
+    geom_density() +
     theme_tufte() + 
     xlab("Night-time light intensity (nanoWatts/cm2/sr)") +
     scale_color_viridis( discrete = TRUE, option = "viridis") +

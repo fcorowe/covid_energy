@@ -235,19 +235,79 @@ for(i in 1:length(cities)){
   
 }
 
-data_total <- data_total %>% mutate(
-  mean_neg = rowMeans(cbind(JanDec_negative, FebDec_negative, MarDec_negative, AprDec_negative, MayDec_negative, JunDec_negative), na.rm=TRUE),
-  mean_neu = rowMeans(cbind(JanDec_neutral, FebDec_neutral, MarDec_neutral, AprDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
-  mean_pos = rowMeans(cbind(JanDec_positive, FebDec_positive, MarDec_positive, AprDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
+if (cities[i]== "Moscow") {
+  data_total <- data_total %>% mutate(
+    mean_neg = rowMeans(cbind(JanDec_negative, FebDec_negative, MarDec_negative, AprDec_negative, MayDec_negative), na.rm=TRUE),
+    mean_neu = rowMeans(cbind(JanDec_neutral, FebDec_neutral, MarDec_neutral, AprDec_neutral, MayDec_neutral), na.rm=TRUE),
+    mean_pos = rowMeans(cbind(JanDec_positive, FebDec_positive, MarDec_positive, AprDec_positive, MayDec_positive), na.rm=TRUE),
+    
+    mean_per_neg = rowMeans(cbind(JanDec_negative_per, FebDec_negative_per, MarDec_negative_per, AprDec_negative_per, MayDec_negative_per), na.rm=TRUE),
+    mean_per_neu = rowMeans(cbind(JanDec_neutral_per, FebDec_neutral_per, MarDec_neutral_per, AprDec_neutral_per, MayDec_neutral_per), na.rm=TRUE),
+    mean_per_pos = rowMeans(cbind(JanDec_positive_per, FebDec_positive_per, MarDec_positive_per, AprDec_positive_per, MayDec_positive_per), na.rm=TRUE),
+    
+    mean_median_neg = rowMeans(cbind(JanDec_negative_median, FebDec_negative_median, MarDec_negative_median, AprDec_negative_median, MayDec_negative_median), na.rm=TRUE),
+    mean_median_neu = rowMeans(cbind(JanDec_neutral_median, FebDec_neutral_median, MarDec_neutral_median, AprDec_neutral_median, MayDec_neutral_median), na.rm=TRUE),
+    mean_median_pos = rowMeans(cbind(JanDec_positive_median, FebDec_positive_median, MarDec_positive_median, AprDec_positive_median, MayDec_positive_median), na.rm=TRUE)
+  )
+  r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$FebDec_dif, r_df$MarDec_dif, r_df$AprDec_dif, r_df$MayDec_dif), na.rm=TRUE )
+} else if (cities[i]== "Jakarta") {
+  data_total <- data_total %>% mutate(
+    mean_neg = rowMeans(cbind(JanDec_negative, AprDec_negative, MayDec_negative, JunDec_negative), na.rm=TRUE),
+    mean_neu = rowMeans(cbind(JanDec_neutral, AprDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
+    mean_pos = rowMeans(cbind(JanDec_positive, AprDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
+    
+    mean_per_neg = rowMeans(cbind(JanDec_negative_per, AprDec_negative_per, MayDec_negative_per, JunDec_negative_per), na.rm=TRUE),
+    mean_per_neu = rowMeans(cbind(JanDec_neutral_per, AprDec_neutral_per, MayDec_neutral_per, JunDec_neutral_per), na.rm=TRUE),
+    mean_per_pos = rowMeans(cbind(JanDec_positive_per, AprDec_positive_per, MayDec_positive_per, JunDec_positive_per), na.rm=TRUE),
+    
+    mean_median_neg = rowMeans(cbind(JanDec_negative_median, AprDec_negative_median, MayDec_negative_median, JunDec_negative_median), na.rm=TRUE),
+    mean_median_neu = rowMeans(cbind(JanDec_neutral_median, AprDec_neutral_median, MayDec_neutral_median, JunDec_neutral_median), na.rm=TRUE),
+    mean_median_pos = rowMeans(cbind(JanDec_positive_median, AprDec_positive_median, MayDec_positive_median, JunDec_positive_median), na.rm=TRUE)
+  )
+} else if (cities[i]== "Kinshasa") {
+  data_total <- data_total %>% mutate(
+    mean_neg = rowMeans(cbind(JanDec_negative, AprDec_negative, MayDec_negative, JunDec_negative), na.rm=TRUE),
+    mean_neu = rowMeans(cbind(JanDec_neutral, AprDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
+    mean_pos = rowMeans(cbind(JanDec_positive, AprDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
+    
+    mean_per_neg = rowMeans(cbind(JanDec_negative_per, AprDec_negative_per, MayDec_negative_per, JunDec_negative_per), na.rm=TRUE),
+    mean_per_neu = rowMeans(cbind(JanDec_neutral_per, AprDec_neutral_per, MayDec_neutral_per, JunDec_neutral_per), na.rm=TRUE),
+    mean_per_pos = rowMeans(cbind(JanDec_positive_per, AprDec_positive_per, MayDec_positive_per, JunDec_positive_per), na.rm=TRUE),
+    
+    mean_median_neg = rowMeans(cbind(JanDec_negative_median, AprDec_negative_median, MayDec_negative_median, JunDec_negative_median), na.rm=TRUE),
+    mean_median_neu = rowMeans(cbind(JanDec_neutral_median, AprDec_neutral_median, MayDec_neutral_median, JunDec_neutral_median), na.rm=TRUE),
+    mean_median_pos = rowMeans(cbind(JanDec_positive_median, AprDec_positive_median, MayDec_positive_median, JunDec_positive_median), na.rm=TRUE)
+  )
   
-  mean_per_neg = rowMeans(cbind(JanDec_negative_per, FebDec_negative_per, MarDec_negative_per, AprDec_negative_per, MayDec_negative_per, JunDec_negative_per), na.rm=TRUE),
-  mean_per_neu = rowMeans(cbind(JanDec_neutral_per, FebDec_neutral_per, MarDec_neutral_per, AprDec_neutral_per, MayDec_neutral_per, JunDec_neutral_per), na.rm=TRUE),
-  mean_per_pos = rowMeans(cbind(JanDec_positive_per, FebDec_positive_per, MarDec_positive_per, AprDec_positive_per, MayDec_positive_per, JunDec_positive_per), na.rm=TRUE),
-  
-  mean_median_neg = rowMeans(cbind(JanDec_negative_median, FebDec_negative_median, MarDec_negative_median, AprDec_negative_median, MayDec_negative_median, JunDec_negative_median), na.rm=TRUE),
-  mean_median_neu = rowMeans(cbind(JanDec_neutral_median, FebDec_neutral_median, MarDec_neutral_median, AprDec_neutral_median, MayDec_neutral_median, JunDec_neutral_median), na.rm=TRUE),
-  mean_median_pos = rowMeans(cbind(JanDec_positive_median, FebDec_positive_median, MarDec_positive_median, AprDec_positive_median, MayDec_positive_median, JunDec_positive_median), na.rm=TRUE)
-)
+} else if (cities[i]== "Nairobi") {
+  data_total <- data_total %>% mutate(
+    mean_neg = rowMeans(cbind(JanDec_negative, FebDec_negative, MarDec_negative, MayDec_negative, JunDec_negative), na.rm=TRUE),
+    mean_neu = rowMeans(cbind(JanDec_neutral, FebDec_neutral, MarDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
+    mean_pos = rowMeans(cbind(JanDec_positive, FebDec_positive, MarDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
+    
+    mean_per_neg = rowMeans(cbind(JanDec_negative_per, FebDec_negative_per, MarDec_negative_per, MayDec_negative_per, JunDec_negative_per), na.rm=TRUE),
+    mean_per_neu = rowMeans(cbind(JanDec_neutral_per, FebDec_neutral_per, MarDec_neutral_per, MayDec_neutral_per, JunDec_neutral_per), na.rm=TRUE),
+    mean_per_pos = rowMeans(cbind(JanDec_positive_per, FebDec_positive_per, MarDec_positive_per, MayDec_positive_per, JunDec_positive_per), na.rm=TRUE),
+    
+    mean_median_neg = rowMeans(cbind(JanDec_negative_median, FebDec_negative_median, MarDec_negative_median, MayDec_negative_median, JunDec_negative_median), na.rm=TRUE),
+    mean_median_neu = rowMeans(cbind(JanDec_neutral_median, FebDec_neutral_median, MarDec_neutral_median, MayDec_neutral_median, JunDec_neutral_median), na.rm=TRUE),
+    mean_median_pos = rowMeans(cbind(JanDec_positive_median, FebDec_positive_median, MarDec_positive_median, MayDec_positive_median, JunDec_positive_median), na.rm=TRUE)
+  )
+} else {
+  data_total <- data_total %>% mutate(
+    mean_neg = rowMeans(cbind(JanDec_negative, FebDec_negative, MarDec_negative, AprDec_negative, MayDec_negative, JunDec_negative), na.rm=TRUE),
+    mean_neu = rowMeans(cbind(JanDec_neutral, FebDec_neutral, MarDec_neutral, AprDec_neutral, MayDec_neutral, JunDec_neutral), na.rm=TRUE),
+    mean_pos = rowMeans(cbind(JanDec_positive, FebDec_positive, MarDec_positive, AprDec_positive, MayDec_positive, JunDec_positive), na.rm=TRUE),
+    
+    mean_per_neg = rowMeans(cbind(JanDec_negative_per, FebDec_negative_per, MarDec_negative_per, AprDec_negative_per, MayDec_negative_per, JunDec_negative_per), na.rm=TRUE),
+    mean_per_neu = rowMeans(cbind(JanDec_neutral_per, FebDec_neutral_per, MarDec_neutral_per, AprDec_neutral_per, MayDec_neutral_per, JunDec_neutral_per), na.rm=TRUE),
+    mean_per_pos = rowMeans(cbind(JanDec_positive_per, FebDec_positive_per, MarDec_positive_per, AprDec_positive_per, MayDec_positive_per, JunDec_positive_per), na.rm=TRUE),
+    
+    mean_median_neg = rowMeans(cbind(JanDec_negative_median, FebDec_negative_median, MarDec_negative_median, AprDec_negative_median, MayDec_negative_median, JunDec_negative_median), na.rm=TRUE),
+    mean_median_neu = rowMeans(cbind(JanDec_neutral_median, FebDec_neutral_median, MarDec_neutral_median, AprDec_neutral_median, MayDec_neutral_median, JunDec_neutral_median), na.rm=TRUE),
+    mean_median_pos = rowMeans(cbind(JanDec_positive_median, FebDec_positive_median, MarDec_positive_median, AprDec_positive_median, MayDec_positive_median, JunDec_positive_median), na.rm=TRUE)
+  )
+}
 
 
 data_total %>% dplyr::select(c(
@@ -332,7 +392,7 @@ hm_median <- ggplot(data = median_df,
   scale_x_discrete(labels=c("mean_median_neg" = "Negative", 
                             "mean_median_pos" = "Positive")) +
   scale_y_discrete(limits=rev) +
-  labs(title= paste(" "), subtitle = "c", x="Median Percentage Change", y="City") +
+  labs(title= paste(" "), subtitle = "c", x="Median Radiance Change", y="City") +
   theme(plot.title = element_text(size=20),
         plot.subtitle = element_text(size=15)) +
   theme(legend.position = "bottom") +

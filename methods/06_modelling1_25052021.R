@@ -180,8 +180,6 @@ font_add_google("Roboto Condensed", "robotocondensed")
 showtext_auto()
 
 
-* All check up to here
-
 #######
 # 3. Exploratory data analysis
 
@@ -413,6 +411,25 @@ png("../outputs/modelling/lineplot/p1_ms07.png",units="in", width=10, height=10,
 p1_ms07
 dev.off()
 
+# Stay-at-home vs Workplace mobility
+p1_mm <- ggplot(cdf) +
+  geom_smooth(aes(x = date, y = Residential), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#287D8EFF") +
+  geom_smooth(aes(x = date, y = Workplaces), method = "loess", se = FALSE, size=1.5, span = 0.3, color="#ddcc77") +
+  facet_wrap(~ City, nrow = 7) + 
+  theme_tufte() +
+  geom_vline(xintercept=0, 
+             linetype="solid", 
+             color = "grey20",
+             size=1,
+             alpha =.2) +
+  labs(x= "Date",
+       y = "Workplace (orange) / Stay-at-Home Rate (blue)") +
+  scale_y_continuous(limits = c(-90, 50))
+
+png("../outputs/modelling/lineplot/p1_mm.png",units="in", width=10, height=10, res=300)
+p1_mm
+dev.off()
+
 ## 3.3 Correlation
     ### Full sample
 pc <- cor( cdf[ , c("Residential", 
@@ -461,6 +478,7 @@ rownames(pc) <- c("Stay-at-home", "New cases t", "New cases t-1",
 sig <- corrplot::cor.mtest(pc, conf.level = .95)
 
 # create a correlogram
+png("../outputs/modelling/correlogram/correlogram.png",units="in", width=10, height=10, res=300)
 corrplot::corrplot(pc, type="lower",
                    method = "circle", 
                    order = "original", 
@@ -468,7 +486,7 @@ corrplot::corrplot(pc, type="lower",
                    p.mat = sig$p, sig.level = .05, 
                    col = viridis::viridis(100, option = "plasma"),
                    diag = FALSE)
-
+dev.off()
 #######
 # 4. Multilevel modelling
 

@@ -115,7 +115,23 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
   r_df_long$measurement[r_df_long$measurement > 30] <- 30
   r_df_long$measurement[r_df_long$measurement < -30] <- -30
   
-
+  if (city_name == "Moscow") {
+    
+    r_df_long <- r_df_long %>%
+      subset(month != "JunDec_dif")
+  } else if (city_name == "Jakarta") {
+    r_df_long <- r_df_long %>%
+      subset(month != "FebDec_dif" & month != "MarDec_dif")
+  } else if (city_name == "Kinshasa") {
+    r_df_long <- r_df_long %>%
+      subset(month != "FebDec_dif" & month != "MarDec_dif")
+  } else if (city_name == "Nairobi") {
+    r_df_long <- r_df_long %>%
+      subset(month != "AprDec_dif ")
+  } else {
+    r_df_long <- r_df_long
+  }
+  
   p1 <- ggplot(data = r_df_long, mapping = aes(x = measurement, color = month)) +
     stat_ecdf(geom = "step",
               size = 1) +
@@ -124,13 +140,14 @@ create_density_plot <- function(month1raster, month2raster, month3raster, month4
     ylab("") +
     scale_color_viridis( discrete = TRUE, option = "viridis",
                          name = "Difference",
-                         breaks = c("JanDec_dif", "FebDec_dif", "MarDec_dif", "AprDec_dif", "MayDec_dif", "JunDec_dif"), 
+                         breaks = c("JanDec_dif", "FebDec_dif", "MarDec_dif", "AprDec_dif", "MayDec_dif", "JunDec_dif"),
+                         limits = c("JanDec_dif", "FebDec_dif", "MarDec_dif", "AprDec_dif", "MayDec_dif", "JunDec_dif"),
                          labels = c("Jan20 - Dec19", "Feb20 - Dec19", "Mar20 - Dec19", "Apr20 - Dec19", "May20 - Dec19", "Jun20 - Dec19"),
-                         ) +
+    ) +
     theme(text = element_text(size = 13),
           legend.title = element_text(size = 15),
           legend.text = element_text(size = 14)
-          ) +
+          )  +
     #scale_y_continuous(limits = c(0,0.6)) +
     #scale_x_continuous(limits = c(-100,100)) +
     ggtitle(city_name)

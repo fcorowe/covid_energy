@@ -115,8 +115,19 @@ for(i in 1:length(cities)){
   r_df[is.na(r_df)] <- 0
 
   # 3.6 Average difference across months by city
-  r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$FebDec_dif, r_df$MarDec_dif, r_df$AprDec_dif, r_df$MayDec_dif, r_df$JunDec_dif), na.rm=TRUE )
-  
+#  r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$FebDec_dif, r_df$MarDec_dif, r_df$AprDec_dif, r_df$MayDec_dif, r_df$JunDec_dif), na.rm=TRUE )
+  if (cities[i]== "Moscow") {
+    r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$FebDec_dif, r_df$MarDec_dif, r_df$AprDec_dif, r_df$MayDec_dif), na.rm=TRUE )
+  } else if (cities[i]== "Jakarta") {
+    r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$AprDec_dif, r_df$MayDec_dif, r_df$JunDec_dif), na.rm=TRUE )
+  } else if (cities[i]== "Kinshasa") {
+    r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$AprDec_dif, r_df$MayDec_dif, r_df$JunDec_dif), na.rm=TRUE )
+  } else if (cities[i]== "Nairobi") {
+    r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$FebDec_dif, r_df$MarDec_dif, r_df$MayDec_dif, r_df$JunDec_dif), na.rm=TRUE )
+  } else {
+    r_df$month_diff <- rowMeans( cbind(r_df$JanDec_dif, r_df$FebDec_dif, r_df$MarDec_dif, r_df$AprDec_dif, r_df$MayDec_dif, r_df$JunDec_dif), na.rm=TRUE )
+  }
+   
   if (!is.null(raster::intersect(Month1_cropped@extent, pop1@extent))) {
     pop_cropped <- crop(pop1, extent(Month1_cropped))
   } else if (!is.null(raster::intersect(Month1_cropped@extent, pop2@extent))) {
@@ -138,6 +149,7 @@ for(i in 1:length(cities)){
   
   # select the columns needed
   combined <- combined[,c(1:3,6)]
+  
   
   
   p <- ggplot(combined, aes(x= log(pop), y= month_diff)) +
