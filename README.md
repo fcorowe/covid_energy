@@ -10,6 +10,29 @@ This repository stores the required code and data to replicate the results of th
 Rowe, F., Robinson, C., Patias, N. 2021. Sensing Global Changes in the Local Patterns of Energy Consumption in Cities During the Early Stages of the COVID-19 Pandemic.
 ```
 
-# References
+This paper analyses changes in urban energy consumption during the early stages of the pandemic for a sample of major global cities. Particularly the paper seeks to:
+* measure city-scale changes in energy consumption in response to COVID-19;
+* determine the extent of shifts in spatial patterns of intra-urban energy consumption;
+* investigate potential explanations for changes in urban energy consumption.
 
 ![](figs/wuhan_singapore_dec-feb.png)
+
+## Citation
+
+If you use the code and/or data in this repository, we would appreciate if you could cite the pre-print paper as:
+
+```
+@article{rowe_et_al2021dp,
+  title={Using Twitter to Track Immigration Sentiment During Early Stages of the COVID-19 Pandemic},
+  author={Rowe, Francisco and 
+          Mahony, Michael and 
+          Graells-Garrido, Eduardo and
+          Rango, Marzia and
+          Sievers, Niklas},
+  journal={arXiv preprint arXiv:xxx},
+  DOI={xxx}
+  year={2021},
+}
+```
+
+The repository is also registered on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/84JWV)
