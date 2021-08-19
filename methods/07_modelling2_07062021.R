@@ -136,7 +136,7 @@ tab_model(m1, m2, m3,
                           "Spline 1st degree", "Spline 2nd degree", 
                           "Spline 3rd degree", "New cases t-1"),
           dv.labels = c("Autoregressive", "Stringency random effects", "New COVID-19 cases random effects"),
-          file = "../outputs/modelling/estimates/reg_table.html"
+          file = "../outputs/modelling/estimates/reg_table.txt"
 )
 
 ## regression plots
