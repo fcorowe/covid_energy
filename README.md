@@ -22,14 +22,12 @@ This paper analyses changes in urban energy consumption during the early stages 
 If you use the code and/or data in this repository, we would appreciate if you could cite the pre-print paper as:
 
 ```
-@article{rowe_et_al2021dp,
+@article{rowe_et_al2021ne,
   title={Using Twitter to Track Immigration Sentiment During Early Stages of the COVID-19 Pandemic},
   author={Rowe, Francisco and 
-          Mahony, Michael and 
-          Graells-Garrido, Eduardo and
-          Rango, Marzia and
-          Sievers, Niklas},
-  journal={arXiv preprint arXiv:xxx},
+          Robinson, Caitlin and 
+          Patias, Nikos},
+  journal={xxx},
   DOI={xxx}
   year={2021},
 }
