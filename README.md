@@ -23,12 +23,12 @@ If you use the code and/or data in this repository, we would appreciate if you c
 
 ```
 @article{rowe_et_al2021ne,
-  title={Using Twitter to Track Immigration Sentiment During Early Stages of the COVID-19 Pandemic},
+  title={Sensing Global Changes in Local Patterns of Energy Consumption in Cities During the Early Stages of the COVID-19 Pandemic},
   author={Rowe, Francisco and 
           Robinson, Caitlin and 
           Patias, Nikos},
-  journal={xxx},
-  DOI={xxx}
+  journal={ResearchSquare},
+  DOI={https://doi.org/10.21203/rs.3.rs-846222/v2}
   year={2021},
 }
 ```
