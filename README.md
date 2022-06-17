@@ -28,7 +28,7 @@ If you use the code and/or data in this repository, we would appreciate if you c
           Robinson, Caitlin and 
           Patias, Nikos},
   journal={Cities},
-  DOI={[https://doi.org/10.21203/rs.3.rs-846222/v2](https://doi.org/10.1016/j.cities.2022.103808)}
+  DOI={https://doi.org/10.1016/j.cities.2022.103808}
   year={2022},
 }
 ```
