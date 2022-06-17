@@ -22,15 +22,15 @@ This paper analyses changes in urban energy consumption during the early stages 
 If you use the code and/or data in this repository, we would appreciate if you could cite the pre-print paper as:
 
 ```
-@article{rowe_et_al2021ne,
+@article{rowe_et_al2022ne,
   title={Sensing Global Changes in Local Patterns of Energy Consumption in Cities During the Early Stages of the COVID-19 Pandemic},
   author={Rowe, Francisco and 
           Robinson, Caitlin and 
           Patias, Nikos},
-  journal={ResearchSquare},
-  DOI={https://doi.org/10.21203/rs.3.rs-846222/v2}
-  year={2021},
+  journal={Cities},
+  DOI={[https://doi.org/10.21203/rs.3.rs-846222/v2](https://doi.org/10.1016/j.cities.2022.103808)}
+  year={2022},
 }
 ```
 
-The repository is also registered on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/84JWV)
+The repository is also registered on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/P74QR)
